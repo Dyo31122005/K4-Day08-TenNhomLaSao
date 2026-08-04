@@ -17,7 +17,10 @@ import json
 from datetime import datetime
 from pathlib import Path
 
-from .task1_collect_legal_docs import fetch_shopee_article
+import sys
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+from src.task1_collect_legal_docs import fetch_shopee_article
 
 DATA_DIR = Path(__file__).parent.parent / "data" / "landing" / "news"
 
@@ -34,7 +37,7 @@ ARTICLE_URLS = [
 def setup_directory():
     """Tạo thư mục data/landing/news/ nếu chưa có."""
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    print(f"[OK] Thư mục đã sẵn sàng: {DATA_DIR}")
+    print(f"[OK] Thu muc da san sang: {DATA_DIR}")
 
 
 def crawl_article(filename: str, url: str, category: str) -> bool:
@@ -65,7 +68,7 @@ def crawl_all():
 
     ok_count = 0
     for filename, url, category in ARTICLE_URLS:
-        print(f"Đang crawl: {url}")
+        print(f"Dang crawl: {url}")
         if crawl_article(filename, url, category):
             ok_count += 1
 

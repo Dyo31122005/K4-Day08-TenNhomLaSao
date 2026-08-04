@@ -126,28 +126,36 @@ def rerank_rrf(
     Returns:
         List of top_k candidates sorted by RRF score descending.
     """
-    # TODO: Implement RRF
-    #
-    # rrf_scores = {}  # content -> score
-    # content_map = {}  # content -> full dict
-    #
-    # for ranked_list in ranked_lists:
-    #     for rank, item in enumerate(ranked_list, 1):
-    #         key = item["content"]
-    #         rrf_scores[key] = rrf_scores.get(key, 0) + 1 / (k + rank)
-    #         content_map[key] = item
-    #
-    # # Sort by RRF score
-    # sorted_items = sorted(rrf_scores.items(), key=lambda x: x[1], reverse=True)
-    #
-    # results = []
-    # for content, score in sorted_items[:top_k]:
-    #     item = content_map[content].copy()
-    #     item["score"] = score
-    #     results.append(item)
-    #
-    # return results
-    raise NotImplementedError("Implement rerank_rrf")
+    if top_k <= 0 or not ranked_lists:
+        return []
+    if k < 0:
+        raise ValueError("k must be non-negative")
+
+    # RRF deliberately ignores the original retrieval scores.  A document's
+    # contribution is determined only by its 1-based rank in each list.
+    rrf_scores: dict[str, float] = {}
+    content_map: dict[str, dict] = {}
+
+    for ranked_list in ranked_lists:
+        for rank, item in enumerate(ranked_list, start=1):
+            content = item["content"]
+            rrf_scores[content] = rrf_scores.get(content, 0.0) + 1.0 / (k + rank)
+            # Keep the complete result shape (metadata, source, etc.) from the
+            # most recently observed ranker, without changing the caller's item.
+            content_map[content] = item
+
+    # dict insertion order provides a deterministic tie-breaker based on the
+    # first time a document appeared in the input lists.
+    ranked_contents = sorted(
+        rrf_scores, key=lambda content: rrf_scores[content], reverse=True
+    )
+
+    results = []
+    for content in ranked_contents[:top_k]:
+        item = content_map[content].copy()
+        item["score"] = rrf_scores[content]
+        results.append(item)
+    return results
 
 
 # =============================================================================
@@ -178,8 +186,10 @@ def rerank(
         # Cần query_embedding - embed query trước
         raise NotImplementedError("Call rerank_mmr with query_embedding")
     elif method == "rrf":
-        # RRF cần nhiều ranked lists - gọi riêng
-        raise NotImplementedError("Call rerank_rrf with ranked_lists")
+        # The unified interface receives one candidate list.  Treat it as a
+        # single ranked list; callers with multiple rankers should call
+        # rerank_rrf([...], ...) directly.
+        return rerank_rrf([candidates], top_k=top_k)
     else:
         raise ValueError(f"Unknown rerank method: {method}")
 

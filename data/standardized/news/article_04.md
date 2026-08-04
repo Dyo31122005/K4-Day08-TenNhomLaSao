@@ -2,7 +2,7 @@
 
 **Source:** https://help.shopee.vn/portal/4/article/79556
 **Category:** Cross-border
-**Crawled:** 2026-08-04T13:14:35.547313
+**Crawled:** 2026-08-04T15:16:33.852676
 
 ---
 

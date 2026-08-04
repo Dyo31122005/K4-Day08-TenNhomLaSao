@@ -2,7 +2,7 @@
 
 **Source:** https://help.shopee.vn/portal/4/article/79215
 **Category:** Order Tracking
-**Crawled:** 2026-08-04T13:14:34.215436
+**Crawled:** 2026-08-04T15:16:32.222226
 
 ---
 
