@@ -70,7 +70,53 @@ Xem code mẫu (DeepEval/RAGAS/TruLens) chi tiết trong `README.md` gốc mục
 ## Kiến Trúc Hệ Thống
 
 ```
-[Vẽ diagram kiến trúc ở đây]
+┌───────────────────────────── DATA INGESTION ─────────────────────────────┐
+│                                                                            │
+│  help.shopee.vn (chính sách)          help.shopee.vn (bài viết hỗ trợ)    │
+│         │ Task 1: crawl → PDF                │ Task 2: crawl → JSON      │
+│         ▼                                     ▼                          │
+│  data/landing/legal/*.pdf            data/landing/news/*.json            │
+│         │                                     │                          │
+│         └──────────────────┬──────────────────┘                         │
+│                             ▼ Task 3: MarkItDown → clean_markdown_text    │
+│                               → tóm tắt LLM đầu file                     │
+│                    data/standardized/**/*.md                            │
+└───────────────────────────────┬──────────────────────────────────────────┘
+                                 ▼ Task 4: chunk (Recursive) + embed (bge-m3)
+                    ┌────────────────────────────┐
+                    │  ChromaDB (chroma_db/)      │
+                    │  + data/all_chunks.json     │
+                    └──────────────┬───────────────┘
+                                 │
+User query ─────────────────────┤
+                                 │
+              ┌──────────────────┴──────────────────┐
+              ▼                                      ▼
+  ┌────────────────────────┐          ┌────────────────────────┐
+  │  Task 5: Semantic Search │          │  Task 6: Lexical Search │
+  │  (HyDE + dense/cosine)   │          │  (BM25 sparse)           │
+  └────────────┬─────────────┘          └────────────┬─────────────┘
+               └──────────────────┬───────────────────┘
+                                   ▼ Task 7: RRF merge + rerank
+                        ┌───────────────────────┐
+                        │   Task 9: Orchestrator │
+                        │   (fallback logic)     │
+                        └───────────┬─────────────┘
+             best score < threshold?│
+              ┌─────────────────────┴─────────────────────┐
+              ▼ có                                          ▼ không
+ ┌─────────────────────────┐                    ┌─────────────────────────┐
+ │ Task 8: PageIndex        │                    │  Top-K chunks (hybrid)   │
+ │ Vectorless (fallback)    │                    │                          │
+ └────────────┬──────────────┘                    └────────────┬─────────────┘
+              └───────────────────────┬───────────────────────┘
+                                       ▼ Task 10: reorder (lost-in-the-middle)
+                                          + prompt + LLM fallback chain
+                            ┌───────────────────────────┐
+                            │  Answer + Citation + Score │
+                            └─────────────┬───────────────┘
+                                          ▼
+                          Web UI (Flask, server.py) — /chat, /api/chat/stream
 ```
 
 ---
@@ -79,11 +125,11 @@ Xem code mẫu (DeepEval/RAGAS/TruLens) chi tiết trong `README.md` gốc mục
 
 | Thành viên | MSSV | Nhiệm vụ | Trạng thái |
 |-----------|------|----------|------------|
-| Nguyễn Minh Đạt | 2A202601142 | Role 1 (Team Leader & RAG Architect - Task 9) | Đang thực hiện |
-| Nguyễn Hùng Mạnh | 2A202601256 | Role 2 (Data Dev - Task 1..3) & Role 5 (UI & Task 10) | Task 1-3 Hoàn thành |
-| Hà Anh Tuấn | 2A202601582 | Role 3 (Vector DB & Dense Search - Task 4, 5) | Hoàn thành Task 4, 5 |
-| Trần Hoàng Mai Anh | | Role 4 (Sparse Retrieval & Rerank - Task 6..8) | Hoàn thành Task 6..8 |
-| Nguyễn Hương Trà | | Role 6 (Evaluation & QA - Golden Dataset & RAGAS) | Đã tạo Golden Dataset |
+| Nguyễn Minh Đạt | 2A202601142 | Role 1 (Team Leader & RAG Architect - Task 9) | Hoàn thành |
+| Nguyễn Hùng Mạnh | 2A202601256 | Role 2 (Data Dev - Task 1..3) & Role 5 (UI & Task 10) + Tích hợp, sửa lỗi và tối ưu toàn bộ pipeline (Task 3..10: PDF→MD, chunking, hybrid retrieval, logging) | Hoàn thành |
+| Hà Anh Tuấn | 2A202601582 | Role 3 (Vector DB & Dense Search - Task 4, 5) | Hoàn thành |
+| Trần Hoàng Mai Anh | | Role 4 (Sparse Retrieval & Rerank - Task 6..8) | Hoàn thành |
+| Nguyễn Hương Trà | | Role 6 (Evaluation & QA - Golden Dataset & RAGAS) | Hoàn thành |
 | | | | |
 
 ---
