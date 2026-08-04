@@ -1,3 +1,11 @@
+# TOM TAT CHINH SACH
+
+Chính sách Trả Hàng và Hoàn Tiền của Shopee Vietnam áp dụng cho Người Mua, Người Bán, và các bên liên quan trong quá trình giao dịch trên sàn Shopee. Chính sách này quy định quyền và nghĩa vụ của các bên trong việc yêu cầu trả hàng và hoàn tiền. Người Mua có thể yêu cầu trả hàng/hoàn tiền trong các trường hợp như không nhận được sản phẩm, sản phẩm bị lỗi, hoặc không đúng như mô tả. Thời gian yêu cầu là 15 ngày kể từ khi giao hàng thành công, riêng với thực phẩm tươi sống là 24 giờ. Shopee cũng cho phép Người Mua trả hàng trong trường hợp không còn nhu cầu, nhưng sản phẩm phải còn nguyên vẹn. Chính sách này nhằm bảo vệ quyền lợi của Người Mua và đảm bảo sự công bằng trong giao dịch.
+
+---
+
+# NOI DUNG CHI TIET
+
 SHOPEE VIETNAM - TRUNG TAM TRO GIUP KHACH HANG
 
 help.shopee.vn

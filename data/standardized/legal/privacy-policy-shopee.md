@@ -1,3 +1,11 @@
+# TOM TAT CHINH SACH
+
+Chính sách bảo mật của Shopee Vietnam cam kết bảo vệ thông tin cá nhân của người dùng theo quy định pháp luật Việt Nam. Shopee thu thập dữ liệu cá nhân khi người dùng đăng ký tài khoản, sử dụng dịch vụ hoặc gửi biểu mẫu liên quan. Dữ liệu cá nhân bao gồm thông tin như tên, số chứng minh nhân dân và thông tin liên hệ, nhằm mục đích quản lý và cung cấp dịch vụ hiệu quả. Người dùng đồng ý cho Shopee xử lý dữ liệu cá nhân khi sử dụng dịch vụ, và nếu không đồng ý, họ được khuyến nghị không sử dụng nền tảng. Shopee cũng cam kết thông báo cho người dùng về bất kỳ thay đổi nào trong chính sách bảo mật. Chính sách này áp dụng cho cả người mua và người bán trên nền tảng.
+
+---
+
+# NOI DUNG CHI TIET
+
 SHOPEE VIETNAM - TRUNG TAM TRO GIUP KHACH HANG
 
 help.shopee.vn

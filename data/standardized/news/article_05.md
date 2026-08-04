@@ -2,7 +2,7 @@
 
 **Source:** https://help.shopee.vn/portal/4/article/140097
 **Category:** Seller Policy
-**Crawled:** 2026-08-04T15:16:34.324699
+**Crawled:** 2026-08-04T16:59:28.138969
 
 ---
 
