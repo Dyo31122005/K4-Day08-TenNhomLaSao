@@ -35,6 +35,7 @@ trong cùng collection, retrieval sẽ trả về kết quả rác từ dữ li�
 """
 
 from pathlib import Path
+from functools import lru_cache
 
 STANDARDIZED_DIR = Path(__file__).parent.parent / "data" / "standardized"
 CHROMA_DIR = Path(__file__).parent.parent / "chroma_db"
@@ -44,9 +45,9 @@ CHROMA_DIR = Path(__file__).parent.parent / "chroma_db"
 # CONFIGURATION — Giải thích lựa chọn của bạn trong comment
 # =============================================================================
 
-# Chunking strategy — thống nhất theo Checkpoint 2: CHUNK_SIZE=800, CHUNK_OVERLAP=100
-CHUNK_SIZE = 800        # Đủ dài để giữ trọn ngữ cảnh 1 điều khoản chính sách, tránh cắt giữa câu
-CHUNK_OVERLAP = 100     # ~12.5% overlap, giảm mất ngữ cảnh ở ranh giới chunk
+# TODO: Chọn chunking strategy và giải thích vì sao
+CHUNK_SIZE = 800        # Theo cấu hình của Checkpoint 2.
+CHUNK_OVERLAP = 100      # Giữ ngữ cảnh khi câu nằm trên ranh giới chunk.
 CHUNKING_METHOD = "recursive"  # "recursive" | "markdown_header" | "semantic"
 
 # Embedding model — thống nhất theo Checkpoint 2: BAAI/bge-m3
@@ -79,7 +80,16 @@ def load_documents() -> list[dict]:
     #         "metadata": {"source": md_file.name, "type": doc_type}
     #     })
     # return documents
-    raise NotImplementedError("Implement load_documents")
+    documents = []
+    for md_file in sorted(STANDARDIZED_DIR.rglob("*.md")):
+        content = md_file.read_text(encoding="utf-8").strip()
+        if content:
+            doc_type = "legal" if md_file.parent.name == "legal" else "news"
+            documents.append({
+                "content": content,
+                "metadata": {"source": md_file.name, "type": doc_type, "doc_type": doc_type},
+            })
+    return documents
 
 
 def chunk_documents(documents: list[dict]) -> list[dict]:
@@ -108,7 +118,24 @@ def chunk_documents(documents: list[dict]) -> list[dict]:
     #             "metadata": {**doc["metadata"], "chunk_index": i}
     #         })
     # return chunks
-    raise NotImplementedError("Implement chunk_documents")
+    from langchain_text_splitters import RecursiveCharacterTextSplitter
+
+    splitter = RecursiveCharacterTextSplitter(
+        chunk_size=CHUNK_SIZE,
+        chunk_overlap=CHUNK_OVERLAP,
+        separators=["\n\n", "\n", ". ", " ", ""],
+    )
+    chunks = []
+    for doc in documents:
+        default_role = "buyer" if doc.get("metadata", {}).get("type") == "legal" else "both"
+        for index, text in enumerate(splitter.split_text(doc["content"])):
+            metadata = {
+                **doc.get("metadata", {}),
+                "chunk_index": index,
+                "customer_role": doc.get("metadata", {}).get("customer_role", default_role),
+            }
+            chunks.append({"content": text, "metadata": metadata})
+    return chunks
 
 
 def embed_chunks(chunks: list[dict]) -> list[dict]:
@@ -134,7 +161,48 @@ def embed_chunks(chunks: list[dict]) -> list[dict]:
     # 1 hàm embed_texts(texts) dispatch theo os.getenv("EMBEDDING_PROVIDER") sang
     # sentence-transformers | Google (genai.embed_content) | OpenAI (client.embeddings.create)
     # rồi gọi lại hàm đó ở đây và ở Task 5 — tránh viết logic embed lặp lại 2 nơi.
-    raise NotImplementedError("Implement embed_chunks")
+    model = _get_embedding_model()
+    embeddings = model.encode(
+        [chunk["content"] for chunk in chunks],
+        show_progress_bar=False,
+        normalize_embeddings=True,
+    )
+    for chunk, embedding in zip(chunks, embeddings):
+        chunk["embedding"] = embedding.tolist()
+    return chunks
+
+
+@lru_cache(maxsize=1)
+def _get_embedding_model():
+    from sentence_transformers import SentenceTransformer
+
+    try:
+        return SentenceTransformer(EMBEDDING_MODEL, local_files_only=True)
+    except Exception:
+        fallback = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+        try:
+            return SentenceTransformer(fallback, local_files_only=True)
+        except Exception as exc:
+            print(f"Không có model embedding local ({exc}); dùng embedding hash deterministic.")
+            return _HashEmbeddingModel()
+
+
+class _HashEmbeddingModel:
+    """Embedding offline tối thiểu, dùng để bootstrap Chroma khi không có model cache."""
+
+    def encode(self, texts, **_kwargs):
+        import hashlib
+        import numpy as np
+
+        vectors = []
+        for text in texts:
+            vector = np.zeros(384, dtype="float32")
+            for token in text.casefold().split():
+                digest = hashlib.sha256(token.encode("utf-8")).digest()
+                vector[int.from_bytes(digest[:4], "big") % 384] += 1.0
+            norm = np.linalg.norm(vector)
+            vectors.append(vector / norm if norm else vector)
+        return np.asarray(vectors)
 
 
 def index_to_vectorstore(chunks: list[dict]):
@@ -160,7 +228,23 @@ def index_to_vectorstore(chunks: list[dict]):
     #     embeddings=[c["embedding"] for c in chunks],
     #     metadatas=[c["metadata"] for c in chunks],
     # )
-    raise NotImplementedError("Implement index_to_vectorstore")
+    import chromadb
+
+    if not chunks:
+        raise ValueError("Không có chunk để index")
+    CHROMA_DIR.mkdir(parents=True, exist_ok=True)
+    client = chromadb.PersistentClient(path=str(CHROMA_DIR))
+    collection = client.get_or_create_collection(
+        name=COLLECTION_NAME, metadata={"hnsw:space": "cosine"}
+    )
+    ids = [f"{c['metadata']['source']}_chunk_{c['metadata']['chunk_index']}" for c in chunks]
+    collection.upsert(
+        ids=ids,
+        documents=[c["content"] for c in chunks],
+        embeddings=[c["embedding"] for c in chunks],
+        metadatas=[c["metadata"] for c in chunks],
+    )
+    return collection
 
 
 def run_pipeline():
