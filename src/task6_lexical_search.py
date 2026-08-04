@@ -15,10 +15,46 @@ BM25 hoạt động thế nào:
     - k1=1.5 (term saturation), b=0.75 (length normalization)
 """
 
-from pathlib import Path
+import math
+import re
+from collections import Counter
 
 # TODO: Load corpus từ data/standardized/ hoặc từ vector store
 CORPUS: list[dict] = []  # List of {'content': str, 'metadata': dict}
+_BM25_INDEX = None
+_INDEXED_CORPUS_ID = None
+
+
+def _tokenize(text: str) -> list[str]:
+    return re.findall(r"[\w]+", text.casefold(), flags=re.UNICODE)
+
+
+class _BM25:
+    """Fallback BM25 để module vẫn chạy khi rank-bm25 chưa được cài."""
+
+    def __init__(self, corpus: list[list[str]], k1: float = 1.5, b: float = 0.75):
+        self.corpus = corpus
+        self.k1, self.b = k1, b
+        self.avgdl = sum(map(len, corpus)) / len(corpus) if corpus else 0
+        self.df = Counter(token for doc in corpus for token in set(doc))
+
+    def get_scores(self, query: list[str]) -> list[float]:
+        if not self.corpus or not query or not self.avgdl:
+            return [0.0] * len(self.corpus)
+        n_docs = len(self.corpus)
+        scores = []
+        for doc in self.corpus:
+            counts = Counter(doc)
+            score = 0.0
+            for token in set(query):
+                tf = counts.get(token, 0)
+                if not tf:
+                    continue
+                idf = math.log(1 + (n_docs - self.df[token] + 0.5) / (self.df[token] + 0.5))
+                denominator = tf + self.k1 * (1 - self.b + self.b * len(doc) / self.avgdl)
+                score += idf * tf * (self.k1 + 1) / denominator
+            scores.append(score)
+        return scores
 
 
 def build_bm25_index(corpus: list[dict]):
@@ -36,7 +72,14 @@ def build_bm25_index(corpus: list[dict]):
     # tokenized_corpus = [doc["content"].lower().split() for doc in corpus]
     # bm25 = BM25Okapi(tokenized_corpus)
     # return bm25
-    raise NotImplementedError("Implement build_bm25_index")
+    if not isinstance(corpus, list):
+        raise TypeError("corpus phải là list")
+    tokenized = [_tokenize(doc.get("content", "")) for doc in corpus]
+    try:
+        from rank_bm25 import BM25Okapi
+        return BM25Okapi(tokenized)
+    except ImportError:
+        return _BM25(tokenized)
 
 
 def lexical_search(query: str, top_k: int = 10) -> list[dict]:
@@ -73,7 +116,30 @@ def lexical_search(query: str, top_k: int = 10) -> list[dict]:
     #             "metadata": CORPUS[idx]["metadata"]
     #         })
     # return results
-    raise NotImplementedError("Implement lexical_search")
+    global CORPUS, _BM25_INDEX, _INDEXED_CORPUS_ID
+    if not isinstance(query, str) or not query.strip() or top_k <= 0:
+        return []
+
+    if not CORPUS:
+        from .task4_chunking_indexing import chunk_documents, load_documents
+        CORPUS = chunk_documents(load_documents())
+
+    corpus_id = id(CORPUS)
+    if _BM25_INDEX is None or _INDEXED_CORPUS_ID != corpus_id:
+        _BM25_INDEX = build_bm25_index(CORPUS)
+        _INDEXED_CORPUS_ID = corpus_id
+
+    scores = _BM25_INDEX.get_scores(_tokenize(query))
+    ranked = sorted(enumerate(scores), key=lambda item: (-float(item[1]), item[0]))
+    return [
+        {
+            "content": CORPUS[index]["content"],
+            "score": float(score),
+            "metadata": CORPUS[index].get("metadata", {}),
+        }
+        for index, score in ranked[:top_k]
+        if score > 0
+    ]
 
 
 if __name__ == "__main__":

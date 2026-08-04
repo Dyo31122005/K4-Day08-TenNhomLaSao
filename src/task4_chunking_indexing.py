@@ -52,8 +52,8 @@ CHUNK_SIZE = 800        # Re-configured to 800 characters per chunk
 CHUNK_OVERLAP = 100      # Re-configured to 100 characters overlap
 CHUNKING_METHOD = "recursive"  # "recursive" | "markdown_header" | "semantic"
 
-# TODO: Chọn embedding model và giải thích
-EMBEDDING_MODEL = "BAAI/bge-m3"  # Vì sao? Multilingual, tốt cho tiếng Việt lẫn tiếng Anh
+# Embedding model — thống nhất theo Checkpoint 2: BAAI/bge-m3
+EMBEDDING_MODEL = "BAAI/bge-m3"  # Multilingual, tốt cho tiếng Việt lẫn tiếng Anh
 EMBEDDING_DIM = 1024
 
 # TODO: Chọn vector store
