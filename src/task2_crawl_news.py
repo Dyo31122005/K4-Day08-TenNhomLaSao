@@ -1,89 +1,76 @@
 """
 Task 2 — Crawl bài viết/hướng dẫn hỗ trợ khách hàng về thương mại điện tử.
 
-Hướng dẫn:
-    1. Crawl tối thiểu 5 bài viết từ trung tâm trợ giúp công khai của một sàn TMĐT.
-    2. Sử dụng Crawl4AI hoặc thư viện crawling tương tự.
-    3. Lưu output vào data/landing/news/
-    4. Mỗi bài lưu 1 file JSON với metadata (url, title, date_crawled, content).
+Nhiệm vụ:
+    - Crawl THẬT (HTTP GET) tối thiểu 5 bài viết từ help.shopee.vn.
+    - Mỗi bài lưu 1 file JSON chứa metadata (url, title, date_crawled, content_markdown).
 
-Cài đặt:
-    pip install crawl4ai
-    playwright install chromium   # bắt buộc — pip install crawl4ai KHÔNG tự tải browser binary,
-                                   # thiếu bước này sẽ báo lỗi
-                                   # "BrowserType.launch: Executable doesn't exist"
+URL trong ARTICLE_URLS được lấy từ sitemap.xml chính thức của help.shopee.vn
+(https://help.shopee.vn/sitemap.xml), đã verify từng URL trả về HTTP 200 và có
+nội dung thật (không phải trang rỗng / placeholder).
 
-Gợi ý chủ đề: theo dõi đơn hàng, đổi phương thức thanh toán, bằng chứng hoàn tiền,
-mua hàng xuyên biên giới.
-
-Lưu ý: một số trang help center dùng JavaScript render (SPA) — nếu crawl về chỉ thấy
-tiêu đề mà không có nội dung, đổi sang bài viết khác cùng domain thay vì cố xử lý.
+Cách trích xuất giống Task 1 — trang bài viết là server-rendered nên chỉ cần
+`requests`, không cần crawl4ai/Playwright.
 """
 
-import asyncio
 import json
 from datetime import datetime
 from pathlib import Path
 
+from .task1_collect_legal_docs import fetch_shopee_article
+
 DATA_DIR = Path(__file__).parent.parent / "data" / "landing" / "news"
+
+# URL thật, lấy từ https://help.shopee.vn/sitemap.xml — verify HTTP 200 (2026-08-04).
+ARTICLE_URLS = [
+    ("article_01.json", "https://help.shopee.vn/portal/4/article/79215", "Order Tracking"),
+    ("article_02.json", "https://help.shopee.vn/portal/4/article/79196", "Payment"),
+    ("article_03.json", "https://help.shopee.vn/portal/4/article/79467", "Returns & Refund"),
+    ("article_04.json", "https://help.shopee.vn/portal/4/article/79556", "Cross-border"),
+    ("article_05.json", "https://help.shopee.vn/portal/4/article/140097", "Seller Policy"),
+]
 
 
 def setup_directory():
     """Tạo thư mục data/landing/news/ nếu chưa có."""
     DATA_DIR.mkdir(parents=True, exist_ok=True)
+    print(f"[OK] Thư mục đã sẵn sàng: {DATA_DIR}")
 
 
-# TODO: Điền danh sách URL bài viết cần crawl
-ARTICLE_URLS = [
-    # Ví dụ (trang công khai Shopee Vietnam):
-    # "https://help.shopee.vn/portal/4/article/...",
-]
+def crawl_article(filename: str, url: str, category: str) -> bool:
+    """Crawl 1 bài viết thật và lưu JSON. Trả về True nếu thành công."""
+    try:
+        fetched = fetch_shopee_article(url)
+    except Exception as e:
+        print(f"[LOI] Khong crawl duoc {url}: {e}")
+        return False
+
+    data = {
+        "url": fetched["url"],
+        "title": fetched["title"],
+        "category": category,
+        "date_crawled": datetime.now().isoformat(),
+        "content_markdown": fetched["content_text"],
+    }
+
+    filepath = DATA_DIR / filename
+    filepath.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"[OK] Da crawl that: {filepath} ({filepath.stat().st_size} bytes) <- {url}")
+    return True
 
 
-async def crawl_article(url: str) -> dict:
-    """
-    Crawl một bài viết và trả về dict chứa metadata + content.
-
-    Returns:
-        {
-            "url": str,
-            "title": str,
-            "date_crawled": str (ISO format),
-            "content_markdown": str
-        }
-    """
-    from crawl4ai import AsyncWebCrawler
-
-    # TODO: Implement crawling logic
-    # async with AsyncWebCrawler() as crawler:
-    #     result = await crawler.arun(url=url)
-    #     return {
-    #         "url": url,
-    #         "title": result.metadata.get("title", "Unknown"),
-    #         "date_crawled": datetime.now().isoformat(),
-    #         "content_markdown": result.markdown,
-    #     }
-    raise NotImplementedError("Implement crawl_article")
-
-
-async def crawl_all():
+def crawl_all():
     """Crawl toàn bộ bài viết trong ARTICLE_URLS."""
     setup_directory()
 
-    for i, url in enumerate(ARTICLE_URLS, 1):
-        print(f"[{i}/{len(ARTICLE_URLS)}] Crawling: {url}")
-        article = await crawl_article(url)
+    ok_count = 0
+    for filename, url, category in ARTICLE_URLS:
+        print(f"Đang crawl: {url}")
+        if crawl_article(filename, url, category):
+            ok_count += 1
 
-        # Lưu file JSON
-        filename = f"article_{i:02d}.json"
-        filepath = DATA_DIR / filename
-        filepath.write_text(json.dumps(article, ensure_ascii=False, indent=2))
-        print(f"  ✓ Saved: {filepath}")
+    print(f"\n[SUMMARY] Crawl thanh cong {ok_count}/{len(ARTICLE_URLS)} bai viet.")
 
 
 if __name__ == "__main__":
-    if not ARTICLE_URLS:
-        print("⚠ Hãy điền ARTICLE_URLS trước khi chạy!")
-        print("Gợi ý: tìm trang hướng dẫn/hỗ trợ khách hàng trên help center của sàn TMĐT")
-    else:
-        asyncio.run(crawl_all())
+    crawl_all()
