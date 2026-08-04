@@ -13,5 +13,221 @@
     "question": "Người bán không được đăng bán những sản phẩm nào?",
     "expected_answer": "Hàng giả/nhái, sản phẩm bất hợp pháp, vi phạm sở hữu trí tuệ, và các mặt hàng nằm trong danh sách cấm của sàn.",
     "expected_context": "Trang Product Listing Regulations, mục Prohibited Content"
+  },
+  {
+    "id": "PAY_01",
+    "category": "payment_methods",
+    "question": "Shopee hiện liệt kê những phương thức thanh toán nào?",
+    "expected_answer": "Tài liệu ghi Shopee hỗ trợ 09 hình thức nhưng danh sách thực tế có 10 mục: Ví ShopeePay, thẻ tín dụng/ghi nợ, trả góp bằng thẻ tín dụng, thanh toán QR, ứng dụng ngân hàng, thẻ nội địa NAPAS, Apple Pay, Google Pay, thanh toán khi nhận hàng (COD) và SPayLater.",
+    "expected_context": "payment-methods-shopee.pdf — phần danh sách phương thức thanh toán, trang 1; mục 10. SPayLater, trang 3.",
+    "is_in_domain": true,
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "PAY_02",
+    "category": "payment_methods",
+    "question": "Tôi có thể dùng những loại thẻ quốc tế nào để thanh toán trên Shopee và đơn hàng tối thiểu bao nhiêu tiền?",
+    "expected_answer": "Có thể dùng thẻ tín dụng hoặc thẻ ghi nợ thuộc Visa, Mastercard, JCB và American Express (AMEX). Giá trị thanh toán của đơn hàng, gồm phí vận chuyển và chi phí phát sinh, phải từ 10.000 VNĐ trở lên.",
+    "expected_context": "payment-methods-shopee.pdf — mục 2. Thẻ Tín dụng/Ghi nợ, trang 1.",
+    "is_in_domain": true,
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "PAY_03",
+    "category": "payment_methods",
+    "question": "Đơn hàng quốc tế có được trả góp bằng thẻ tín dụng không?",
+    "expected_answer": "Không. Phương thức trả góp bằng thẻ tín dụng không áp dụng cho đơn hàng quốc tế.",
+    "expected_context": "payment-methods-shopee.pdf — mục 3. Trả góp bằng Thẻ tín dụng, trang 1.",
+    "is_in_domain": true,
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "PAY_04",
+    "category": "payment_methods",
+    "question": "Apple Pay trên Shopee áp dụng cho đơn hàng có giá trị bao nhiêu và không dùng được cho những đơn nào?",
+    "expected_answer": "Apple Pay áp dụng cho đơn hàng có giá trị thanh toán cuối cùng từ 10.000 VNĐ đến 25.000.000 VNĐ. Không áp dụng cho đơn có sản phẩm thuộc nhóm Nạp thẻ & Dịch vụ, đơn dùng phương thức Người bán tự vận chuyển hoặc Seller Own Fleet - Vận chuyển quốc tế, và đơn ShopeeFood.",
+    "expected_context": "payment-methods-shopee.pdf — mục 7. Apple Pay, trang 2.",
+    "is_in_domain": true,
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "PAY_05",
+    "category": "payment_methods",
+    "question": "Giới hạn giá trị đơn hàng khi thanh toán bằng Google Pay trên Shopee là bao nhiêu?",
+    "expected_answer": "Đơn hàng phải có giá trị thanh toán cuối cùng từ 10.000 VNĐ đến 120.000.000 VNĐ. Google Pay không áp dụng cho đơn có sản phẩm thuộc nhóm Nạp thẻ & Dịch vụ hoặc đơn ShopeeFood.",
+    "expected_context": "payment-methods-shopee.pdf — mục 8. Google Pay, trang 2–3.",
+    "is_in_domain": true,
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "PAY_06",
+    "category": "payment_methods",
+    "question": "Có phải shop nào trên Shopee cũng cho thanh toán khi nhận hàng không?",
+    "expected_answer": "Không. Không phải tất cả các Shop đều cho phép COD. Shopee cũng không hỗ trợ các hình thức không được liệt kê hoặc giao dịch ngoài Shopee như chuyển khoản hay đặt cọc trực tiếp.",
+    "expected_context": "payment-methods-shopee.pdf — mục 9. Thanh toán khi nhận hàng (COD), trang 3.",
+    "is_in_domain": true,
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "PAY_07",
+    "category": "payment_methods",
+    "question": "SPayLater hoạt động như thế nào và có những kỳ thanh toán nào?",
+    "expected_answer": "SPayLater là phương thức mua trước trả sau do các ngân hàng đối tác cung cấp thông qua thẻ tín dụng phi vật lý. Người dùng có thể chọn 01, 02, 03 hoặc 06 kỳ; kỳ hạn 06 kỳ chỉ áp dụng cho một nhóm người dùng nhất định. Người dùng phải đủ điều kiện, kích hoạt dịch vụ và được cấp hạn mức.",
+    "expected_context": "payment-methods-shopee.pdf — mục 10. SPayLater, trang 3.",
+    "is_in_domain": true,
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "PRI_01",
+    "category": "privacy_policy",
+    "question": "Shopee có thể thu thập dữ liệu cá nhân của người dùng trong những trường hợp nào?",
+    "expected_answer": "Shopee có thể thu thập khi người dùng đăng ký hoặc sử dụng dịch vụ, gửi biểu mẫu, ký thỏa thuận, tương tác qua điện thoại/email/mạng xã hội, dùng nền tảng và cookie, cấp quyền thiết bị, liên kết tài khoản bên ngoài, thực hiện giao dịch, gửi phản hồi hoặc khiếu nại, tham gia cuộc thi hoặc chủ động cung cấp dữ liệu.",
+    "expected_context": "privacy-policy-shopee.pdf — mục 2.1. Khi nào Shopee thu thập dữ liệu cá nhân, trang 2.",
+    "is_in_domain": true,
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "PRI_02",
+    "category": "privacy_policy",
+    "question": "Shopee có thể thu thập những loại dữ liệu cá nhân nào?",
+    "expected_answer": "Có thể bao gồm họ tên, email, ngày sinh, địa chỉ thanh toán/giao nhận, tài khoản ngân hàng và thông tin thanh toán, số điện thoại, giới tính, dữ liệu thiết bị và mạng, danh bạ khi được cho phép, hình ảnh/âm thanh/video, giấy tờ định danh, lịch sử liên lạc, lịch sử tìm kiếm và giao dịch, dữ liệu vị trí và thông tin sử dụng nền tảng.",
+    "expected_context": "privacy-policy-shopee.pdf — mục 3.1. Shopee sẽ thu thập những dữ liệu gì, trang 3.",
+    "is_in_domain": true,
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "PRI_03",
+    "category": "privacy_policy",
+    "question": "Cookie được Shopee sử dụng để làm gì và người dùng có thể từ chối cookie không?",
+    "expected_answer": "Cookie được dùng để ghi nhớ và theo dõi việc sử dụng nền tảng, theo dõi giỏ hàng, cá nhân hóa nội dung, hỗ trợ quảng cáo và phân tích dữ liệu. Người dùng có thể từ chối cookie trong cài đặt trình duyệt hoặc thiết bị, nhưng có thể không sử dụng được đầy đủ các chức năng của nền tảng.",
+    "expected_context": "privacy-policy-shopee.pdf — mục 5. Cookies, trang 4–5.",
+    "is_in_domain": true,
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "PRI_04",
+    "category": "privacy_policy",
+    "question": "Shopee sử dụng dữ liệu cá nhân của người dùng cho những mục đích chính nào?",
+    "expected_answer": "Các mục đích gồm xử lý giao dịch và quản lý tài khoản, cung cấp dịch vụ khách hàng, xác minh danh tính và đánh giá rủi ro, vận hành và cải thiện dịch vụ, nghiên cứu và phân tích, tiếp thị/quảng cáo, tuân thủ pháp luật, kiểm soát rủi ro, ngăn chặn hoặc điều tra gian lận và lưu trữ/sao lưu dữ liệu.",
+    "expected_context": "privacy-policy-shopee.pdf — mục 6.1. Cách Shopee sử dụng thông tin, trang 5–7.",
+    "is_in_domain": true,
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "PRI_05",
+    "category": "privacy_policy",
+    "question": "Shopee có thể chia sẻ dữ liệu cá nhân với những bên nào?",
+    "expected_answer": "Shopee có thể chia sẻ với công ty mẹ, công ty con và công ty liên kết; người mua hoặc người bán có giao dịch; nhà thầu, đại lý và nhà cung cấp dịch vụ như bưu chính, viễn thông, quảng cáo, công nghệ thông tin, lưu trữ đám mây, dịch vụ AI tạo sinh và sáng tạo nội dung; cơ quan nhà nước có thẩm quyền; bên nhận chuyển nhượng trong giao dịch doanh nghiệp và các bên thứ ba phục vụ các mục đích được nêu trong chính sách.",
+    "expected_context": "privacy-policy-shopee.pdf — mục 8.1. Tiết lộ/chuyển giao thông tin, trang 8–9.",
+    "is_in_domain": true,
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "PRI_06",
+    "category": "privacy_policy",
+    "question": "Người dùng muốn rút lại sự đồng ý xử lý dữ liệu cá nhân thì phải làm gì và có thể gặp hệ quả gì?",
+    "expected_answer": "Người dùng có thể gửi yêu cầu cho Chuyên viên Bảo Vệ Dữ Liệu Cá Nhân qua email dpo.vn@shopee.com hoặc kênh được Shopee cung cấp. Việc rút lại, hạn chế hoặc phản đối xử lý dữ liệu có thể khiến Shopee không thể tiếp tục cung cấp dịch vụ và có thể phải chấm dứt quan hệ hoặc hợp đồng hiện tại.",
+    "expected_context": "privacy-policy-shopee.pdf — mục 13.1. Rút lại sự đồng ý, trang 11.",
+    "is_in_domain": true,
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "RET_01",
+    "category": "returns_refunds",
+    "question": "Những trường hợp nào người mua có thể yêu cầu trả hàng hoặc hoàn tiền?",
+    "expected_answer": "Các trường hợp gồm không nhận được hàng hoặc không nhận đủ hàng, nhận hàng giả/nhái, sản phẩm lỗi hoặc hư hại khi vận chuyển, giao sai sản phẩm, sản phẩm khác biệt rõ rệt so với mô tả, hết hạn sử dụng, người bán đồng ý cho trả hàng, hoặc sản phẩm còn nguyên vẹn và nguyên bao bì nhưng người mua không còn nhu cầu nếu đủ điều kiện Trả hàng COM.",
+    "expected_context": "returns-refund-policy-shopee.pdf — mục 3.1. Điều kiện yêu cầu trả hàng/hoàn tiền, trang 1–2.",
+    "is_in_domain": true,
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "RET_02",
+    "category": "returns_refunds",
+    "question": "Tôi đã nhận hàng 10 ngày trước thì còn yêu cầu trả hàng/hoàn tiền được không?",
+    "expected_answer": "Có, nếu là sản phẩm thông thường vì thời hạn là 15 ngày kể từ khi đơn hàng được cập nhật giao thành công. Với thực phẩm tươi sống hoặc đông lạnh, thời hạn chỉ là 24 giờ.",
+    "expected_context": "returns-refund-policy-shopee.pdf — mục 3.2. Thời hạn gửi yêu cầu, trang 2.",
+    "is_in_domain": true,
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "RET_03",
+    "category": "returns_refunds",
+    "question": "Đơn thanh toán COD nhưng tài khoản chưa liên kết ngân hàng hoặc ShopeePay thì có yêu cầu hoàn tiền được không?",
+    "expected_answer": "Không. Với đơn COD hoặc chuyển khoản ngân hàng, tài khoản Shopee phải liên kết thành công với một phương thức nhận hoàn tiền hợp lệ, ví dụ tài khoản ngân hàng hoặc Ví ShopeePay, trước khi thực hiện yêu cầu trả hàng/hoàn tiền.",
+    "expected_context": "returns-refund-policy-shopee.pdf — mục 3.3. Phương thức nhận hoàn tiền, trang 2.",
+    "is_in_domain": true,
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "RET_04",
+    "category": "returns_refunds",
+    "question": "Ai được sử dụng quyền Trả hàng COM và hạn mức mỗi tháng là bao nhiêu?",
+    "expected_answer": "Trả hàng COM áp dụng cho thành viên Shopee hạng Vàng hoặc Kim Cương và người đang dùng Gói ShopeeVIP. Hạng Vàng/Kim Cương không bị giới hạn số lần theo tháng nếu không vi phạm chính sách; người dùng ShopeeVIP có hạn mức 15 lần mỗi tháng. Nếu đồng thời thuộc cả hai nhóm thì áp dụng quyền lợi có hạn mức cao hơn.",
+    "expected_context": "returns-refund-policy-shopee.pdf — mục 4.1 và 4.2. Đối tượng và hạn mức Trả hàng COM, trang 2–3.",
+    "is_in_domain": true,
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "RET_05",
+    "category": "returns_refunds",
+    "question": "Người bán phải phản hồi yêu cầu trả hàng/hoàn tiền trong bao lâu?",
+    "expected_answer": "Người bán cần phản hồi trong vòng 02 ngày lịch kể từ ngày nhận được thông báo của Shopee, trừ khi Shopee quy định thời hạn khác tại từng thời điểm. Nếu không phản hồi, Shopee có thể hiểu rằng người bán đồng ý với quyết định xử lý và không có khiếu nại.",
+    "expected_context": "returns-refund-policy-shopee.pdf — mục 5. Quyền của Người Bán, trang 4.",
+    "is_in_domain": true,
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "RET_06",
+    "category": "returns_refunds",
+    "question": "Khi gửi trả sản phẩm, người mua phải chuẩn bị hàng và bằng chứng như thế nào?",
+    "expected_answer": "Sản phẩm phải được đóng gói theo chính sách vận chuyển, gửi kèm đầy đủ phụ kiện, hóa đơn VAT và tem phiếu bảo hành nếu có, đồng thời giữ tình trạng nguyên vẹn như khi nhận. Người mua phải quay video và/hoặc chụp ảnh sản phẩm khi nhận hàng và trong lúc đóng gói hàng hoàn để làm bằng chứng.",
+    "expected_context": "returns-refund-policy-shopee.pdf — mục 6. Yêu cầu đối với Sản Phẩm Hoàn Trả, trang 4.",
+    "is_in_domain": true,
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "RET_07",
+    "category": "returns_refunds",
+    "question": "Tiền hoàn trả có thể được chuyển vào những phương thức nào?",
+    "expected_answer": "Tùy trường hợp, tiền hoàn có thể được chuyển vào Ví ShopeePay, SPayLater, thẻ nội địa NAPAS, tài khoản ngân hàng, thẻ tín dụng/ghi nợ đã đăng ký với Shopee hoặc Số Dư Tài Khoản Shopee.",
+    "expected_context": "returns-refund-policy-shopee.pdf — mục 9.4. Phương thức nhận tiền hoàn, trang 6.",
+    "is_in_domain": true,
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "OOD_01",
+    "category": "out_of_domain",
+    "question": "Ngày mai thời tiết ở Hà Nội có mưa không?",
+    "expected_answer": "Xin lỗi, câu hỏi này nằm ngoài phạm vi các tài liệu hiện có về phương thức thanh toán, chính sách bảo mật và chính sách trả hàng/hoàn tiền của Shopee.",
+    "expected_context": "Không có ngữ cảnh phù hợp trong ba tài liệu; hệ thống phải kích hoạt fallback.",
+    "is_in_domain": false,
+    "expected_behavior": "fallback"
+  },
+  {
+    "id": "OOD_02",
+    "category": "out_of_domain",
+    "question": "Hãy hướng dẫn tôi nấu món phở bò tại nhà.",
+    "expected_answer": "Xin lỗi, câu hỏi này nằm ngoài phạm vi các tài liệu hiện có về phương thức thanh toán, chính sách bảo mật và chính sách trả hàng/hoàn tiền của Shopee.",
+    "expected_context": "Không có ngữ cảnh phù hợp trong ba tài liệu; hệ thống phải kích hoạt fallback.",
+    "is_in_domain": false,
+    "expected_behavior": "fallback"
+  },
+  {
+    "id": "OOD_03",
+    "category": "out_of_domain",
+    "question": "Trong Python, sự khác nhau giữa list và tuple là gì?",
+    "expected_answer": "Xin lỗi, câu hỏi này nằm ngoài phạm vi các tài liệu hiện có về phương thức thanh toán, chính sách bảo mật và chính sách trả hàng/hoàn tiền của Shopee.",
+    "expected_context": "Không có ngữ cảnh phù hợp trong ba tài liệu; hệ thống phải kích hoạt fallback.",
+    "is_in_domain": false,
+    "expected_behavior": "fallback"
+  },
+  {
+    "id": "OOD_04",
+    "category": "out_of_domain",
+    "question": "So sánh camera của iPhone và Samsung giúp tôi.",
+    "expected_answer": "Xin lỗi, câu hỏi này nằm ngoài phạm vi các tài liệu hiện có về phương thức thanh toán, chính sách bảo mật và chính sách trả hàng/hoàn tiền của Shopee.",
+    "expected_context": "Không có ngữ cảnh phù hợp trong ba tài liệu; hệ thống phải kích hoạt fallback.",
+    "is_in_domain": false,
+    "expected_behavior": "fallback"
   }
 ]
