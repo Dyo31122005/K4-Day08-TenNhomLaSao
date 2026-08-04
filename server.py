@@ -16,6 +16,7 @@ from flask import Flask, Response, jsonify, render_template, request, stream_wit
 PROJECT_ROOT = Path(__file__).parent.resolve()
 sys.path.insert(0, str(PROJECT_ROOT))
 
+from src.task4_chunking_indexing import classify_customer_role
 from src.task9_retrieval_pipeline import retrieve
 from src.task10_generation import generate_with_citation, generate_with_citation_stream
 
@@ -32,6 +33,26 @@ def chat():
     return render_template("chat.html")
 
 
+@app.route("/presentation")
+def presentation():
+    return render_template("presentation.html")
+
+
+def log_retrieval_to_console(question: str, retrieved_sources: list[dict]):
+    print("\n" + "=" * 70, flush=True)
+    print(f"📩 [USER QUERY]: {question}", flush=True)
+    print("-" * 70, flush=True)
+    print(f"🔍 [RETRIEVAL LOG]: Top {len(retrieved_sources)} Chunks (Hybrid RRF Fusion):", flush=True)
+    for i, s in enumerate(retrieved_sources, 1):
+        meta = s.get("metadata", {})
+        src_name = meta.get("source", file_name(meta.get("path", "")))
+        score = round(s.get("score", 0), 4)
+        chunk_idx = meta.get("chunk_index", 0)
+        role = meta.get("customer_role", "both")
+        print(f"  {i}. [Score: {score:.4f}] {src_name} (Chunk #{chunk_idx} | Role: {role})", flush=True)
+    print("=" * 70 + "\n", flush=True)
+
+
 @app.route("/api/chat", methods=["POST"])
 def api_chat():
     data = request.get_json() or {}
@@ -40,6 +61,9 @@ def api_chat():
 
     if not question:
         return jsonify({"error": "Missing question"}), 400
+
+    sources = retrieve(question, top_k=top_k)
+    log_retrieval_to_console(question, sources)
 
     res = generate_with_citation(question, top_k=top_k)
     return jsonify(res)
@@ -57,13 +81,17 @@ def api_chat_stream():
     def generate():
         # Step 1: Hybrid Retrieval (Task 9) — Siêu tốc nhờ Pre-warming RAM
         retrieved_sources = retrieve(question, top_k=top_k)
+        log_retrieval_to_console(question, retrieved_sources)
+
         sources_meta = []
-        for i, s in enumerate(retrieved_sources):
+        for i, s in enumerate(retrieved_sources, 1):
             meta = s.get("metadata", {})
+            src_name = meta.get("source", file_name(meta.get("path", "")))
+            score = round(s.get("score", 0), 4)
             sources_meta.append({
                 "id": i,
-                "title": meta.get("source", file_name(meta.get("path", ""))),
-                "score": round(s.get("score", 0), 4),
+                "title": src_name,
+                "score": score,
                 "content": s.get("content", ""),
                 "type": meta.get("type", "policy"),
                 "url": meta.get("url", "https://help.shopee.vn")
@@ -97,12 +125,7 @@ def api_documents():
             except Exception:
                 content_text = ""
 
-            role = "both"
-            filename = file.name.lower()
-            if "returns" in filename or "payment" in filename or "article_01" in filename or "article_02" in filename or "article_03" in filename:
-                role = "buyer"
-            elif "seller" in filename or "article_05" in filename:
-                role = "seller"
+            role = classify_customer_role(file.name, content_text)
 
             docs.append({
                 "id": file.stem,

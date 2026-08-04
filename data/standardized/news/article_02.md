@@ -2,7 +2,7 @@
 
 **Source:** https://help.shopee.vn/portal/4/article/79196
 **Category:** Payment
-**Crawled:** 2026-08-04T15:16:32.772500
+**Crawled:** 2026-08-04T16:59:26.601511
 
 ---
 

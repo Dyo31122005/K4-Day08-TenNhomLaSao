@@ -215,27 +215,44 @@ def rerank_rrf(
 
     # RRF deliberately ignores the original retrieval scores.  A document's
     # contribution is determined only by its 1-based rank in each list.
+    #
+    # Dedup key: prefer the stable (source, chunk_index) chunk id over the raw
+    # content string. Dense results come from the persisted ChromaDB index
+    # while sparse results are re-chunked live from the current markdown
+    # files (task6_lexical_search) — if the corpus was edited without
+    # reindexing, or even splitter output drifts by a single character, a
+    # content-string key would treat the same logical chunk as two different
+    # documents and silently break the fusion. Fall back to content when a
+    # result has no usable metadata (e.g. ad-hoc candidates in tests).
+    def dedup_key(item: dict) -> str:
+        metadata = item.get("metadata") or {}
+        source = metadata.get("source")
+        chunk_index = metadata.get("chunk_index")
+        if source is not None and chunk_index is not None:
+            return f"{source}::{chunk_index}"
+        return item["content"]
+
     rrf_scores: dict[str, float] = {}
-    content_map: dict[str, dict] = {}
+    item_map: dict[str, dict] = {}
 
     for ranked_list in ranked_lists:
         for rank, item in enumerate(ranked_list, start=1):
-            content = item["content"]
-            rrf_scores[content] = rrf_scores.get(content, 0.0) + 1.0 / (k + rank)
+            key = dedup_key(item)
+            rrf_scores[key] = rrf_scores.get(key, 0.0) + 1.0 / (k + rank)
             # Keep the complete result shape (metadata, source, etc.) from the
             # most recently observed ranker, without changing the caller's item.
-            content_map[content] = item
+            item_map[key] = item
 
     # dict insertion order provides a deterministic tie-breaker based on the
     # first time a document appeared in the input lists.
-    ranked_contents = sorted(
-        rrf_scores, key=lambda content: rrf_scores[content], reverse=True
+    ranked_keys = sorted(
+        rrf_scores, key=lambda key: rrf_scores[key], reverse=True
     )
 
     results = []
-    for content in ranked_contents[:top_k]:
-        item = content_map[content].copy()
-        item["score"] = rrf_scores[content]
+    for key in ranked_keys[:top_k]:
+        item = item_map[key].copy()
+        item["score"] = rrf_scores[key]
         results.append(item)
     return results
 
