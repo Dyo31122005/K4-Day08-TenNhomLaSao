@@ -89,7 +89,24 @@ def semantic_search(query: str, top_k: int = 10) -> list[dict]:
             query_vector = model.encode(hyde_query).tolist()
     except Exception as e:
         print(f"[Semantic Search] Embedding generation failed: {e}")
-        return []
+        if provider != "sentence_transformers":
+            print("[Semantic Search] Falling back to local sentence-transformers embeddings.")
+            try:
+                from sentence_transformers import SentenceTransformer
+                model_name = os.getenv("EMBEDDING_MODEL", "BAAI/bge-m3")
+                model = SentenceTransformer(model_name)
+                query_vector = model.encode(hyde_query).tolist()
+            except Exception as e2:
+                print(f"[Semantic Search] Local fallback failed: {e2}")
+                try:
+                    from sentence_transformers import SentenceTransformer
+                    model = SentenceTransformer("all-MiniLM-L6-v2")
+                    query_vector = model.encode(hyde_query).tolist()
+                except Exception as e3:
+                    print(f"[Semantic Search] Local fallback to MiniLM failed: {e3}")
+                    return []
+        else:
+            return []
 
     # 3. Truy vấn cơ sở dữ liệu vector ChromaDB
     try:
