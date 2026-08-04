@@ -14,7 +14,40 @@ bất kể nội dung đó có thật sự liên quan đến câu hỏi hay khô
 quyết định fallback ở Task 9 — xem ghi chú ở đó.
 """
 
+import math
+import os
+import re
 from typing import Optional
+
+
+def _safe_top_k(top_k: int) -> int:
+    if top_k <= 0:
+        return 0
+    return int(top_k)
+
+
+def _tokenize(text: str) -> list[str]:
+    """Small dependency-free tokenizer used by the offline fallback."""
+    return re.findall(r"[\wÀ-ỹ]+", str(text).casefold(), flags=re.UNICODE)
+
+
+def _token_overlap(query: str, text: str) -> float:
+    query_tokens = set(_tokenize(query))
+    if not query_tokens:
+        return 0.0
+    document_tokens = set(_tokenize(text))
+    return len(query_tokens & document_tokens) / len(query_tokens)
+
+
+def _cosine(left: list[float], right: list[float]) -> float:
+    if not left or not right or len(left) != len(right):
+        return 0.0
+    dot = sum(float(a) * float(b) for a, b in zip(left, right))
+    left_norm = math.sqrt(sum(float(a) ** 2 for a in left))
+    right_norm = math.sqrt(sum(float(b) ** 2 for b in right))
+    if not left_norm or not right_norm:
+        return 0.0
+    return dot / (left_norm * right_norm)
 
 
 def rerank_cross_encoder(
@@ -31,30 +64,63 @@ def rerank_cross_encoder(
     Returns:
         List of top_k candidates, re-scored và sorted by rerank_score descending.
     """
-    # TODO: Implement cross-encoder reranking
-    #
-    # Option A: Jina Reranker API
-    # import requests
-    # response = requests.post(
-    #     "https://api.jina.ai/v1/rerank",
-    #     headers={"Authorization": f"Bearer {JINA_API_KEY}"},
-    #     json={
-    #         "model": "jina-reranker-v2-base-multilingual",
-    #         "query": query,
-    #         "documents": [c["content"] for c in candidates],
-    #         "top_n": top_k
-    #     }
-    # )
-    # reranked = response.json()["results"]
-    # return [
-    #     {**candidates[r["index"]], "score": r["relevance_score"]}
-    #     for r in reranked
-    # ]
-    #
-    # Option B: Local model (Qwen3-Reranker)
-    # from transformers import AutoModelForSequenceClassification, AutoTokenizer
-    # ...
-    raise NotImplementedError("Implement rerank_cross_encoder")
+    limit = _safe_top_k(top_k)
+    if not candidates or not limit:
+        return []
+
+    api_key = os.getenv("JINA_API_KEY", "").strip()
+    if api_key:
+        try:
+            import requests
+
+            response = requests.post(
+                "https://api.jina.ai/v1/rerank",
+                headers={"Authorization": f"Bearer {api_key}"},
+                json={
+                    "model": os.getenv(
+                        "JINA_RERANKER_MODEL",
+                        "jina-reranker-v2-base-multilingual",
+                    ),
+                    "query": query,
+                    "documents": [str(c.get("content", "")) for c in candidates],
+                    "top_n": min(limit, len(candidates)),
+                    "return_documents": False,
+                },
+                timeout=float(os.getenv("JINA_TIMEOUT", "30")),
+            )
+            response.raise_for_status()
+            payload = response.json()
+            ranked = payload.get("results", [])
+            output = []
+            for item in ranked:
+                index = item.get("index")
+                if not isinstance(index, int) or not 0 <= index < len(candidates):
+                    continue
+                score = float(item.get("relevance_score", item.get("score", 0.0)))
+                result = candidates[index].copy()
+                result["score"] = score
+                result["rerank_score"] = score
+                output.append(result)
+            if output:
+                return output[:limit]
+        except Exception as exc:
+            # Retrieval must remain usable without an external reranker.
+            print(f"[Cross-encoder] Jina unavailable ({exc}); using lexical fallback.")
+
+    # Deterministic offline fallback. It is intentionally conservative: the
+    # original retrieval score breaks ties, while token overlap supplies the
+    # query-dependent re-ranking signal.
+    scored = []
+    for position, candidate in enumerate(candidates):
+        overlap = _token_overlap(query, candidate.get("content", ""))
+        original = float(candidate.get("score", 0.0) or 0.0)
+        score = 0.8 * overlap + 0.2 * original
+        result = candidate.copy()
+        result["score"] = score
+        result["rerank_score"] = score
+        scored.append((score, -position, result))
+    scored.sort(key=lambda item: (item[0], item[1]), reverse=True)
+    return [item[2] for item in scored[:limit]]
 
 
 def rerank_mmr(
@@ -77,37 +143,53 @@ def rerank_mmr(
     Returns:
         List of top_k candidates selected by MMR.
     """
-    # TODO: Implement MMR
-    #
-    # selected = []
-    # remaining = list(range(len(candidates)))
-    #
-    # for _ in range(min(top_k, len(candidates))):
-    #     best_idx = None
-    #     best_score = float('-inf')
-    #
-    #     for idx in remaining:
-    #         # Relevance to query
-    #         relevance = cosine_sim(query_embedding, candidates[idx]["embedding"])
-    #
-    #         # Max similarity to already selected
-    #         max_sim_to_selected = 0
-    #         for sel_idx in selected:
-    #             sim = cosine_sim(candidates[idx]["embedding"], candidates[sel_idx]["embedding"])
-    #             max_sim_to_selected = max(max_sim_to_selected, sim)
-    #
-    #         # MMR score
-    #         mmr_score = lambda_param * relevance - (1 - lambda_param) * max_sim_to_selected
-    #
-    #         if mmr_score > best_score:
-    #             best_score = mmr_score
-    #             best_idx = idx
-    #
-    #     selected.append(best_idx)
-    #     remaining.remove(best_idx)
-    #
-    # return [candidates[i] for i in selected]
-    raise NotImplementedError("Implement rerank_mmr")
+    limit = _safe_top_k(top_k)
+    if not 0.0 <= lambda_param <= 1.0:
+        raise ValueError("lambda_param must be between 0 and 1")
+    if not candidates or not limit:
+        return []
+
+    selected: list[int] = []
+    selected_scores: list[float] = []
+    remaining = list(range(len(candidates)))
+    query_vector = list(query_embedding or [])
+    for _ in range(min(limit, len(candidates))):
+        best_index = remaining[0]
+        best_mmr = float("-inf")
+        for index in remaining:
+            candidate = candidates[index]
+            vector = candidate.get("embedding") or []
+            if query_vector and vector:
+                relevance = _cosine(query_vector, vector)
+            else:
+                # Useful for lexical/BM25 candidates which have no vectors.
+                relevance = float(candidate.get("score", 0.0) or 0.0)
+                if query_vector:
+                    relevance = 0.0
+
+            if selected and vector:
+                similarities = [
+                    _cosine(vector, candidates[selected_index].get("embedding") or [])
+                    for selected_index in selected
+                ]
+                redundancy = max(similarities, default=0.0)
+            else:
+                redundancy = 0.0
+            mmr_score = lambda_param * relevance - (1.0 - lambda_param) * redundancy
+            if mmr_score > best_mmr:
+                best_mmr = mmr_score
+                best_index = index
+        selected.append(best_index)
+        selected_scores.append(best_mmr)
+        remaining.remove(best_index)
+
+    results = []
+    for index, mmr_score in zip(selected, selected_scores):
+        result = candidates[index].copy()
+        result["score"] = mmr_score
+        result["rerank_score"] = mmr_score
+        results.append(result)
+    return results
 
 
 def rerank_rrf(
@@ -133,27 +215,44 @@ def rerank_rrf(
 
     # RRF deliberately ignores the original retrieval scores.  A document's
     # contribution is determined only by its 1-based rank in each list.
+    #
+    # Dedup key: prefer the stable (source, chunk_index) chunk id over the raw
+    # content string. Dense results come from the persisted ChromaDB index
+    # while sparse results are re-chunked live from the current markdown
+    # files (task6_lexical_search) — if the corpus was edited without
+    # reindexing, or even splitter output drifts by a single character, a
+    # content-string key would treat the same logical chunk as two different
+    # documents and silently break the fusion. Fall back to content when a
+    # result has no usable metadata (e.g. ad-hoc candidates in tests).
+    def dedup_key(item: dict) -> str:
+        metadata = item.get("metadata") or {}
+        source = metadata.get("source")
+        chunk_index = metadata.get("chunk_index")
+        if source is not None and chunk_index is not None:
+            return f"{source}::{chunk_index}"
+        return item["content"]
+
     rrf_scores: dict[str, float] = {}
-    content_map: dict[str, dict] = {}
+    item_map: dict[str, dict] = {}
 
     for ranked_list in ranked_lists:
         for rank, item in enumerate(ranked_list, start=1):
-            content = item["content"]
-            rrf_scores[content] = rrf_scores.get(content, 0.0) + 1.0 / (k + rank)
+            key = dedup_key(item)
+            rrf_scores[key] = rrf_scores.get(key, 0.0) + 1.0 / (k + rank)
             # Keep the complete result shape (metadata, source, etc.) from the
             # most recently observed ranker, without changing the caller's item.
-            content_map[content] = item
+            item_map[key] = item
 
     # dict insertion order provides a deterministic tie-breaker based on the
     # first time a document appeared in the input lists.
-    ranked_contents = sorted(
-        rrf_scores, key=lambda content: rrf_scores[content], reverse=True
+    ranked_keys = sorted(
+        rrf_scores, key=lambda key: rrf_scores[key], reverse=True
     )
 
     results = []
-    for content in ranked_contents[:top_k]:
-        item = content_map[content].copy()
-        item["score"] = rrf_scores[content]
+    for key in ranked_keys[:top_k]:
+        item = item_map[key].copy()
+        item["score"] = rrf_scores[key]
         results.append(item)
     return results
 
@@ -167,6 +266,7 @@ def rerank(
     candidates: list[dict],
     top_k: int = 5,
     method: str = "rrf",  # "cross_encoder" | "mmr" | "rrf"
+    query_embedding: Optional[list[float]] = None,
 ) -> list[dict]:
     """
     Unified reranking interface.
@@ -183,8 +283,7 @@ def rerank(
     if method == "cross_encoder":
         return rerank_cross_encoder(query, candidates, top_k)
     elif method == "mmr":
-        # Cần query_embedding - embed query trước
-        raise NotImplementedError("Call rerank_mmr with query_embedding")
+        return rerank_mmr(query_embedding or [], candidates, top_k=top_k)
     elif method == "rrf":
         # The unified interface receives one candidate list.  Treat it as a
         # single ranked list; callers with multiple rankers should call
