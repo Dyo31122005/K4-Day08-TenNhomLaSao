@@ -16,52 +16,61 @@ def _get_st_model(model_name: str):
 def generate_hypothetical_doc(query: str) -> str:
     """
     Tạo ra tài liệu giả định (HyDE) sử dụng mô hình LLM để tối ưu hóa tìm kiếm.
+    Cài đặt fallback chain nhiều tầng để tránh gián đoạn khi 1 API key hết quota.
     """
-    openai_key = os.getenv("OPENAI_API_KEY")
-    openrouter_key = os.getenv("OPENROUTER_API_KEY")
-    
-    if not openrouter_key and not openai_key:
-        # Nếu không có API Key, trả về query nguyên bản làm fallback
-        return query
+    # OpenAI đặt đầu tiên (phản hồi ổn định/nhanh hơn DeepSeek trong thực tế đo được).
+    chain = [
+        ("OpenAI", "gpt-4o-mini", None, "OPENAI_API_KEY"),
+        ("OpenRouter", "google/gemini-2.5-flash", "https://openrouter.ai/api/v1", "OPENROUTER_API_KEY"),
+        ("Gemini", "gemini-1.5-flash", "https://generativelanguage.googleapis.com/v1beta/openai/", "GEMINI_API_KEY"),
+        ("DeepSeek", "deepseek-chat", "https://api.deepseek.com", "DEEPSEEK_API_KEY"),
+    ]
+    # Timeout cứng: 1 provider bị treo mạng sẽ raise thay vì làm cả request
+    # (và cả server) đứng im vô thời hạn, chặn luôn fallback sang provider kế.
+    LLM_REQUEST_TIMEOUT = 20.0
 
-    try:
-        from openai import OpenAI
-        if openrouter_key:
-            client = OpenAI(api_key=openrouter_key, base_url="https://openrouter.ai/api/v1")
-            model = os.getenv("LLM_MODEL", "openai/gpt-4o-mini")
-        else:
-            client = OpenAI(api_key=openai_key)
-            model = os.getenv("LLM_MODEL", "gpt-4o-mini")
-        
-        prompt = (
-            "Hãy viết một câu trả lời giả định hoặc tài liệu hướng dẫn ngắn (khoảng 100-200 từ) "
-            "về chủ đề sau đây cho Trung tâm Hỗ trợ của sàn Thương mại điện tử (Shopee Việt Nam). "
-            "Tập trung cung cấp thông tin thực tế, chi tiết và có cấu trúc rõ ràng.\n\n"
-            f"Chủ đề: {query}"
-        )
-        
-        response = client.chat.completions.create(
-            model=model,
-            messages=[
-                {"role": "system", "content": "Trợ lý hỗ trợ khách hàng TMĐT chuyên nghiệp."},
-                {"role": "user", "content": prompt}
-            ],
-            temperature=0.5,
-            max_tokens=300
-        )
-        return response.choices[0].message.content.strip()
-    except Exception as e:
-        print(f"[HyDE] Failed to generate hypothetical doc: {e}. Using original query.")
-        return query
+    prompt = (
+        "Hãy viết một câu trả lời giả định hoặc tài liệu hướng dẫn ngắn (khoảng 100-200 từ) bằng tiếng Việt "
+        "về chủ đề sau đây cho Trung tâm Hỗ trợ của sàn Thương mại điện tử (Shopee Việt Nam). "
+        "Tập trung cung cấp thông tin thực tế, chi tiết và có cấu trúc rõ ràng.\n\n"
+        f"Chủ đề: {query}"
+    )
+
+    from openai import OpenAI
+    for provider_name, model, base_url, key_env in chain:
+        api_key = os.getenv(key_env)
+        if not api_key:
+            print(f"  [HyDE] {provider_name} ({model}): bo qua, thieu {key_env}")
+            continue
+        try:
+            client = OpenAI(api_key=api_key, base_url=base_url, timeout=LLM_REQUEST_TIMEOUT)
+            response = client.chat.completions.create(
+                model=model,
+                messages=[
+                    {"role": "system", "content": "Trợ lý hỗ trợ khách hàng TMĐT chuyên nghiệp."},
+                    {"role": "user", "content": prompt}
+                ],
+                temperature=0.5,
+                max_tokens=300
+            )
+            print(f"  [HyDE] {provider_name} ({model}): OK")
+            return response.choices[0].message.content.strip()
+        except Exception as e:
+            print(f"  [HyDE] {provider_name} ({model}): loi - {e}")
+            continue
+
+    print("  [HyDE] Tat ca provider deu loi/thieu key -> dung nguyen query goc")
+    return query
 
 
-def semantic_search(query: str, top_k: int = 10) -> list[dict]:
+def semantic_search(query: str, top_k: int = 10, filter_metadata: dict = None) -> list[dict]:
     """
     Tìm kiếm ngữ nghĩa sử dụng vector similarity kết hợp HyDE.
 
     Args:
         query: Câu truy vấn
         top_k: Số lượng kết quả tối đa
+        filter_metadata: Dict chứa điều kiện lọc metadata (VD: {'customer_role': 'seller'} hoặc {'type': 'legal'})
 
     Returns:
         List of {
@@ -71,12 +80,15 @@ def semantic_search(query: str, top_k: int = 10) -> list[dict]:
         }
         Sorted by score descending.
     """
+    print(f"[Semantic Search] Query: '{query}' (top_k={top_k}, filter={filter_metadata})")
+
     # 1. Sử dụng HyDE để sinh tài liệu giả định
     hyde_query = generate_hypothetical_doc(query)
 
     # 2. Sinh embedding cho tài liệu giả định theo Embedding Provider
     provider = os.getenv("EMBEDDING_PROVIDER", "sentence_transformers").lower()
-    
+    print(f"  [Semantic Search] Embedding provider: {provider}")
+
     try:
         if provider == "openai":
             from openai import OpenAI
@@ -113,11 +125,25 @@ def semantic_search(query: str, top_k: int = 10) -> list[dict]:
         except Exception:
             return []
 
-        results = collection.query(
-            query_embeddings=[query_vector],
-            n_results=top_k,
-            include=["documents", "metadatas", "distances"],
-        )
+        query_kwargs = {
+            "query_embeddings": [query_vector],
+            "n_results": top_k,
+            "include": ["documents", "metadatas", "distances"]
+        }
+        if filter_metadata:
+            query_kwargs["where"] = filter_metadata
+
+        try:
+            results = collection.query(**query_kwargs)
+        except Exception as e:
+            if "dimension" in str(e).lower():
+                print(f"[Semantic Search] Dimension mismatch ({e}). Auto re-indexing vector store...")
+                from .task4_chunking_indexing import run_pipeline
+                run_pipeline()
+                collection = client.get_collection(name=collection_name)
+                results = collection.query(**query_kwargs)
+            else:
+                raise e
 
         if not results or not results.get("documents") or len(results["documents"]) == 0:
             return []
@@ -134,7 +160,9 @@ def semantic_search(query: str, top_k: int = 10) -> list[dict]:
             })
 
         output.sort(key=lambda x: x["score"], reverse=True)
-        return output[:top_k]
+        output = output[:top_k]
+        print(f"  [Semantic Search] Ket qua: {len(output)} chunk (best score={output[0]['score']:.4f})" if output else "  [Semantic Search] Ket qua: 0 chunk")
+        return output
     except Exception as e:
         print(f"[Semantic Search] Query failed: {e}")
         return []

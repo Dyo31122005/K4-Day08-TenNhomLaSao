@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopee AI RAG — Presentation Slides</title>
+  <link rel="icon" type="image/svg+xml" href="static/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-light: #F8FAFC;
+      --bg-card: #FFFFFF;
+      --shopee-orange: #EE4D2D;
+      --shopee-coral: #FF6B00;
+      --text-dark: #0F172A;
+      --text-navy: #1E293B;
+      --text-muted: #475569;
+      --border-color: #E2E8F0;
+      --card-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      overflow: hidden;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    /* Slides Viewport */
+    .slides-viewport {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(0.98);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+      padding: 40px 60px 80px 60px;
+    }
+
+    .slide.active {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+    }
+
+    /* Header */
+    .slide-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px;
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 15px;
+    }
+
+    .slide-tag {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--shopee-orange);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .slide-title {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--text-dark);
+    }
+
+    .slide-counter {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--shopee-orange);
+      background: rgba(238, 77, 45, 0.1);
+      padding: 6px 14px;
+      border-radius: 20px;
+      border: 1px solid rgba(238, 77, 45, 0.2);
+    }
+
+    /* Content Layout Grid */
+    .slide-body {
+      flex: 1;
+      display: flex;
+      gap: 25px;
+      align-items: center;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      width: 100%;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      width: 100%;
+    }
+
+    /* Cards */
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: var(--card-shadow);
+      transition: border-color 0.3s, transform 0.3s;
+    }
+
+    .card:hover {
+      border-color: var(--shopee-orange);
+      transform: translateY(-4px);
+    }
+
+    .card-orange {
+      border-top: 4px solid var(--shopee-orange);
+    }
+
+    .card-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text-dark);
+    }
+
+    .card-list {
+      list-style: none;
+    }
+
+    .card-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .card-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--shopee-orange);
+      font-size: 22px;
+      line-height: 1;
+    }
+
+    /* Hero Slide */
+    .hero-slide {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(180deg, #FFFFFF 0%, #F1F5F9 100%);
+    }
+
+    .hero-badge {
+      display: inline-block;
+      padding: 8px 22px;
+      background: rgba(238, 77, 45, 0.1);
+      color: var(--shopee-orange);
+      border: 1px solid rgba(238, 77, 45, 0.3);
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+
+    .hero-title {
+      font-size: 52px;
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      color: var(--text-dark);
+    }
+
+    .hero-title span {
+      color: var(--shopee-orange);
+    }
+
+    .hero-desc {
+      font-size: 22px;
+      color: var(--text-muted);
+      max-width: 800px;
+      margin-bottom: 40px;
+    }
+
+    .hero-meta {
+      display: flex;
+      gap: 20px;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text-navy);
+      background: var(--bg-card);
+      padding: 14px 32px;
+      border-radius: 40px;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--card-shadow);
+    }
+
+    /* Stat Box */
+    .stat-number {
+      font-size: 42px;
+      font-weight: 800;
+      color: var(--shopee-orange);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* Controls Bar */
+    .controls-bar {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: #FFFFFF;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+      padding: 10px 24px;
+      border-radius: 40px;
+      border: 1px solid var(--border-color);
+      z-index: 100;
+    }
+
+    .btn-nav {
+      background: #F1F5F9;
+      border: 1px solid var(--border-color);
+      color: var(--text-dark);
+      padding: 8px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 13px;
+      transition: 0.2s;
+    }
+
+    .btn-nav:hover {
+      background: var(--shopee-orange);
+      color: #FFFFFF;
+      border-color: var(--shopee-orange);
+    }
+
+    .dots-nav {
+      display: flex;
+      gap: 8px;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #CBD5E1;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .dot.active {
+      background: var(--shopee-orange);
+      width: 24px;
+      border-radius: 10px;
+    }
+
+    /* Table Styling */
+    .styled-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--bg-card);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--card-shadow);
+      border: 1px solid var(--border-color);
+    }
+
+    .styled-table th {
+      background: rgba(238, 77, 45, 0.1);
+      color: var(--shopee-orange);
+      padding: 16px;
+      text-align: left;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .styled-table td {
+      padding: 16px;
+      border-bottom: 1px solid var(--border-color);
+      font-size: 14px;
+      color: var(--text-navy);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="slides-viewport">
+
+    <!-- SLIDE 1: HERO -->
+    <div class="slide hero-slide active">
+      <div class="hero-badge">DỰ ÁN RAG THƯƠNG MẠI ĐIỆN TỬ - K4 AI</div>
+      <h1 class="hero-title">SHOPEE AI <span>HELP CENTER ASSISTANT</span></h1>
+      <p class="hero-desc">Hệ thống RAG Tìm kiếm Hybrid Kết hợp Sinh câu trả lời có Trích dẫn Nguồn chính xác</p>
+      <div class="hero-meta">
+        <span>👥 Nhóm Thực Hiện: <strong>Tên Nhóm Là Sao</strong></span>
+      </div>
+    </div>
+
+    <!-- SLIDE 2: PROBLEM STATEMENT -->
+    <div class="slide">
+      <div class="slide-header">
+        <div>
+          <div class="slide-tag">Thách Thức & Mục Tiêu</div>
+          <h2 class="slide-title">BỐI CẢNH DỰ ÁN & THÁCH THỨC ĐẶT RA</h2>
+        </div>
+        <div class="slide-counter">02 / 12</div>
+      </div>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="card">
+            <h3 class="card-title">⚠️ Thách Thức CSKH Shopee</h3>
+            <ul class="card-list">
+              <li>Hàng triệu câu hỏi trùng lặp về đổi trả, thanh toán, gian lận mỗi ngày.</li>
+              <li>LLM thuần túy bị 'Bịa đặt' (Hallucination) và không có kiến thức Shopee.</li>
+              <li>LLM thuần túy không thể chỉ ra căn cứ điều khoản trích dẫn nguồn.</li>
+              <li>Tìm kiếm từ khóa truyền thống không hiểu ý định tự nhiên của khách.</li>
+            </ul>
+          </div>
+          <div class="card card-orange">
+            <h3 class="card-title" style="color: var(--shopee-orange);">🎯 Mục Tiêu Giải Pháp RAG</h3>
+            <ul class="card-list">
+              <li>Chính xác 100%: Trả lời hoàn toàn dựa trên kho tri thức Shopee chính thức.</li>
+              <li>Trích dẫn minh chứng: Tự động gắn tag nguồn [Document X | Source: ...].</li>
+              <li>Phản hồi siêu tốc: Retrieval trong &lt; 0.05s nhờ Pre-warming RAM.</li>
+              <li>Real-time Streaming: Hiển thị chữ gõ mượt mà từng từ như ChatGPT.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 3: ARCHITECTURE -->
+    <div class="slide">
+      <div class="slide-header">
+        <div>
+          <div class="slide-tag">Kiến Trúc Hệ Thống</div>
+          <h2 class="slide-title">SƠ ĐỒ LUỒNG DỮ LIỆU END-TO-END (10 TASKS)</h2>
+        </div>
+        <div class="slide-counter">03 / 12</div>
+      </div>
+      <div class="slide-body">
+        <div class="grid-3">
+          <div class="card">
+            <h3 class="card-title">1. Data Engineering</h3>
+            <p style="color: var(--text-muted); font-size: 14px;">Task 1-3: Crawl 5 News JSON & Clean 3 PDF Legal
+              Markdown.</p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">2. Vector Indexing</h3>
+            <p style="color: var(--text-muted); font-size: 14px;">Task 4: Chunking 800/100, BAAI/bge-m3 1024-dim Vector
+              Store.</p>
+          </div>
+          <div class="card card-orange">
+            <h3 class="card-title" style="color: var(--shopee-orange);">3. Dense Search</h3>
+            <p style="color: var(--text-muted); font-size: 14px;">Task 5: Vector Similarity + HyDE (Hypothetical
+              Document Embeddings).</p>
+          </div>
+          <div class="card card-orange">
+            <h3 class="card-title" style="color: var(--shopee-orange);">4. Sparse Search</h3>
+            <p style="color: var(--text-muted); font-size: 14px;">Task 6: BM25Okapi Exact Keyword Matching.</p>
+          </div>
+          <div class="card card-orange">
+            <h3 class="card-title" style="color: var(--shopee-orange);">5. RRF Fusion</h3>
+            <p style="color: var(--text-muted); font-size: 14px;">Task 7-9: Reciprocal Rank Fusion (k=60) + PageIndex
+              Fallback.</p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">6. Generation</h3>
+            <p style="color: var(--text-muted); font-size: 14px;">Task 10: Prompt Citation Grounding + 4-Tier Fallback
+              Chain.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 4: DATA CLEANING -->
+    <div class="slide">
+      <div class="slide-header">
+        <div>
+          <div class="slide-tag">Tiền Xử Lý Dữ Liệu</div>
+          <h2 class="slide-title">LÀM SẠCH VÀ CHUẨN HÓA DỮ LIỆU (TASK 1 - TASK 3)</h2>
+        </div>
+        <div class="slide-counter">04 / 12</div>
+      </div>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="card">
+            <h3 class="card-title">📂 Kho Dữ Liệu Nguồn</h3>
+            <ul class="card-list">
+              <li>3 Văn bản Pháp luật PDF chính thức (Thanh toán, Bảo mật, Trả hàng).</li>
+              <li>5 Bài viết Tin tức hỗ trợ crawl từ help.shopee.vn.</li>
+              <li>Chuyển đổi toàn bộ sang định dạng Markdown (.md) chuẩn.</li>
+            </ul>
+          </div>
+          <div class="card card-orange">
+            <h3 class="card-title" style="color: var(--shopee-orange);">✨ Kỹ Thuật Cleaning Đột Phá</h3>
+            <ul class="card-list">
+              <li>Loại bỏ 100% ký tự điều khiển ngắt trang PDF (\x0c).</li>
+              <li>Lọc bỏ các dòng Header/Footer lặp lại (Trang X | Nguon...).</li>
+              <li>Tự động nối liền các câu bị ngắt dòng giữa chừng do bố cục PDF.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 5: CHUNKING & METADATA -->
+    <div class="slide">
+      <div class="slide-header">
+        <div>
+          <div class="slide-tag">Vector DB & Metadata</div>
+          <h2 class="slide-title">CHUNKING & METADATA ĐA CHIỀU (TASK 4)</h2>
+        </div>
+        <div class="slide-counter">05 / 12</div>
+      </div>
+      <div class="slide-body" style="flex-direction: column; justify-content: center; gap: 20px;">
+        <div class="grid-3">
+          <div class="card" style="text-align: center;">
+            <div class="stat-number">141</div>
+            <p style="color: var(--text-muted); font-size: 14px;">Tổng số Chunks trong CSDL</p>
+          </div>
+          <div class="card" style="text-align: center;">
+            <div class="stat-number">800/100</div>
+            <p style="color: var(--text-muted); font-size: 14px;">CHUNK_SIZE / OVERLAP (Chars)</p>
+          </div>
+          <div class="card" style="text-align: center;">
+            <div class="stat-number">1024</div>
+            <p style="color: var(--text-muted); font-size: 14px;">BAAI/bge-m3 Vector Dim</p>
+          </div>
+        </div>
+
+        <div class="card card-orange" style="width: 100%;">
+          <h3 class="card-title" style="color: var(--shopee-orange);">🏷️ Phân Loại Metadata Theo Vai Trò Khách Hàng
+            (Customer Role)</h3>
+          <ul class="card-list">
+            <li>🛒 <strong>buyer (Người Mua): 22 chunks</strong> — Hướng dẫn thanh toán, theo dõi đơn hàng, áp mã giảm
+              giá.</li>
+            <li>🏪 <strong>seller (Người Bán): 39 chunks</strong> — Quy định xử phạt gian lận, chính sách Người Bán vi
+              phạm.</li>
+            <li>🤝 <strong>both (Cả Hai): 80 chunks</strong> — Chính sách bảo mật, chính sách đổi trả hoàn tiền chung.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 6: HYBRID SEARCH -->
+    <div class="slide">
+      <div class="slide-header">
+        <div>
+          <div class="slide-tag">Retrieval Engine</div>
+          <h2 class="slide-title">ĐỘNG CƠ TÌM KIẾM DENSE VÀ SPARSE (TASK 5 & 6)</h2>
+        </div>
+        <div class="slide-counter">06 / 12</div>
+      </div>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="card card-orange">
+            <h3 class="card-title" style="color: var(--shopee-orange);">🧠 Dense Search + HyDE (Task 5)</h3>
+            <ul class="card-list">
+              <li>Tìm kiếm tương đồng ngữ nghĩa bằng Cosine Similarity trong ChromaDB.</li>
+              <li>Công nghệ HyDE: Cho LLM sinh ra câu trả lời giả định trước.</li>
+              <li>Dùng Vector tài liệu giả định đi quét CSDL ➔ Giúp hiểu câu hỏi tự nhiên ngay cả khi khác từ khóa.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 class="card-title">🔤 Sparse Lexical Search (Task 6)</h3>
+            <ul class="card-list">
+              <li>Sử dụng thuật toán BM25Okapi tính tần suất từ khóa chính xác.</li>
+              <li>Giải quyết triệt để điểm yếu của Vector Search với các từ khóa hiếm.</li>
+              <li>Đảm bảo tìm chính xác 100% các từ khóa như SPayLater, NAPAS, Apple Pay, COD.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 7: RRF & FALLBACK -->
+    <div class="slide">
+      <div class="slide-header">
+        <div>
+          <div class="slide-tag">Hybrid Fusion</div>
+          <h2 class="slide-title">HỢP NHẤT RRF & CHỐNG LẠC ĐỀ (TASK 7 - TASK 9)</h2>
+        </div>
+        <div class="slide-counter">07 / 12</div>
+      </div>
+      <div class="slide-body" style="flex-direction: column; justify-content: center; gap: 20px;">
+        <div class="card card-orange" style="width: 100%;">
+          <h3 class="card-title" style="color: var(--shopee-orange);">📐 Thuật Toán Reciprocal Rank Fusion (RRF với k =
+            60)</h3>
+          <p
+            style="font-family: 'JetBrains Mono', monospace; font-size: 18px; color: var(--text-dark); background: rgba(238, 77, 45, 0.08); padding: 12px; border-radius: 8px; margin: 10px 0; border: 1px solid rgba(238, 77, 45, 0.2);">
+            RRF_Score(d) = 1 / (60 + Rank_Dense(d)) + 1 / (60 + Rank_BM25(d))
+          </p>
+          <p style="color: var(--text-muted); font-size: 14px;">Bỏ qua sự lệch thang điểm gốc giữa Vector và BM25, cộng
+            điểm thưởng mượt mà theo Thứ hạng để chọn ra Top 5 Chunks được CẢ 2 BÊN cùng đánh giá tốt nhất.</p>
+        </div>
+
+        <div class="card" style="width: 100%;">
+          <h3 class="card-title">🛡️ Cơ Chế Phòng Hộ Khẩn Cấp (Task 8: PageIndex Fallback)</h3>
+          <ul class="card-list">
+            <li>Nếu SCORE_THRESHOLD &lt; 0.3 (câu hỏi hoàn toàn lạc đề/không có trong kho tri thức).</li>
+            <li>Tự động kích hoạt PageIndex Fallback để bảo vệ hệ thống không trả về kết quả rác.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 8: GENERATION -->
+    <div class="slide">
+      <div class="slide-header">
+        <div>
+          <div class="slide-tag">Generation Engine</div>
+          <h2 class="slide-title">SINH CÂU TRẢ LỜI CÓ TRÍCH DẪN (TASK 10)</h2>
+        </div>
+        <div class="slide-counter">08 / 12</div>
+      </div>
+      <div class="slide-body" style="flex-direction: column; justify-content: center; gap: 20px;">
+        <div class="grid-2">
+          <div class="card card-orange">
+            <h3 class="card-title" style="color: var(--shopee-orange);">🧠 Anti 'Lost in the Middle'</h3>
+            <p style="color: var(--text-muted); font-size: 14px;">Đảo thứ tự 5 Chunks thành [1, 3, 5, 4, 2] đưa thông
+              tin quan trọng nhất lên đầu và cuối Prompt, giúp LLM không bị bỏ sót thông tin ở giữa.</p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">🏷️ Citation Grounding</h3>
+            <p style="color: var(--text-muted); font-size: 14px;">Gắn thẻ [Document X | Source: ...] và đặt Temperature
+              = 0.3 ép LLM phải trích dẫn nguồn cụ thể ngay sau mỗi khẳng định.</p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 100%; border-color: var(--shopee-orange); background: rgba(238, 77, 45, 0.05);">
+          <h3 class="card-title" style="color: var(--shopee-orange);">🔄 Chuỗi Dự Phòng LLM 4 Tầng (LLM Fallback Chain)
+          </h3>
+          <p
+            style="font-family: 'JetBrains Mono', monospace; font-size: 16px; color: var(--text-dark); margin-top: 8px; font-weight: 700;">
+            Gemini 2.5 Flash ──> Gemini 1.5 Flash ──> DeepSeek Chat ──> GPT-4o-mini
+          </p>
+          <p style="color: var(--text-muted); font-size: 13px; margin-top: 6px;">Đảm bảo ứng dụng hoạt động 24/7. Nếu 1
+            API key hết tiền hoặc bị rate limit, hệ thống tự động chuyển sang provider tiếp theo.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 9: WEB APP UX -->
+    <div class="slide">
+      <div class="slide-header">
+        <div>
+          <div class="slide-tag">Web Application</div>
+          <h2 class="slide-title">ỨNG DỤNG WEB UI & TRẢI NGHIỆM NGUỜI DÙNG (SERVER.PY)</h2>
+        </div>
+        <div class="slide-counter">09 / 12</div>
+      </div>
+      <div class="slide-body">
+        <div class="grid-3">
+          <div class="card card-orange">
+            <h3 class="card-title" style="color: var(--shopee-orange);">⚡ Pre-warming RAM</h3>
+            <p style="color: var(--text-muted); font-size: 14px;">Nạp trước Embedding Model và BM25 Index vào RAM khi
+              khởi động server. Tốc độ Retrieval đạt &lt; 0.05s.</p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">📡 Real-time Streaming</h3>
+            <p style="color: var(--text-muted); font-size: 14px;">Bắn từng token từ LLM về giao diện theo thời gian thực
+              (Server-Sent Events) giúp chữ gõ ra mượt như ChatGPT.</p>
+          </div>
+          <div class="card card-orange">
+            <h3 class="card-title" style="color: var(--shopee-orange);">🖥️ Terminal Logger</h3>
+            <p style="color: var(--text-muted); font-size: 14px;">Tự động xả log minh bạch ra màn hình Terminal khi có
+              người dùng chat: hiển thị Query, Top Chunks, Scores và Customer Role.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 10: EVALUATION -->
+    <div class="slide">
+      <div class="slide-header">
+        <div>
+          <div class="slide-tag">Kiểm Thử & Đánh Giá</div>
+          <h2 class="slide-title">KẾT QUẢ ĐÁNH GIÁ VÀ KIỂM THỬ (EVALUATION)</h2>
+        </div>
+        <div class="slide-counter">10 / 12</div>
+      </div>
+      <div class="slide-body">
+        <div class="grid-2">
+          <div class="card card-orange"
+            style="text-align: center; justify-content: center; display: flex; flex-direction: column;">
+            <h3 class="card-title" style="color: var(--shopee-orange); justify-content: center;">🧪 Automated Pytest
+              Results</h3>
+            <div class="stat-number" style="font-size: 56px; margin: 15px 0;">34 / 34 PASSED</div>
+            <p style="color: var(--text-dark); font-size: 16px; font-weight: 600;">Tất cả 34 test cases độc lập đều ĐẠT
+              100% (50/50 điểm tối đa cá nhân).</p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">📊 RAGAS Benchmark Evaluation</h3>
+            <ul class="card-list">
+              <li>Đã hoàn thiện bộ Golden Dataset chính thức cho nhóm.</li>
+              <li>Độ trung thực (Faithfulness): &gt; 0.92 nhờ Prompting nghiêm ngặt và Citation Grounding.</li>
+              <li>Độ bao phủ tri thức (Context Recall): &gt; 0.90 nhờ Hybrid Search và RRF Fusion.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 11: TEAM ALLOCATION -->
+    <div class="slide">
+      <div class="slide-header">
+        <div>
+          <div class="slide-tag">Phân Công Nhân Lực</div>
+          <h2 class="slide-title">PHÂN CÔNG NHIỆM VỤ NHÓM 'TÊN NHÓM LÀ SAO'</h2>
+        </div>
+        <div class="slide-counter">11 / 12</div>
+      </div>
+      <div class="slide-body">
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Thành Viên</th>
+              <th>Phân Công Vai Trò & Nhiệm Vụ</th>
+              <th>Trạng Thái</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Nguyễn Minh Đạt</strong></td>
+              <td>Role 1: Team Leader & RAG Architect (Task 9 Hybrid Pipeline)</td>
+              <td><span style="color: #16A34A; font-weight: 700;">Hoàn thành</span></td>
+            </tr>
+            <tr>
+              <td><strong>Nguyễn Hùng Mạnh</strong></td>
+              <td>Role 2: Data Dev (Task 1-3) & Role 5: Web UI & Task 10 Generation</td>
+              <td><span style="color: #16A34A; font-weight: 700;">Hoàn thành</span></td>
+            </tr>
+            <tr>
+              <td><strong>Nguyễn Tuấn Hà</strong></td>
+              <td>Role 3: Vector DB & Dense Search (Task 4, 5)</td>
+              <td><span style="color: #16A34A; font-weight: 700;">Hoàn thành</span></td>
+            </tr>
+            <tr>
+              <td><strong>Trần Hoàng Mai Anh</strong></td>
+              <td>Role 4: Sparse Search & Rerank (Task 6..8)</td>
+              <td><span style="color: #16A34A; font-weight: 700;">Hoàn thành</span></td>
+            </tr>
+            <tr>
+              <td><strong>Nguyễn Hương Trà</strong></td>
+              <td>Role 6: Evaluation & QA Engineer (Golden Dataset & RAGAS)</td>
+              <td><span style="color: #16A34A; font-weight: 700;">Hoàn thành</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- SLIDE 12: DEMO & Q&A -->
+    <div class="slide hero-slide">
+      <div class="hero-badge">TRÌNH DIỄN THỰC TẾ & Q&A</div>
+      <h1 class="hero-title">DEMO THỰC TẾ <span>HỆ THỐNG SHOPEE AI</span></h1>
+      <p class="hero-desc">Trải nghiệm ứng dụng tại: <strong>...</strong></p>
+      <div class="hero-meta">
+        <span>Trân trọng cảm ơn các Thầy Cô và các Bạn đã lắng nghe!</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls Bar -->
+  <div class="controls-bar">
+    <button class="btn-nav" id="prevBtn">← Trở về</button>
+    <div class="dots-nav" id="dotsNav"></div>
+    <button class="btn-nav" id="nextBtn">Tiếp theo →</button>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const dotsNav = document.getElementById('dotsNav');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let currentIndex = 0;
+
+    // Create Dots
+    slides.forEach((_, idx) => {
+      const dot = document.createElement('div');
+      dot.classList.add('dot');
+      if (idx === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => goToSlide(idx));
+      dotsNav.appendChild(dot);
+    });
+
+    const dots = document.querySelectorAll('.dot');
+
+    function goToSlide(index) {
+      if (index < 0 || index >= slides.length) return;
+      slides[currentIndex].classList.remove('active');
+      dots[currentIndex].classList.remove('active');
+
+      currentIndex = index;
+
+      slides[currentIndex].classList.add('active');
+      dots[currentIndex].classList.add('active');
+    }
+
+    prevBtn.addEventListener('click', () => goToSlide(currentIndex - 1));
+    nextBtn.addEventListener('click', () => goToSlide(currentIndex + 1));
+
+    // Keyboard Navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
+        goToSlide(currentIndex + 1);
+      } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+        goToSlide(currentIndex - 1);
+      }
+    });
+  </script>
+</body>
+
+</html>

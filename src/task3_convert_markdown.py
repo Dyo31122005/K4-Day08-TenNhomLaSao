@@ -5,10 +5,20 @@ Sử dụng MarkItDown của Microsoft (yêu cầu `pip install "markitdown[pdf]
 Nếu thiếu dependency, in lỗi rõ ràng và bỏ qua file đó — KHÔNG dùng nội dung
 giả thay thế, vì data/landing/legal/ chỉ được phép chứa PDF/DOCX thật theo
 yêu cầu Task 1.
+
+MarkItDown's PDF backend không tái dựng đoạn văn: mỗi dòng bị word-wrap theo
+lề trang PDF được trả về như một đoạn riêng (\\n\\n), làm câu bị chặt vụn dù
+PDF gốc hiển thị bình thường. clean_markdown_text() (scripts/clean_legal_md.py)
+được gọi ngay sau khi convert để dọn header/footer lặp và nối lại các dòng bị
+ngắt giữa câu, trước khi ghi ra data/standardized/.
 """
 
 import json
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from scripts.clean_legal_md import clean_markdown_text
 
 LANDING_DIR = Path(__file__).parent.parent / "data" / "landing"
 OUTPUT_DIR = Path(__file__).parent.parent / "data" / "standardized"
@@ -38,7 +48,7 @@ def convert_legal_docs():
                 try:
                     result = md.convert(str(filepath))
                     if result and len(result.text_content) > 100:
-                        content = result.text_content
+                        content = clean_markdown_text(result.text_content)
                 except Exception as e:
                     print(f"  Warning: MarkItDown conversion: {e}")
 

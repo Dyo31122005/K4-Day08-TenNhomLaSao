@@ -61,7 +61,7 @@ CHUNKING_METHOD = "recursive"  # "recursive" | "markdown_header" | "semantic"
 
 # Embedding model — thống nhất theo Checkpoint 2: BAAI/bge-m3
 EMBEDDING_MODEL = "BAAI/bge-m3"  # Multilingual, tốt cho tiếng Việt lẫn tiếng Anh
-EMBEDDING_DIM = 1536
+EMBEDDING_DIM = 1024
 
 # TODO: Chọn vector store
 VECTOR_STORE = "chromadb"  # "chromadb" | "weaviate" | "faiss"
@@ -71,6 +71,28 @@ COLLECTION_NAME = "ecommerce_support_docs"
 # =============================================================================
 # IMPLEMENTATION
 # =============================================================================
+
+def classify_customer_role(filename: str, content: str = "") -> str:
+    """
+    Phân loại tài liệu theo đối tượng khách hàng (buyer/seller/both) dựa trên
+    tên file và nội dung.
+
+    Đây là nguồn duy nhất cho logic này — dùng chung cho cả pipeline
+    chunking/indexing (chunk metadata thật, ảnh hưởng retrieval) lẫn endpoint
+    /api/documents của server.py (hiển thị UI). Trước đây 2 nơi tự đoán bằng
+    2 quy tắc khác nhau, dẫn tới cùng 1 file bị gắn role khác nhau ở chunk
+    metadata so với UI.
+    """
+    filename_lower = filename.lower()
+    content_lower = content.lower()
+
+    if "seller" in filename_lower or "listing" in filename_lower or "article_05" in filename_lower or "người bán" in content_lower[:300]:
+        return "seller"
+    elif "returns" in filename_lower or "refund" in filename_lower or "privacy" in filename_lower:
+        return "both"
+    else:
+        return "buyer"
+
 
 def load_documents() -> list[dict]:
     """
@@ -86,17 +108,7 @@ def load_documents() -> list[dict]:
     for md_file in STANDARDIZED_DIR.rglob("*.md"):
         content = md_file.read_text(encoding="utf-8")
         doc_type = "legal" if "legal" in str(md_file) else "news"
-        
-        # Determine customer_role compatibility with K4 Variant
-        filename_lower = md_file.name.lower()
-        content_lower = content.lower()
-
-        if "seller" in filename_lower or "listing" in filename_lower or "article_05" in filename_lower or "người bán" in content_lower[:300]:
-            customer_role = "seller"
-        elif "returns" in filename_lower or "refund" in filename_lower or "privacy" in filename_lower:
-            customer_role = "both"
-        else:
-            customer_role = "buyer"
+        customer_role = classify_customer_role(md_file.name, content)
 
         documents.append({
             "content": content,
@@ -121,7 +133,12 @@ def chunk_documents(documents: list[dict]) -> list[dict]:
     splitter = RecursiveCharacterTextSplitter(
         chunk_size=CHUNK_SIZE,
         chunk_overlap=CHUNK_OVERLAP,
-        separators=["\n\n", "\n", ". ", " ", ""]
+        # "(?<!\d)\.\s" thay vì ". " literal: các điều khoản pháp lý dùng số
+        # dạng "6.2. " — literal ". " tách nhầm ngay sau "6.2" như thể đó là
+        # dấu chấm hết câu, để lại chunk rác 3 ký tự ("6.2") tách rời khỏi
+        # câu thật của nó. Negative lookbehind chặn tách sau 1 chữ số.
+        separators=["\n\n", "\n", r"(?<!\d)\.\s", " ", ""],
+        is_separator_regex=True,
     )
     
     chunks = []

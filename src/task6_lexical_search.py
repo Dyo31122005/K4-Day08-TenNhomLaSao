@@ -82,13 +82,21 @@ def build_bm25_index(corpus: list[dict]):
         return _BM25(tokenized)
 
 
-def lexical_search(query: str, top_k: int = 10) -> list[dict]:
+def _matches_filter(metadata: dict, filter_metadata: dict) -> bool:
+    return all(metadata.get(key) == value for key, value in filter_metadata.items())
+
+
+def lexical_search(query: str, top_k: int = 10, filter_metadata: dict = None) -> list[dict]:
     """
     Tìm kiếm từ khóa sử dụng BM25.
 
     Args:
         query: Câu truy vấn
         top_k: Số lượng kết quả tối đa
+        filter_metadata: Dict điều kiện lọc metadata exact-match (VD:
+            {'customer_role': 'seller'}), cùng interface với semantic_search
+            — bắt buộc phải giữ đồng bộ với nhánh dense, nếu không nhánh BM25
+            sẽ làm rò rỉ kết quả bị lọc ra ở nhánh kia khi merge bằng RRF.
 
     Returns:
         List of {
@@ -123,23 +131,33 @@ def lexical_search(query: str, top_k: int = 10) -> list[dict]:
     if not CORPUS:
         from .task4_chunking_indexing import chunk_documents, load_documents
         CORPUS = chunk_documents(load_documents())
+        print(f"  [Lexical Search] Da nap corpus: {len(CORPUS)} chunk")
 
     corpus_id = id(CORPUS)
     if _BM25_INDEX is None or _INDEXED_CORPUS_ID != corpus_id:
         _BM25_INDEX = build_bm25_index(CORPUS)
         _INDEXED_CORPUS_ID = corpus_id
+        print(f"  [Lexical Search] Da xay BM25 index tren {len(CORPUS)} chunk")
 
     scores = _BM25_INDEX.get_scores(_tokenize(query))
     ranked = sorted(enumerate(scores), key=lambda item: (-float(item[1]), item[0]))
-    return [
-        {
+
+    results = []
+    for index, score in ranked:
+        if score <= 0:
+            continue
+        metadata = CORPUS[index].get("metadata", {})
+        if filter_metadata and not _matches_filter(metadata, filter_metadata):
+            continue
+        results.append({
             "content": CORPUS[index]["content"],
             "score": float(score),
-            "metadata": CORPUS[index].get("metadata", {}),
-        }
-        for index, score in ranked[:top_k]
-        if score > 0
-    ]
+            "metadata": metadata,
+        })
+        if len(results) >= top_k:
+            break
+    print(f"  [Lexical Search] Ket qua: {len(results)} chunk (BM25 > 0)")
+    return results
 
 
 if __name__ == "__main__":

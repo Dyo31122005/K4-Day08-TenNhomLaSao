@@ -48,6 +48,7 @@ def retrieve(
     top_k: int = DEFAULT_TOP_K,
     score_threshold: float = SCORE_THRESHOLD,
     use_reranking: bool = True,
+    filter_metadata: dict = None,
 ) -> list[dict]:
     """
     Retrieval pipeline hoàn chỉnh với fallback logic.
@@ -68,6 +69,7 @@ def retrieve(
         top_k: Số lượng kết quả cuối cùng
         score_threshold: Ngưỡng điểm cosine gốc tối thiểu (KHÔNG phải điểm RRF)
         use_reranking: Có áp dụng reranking hay không
+        filter_metadata: Điều kiện lọc theo metadata (VD: {'customer_role': 'seller'})
 
     Returns:
         List of {
@@ -77,29 +79,39 @@ def retrieve(
             'source': str  # 'hybrid' hoặc 'pageindex'
         }
     """
+    print(f"\n[Retrieval Pipeline] === Query: '{query}' (top_k={top_k}) ===")
+
     # Step 1: Chạy semantic + lexical search
-    dense_results = semantic_search(query, top_k=top_k * 2)
-    sparse_results = lexical_search(query, top_k=top_k * 2)
+    dense_results = semantic_search(query, top_k=top_k * 2, filter_metadata=filter_metadata)
+    sparse_results = lexical_search(query, top_k=top_k * 2, filter_metadata=filter_metadata)
+    print(f"  [Retrieval] Dense: {len(dense_results)} | Sparse: {len(sparse_results)}")
 
     # Step 2: Merge bằng RRF
     merged = rerank_rrf([dense_results, sparse_results], top_k=top_k * 2)
     for item in merged:
         item["source"] = "hybrid"
+    print(f"  [Retrieval] RRF merge -> {len(merged)} chunk")
 
     # Step 3: Rerank (rerank_rrf giữ nguyên key "source" đã gán ở bước merge)
     if use_reranking and merged:
         final_results = rerank(query, merged, top_k=top_k, method=RERANK_METHOD)
+        print(f"  [Retrieval] Rerank ({RERANK_METHOD}) -> {len(final_results)} chunk")
     else:
         final_results = merged[:top_k]
+        print(f"  [Retrieval] Bo qua rerank -> {len(final_results)} chunk")
 
     # Step 4: Check threshold DÙNG ĐIỂM COSINE GỐC (dense_results), KHÔNG PHẢI RRF
     best_score = dense_results[0]["score"] if dense_results else 0.0
+    print(f"  [Retrieval] Nguong fallback: best dense score={best_score:.4f} vs threshold={score_threshold}")
     if best_score < score_threshold:
-        print(f"  ⚠ Semantic best score ({best_score:.3f}) < threshold ({score_threshold})")
+        print(f"  ⚠ Semantic best score ({best_score:.3f}) < threshold ({score_threshold}) -> fallback PageIndex")
         fallback = pageindex_search(query, top_k=top_k)
         if fallback:
+            print(f"  [Retrieval] PageIndex fallback -> {len(fallback)} chunk")
             return fallback
+        print("  [Retrieval] PageIndex fallback rong, giu ket qua hybrid")
 
+    print(f"[Retrieval Pipeline] === Tra ve {min(len(final_results), top_k)} chunk cuoi cung ===\n")
     return final_results[:top_k]
 
 

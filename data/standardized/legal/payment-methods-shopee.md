@@ -32,9 +32,7 @@ Ví ShopeePay là một ví điện tử được tích hợp bên trong Ứng d
 
 Bạn có thể sử dụng Thẻ tín dụng hoặc Thẻ ghi nợ thuộc các hệ thống thẻ Visa, thẻ Mastercard, thẻ JCB, và thẻ American Express (AMEX) khi thanh toán đơn hàng trên Shopee
 
-Lưu ý: chỉ áp dụng cho đơn hàng có giá trị thanh toán (bao gồm phí vận chuyển và các chi phí phát sinh khác) từ
-
-10.000 VNĐ trở lên
+Lưu ý: chỉ áp dụng cho đơn hàng có giá trị thanh toán (bao gồm phí vận chuyển và các chi phí phát sinh khác) từ 10.000 VNĐ trở lên
 
 3. Trả góp bằng Thẻ tín dụng
 
@@ -44,9 +42,7 @@ Lưu ý: Phương thức Trả góp bằng Thẻ tín dụng KHÔNG áp dụng c
 
 4. Thanh toán QR
 
-Là hình thức thanh toán cho phép Người mua thanh toán bằng dịch vụ ngân hàng trực tuyến (internet banking) Và chỉ áp dụng cho đơn hàng có giá trị thanh toán cuối cùng (gồm phí vận chuyển và các chi phí phát sinh khác) từ
-
-10.000 VNĐ trở lên (*)(*) đơn hàng không bao gồm các sản phẩm thuộc nhóm Nạp thẻ & Dịch vụ
+Là hình thức thanh toán cho phép Người mua thanh toán bằng dịch vụ ngân hàng trực tuyến (internet banking) Và chỉ áp dụng cho đơn hàng có giá trị thanh toán cuối cùng (gồm phí vận chuyển và các chi phí phát sinh khác) từ 10.000 VNĐ trở lên (*)(*) đơn hàng không bao gồm các sản phẩm thuộc nhóm Nạp thẻ & Dịch vụ
 
 5. Ứng dụng ngân hàng
 
@@ -56,11 +52,7 @@ Là hình thức thanh toán cho phép bạn hoàn tất giao dịch bằng các
 
 Bạn có thể sử dụng thẻ nội địa NAPAS có đăng ký dịch vụ Internet Banking để thanh toán các đơn hàng. Xem hướng dẫn thanh toán đơn hàng bằng thẻ nội địa NAPAS
 
-Lưu ý: Chỉ áp dụng cho đơn hàng có giá trị thanh toán cuối cùng (gồm phí vận chuyển và các chi phí phát sinh khác) từ
-
-10.000 VNĐ trở lên (*)
-
-(*) đơn hàng không bao gồm các sản phẩm thuộc nhóm Nạp thẻ & Dịch vụ Xem thêm: Danh sách các ngân hàng phát hành Thẻ nội địa Napas TẠI ĐÂY
+Lưu ý: Chỉ áp dụng cho đơn hàng có giá trị thanh toán cuối cùng (gồm phí vận chuyển và các chi phí phát sinh khác) từ 10.000 VNĐ trở lên (*) (*) đơn hàng không bao gồm các sản phẩm thuộc nhóm Nạp thẻ & Dịch vụ Xem thêm: Danh sách các ngân hàng phát hành Thẻ nội địa Napas TẠI ĐÂY
 
 7. Apple Pay
 
@@ -68,13 +60,9 @@ Bạn có thể sử dụng Apple Pay để thanh toán đơn hàng khi mua sắ
 
 Lưu ý:
 
-- Phương thức thanh toán Apple Pay chỉ được hỗ trợ trên một số thiết bị theo quy định của Apple. Trên các thiết bị này,
+- Phương thức thanh toán Apple Pay chỉ được hỗ trợ trên một số thiết bị theo quy định của Apple. Trên các thiết bị này, bạn cần thiết lập Apple Pay bằng cách thêm thẻ tín dụng/thẻ ghi nợ vào ứng dụng Ví (Wallet) để hoàn tất thiết lập thanh toán. Bạn có thể xem hướng dẫn Thiết lập Apple Pay TẠI ĐÂY
 
-bạn cần thiết lập Apple Pay bằng cách thêm thẻ tín dụng/thẻ ghi nợ vào ứng dụng Ví (Wallet) để hoàn tất thiết lập thanh toán. Bạn có thể xem hướng dẫn Thiết lập Apple Pay TẠI ĐÂY
-
-- Phương thức thanh toán Apple Pay KHÔNG áp dụng cho các đơn hàng sau:Đơn hàng có sản phẩm thuộc nhóm Nạp
-
-thẻ & Dịch vụ
+- Phương thức thanh toán Apple Pay KHÔNG áp dụng cho các đơn hàng sau:Đơn hàng có sản phẩm thuộc nhóm Nạp thẻ & Dịch vụ
 
 - Đơn hàng có phương thức vận chuyển “Người bán tự vận chuyển” hoặc “Seller Own Fleet - Vận chuyển quốc tế”
 
@@ -86,13 +74,9 @@ Google Pay (Google Wallet) là phương thức thanh toán cho đơn hàng mua t
 
 Lưu ý:
 
-- Để sử dụng phương thức thanh toán này, bạn cần tải về ứng dụng Google Pay (Google Wallet) trên Play Store (Cửa
+- Để sử dụng phương thức thanh toán này, bạn cần tải về ứng dụng Google Pay (Google Wallet) trên Play Store (Cửa hàng Play), sau đó hoàn tất thiết lập Google Pay bằng cách thêm thẻ ghi nợ hoặc thẻ tín dụng vào ứng dụng. Bạn có thể xem hướng dẫn chi tiết cách thiết lập tại đây
 
-hàng Play), sau đó hoàn tất thiết lập Google Pay bằng cách thêm thẻ ghi nợ hoặc thẻ tín dụng vào ứng dụng. Bạn có thể xem hướng dẫn chi tiết cách thiết lập tại đây
-
-- Phương thức thanh toán Google Pay KHÔNG áp dụng cho đơn hàng bao gồm các sản phẩm thuộc nhóm Nạp thẻ &
-
-Dịch vụ, đơn hàng ShopeeFood
+- Phương thức thanh toán Google Pay KHÔNG áp dụng cho đơn hàng bao gồm các sản phẩm thuộc nhóm Nạp thẻ & Dịch vụ, đơn hàng ShopeeFood
 
 9. Thanh toán khi nhận hàng (COD)
 
@@ -100,9 +84,7 @@ Bên cạnh những hình thức thanh toán trên, bạn cũng có thể lựa 
 
 Lưu ý:
 
-- Shopee tuyệt đối không hỗ trợ cho những giao dịch sử dụng các hình thức thanh toán khác không được liệt kê ở trên
-
-hoặc giao dịch ngoài Shopee, như chuyển khoản hoặc đặt cọc,..v..v. Shopee sẽ có biện pháp xử lý nếu phát hiện hành vi gian lận hoặc giao dịch ngoài làm ảnh hưởng đến quyền lợi Người dùng trên Shopee
+- Shopee tuyệt đối không hỗ trợ cho những giao dịch sử dụng các hình thức thanh toán khác không được liệt kê ở trên hoặc giao dịch ngoài Shopee, như chuyển khoản hoặc đặt cọc,..v..v. Shopee sẽ có biện pháp xử lý nếu phát hiện hành vi gian lận hoặc giao dịch ngoài làm ảnh hưởng đến quyền lợi Người dùng trên Shopee
 
 10. SPayLater
 
@@ -110,6 +92,4 @@ SPayLater là phương thức thanh toán được cung cấp bởi (các) Ngân
 
 Lưu ý:
 
-- Hiện tại, dịch vụ SPayLater chỉ khả dụng cho Người dùng thoả mãn điều kiện theo chính sách của Shopee nên sẽ có
-
-trường hợp một số Người dùng chưa thể tìm và kích hoạt được dịch vụ này. Shopee sẽ liên tục hoàn thiện dịch vụ SPayLater để mở rộng phạm vi phục vụ đến nhiều Người dùng hơn nữa trong thời gian sắp tới.
+- Hiện tại, dịch vụ SPayLater chỉ khả dụng cho Người dùng thoả mãn điều kiện theo chính sách của Shopee nên sẽ có trường hợp một số Người dùng chưa thể tìm và kích hoạt được dịch vụ này. Shopee sẽ liên tục hoàn thiện dịch vụ SPayLater để mở rộng phạm vi phục vụ đến nhiều Người dùng hơn nữa trong thời gian sắp tới.

@@ -42,37 +42,56 @@ def clean_markdown_text(text: str) -> str:
 
     # 4. Smart join lines that were artificially broken by PDF page layout
     # Paragraph blocks should only split on headings, bullet points, numbered items, or end of sentence.
+    #
+    # Two kinds of markers, handled differently:
+    #   - force_standalone: a complete one-line unit that must never absorb the
+    #     next line (top-level headings like "1. GIỚI THIỆU", "#", document
+    #     title, "Nguồn:"/"Source:" — always a single-line URL/label in this
+    #     corpus).
+    #   - accumulate_starter: only marks where a NEW block begins ("1.1." clause
+    #     numbers, "- "/"* " bullets, "Lưu ý:" notes) — the marker line itself is
+    #     normal prose that keeps wrapping across several raw PDF lines, so its
+    #     continuation lines must still merge into it until sentence-ending
+    #     punctuation (or the next marker) is hit. Treating these as standalone
+    #     previously cut them off from their own continuation, leaving most
+    #     numbered clauses/bullets/notes split mid-sentence.
     blocks = []
     current_block = []
 
     for line in cleaned_lines:
-        is_heading_or_list = (
+        is_top_level_heading = bool(re.match(r"^\d+\.\s", line)) and not re.match(r"^\d+\.\d", line)
+        is_force_standalone = (
             line.startswith("#")
-            or line.startswith("- ")
-            or line.startswith("* ")
-            or re.match(r"^\d+(\.\d+)*\.", line)
+            or is_top_level_heading
             or line.startswith("Nguồn:")
             or line.startswith("Source:")
-            or line.startswith("Lưu ý:")
             or line.startswith("CHÍNH SÁCH")
         )
+        is_accumulate_starter = (
+            line.startswith("- ")
+            or line.startswith("* ")
+            or line.startswith("Lưu ý:")
+            or bool(re.match(r"^\d+(\.\d+)+\.", line))
+        )
 
-        if is_heading_or_list:
-            if current_block:
-                blocks.append(" ".join(current_block))
-                current_block = []
+        if (is_force_standalone or is_accumulate_starter) and current_block:
+            blocks.append(" ".join(current_block))
+            current_block = []
+
+        if is_force_standalone:
             blocks.append(line)
+            continue
+
+        if not current_block:
+            current_block.append(line)
         else:
-            if not current_block:
-                current_block.append(line)
+            last_line = current_block[-1]
+            # If last line ends with sentence punctuation, start new block
+            if last_line.endswith((".", ":", "?", "!", ";", '")', '”')):
+                blocks.append(" ".join(current_block))
+                current_block = [line]
             else:
-                last_line = current_block[-1]
-                # If last line ends with sentence punctuation, start new block
-                if last_line.endswith((".", ":", "?", "!", '")', '”')):
-                    blocks.append(" ".join(current_block))
-                    current_block = [line]
-                else:
-                    current_block.append(line)
+                current_block.append(line)
 
     if current_block:
         blocks.append(" ".join(current_block))
