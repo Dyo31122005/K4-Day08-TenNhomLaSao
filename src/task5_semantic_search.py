@@ -4,6 +4,14 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+_ST_MODEL_CACHE = {}
+
+def _get_st_model(model_name: str):
+    if model_name not in _ST_MODEL_CACHE:
+        from sentence_transformers import SentenceTransformer
+        _ST_MODEL_CACHE[model_name] = SentenceTransformer(model_name)
+    return _ST_MODEL_CACHE[model_name]
+
 
 def generate_hypothetical_doc(query: str) -> str:
     """
@@ -83,9 +91,8 @@ def semantic_search(query: str, top_k: int = 10) -> list[dict]:
             res = genai.embed_content(model=model_name, contents=hyde_query)
             query_vector = res['embedding']
         else:
-            from sentence_transformers import SentenceTransformer
             model_name = os.getenv("EMBEDDING_MODEL", "BAAI/bge-m3")
-            model = SentenceTransformer(model_name)
+            model = _get_st_model(model_name)
             query_vector = model.encode(hyde_query).tolist()
     except Exception as e:
         print(f"[Semantic Search] Embedding generation failed: {e}")

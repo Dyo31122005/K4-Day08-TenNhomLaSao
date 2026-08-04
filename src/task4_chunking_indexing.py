@@ -34,10 +34,17 @@ chroma_db/ cũ trước khi reindex — nếu không, chunk cũ và mới sẽ t
 trong cùng collection, retrieval sẽ trả về kết quả rác từ dữ liệu cũ.
 """
 
+import sys
 from pathlib import Path
 from dotenv import load_dotenv
 
 load_dotenv()
+
+if sys.platform == "win32":
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
 
 STANDARDIZED_DIR = Path(__file__).parent.parent / "data" / "standardized"
 CHROMA_DIR = Path(__file__).parent.parent / "chroma_db"
@@ -82,7 +89,9 @@ def load_documents() -> list[dict]:
         
         # Determine customer_role compatibility with K4 Variant
         filename_lower = md_file.name.lower()
-        if "listing" in filename_lower or "seller" in filename_lower:
+        content_lower = content.lower()
+
+        if "seller" in filename_lower or "listing" in filename_lower or "article_05" in filename_lower or "người bán" in content_lower[:300]:
             customer_role = "seller"
         elif "returns" in filename_lower or "refund" in filename_lower or "privacy" in filename_lower:
             customer_role = "both"
@@ -186,12 +195,29 @@ def index_to_vectorstore(chunks: list[dict]):
     embeddings = [c["embedding"] for c in chunks]
     metadatas = [c["metadata"] for c in chunks]
 
-    collection.upsert(
-        ids=ids,
-        documents=documents,
-        embeddings=embeddings,
-        metadatas=metadatas,
-    )
+    try:
+        collection.upsert(
+            ids=ids,
+            documents=documents,
+            embeddings=embeddings,
+            metadatas=metadatas,
+        )
+    except Exception as e:
+        if "dimension" in str(e).lower():
+            print(f"[WARN] Dimension mismatch detected ({e}). Re-creating collection '{COLLECTION_NAME}'...")
+            client.delete_collection(COLLECTION_NAME)
+            collection = client.get_or_create_collection(
+                name=COLLECTION_NAME,
+                metadata={"hnsw:space": "cosine"},
+            )
+            collection.upsert(
+                ids=ids,
+                documents=documents,
+                embeddings=embeddings,
+                metadatas=metadatas,
+            )
+        else:
+            raise e
 
 
 def run_pipeline():
@@ -208,6 +234,25 @@ def run_pipeline():
 
     chunks = chunk_documents(docs)
     print(f"[OK] Created {len(chunks)} chunks")
+
+    # Export chunks to JSON file for easy inspection
+    import json
+    export_path = Path(__file__).parent.parent / "data" / "all_chunks.json"
+    formatted_chunks = [
+        {
+            "chunk_id": i,
+            "source": c["metadata"].get("source"),
+            "doc_type": c["metadata"].get("type"),
+            "customer_role": c["metadata"].get("customer_role"),
+            "chunk_index": c["metadata"].get("chunk_index"),
+            "char_length": len(c["content"]),
+            "content": c["content"]
+        }
+        for i, c in enumerate(chunks, 1)
+    ]
+    with open(export_path, "w", encoding="utf-8") as f:
+        json.dump(formatted_chunks, f, ensure_ascii=False, indent=2)
+    print(f"[OK] Exported {len(chunks)} chunks to {export_path.name}")
 
     chunks = embed_chunks(chunks)
     print(f"[OK] Embedded {len(chunks)} chunks")
