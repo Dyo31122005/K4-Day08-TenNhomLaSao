@@ -49,7 +49,7 @@ LEGAL_ARTICLES = [
 def setup_directory():
     """Tạo thư mục data/landing/legal/ nếu chưa có."""
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    print(f"[OK] Thư mục đã sẵn sàng: {DATA_DIR}")
+    print(f"[OK] Thu muc da san sang: {DATA_DIR}")
 
 
 def _extract_balanced_json(text: str, start: int) -> str:
@@ -249,7 +249,7 @@ def generate_pdf(filename: str, title: str, source_url: str, content_text: str):
     filepath = DATA_DIR / filename
     pdf.output(str(filepath))
 
-    print(f"[OK] Đã tạo PDF từ nội dung crawl thật: {filepath} ({filepath.stat().st_size} bytes)")
+    print(f"[OK] Da tao PDF tu noi dung crawl that: {filepath} ({filepath.stat().st_size} bytes)")
 
 
 def generate_legal_docs():
@@ -257,11 +257,13 @@ def generate_legal_docs():
     setup_directory()
 
     for article in LEGAL_ARTICLES:
-        print(f"Đang tải: {article['url']}")
+        print(f"Dang tai: {article['url']}")
         try:
             fetched = fetch_shopee_article(article["url"])
             generate_pdf(article["filename"], fetched["title"], fetched["url"], fetched["content_text"])
         except Exception as e:
+            import traceback
+            traceback.print_exc()
             print(f"[LOI] Khong tai duoc {article['url']}: {e}")
             print("      -> Bo qua file nay. Kiem tra ket noi mang hoac chay lai sau.")
 

@@ -2,7 +2,7 @@
 
 **Source:** https://help.shopee.vn/portal/4/article/79467
 **Category:** Returns & Refund
-**Crawled:** 2026-08-04T13:14:35.159293
+**Crawled:** 2026-08-04T15:16:33.405340
 
 ---
 
