@@ -128,8 +128,8 @@ User query ─────────────────────┤
 | Nguyễn Minh Đạt | 2A202601142 | Role 1 (Team Leader & RAG Architect - Task 9) | Hoàn thành |
 | Nguyễn Hùng Mạnh | 2A202601256 | Role 2 (Data Dev - Task 1..3) & Role 5 (UI & Task 10) + Tích hợp, sửa lỗi và tối ưu toàn bộ pipeline (Task 3..10: PDF→MD, chunking, hybrid retrieval, logging) | Hoàn thành |
 | Hà Anh Tuấn | 2A202601582 | Role 3 (Vector DB & Dense Search - Task 4, 5) | Hoàn thành |
-| Trần Hoàng Mai Anh | | Role 4 (Sparse Retrieval & Rerank - Task 6..8) | Hoàn thành |
-| Nguyễn Hương Trà | | Role 6 (Evaluation & QA - Golden Dataset & RAGAS) | Hoàn thành |
+| Trần Hoàng Mai Anh | 2A202601324 | Role 4 (Sparse Retrieval & Rerank - Task 6..8) | Hoàn thành |
+| Nguyễn Hương Trà | 2A202601416 | Role 6 (Evaluation & QA - Golden Dataset & RAGAS) | Hoàn thành |
 | | | | |
 
 ---

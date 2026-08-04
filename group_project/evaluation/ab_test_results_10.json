@@ -1,0 +1,765 @@
+{
+  "summary": {
+    "n_queries": 10,
+    "A": {
+      "hit_at_5_mean": 1,
+      "mrr": 1.0,
+      "latency_mean_s": 3.2141058667002653,
+      "fallback_rate": 0
+    },
+    "B": {
+      "hit_at_5_mean": 0,
+      "mrr": 0.0,
+      "latency_mean_s": 2.7915244210005765,
+      "fallback_rate": 0
+    },
+    "delta": {
+      "hit_at_5_mean": 1,
+      "mrr": 1.0,
+      "latency_mean_s": 0.4225814456996888,
+      "fallback_rate": 0
+    }
+  },
+  "records": [
+    {
+      "id": "PAY_03",
+      "question": "Đơn hàng quốc tế có được trả góp bằng thẻ tín dụng không?",
+      "A": {
+        "hit": 1,
+        "rr": 1.0,
+        "results": [
+          {
+            "content": "2. Thẻ Tín dụng/Ghi nợ\n\nBạn có thể sử dụng Thẻ tín dụng hoặc Thẻ ghi nợ thuộc các hệ thống thẻ Visa, thẻ Mastercard, thẻ JCB, và thẻ American Express (AMEX) khi thanh toán đơn hàng trên Shopee\n\nLưu ý: chỉ áp dụng cho đơn hàng có giá trị thanh toán (bao gồm phí vận chuyển và các chi phí phát sinh khác) từ 10.000 VNĐ trở lên\n\n3. Trả góp bằng Thẻ tín dụng\n\nBên cạnh hình thức thanh toán toàn bộ giá trị đơn hàng, Shopee cũng hỗ trợ khách hàng thanh toán thông qua hình thức trả góp khi sử dụng tính năng thanh toán bằng Thẻ tín dụng\n\nLưu ý: Phương thức Trả góp bằng Thẻ tín dụng KHÔNG áp dụng cho đơn hàng Quốc tế\n\n4. Thanh toán QR",
+            "score": 0.01639344262295082,
+            "metadata": {
+              "source": "payment-methods-shopee.md",
+              "type": "legal",
+              "customer_role": "buyer",
+              "chunk_index": 2
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "# TOM TAT CHINH SACH\n\nShopee Việt Nam hiện hỗ trợ 09 hình thức thanh toán cho người dùng, bao gồm: Ví ShopeePay, Thẻ Tín dụng/Ghi nợ, Trả góp bằng Thẻ tín dụng, Thanh toán QR, Ứng dụng ngân hàng, Thẻ nội địa NAPAS, Apple Pay, Google Pay và Thanh toán khi nhận hàng (COD). Ví ShopeePay cho phép thanh toán trực tuyến và tại cửa hàng, trong khi Thẻ Tín dụng/Ghi nợ có thể sử dụng cho đơn hàng từ 10.000 VNĐ trở lên. Hình thức trả góp cũng được hỗ trợ nhưng không áp dụng cho đơn hàng quốc tế. Thanh toán QR và qua ứng dụng ngân hàng yêu cầu đơn hàng từ 10.000 VNĐ, trong khi Apple Pay và Google Pay có giới hạn giá trị thanh toán từ 10.000 VNĐ đến 120.000.000 VNĐ, tùy thuộc vào từng phương thức.\n\n---\n\n# NOI DUNG CHI TIET\n\n[Thành viên mới] Shopee hiện đang có những phương thức thanh toán nào?",
+            "score": 0.016129032258064516,
+            "metadata": {
+              "source": "payment-methods-shopee.md",
+              "type": "legal",
+              "customer_role": "buyer",
+              "chunk_index": 0
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "Lưu ý: Phương thức Trả góp bằng Thẻ tín dụng KHÔNG áp dụng cho đơn hàng Quốc tế\n\n4. Thanh toán QR\n\nLà hình thức thanh toán cho phép Người mua thanh toán bằng dịch vụ ngân hàng trực tuyến (internet banking) Và chỉ áp dụng cho đơn hàng có giá trị thanh toán cuối cùng (gồm phí vận chuyển và các chi phí phát sinh khác) từ 10.000 VNĐ trở lên (*)(*) đơn hàng không bao gồm các sản phẩm thuộc nhóm Nạp thẻ & Dịch vụ\n\n5. Ứng dụng ngân hàng\n\nLà hình thức thanh toán cho phép bạn hoàn tất giao dịch bằng cách chuyển hướng trực tiếp từ ứng dụng mua hàng Shopee sang ứng dụng của Ngân hàng đã cài đặt trên điện thoại Hình thức này nhanh chóng, bảo mật cao và chỉ áp dụng cho một số Người bán hoặc Ngân hàng có hỗ trợ liên kết Chi tiết tại bài viết [Thanh toán Ứng dụng Ngân hàng] Các câu hỏi thường gặp",
+            "score": 0.015873015873015872,
+            "metadata": {
+              "source": "payment-methods-shopee.md",
+              "type": "legal",
+              "customer_role": "buyer",
+              "chunk_index": 3
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "Lưu ý:\n\n- Phương thức thanh toán Apple Pay chỉ được hỗ trợ trên một số thiết bị theo quy định của Apple. Trên các thiết bị này, bạn cần thiết lập Apple Pay bằng cách thêm thẻ tín dụng/thẻ ghi nợ vào ứng dụng Ví (Wallet) để hoàn tất thiết lập thanh toán. Bạn có thể xem hướng dẫn Thiết lập Apple Pay TẠI ĐÂY\n\n- Phương thức thanh toán Apple Pay KHÔNG áp dụng cho các đơn hàng sau:Đơn hàng có sản phẩm thuộc nhóm Nạp thẻ & Dịch vụ\n\n- Đơn hàng có phương thức vận chuyển “Người bán tự vận chuyển” hoặc “Seller Own Fleet - Vận chuyển quốc tế”\n\n- Đơn hàng ShopeeFood\n\n8. Google Pay",
+            "score": 0.015625,
+            "metadata": {
+              "source": "payment-methods-shopee.md",
+              "type": "legal",
+              "customer_role": "buyer",
+              "chunk_index": 5
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "---\n\n# NOI DUNG CHI TIET\n\n[Thành viên mới] Shopee hiện đang có những phương thức thanh toán nào?\n\nNguồn: https://help.shopee.vn/portal/4/article/79198\n\nHiện nay Shopee Việt Nam đang hỗ trợ 09 hình thức thanh toán, bao gồm:\n\n- Ví ShopeePay\n\n- Thẻ Tín dụng/Ghi nợ\n\n- Trả góp bằng Thẻ tín dụng\n\n- Thanh toán QR\n\n- Ứng dụng ngân hàng\n\n- Thẻ nội địa NAPAS\n\n- Apple Pay\n\n- Google Pay\n\n- Thanh toán khi nhận hàng (COD)\n\n- SPayLater\n\n1. Ví ShopeePay\n\nVí ShopeePay là một ví điện tử được tích hợp bên trong Ứng dụng Shopee Sau khi đã thiết lập thành công tài khoản Ví ShopeePay và tiến hành nạp đủ số dư, bạn có thể sử dụng Ví ShopeePay để thanh toán khi mua sắm trực tuyến, cũng như khi mua sắm trực tiếp tại các cửa hàng chấp nhận thanh toán\n\n2. Thẻ Tín dụng/Ghi nợ",
+            "score": 0.015384615384615385,
+            "metadata": {
+              "source": "payment-methods-shopee.md",
+              "type": "legal",
+              "customer_role": "buyer",
+              "chunk_index": 1
+            },
+            "source": "hybrid"
+          }
+        ],
+        "latency": 6.5631654579992755,
+        "fallback": false
+      },
+      "B": {
+        "hit": 0,
+        "rr": 0.0,
+        "results": [],
+        "latency": 2.6140624590007064,
+        "fallback": false
+      }
+    },
+    {
+      "id": "PAY_04",
+      "question": "Apple Pay trên Shopee áp dụng cho đơn hàng có giá trị bao nhiêu và không dùng được cho những đơn nào?",
+      "A": {
+        "hit": 1,
+        "rr": 1.0,
+        "results": [
+          {
+            "content": "# TOM TAT CHINH SACH\n\nShopee Việt Nam hiện hỗ trợ 09 hình thức thanh toán cho người dùng, bao gồm: Ví ShopeePay, Thẻ Tín dụng/Ghi nợ, Trả góp bằng Thẻ tín dụng, Thanh toán QR, Ứng dụng ngân hàng, Thẻ nội địa NAPAS, Apple Pay, Google Pay và Thanh toán khi nhận hàng (COD). Ví ShopeePay cho phép thanh toán trực tuyến và tại cửa hàng, trong khi Thẻ Tín dụng/Ghi nợ có thể sử dụng cho đơn hàng từ 10.000 VNĐ trở lên. Hình thức trả góp cũng được hỗ trợ nhưng không áp dụng cho đơn hàng quốc tế. Thanh toán QR và qua ứng dụng ngân hàng yêu cầu đơn hàng từ 10.000 VNĐ, trong khi Apple Pay và Google Pay có giới hạn giá trị thanh toán từ 10.000 VNĐ đến 120.000.000 VNĐ, tùy thuộc vào từng phương thức.\n\n---\n\n# NOI DUNG CHI TIET\n\n[Thành viên mới] Shopee hiện đang có những phương thức thanh toán nào?",
+            "score": 0.01639344262295082,
+            "metadata": {
+              "source": "payment-methods-shopee.md",
+              "type": "legal",
+              "customer_role": "buyer",
+              "chunk_index": 0
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "- Sản phẩm của bạn không thuộc ngành hàng được áp dụng phương thức thanh toán này\n\n- Đơn hàng có giá trị thanh toán cuối cùng (gồm phí vận chuyển và các chi phí phát sinh khác) dưới 10.000 VNĐ\n\n5. Ứng dụng ngân hàng\n\n- Hình thức này chỉ áp dụng cho một số Người bán hoặc Ngân hàng có hỗ trợ liên kết.\n\n- Đơn hàng có giá trị thanh toán cuối cùng (gồm phí vận chuyển và các chi phí phát sinh khác) dưới 10.000 VNĐ\n\n6. Apple Pay\n\n- Thiết bị của bạn chưa hỗ trợ hình thức thanh toán Apple Pay (Xem chi tiết thiết bị tương thích TẠI ĐÂY)\n\n- Đơn hàng có giá trị thanh toán (đã bao gồm phí vận chuyển và các chi phí phát sinh khác - nếu có) không nằm trong hạn mức thanh toán là từ 10.000 VNĐ đến 25.000.000 VNĐ",
+            "score": 0.016129032258064516,
+            "metadata": {
+              "source": "article_02.md",
+              "type": "news",
+              "customer_role": "buyer",
+              "chunk_index": 2
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "6. Thẻ nội địa NAPAS\n\nBạn có thể sử dụng thẻ nội địa NAPAS có đăng ký dịch vụ Internet Banking để thanh toán các đơn hàng. Xem hướng dẫn thanh toán đơn hàng bằng thẻ nội địa NAPAS\n\nLưu ý: Chỉ áp dụng cho đơn hàng có giá trị thanh toán cuối cùng (gồm phí vận chuyển và các chi phí phát sinh khác) từ 10.000 VNĐ trở lên (*) (*) đơn hàng không bao gồm các sản phẩm thuộc nhóm Nạp thẻ & Dịch vụ Xem thêm: Danh sách các ngân hàng phát hành Thẻ nội địa Napas TẠI ĐÂY\n\n7. Apple Pay\n\nBạn có thể sử dụng Apple Pay để thanh toán đơn hàng khi mua sắm trên ứng dụng Shopee. Để lựa chọn/sử dụng được hình thức thanh toán này, đơn hàng phải có giá trị thanh toán cuối cùng (đã bao gồm phí vận chuyển và các chi phí phát sinh khác - nếu có) từ 10.000 VNĐ đến 25.000.000 VNĐ\n\nLưu ý:",
+            "score": 0.015873015873015872,
+            "metadata": {
+              "source": "payment-methods-shopee.md",
+              "type": "legal",
+              "customer_role": "buyer",
+              "chunk_index": 4
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "Lưu ý:\n\n- Phương thức thanh toán Apple Pay chỉ được hỗ trợ trên một số thiết bị theo quy định của Apple. Trên các thiết bị này, bạn cần thiết lập Apple Pay bằng cách thêm thẻ tín dụng/thẻ ghi nợ vào ứng dụng Ví (Wallet) để hoàn tất thiết lập thanh toán. Bạn có thể xem hướng dẫn Thiết lập Apple Pay TẠI ĐÂY\n\n- Phương thức thanh toán Apple Pay KHÔNG áp dụng cho các đơn hàng sau:Đơn hàng có sản phẩm thuộc nhóm Nạp thẻ & Dịch vụ\n\n- Đơn hàng có phương thức vận chuyển “Người bán tự vận chuyển” hoặc “Seller Own Fleet - Vận chuyển quốc tế”\n\n- Đơn hàng ShopeeFood\n\n8. Google Pay",
+            "score": 0.015625,
+            "metadata": {
+              "source": "payment-methods-shopee.md",
+              "type": "legal",
+              "customer_role": "buyer",
+              "chunk_index": 5
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "2. Thẻ Tín dụng/Ghi nợ\n\nBạn có thể sử dụng Thẻ tín dụng hoặc Thẻ ghi nợ thuộc các hệ thống thẻ Visa, thẻ Mastercard, thẻ JCB, và thẻ American Express (AMEX) khi thanh toán đơn hàng trên Shopee\n\nLưu ý: chỉ áp dụng cho đơn hàng có giá trị thanh toán (bao gồm phí vận chuyển và các chi phí phát sinh khác) từ 10.000 VNĐ trở lên\n\n3. Trả góp bằng Thẻ tín dụng\n\nBên cạnh hình thức thanh toán toàn bộ giá trị đơn hàng, Shopee cũng hỗ trợ khách hàng thanh toán thông qua hình thức trả góp khi sử dụng tính năng thanh toán bằng Thẻ tín dụng\n\nLưu ý: Phương thức Trả góp bằng Thẻ tín dụng KHÔNG áp dụng cho đơn hàng Quốc tế\n\n4. Thanh toán QR",
+            "score": 0.015384615384615385,
+            "metadata": {
+              "source": "payment-methods-shopee.md",
+              "type": "legal",
+              "customer_role": "buyer",
+              "chunk_index": 2
+            },
+            "source": "hybrid"
+          }
+        ],
+        "latency": 2.890305625001929,
+        "fallback": false
+      },
+      "B": {
+        "hit": 0,
+        "rr": 0.0,
+        "results": [],
+        "latency": 2.8113623749995895,
+        "fallback": false
+      }
+    },
+    {
+      "id": "PAY_05",
+      "question": "Giới hạn giá trị đơn hàng khi thanh toán bằng Google Pay trên Shopee là bao nhiêu?",
+      "A": {
+        "hit": 1,
+        "rr": 1.0,
+        "results": [
+          {
+            "content": "# TOM TAT CHINH SACH\n\nShopee Việt Nam hiện hỗ trợ 09 hình thức thanh toán cho người dùng, bao gồm: Ví ShopeePay, Thẻ Tín dụng/Ghi nợ, Trả góp bằng Thẻ tín dụng, Thanh toán QR, Ứng dụng ngân hàng, Thẻ nội địa NAPAS, Apple Pay, Google Pay và Thanh toán khi nhận hàng (COD). Ví ShopeePay cho phép thanh toán trực tuyến và tại cửa hàng, trong khi Thẻ Tín dụng/Ghi nợ có thể sử dụng cho đơn hàng từ 10.000 VNĐ trở lên. Hình thức trả góp cũng được hỗ trợ nhưng không áp dụng cho đơn hàng quốc tế. Thanh toán QR và qua ứng dụng ngân hàng yêu cầu đơn hàng từ 10.000 VNĐ, trong khi Apple Pay và Google Pay có giới hạn giá trị thanh toán từ 10.000 VNĐ đến 120.000.000 VNĐ, tùy thuộc vào từng phương thức.\n\n---\n\n# NOI DUNG CHI TIET\n\n[Thành viên mới] Shopee hiện đang có những phương thức thanh toán nào?",
+            "score": 0.01639344262295082,
+            "metadata": {
+              "source": "payment-methods-shopee.md",
+              "type": "legal",
+              "customer_role": "buyer",
+              "chunk_index": 0
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "- Đơn hàng ShopeeFood\n\n8. Google Pay\n\nGoogle Pay (Google Wallet) là phương thức thanh toán cho đơn hàng mua trên ứng dụng Shopee, được hỗ trợ trên một số thiết bị sử dụng hệ điều hành Android tương thích (xem chi tiết tại đây). Để sử dụng được hình thức thanh toán này khi mua sắm trên ứng dụng Shopee, đơn hàng phải có giá trị thanh toán cuối cùng (đã bao gồm phí vận chuyển và các chi phí phát sinh khác - nếu có) từ 10.000 VNĐ đến 120.000.000 VNĐ.\n\nLưu ý:\n\n- Để sử dụng phương thức thanh toán này, bạn cần tải về ứng dụng Google Pay (Google Wallet) trên Play Store (Cửa hàng Play), sau đó hoàn tất thiết lập Google Pay bằng cách thêm thẻ ghi nợ hoặc thẻ tín dụng vào ứng dụng. Bạn có thể xem hướng dẫn chi tiết cách thiết lập tại đây",
+            "score": 0.016129032258064516,
+            "metadata": {
+              "source": "payment-methods-shopee.md",
+              "type": "legal",
+              "customer_role": "buyer",
+              "chunk_index": 6
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "- Sản phẩm của bạn không thuộc ngành hàng được áp dụng phương thức thanh toán này\n\n- Đơn hàng có giá trị thanh toán cuối cùng (gồm phí vận chuyển và các chi phí phát sinh khác) dưới 10.000 VNĐ\n\n5. Ứng dụng ngân hàng\n\n- Hình thức này chỉ áp dụng cho một số Người bán hoặc Ngân hàng có hỗ trợ liên kết.\n\n- Đơn hàng có giá trị thanh toán cuối cùng (gồm phí vận chuyển và các chi phí phát sinh khác) dưới 10.000 VNĐ\n\n6. Apple Pay\n\n- Thiết bị của bạn chưa hỗ trợ hình thức thanh toán Apple Pay (Xem chi tiết thiết bị tương thích TẠI ĐÂY)\n\n- Đơn hàng có giá trị thanh toán (đã bao gồm phí vận chuyển và các chi phí phát sinh khác - nếu có) không nằm trong hạn mức thanh toán là từ 10.000 VNĐ đến 25.000.000 VNĐ",
+            "score": 0.015873015873015872,
+            "metadata": {
+              "source": "article_02.md",
+              "type": "news",
+              "customer_role": "buyer",
+              "chunk_index": 2
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "6. Thẻ nội địa NAPAS\n\nBạn có thể sử dụng thẻ nội địa NAPAS có đăng ký dịch vụ Internet Banking để thanh toán các đơn hàng. Xem hướng dẫn thanh toán đơn hàng bằng thẻ nội địa NAPAS\n\nLưu ý: Chỉ áp dụng cho đơn hàng có giá trị thanh toán cuối cùng (gồm phí vận chuyển và các chi phí phát sinh khác) từ 10.000 VNĐ trở lên (*) (*) đơn hàng không bao gồm các sản phẩm thuộc nhóm Nạp thẻ & Dịch vụ Xem thêm: Danh sách các ngân hàng phát hành Thẻ nội địa Napas TẠI ĐÂY\n\n7. Apple Pay\n\nBạn có thể sử dụng Apple Pay để thanh toán đơn hàng khi mua sắm trên ứng dụng Shopee. Để lựa chọn/sử dụng được hình thức thanh toán này, đơn hàng phải có giá trị thanh toán cuối cùng (đã bao gồm phí vận chuyển và các chi phí phát sinh khác - nếu có) từ 10.000 VNĐ đến 25.000.000 VNĐ\n\nLưu ý:",
+            "score": 0.015625,
+            "metadata": {
+              "source": "payment-methods-shopee.md",
+              "type": "legal",
+              "customer_role": "buyer",
+              "chunk_index": 4
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "- Đơn hàng thuộc các trường hợp sau:Đơn hàng có sản phẩm thuộc nhóm Nạp thẻ & Dịch vụĐơn hàng có phương thức vận chuyển “Người bán tự vận chuyển” hoặc “Seller Own Fleet - Vận chuyển quốc tế”Đơn hàng ShopeeFood\n\n- Thiết bị của bạn chưa hỗ trợ hình thức thanh toán Google Pay (xem chi tiết tại đây)\n\n- Đơn hàng có giá trị thanh toán (đã bao gồm phí vận chuyển và các chi phí phát sinh khác - nếu có) KHÔNG nằm trong hạn mức thanh toán  từ 10.000 VNĐ đến 120.000.000 VNĐ\n\n- Đơn hàng có bao gồm sản phẩm Nạp thẻ & Dịch vụ/đơn hàng ShopeeFood\n\n8. Thanh toán khi nhận hàng (tiền mặt):\n\n- Người bán không sử dụng các hình thức vận chuyển của Shopee và không cung cấp hình thức thanh toán này cho sản phẩm bạn chọn mua (ví dụ: mã điện tử để nạp điện thoại, mã vé xem phim điện tử...) hoặc",
+            "score": 0.015384615384615385,
+            "metadata": {
+              "source": "article_02.md",
+              "type": "news",
+              "customer_role": "buyer",
+              "chunk_index": 3
+            },
+            "source": "hybrid"
+          }
+        ],
+        "latency": 2.8307339169987245,
+        "fallback": false
+      },
+      "B": {
+        "hit": 0,
+        "rr": 0.0,
+        "results": [],
+        "latency": 2.8657886249966396,
+        "fallback": false
+      }
+    },
+    {
+      "id": "PAY_06",
+      "question": "Có phải shop nào trên Shopee cũng cho thanh toán khi nhận hàng không?",
+      "A": {
+        "hit": 1,
+        "rr": 1.0,
+        "results": [
+          {
+            "content": "- Phương thức thanh toán Google Pay KHÔNG áp dụng cho đơn hàng bao gồm các sản phẩm thuộc nhóm Nạp thẻ & Dịch vụ, đơn hàng ShopeeFood\n\n9. Thanh toán khi nhận hàng (COD)\n\nBên cạnh những hình thức thanh toán trên, bạn cũng có thể lựa chọn hình thức thanh toán khi nhận hàng. Tuy nhiên, cần chú ý rằng không phải tất cả các Shop trên Shopee đều cho phép sử dụng hình thức thanh toán trên\n\nLưu ý:\n\n- Shopee tuyệt đối không hỗ trợ cho những giao dịch sử dụng các hình thức thanh toán khác không được liệt kê ở trên hoặc giao dịch ngoài Shopee, như chuyển khoản hoặc đặt cọc,..v..v. Shopee sẽ có biện pháp xử lý nếu phát hiện hành vi gian lận hoặc giao dịch ngoài làm ảnh hưởng đến quyền lợi Người dùng trên Shopee\n\n10. SPayLater",
+            "score": 0.01639344262295082,
+            "metadata": {
+              "source": "payment-methods-shopee.md",
+              "type": "legal",
+              "customer_role": "buyer",
+              "chunk_index": 7
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "# TOM TAT CHINH SACH\n\nShopee Việt Nam hiện hỗ trợ 09 hình thức thanh toán cho người dùng, bao gồm: Ví ShopeePay, Thẻ Tín dụng/Ghi nợ, Trả góp bằng Thẻ tín dụng, Thanh toán QR, Ứng dụng ngân hàng, Thẻ nội địa NAPAS, Apple Pay, Google Pay và Thanh toán khi nhận hàng (COD). Ví ShopeePay cho phép thanh toán trực tuyến và tại cửa hàng, trong khi Thẻ Tín dụng/Ghi nợ có thể sử dụng cho đơn hàng từ 10.000 VNĐ trở lên. Hình thức trả góp cũng được hỗ trợ nhưng không áp dụng cho đơn hàng quốc tế. Thanh toán QR và qua ứng dụng ngân hàng yêu cầu đơn hàng từ 10.000 VNĐ, trong khi Apple Pay và Google Pay có giới hạn giá trị thanh toán từ 10.000 VNĐ đến 120.000.000 VNĐ, tùy thuộc vào từng phương thức.\n\n---\n\n# NOI DUNG CHI TIET\n\n[Thành viên mới] Shopee hiện đang có những phương thức thanh toán nào?",
+            "score": 0.016129032258064516,
+            "metadata": {
+              "source": "payment-methods-shopee.md",
+              "type": "legal",
+              "customer_role": "buyer",
+              "chunk_index": 0
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "2. Thẻ Tín dụng/Ghi nợ\n\nBạn có thể sử dụng Thẻ tín dụng hoặc Thẻ ghi nợ thuộc các hệ thống thẻ Visa, thẻ Mastercard, thẻ JCB, và thẻ American Express (AMEX) khi thanh toán đơn hàng trên Shopee\n\nLưu ý: chỉ áp dụng cho đơn hàng có giá trị thanh toán (bao gồm phí vận chuyển và các chi phí phát sinh khác) từ 10.000 VNĐ trở lên\n\n3. Trả góp bằng Thẻ tín dụng\n\nBên cạnh hình thức thanh toán toàn bộ giá trị đơn hàng, Shopee cũng hỗ trợ khách hàng thanh toán thông qua hình thức trả góp khi sử dụng tính năng thanh toán bằng Thẻ tín dụng\n\nLưu ý: Phương thức Trả góp bằng Thẻ tín dụng KHÔNG áp dụng cho đơn hàng Quốc tế\n\n4. Thanh toán QR",
+            "score": 0.015873015873015872,
+            "metadata": {
+              "source": "payment-methods-shopee.md",
+              "type": "legal",
+              "customer_role": "buyer",
+              "chunk_index": 2
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "- Theo hình thức “Tự sắp xếp”: Người Mua cần thanh toán trước chi phí vận chuyển cho việc trả hàng. Shopee sẽ hoàn lại số tiền bằng với chi phí vận chuyển mà Người Mua đã thanh toán cho đơn vị vận chuyển thông qua “Số Dư Tài Khoản Shopee” trên Ứng Dụng Shopee trong thời hạn 03 – 05 ngày làm việc kể từ ngày Người Mua đã gửi Sản Phẩm Hoàn Trả cho đơn vị vận chuyển và yêu cầu trả hàng/hoàn tiền của Người Mua được chấp nhận.\n\n8.2. Với Sản Phẩm không thuộc Shopee Mall, Người Mua có thể lựa chọn hoàn trả Sản Phẩm:\n\n- Theo hình thức “Lấy hàng hoàn trả tại nhà” hoặc “Gửi trả hàng tại bưu cục”: Người Mua không phải thanh toán bất cứ chi phí vận chuyển nào cho việc trả hàng.",
+            "score": 0.015625,
+            "metadata": {
+              "source": "returns-refund-policy-shopee.md",
+              "type": "legal",
+              "customer_role": "seller",
+              "chunk_index": 22
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "---\n\n# NOI DUNG CHI TIET\n\n[Thành viên mới] Shopee hiện đang có những phương thức thanh toán nào?\n\nNguồn: https://help.shopee.vn/portal/4/article/79198\n\nHiện nay Shopee Việt Nam đang hỗ trợ 09 hình thức thanh toán, bao gồm:\n\n- Ví ShopeePay\n\n- Thẻ Tín dụng/Ghi nợ\n\n- Trả góp bằng Thẻ tín dụng\n\n- Thanh toán QR\n\n- Ứng dụng ngân hàng\n\n- Thẻ nội địa NAPAS\n\n- Apple Pay\n\n- Google Pay\n\n- Thanh toán khi nhận hàng (COD)\n\n- SPayLater\n\n1. Ví ShopeePay\n\nVí ShopeePay là một ví điện tử được tích hợp bên trong Ứng dụng Shopee Sau khi đã thiết lập thành công tài khoản Ví ShopeePay và tiến hành nạp đủ số dư, bạn có thể sử dụng Ví ShopeePay để thanh toán khi mua sắm trực tuyến, cũng như khi mua sắm trực tiếp tại các cửa hàng chấp nhận thanh toán\n\n2. Thẻ Tín dụng/Ghi nợ",
+            "score": 0.015384615384615385,
+            "metadata": {
+              "source": "payment-methods-shopee.md",
+              "type": "legal",
+              "customer_role": "buyer",
+              "chunk_index": 1
+            },
+            "source": "hybrid"
+          }
+        ],
+        "latency": 3.093560625002283,
+        "fallback": false
+      },
+      "B": {
+        "hit": 0,
+        "rr": 0.0,
+        "results": [],
+        "latency": 2.7531134169985307,
+        "fallback": false
+      }
+    },
+    {
+      "id": "PAY_07",
+      "question": "SPayLater hoạt động như thế nào và có những kỳ thanh toán nào?",
+      "A": {
+        "hit": 1,
+        "rr": 1.0,
+        "results": [
+          {
+            "content": "10. SPayLater\n\nSPayLater là phương thức thanh toán được cung cấp bởi (các) Ngân hàng đối tác uy tín, cho phép bạn mua trước trả sau trên sàn thương mại điện tử Shopee thông qua hình thức thẻ tín dụng phi vật lý. Khi kích hoạt SPayLater thành công, bạn có thể mua sắm trong hạn mức được cấp và trả sau theo số kỳ thanh toán đã chọn, như sau: 01, 02, 03 và 06 kỳ ( loại kỳ hạn 06 kỳ chỉ áp dụng cho một nhóm người dùng nhất định) Để sử dụng SPayLater trong phương thức thanh toán của đơn hàng, bạn cần hoàn tất các bước để kích hoạt SPayLater và nhận được thông báo về Hạn mức SPayLater tạm thời Bạn có thể tham khảo thêm một số thông tin về phương thức thanh toán này tại đây\n\nLưu ý:",
+            "score": 0.01639344262295082,
+            "metadata": {
+              "source": "payment-methods-shopee.md",
+              "type": "legal",
+              "customer_role": "buyer",
+              "chunk_index": 8
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "---\n\n# NOI DUNG CHI TIET\n\n[Thành viên mới] Shopee hiện đang có những phương thức thanh toán nào?\n\nNguồn: https://help.shopee.vn/portal/4/article/79198\n\nHiện nay Shopee Việt Nam đang hỗ trợ 09 hình thức thanh toán, bao gồm:\n\n- Ví ShopeePay\n\n- Thẻ Tín dụng/Ghi nợ\n\n- Trả góp bằng Thẻ tín dụng\n\n- Thanh toán QR\n\n- Ứng dụng ngân hàng\n\n- Thẻ nội địa NAPAS\n\n- Apple Pay\n\n- Google Pay\n\n- Thanh toán khi nhận hàng (COD)\n\n- SPayLater\n\n1. Ví ShopeePay\n\nVí ShopeePay là một ví điện tử được tích hợp bên trong Ứng dụng Shopee Sau khi đã thiết lập thành công tài khoản Ví ShopeePay và tiến hành nạp đủ số dư, bạn có thể sử dụng Ví ShopeePay để thanh toán khi mua sắm trực tuyến, cũng như khi mua sắm trực tiếp tại các cửa hàng chấp nhận thanh toán\n\n2. Thẻ Tín dụng/Ghi nợ",
+            "score": 0.016129032258064516,
+            "metadata": {
+              "source": "payment-methods-shopee.md",
+              "type": "legal",
+              "customer_role": "buyer",
+              "chunk_index": 1
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "- Phương thức thanh toán Google Pay KHÔNG áp dụng cho đơn hàng bao gồm các sản phẩm thuộc nhóm Nạp thẻ & Dịch vụ, đơn hàng ShopeeFood\n\n9. Thanh toán khi nhận hàng (COD)\n\nBên cạnh những hình thức thanh toán trên, bạn cũng có thể lựa chọn hình thức thanh toán khi nhận hàng. Tuy nhiên, cần chú ý rằng không phải tất cả các Shop trên Shopee đều cho phép sử dụng hình thức thanh toán trên\n\nLưu ý:\n\n- Shopee tuyệt đối không hỗ trợ cho những giao dịch sử dụng các hình thức thanh toán khác không được liệt kê ở trên hoặc giao dịch ngoài Shopee, như chuyển khoản hoặc đặt cọc,..v..v. Shopee sẽ có biện pháp xử lý nếu phát hiện hành vi gian lận hoặc giao dịch ngoài làm ảnh hưởng đến quyền lợi Người dùng trên Shopee\n\n10. SPayLater",
+            "score": 0.015873015873015872,
+            "metadata": {
+              "source": "payment-methods-shopee.md",
+              "type": "legal",
+              "customer_role": "buyer",
+              "chunk_index": 7
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "\"Giao dịch tài sản kinh doanh\" là các giao dịch mua, bán, cho thuê, sáp nhập, hợp nhất hoặc bất kỳ hoạt động mua lại, thanh lý hay tài trợ nào của một tổ chức hoặc một phần của một tổ chức hoặc của bất kỳ hoạt động kinh doanh hay tài sản nào của một tổ chức; và/hoặc\n\n- bất kỳ mục đích nào mà chúng tôi thông báo cho bạn tại thời điểm xin sự cho phép của bạn.\n\n(gọi chung là “Các Mục Đích”)",
+            "score": 0.015625,
+            "metadata": {
+              "source": "privacy-policy-shopee.md",
+              "type": "legal",
+              "customer_role": "both",
+              "chunk_index": 37
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "# [Đơn hàng Quốc tế] Tôi cần chờ bao lâu để nhận được đơn hàng Quốc tế?\n\n**Source:** https://help.shopee.vn/portal/4/article/79556\n**Category:** Cross-border\n**Crawled:** 2026-08-04T16:59:27.630023\n\n---\n\nThời gian dự kiến giao đơn hàng Quốc tế là trong vòng 7 - 15 ngày kể từ thời điểm bạn thanh toán đơn hàng, không bao gồm những ngày lễ theo quy định tại Việt Nam và các quốc gia mà Shop Quốc tế đang hoạt động; hoặc ngày nghỉ không làm việc của Đơn vị vận chuyển. Để biết cụ thể ngày nhận hàng, bạn có thể kiểm tra thời gian giao hàng dự kiến của đơn hàng.\n⚠️ Lưu ý:\n\nThời gian giao đơn hàng Quốc tế có thể lâu hơn so với dự kiến vì một (số) lý do khách quan như điều kiện thời tiết xấu, gặp vấn đề liên quan đến thủ tục Hải quan, hoặc do trùng lặp với những kỳ nghỉ lễ lớn của mỗi quốc gia.",
+            "score": 0.015384615384615385,
+            "metadata": {
+              "source": "article_04.md",
+              "type": "news",
+              "customer_role": "buyer",
+              "chunk_index": 0
+            },
+            "source": "hybrid"
+          }
+        ],
+        "latency": 2.8087938749995374,
+        "fallback": false
+      },
+      "B": {
+        "hit": 0,
+        "rr": 0.0,
+        "results": [],
+        "latency": 2.7287317920017813,
+        "fallback": false
+      }
+    },
+    {
+      "id": "PRI_01",
+      "question": "Shopee có thể thu thập dữ liệu cá nhân của người dùng trong những trường hợp nào?",
+      "A": {
+        "hit": 1,
+        "rr": 1.0,
+        "results": [
+          {
+            "content": "8.6. Như được quy định trong Điều khoản dịch vụ của Shopee, Người dùng (bao gồm bất cứ người lao động, đại lý, người đại diện hoặc bất cứ bên nào khác hành động cho Người dùng đó hoặc thay mặt người dùng đó) sở hữu dữ liệu cá nhân của Người dùng khác thông qua việc sử dụng Dịch vụ (“Bên nhận dữ liệu”) tại đây đồng ý rằng, họ sẽ (i) tuân thủ với các quy định của pháp luật về bảo vệ dữ liệu cá nhân liên quan đến các dữ liệu này, bao gồm bất cứ hoạt động thu thập, xử lý, lưu giữ và chuyển giao các dữ liệu này; (ii) cho phép Shopee hoặc Người dùng mà dữ liệu cá nhân của Bên nhận được thu thập (“Bên tiết lộ”) được xóa dữ liệu của anh hoặc cô ấy đã bị thu thập khỏi cơ sở dữ liệu của Bên nhận dữ liệu; và (iii) cho phép Shopee hoặc Bên tiết lộ dữ liệu được rà soát những nội dung đã bị thu thập",
+            "score": 0.01639344262295082,
+            "metadata": {
+              "source": "privacy-policy-shopee.md",
+              "type": "legal",
+              "customer_role": "both",
+              "chunk_index": 54
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "2.3. Trong một số trường hợp, bạn có thể cung cấp dữ liệu cá nhân của các cá nhân khác cho chúng tôi (ví dụ như thành viên gia đình, bạn bè hoặc những người trong danh sách liên hệ của bạn). Nếu bạn cung cấp cho chúng tôi dữ liệu cá nhân của họ, bạn tuyên bố và đảm bảo rằng bạn đã nhận được sự đồng ý của họ để xử lý dữ liệu cá nhân của họ theo Chính sách này.\n\n3. SHOPEE SẼ THU THẬP NHỮNG DỮ LIỆU GÌ?\n\n3.1. Trừ trường hợp được quy định khác đi trong Chính sách này, dữ liệu cá nhân mà Shopee có thể thu thập bao gồm dữ liệu cá nhân cơ bản và dữ liệu cá nhân nhạy cảm (theo quy định của Luật riêng tư) như được liệt kê dưới đây:\n\n- họ tên;\n\n- địa chỉ email;\n\n- ngày sinh;\n\n- địa chỉ thanh toán và/hoặc giao nhận hàng hóa;\n\n- tài khoản ngân hàng và thông tin thanh toán\n\n- số điện thoại;",
+            "score": 0.016129032258064516,
+            "metadata": {
+              "source": "privacy-policy-shopee.md",
+              "type": "legal",
+              "customer_role": "both",
+              "chunk_index": 12
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "# TOM TAT CHINH SACH\n\nChính sách bảo mật của Shopee.vn, được vận hành bởi Công ty TNHH Shopee, cam kết bảo vệ thông tin cá nhân của người dùng theo quy định của pháp luật Việt Nam. Chính sách này giải thích cách thức thu thập, sử dụng, tiết lộ và xử lý dữ liệu cá nhân của người dùng, bao gồm cả người mua và người bán. Khi sử dụng dịch vụ, người dùng đồng ý cho Shopee thu thập và xử lý dữ liệu cá nhân của họ. Shopee sẽ thu thập dữ liệu cá nhân khi người dùng đăng ký tài khoản, gửi biểu mẫu, ký kết thỏa thuận hoặc tương tác với dịch vụ của họ. Chính sách cũng nhấn mạnh rằng người dùng cần đồng ý với các điều khoản này để tiếp tục sử dụng dịch vụ, và mọi thay đổi trong chính sách sẽ được thông báo trên nền tảng của Shopee.\n\n---\n\n# NOI DUNG CHI TIET\n\nCHÍNH SÁCH BẢO MẬT",
+            "score": 0.015873015873015872,
+            "metadata": {
+              "source": "privacy-policy-shopee.md",
+              "type": "legal",
+              "customer_role": "both",
+              "chunk_index": 0
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "1.4. Chính sách này áp dụng cùng với các thông báo, điều khoản hợp đồng, điều khoản chấp thuận khác áp dụng liên quan đến việc chúng tôi thu thập, lưu trữ, sử dụng, tiết lộ và/hoặc xử lý dữ liệu cá nhân của bạn và không nhằm ghi đè những thông báo hoặc các điều khoản đó trừ khi chúng tôi có tuyên bố ràng khác.\n\n1.5. Chính sách này được áp dụng cho cả Người bán và Người mua đang sử dụng Dịch vụ trừ khi có tuyên bố rõ ràng ngược lại.\n\n2. KHI NÀO SHOPEE SẼ THU THẬP DỮ LIỆU CÁ NHÂN?\n\n2.1. Chúng tôi sẽ/có thể thu thập dữ liệu cá nhân về bạn:\n\n- khi bạn đăng ký và/hoặc sử dụng Các Dịch Vụ hoặc Nền tảng của chúng tôi, hoặc mở một tài khoản với chúng tôi;",
+            "score": 0.015625,
+            "metadata": {
+              "source": "privacy-policy-shopee.md",
+              "type": "legal",
+              "customer_role": "both",
+              "chunk_index": 7
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "nền tảng Shopee; (iii) không được cho phép tiết lộ các dữ liệu cá nhân của Người mua này đến bất cứ bên thứ ba không được phép nào mà không có sự cho phép trước bằng văn bản của Người mua và Shopee; (iv) phải thực hiện các biện pháp an ninh thích hợp để bảo vệ từng dữ liệu cá nhân người dùng của Shopee mà họ đang sở hữu, chỉ lưu giữ dữ liệu này chừng nào vẫn còn cần thiết cho các mục đích ở trên và phù hợp với quy định của pháp luật bảo vệ dữ liệu cá nhân, và xóa hoặc hoàn trả các dữ liệu này cho Shopee theo yêu cầu từ Shopee hoặc trong thời gian sớm nhất có thể khi hoàn thành giao dịch; và (v) thông báo cho Bộ phận bảo vệ Dữ liệu Cá nhân của Shopee tại dpo.vn@shopee.com trong trường hợp có khả năng vi phạm dữ liệu hoặc mất dữ liệu khác của người dùng này.",
+            "score": 0.015384615384615385,
+            "metadata": {
+              "source": "privacy-policy-shopee.md",
+              "type": "legal",
+              "customer_role": "both",
+              "chunk_index": 57
+            },
+            "source": "hybrid"
+          }
+        ],
+        "latency": 2.616310124998563,
+        "fallback": false
+      },
+      "B": {
+        "hit": 0,
+        "rr": 0.0,
+        "results": [],
+        "latency": 2.800952750003489,
+        "fallback": false
+      }
+    },
+    {
+      "id": "PRI_02",
+      "question": "Shopee có thể thu thập những loại dữ liệu cá nhân nào?",
+      "A": {
+        "hit": 1,
+        "rr": 1.0,
+        "results": [
+          {
+            "content": "2.3. Trong một số trường hợp, bạn có thể cung cấp dữ liệu cá nhân của các cá nhân khác cho chúng tôi (ví dụ như thành viên gia đình, bạn bè hoặc những người trong danh sách liên hệ của bạn). Nếu bạn cung cấp cho chúng tôi dữ liệu cá nhân của họ, bạn tuyên bố và đảm bảo rằng bạn đã nhận được sự đồng ý của họ để xử lý dữ liệu cá nhân của họ theo Chính sách này.\n\n3. SHOPEE SẼ THU THẬP NHỮNG DỮ LIỆU GÌ?\n\n3.1. Trừ trường hợp được quy định khác đi trong Chính sách này, dữ liệu cá nhân mà Shopee có thể thu thập bao gồm dữ liệu cá nhân cơ bản và dữ liệu cá nhân nhạy cảm (theo quy định của Luật riêng tư) như được liệt kê dưới đây:\n\n- họ tên;\n\n- địa chỉ email;\n\n- ngày sinh;\n\n- địa chỉ thanh toán và/hoặc giao nhận hàng hóa;\n\n- tài khoản ngân hàng và thông tin thanh toán\n\n- số điện thoại;",
+            "score": 0.01639344262295082,
+            "metadata": {
+              "source": "privacy-policy-shopee.md",
+              "type": "legal",
+              "customer_role": "both",
+              "chunk_index": 12
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "1.4. Chính sách này áp dụng cùng với các thông báo, điều khoản hợp đồng, điều khoản chấp thuận khác áp dụng liên quan đến việc chúng tôi thu thập, lưu trữ, sử dụng, tiết lộ và/hoặc xử lý dữ liệu cá nhân của bạn và không nhằm ghi đè những thông báo hoặc các điều khoản đó trừ khi chúng tôi có tuyên bố ràng khác.\n\n1.5. Chính sách này được áp dụng cho cả Người bán và Người mua đang sử dụng Dịch vụ trừ khi có tuyên bố rõ ràng ngược lại.\n\n2. KHI NÀO SHOPEE SẼ THU THẬP DỮ LIỆU CÁ NHÂN?\n\n2.1. Chúng tôi sẽ/có thể thu thập dữ liệu cá nhân về bạn:\n\n- khi bạn đăng ký và/hoặc sử dụng Các Dịch Vụ hoặc Nền tảng của chúng tôi, hoặc mở một tài khoản với chúng tôi;",
+            "score": 0.016129032258064516,
+            "metadata": {
+              "source": "privacy-policy-shopee.md",
+              "type": "legal",
+              "customer_role": "both",
+              "chunk_index": 7
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "8.6. Như được quy định trong Điều khoản dịch vụ của Shopee, Người dùng (bao gồm bất cứ người lao động, đại lý, người đại diện hoặc bất cứ bên nào khác hành động cho Người dùng đó hoặc thay mặt người dùng đó) sở hữu dữ liệu cá nhân của Người dùng khác thông qua việc sử dụng Dịch vụ (“Bên nhận dữ liệu”) tại đây đồng ý rằng, họ sẽ (i) tuân thủ với các quy định của pháp luật về bảo vệ dữ liệu cá nhân liên quan đến các dữ liệu này, bao gồm bất cứ hoạt động thu thập, xử lý, lưu giữ và chuyển giao các dữ liệu này; (ii) cho phép Shopee hoặc Người dùng mà dữ liệu cá nhân của Bên nhận được thu thập (“Bên tiết lộ”) được xóa dữ liệu của anh hoặc cô ấy đã bị thu thập khỏi cơ sở dữ liệu của Bên nhận dữ liệu; và (iii) cho phép Shopee hoặc Bên tiết lộ dữ liệu được rà soát những nội dung đã bị thu thập",
+            "score": 0.015873015873015872,
+            "metadata": {
+              "source": "privacy-policy-shopee.md",
+              "type": "legal",
+              "customer_role": "both",
+              "chunk_index": 54
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "3.4. Nếu bạn không muốn chúng tôi thu thập thông tin/dữ liệu cá nhân nói trên, bạn có thể chọn không tham gia vào bất kỳ lúc nào bằng cách thông báo bằng văn bản đến Chuyên viên Bảo Vệ Dữ Liệu Cá Nhân của chúng tôi. Có thể tìm thấy thêm thông tin về nội dung trong mục \"Bạn có thể rút lại sự đồng ý, yêu cầu xóa, hạn chế xử lý, phản đối xử lý, yêu cầu cung cấp dữ liệu cá nhân, truy cập hoặc điều chỉnh thông tin bạn đã cung cấp cho chúng tôi bằng cách nào?\" dưới đây. Tuy nhiên, lưu ý rằng việc từ chối hoặc hủy bỏ cho phép chúng tôi thu thập, sử dụng hoặc xử lý dữ liệu cá nhân của bạn có thể ảnh hưởng đến việc bạn sử dụng Các Dịch Vụ và Nền tảng. Ví dụ như dịch vụ xác định vị trí sẽ không hoạt động nếu bạn không cho phép ứng dụng truy cập vị trí của bạn.\n\n4. THU THẬP CÁC DỮ LIỆU KHÁC",
+            "score": 0.015625,
+            "metadata": {
+              "source": "privacy-policy-shopee.md",
+              "type": "legal",
+              "customer_role": "both",
+              "chunk_index": 17
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "6.3. Vì Các Mục Đích mà chúng tôi sẽ/có thể thu thập, sử dụng, tiết lộ hoặc xử lý dữ liệu cá nhân của bạn phụ thuộc vào hoàn cảnh hiện có, mục đích đó có thể không xuất hiện bên trên. Tuy nhiên, chúng tôi sẽ thông báo cho bạn biết mục đích khác đó tại thời điểm xin sự cho phép của bạn, trừ phi việc xử lý dữ liệu áp dụng mà không có sự đồng ý của bạn là được phép theo các quy định của pháp luật về bảo vệ bí mật thông tin cá nhân hoặc theo quy định pháp luật.\n\n7. SHOPEE BẢO VỆ VÀ LƯU TRỮ THÔNG TIN KHÁCH HÀNG BẰNG CÁCH NÀO",
+            "score": 0.015384615384615385,
+            "metadata": {
+              "source": "privacy-policy-shopee.md",
+              "type": "legal",
+              "customer_role": "both",
+              "chunk_index": 40
+            },
+            "source": "hybrid"
+          }
+        ],
+        "latency": 2.817945791997772,
+        "fallback": false
+      },
+      "B": {
+        "hit": 0,
+        "rr": 0.0,
+        "results": [],
+        "latency": 2.958877332999691,
+        "fallback": false
+      }
+    },
+    {
+      "id": "PRI_03",
+      "question": "Cookie được Shopee sử dụng để làm gì và người dùng có thể từ chối cookie không?",
+      "A": {
+        "hit": 1,
+        "rr": 1.0,
+        "results": [
+          {
+            "content": "Cookie cũng liên kết với thông tin về những nội dung bạn đã chọn để mua sắm và các trang web mà bạn đã xem.\n\nThông tin này được sử dụng để theo dõi giỏ hàng, để chuyển tải nội dung phù hợp với sở thích của bạn, để cho phép các đối tác cung cấp dịch vụ quảng cáo cung cấp dịch vụ quảng cáo trên các trang thông qua mạng Internet và để thực hiện phân tích dữ liệu và hoặc theo dõi việc sử dụng Dịch vụ\n\n5.2. Bạn có thể từ chối sử dụng cookie bằng cách chọn các thiết lập thích hợp trên trình duyệt hoặc thiết bị của bạn.\n\nTuy nhiên, vui lòng lưu ý rằng nếu bạn thực hiện thao tác này bạn có thể không sử dụng được các chức năng đầy đủ của Nền tảng hoặc Các Dịch Vụ của chúng tôi.\n\n6. CHÚNG TÔI SỬ DỤNG THÔNG TIN BẠN CUNG CẤP CHO CHÚNG TÔI NHƯ THẾ NÀO?",
+            "score": 0.01639344262295082,
+            "metadata": {
+              "source": "privacy-policy-shopee.md",
+              "type": "legal",
+              "customer_role": "both",
+              "chunk_index": 25
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": ". \"Cookie\" là các mã danh định được lưu trữ trên máy tính hoặc thiết bị di động của bạn lưu trữ các dữ liệu về máy tính hoặc thiết bị, bằng cách nào và khi nào Các Dịch Vụ hoặc Nền tảng được sử dụng hay truy cập, bởi bao nhiêu người và để theo dõi những hoạt động trong Các Nền tảng của chúng tôi. Chúng tôi có thể liên kết thông tin cookie với dữ liệu cá nhân.",
+            "score": 0.016129032258064516,
+            "metadata": {
+              "source": "privacy-policy-shopee.md",
+              "type": "legal",
+              "customer_role": "both",
+              "chunk_index": 24
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "ii. Người Mua đang sử dụng Gói ShopeeVIP. Vui lòng tham khảo ShopeeVIP tại ĐÂY.\n\nb. Trong trường hợp Người Mua không thuộc đối tượng được quy định tại Điều 4.1.a nêu trên nhưng vẫn có thể thực hiện yêu cầu Trả hàng COM từ tài khoản của Người Mua, thì Shopee có quyền từ chối yêu cầu đó. Tuy nhiên, trong trường hợp Shopee, vì bất cứ lý do gì theo quyết định của riêng Shopee, đồng ý cho Người Mua đó được quyền Trả hàng COM, Người Bán sẽ không phải chịu phí vận chuyển của đơn hoàn.\n\n4.2. Hạn mức Người Mua hợp lệ chỉ được Trả hàng COM trong các hạn mức được tính theo tháng như sau:",
+            "score": 0.015873015873015872,
+            "metadata": {
+              "source": "returns-refund-policy-shopee.md",
+              "type": "legal",
+              "customer_role": "seller",
+              "chunk_index": 8
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "10. THÔNG TIN THU THẬP BỞI CÁC BÊN THỨ BA\n\n10.1. Nền tảng của chúng tôi sử dụng Google Analytics, một dịch vụ phân tích web được cung cấp bởi Google, Inc.\n\n(\"Google\"). Google Analytics sử dụng cookie, là các tập tin văn bản trên thiết bị của bạn, để giúp Nền tảng phân tích cách thức người dùng sử dụng Nền tảng của chúng tôi. Thông tin được tạo bởi cookie về việc bạn sử dụng Nền tảng (bao gồm địa chỉ IP của bạn) sẽ được gửi đến và lưu bởi Google trên các máy chủ tại Hoa Kỳ. Google sẽ sử dụng thông tin này để đánh giá việc bạn sử dụng Nền tảng của chúng tôi, soạn báo cáo về hoạt động trang web dành cho các nhà điều hành trang web và cung cấp các dịch vụ khác liên quan đến hoạt động trang web và việc sử dụng Internet.",
+            "score": 0.015625,
+            "metadata": {
+              "source": "privacy-policy-shopee.md",
+              "type": "legal",
+              "customer_role": "both",
+              "chunk_index": 61
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "v. Trong trường hợp một yêu cầu Trả hàng COM được tạo trong một tháng nhưng, vì bất cứ lý do gì, được Shopee giải quyết trong tháng tiếp theo, thì yêu cầu này sẽ được tính vào hạn mức của tháng mà yêu cầu đó được tạo, và không ảnh hưởng đến hạn mức của tháng tiếp theo.\n\nvi. Trong trường hợp vì bất cứ lý do gì mà dù cho Người Mua vẫn có thể thực hiện yêu cầu Trả hàng COM từ tài khoản của Người Mua, Shopee vẫn có quyền từ chối yêu cầu này khi yêu cầu đó được thực hiện sau khi Người Mua đã đạt hạn mức trong tháng hoặc bị chấm dứt quyền trả hàng COM.\n\nc. Người Mua vừa đồng thời được Trả hàng COM theo hạng thành viên của chương trình khách hàng thân thiết vừa được hưởng quyền lợi theo gói ShopeeVIP thì sẽ được áp dụng quyền lợi Trả hàng COM có hạn mức cao hơn.",
+            "score": 0.015384615384615385,
+            "metadata": {
+              "source": "returns-refund-policy-shopee.md",
+              "type": "legal",
+              "customer_role": "seller",
+              "chunk_index": 12
+            },
+            "source": "hybrid"
+          }
+        ],
+        "latency": 2.7586171670009207,
+        "fallback": false
+      },
+      "B": {
+        "hit": 0,
+        "rr": 0.0,
+        "results": [],
+        "latency": 2.705337709001469,
+        "fallback": false
+      }
+    },
+    {
+      "id": "PRI_04",
+      "question": "Shopee sử dụng dữ liệu cá nhân của người dùng cho những mục đích chính nào?",
+      "A": {
+        "hit": 1,
+        "rr": 1.0,
+        "results": [
+          {
+            "content": "nền tảng Shopee; (iii) không được cho phép tiết lộ các dữ liệu cá nhân của Người mua này đến bất cứ bên thứ ba không được phép nào mà không có sự cho phép trước bằng văn bản của Người mua và Shopee; (iv) phải thực hiện các biện pháp an ninh thích hợp để bảo vệ từng dữ liệu cá nhân người dùng của Shopee mà họ đang sở hữu, chỉ lưu giữ dữ liệu này chừng nào vẫn còn cần thiết cho các mục đích ở trên và phù hợp với quy định của pháp luật bảo vệ dữ liệu cá nhân, và xóa hoặc hoàn trả các dữ liệu này cho Shopee theo yêu cầu từ Shopee hoặc trong thời gian sớm nhất có thể khi hoàn thành giao dịch; và (v) thông báo cho Bộ phận bảo vệ Dữ liệu Cá nhân của Shopee tại dpo.vn@shopee.com trong trường hợp có khả năng vi phạm dữ liệu hoặc mất dữ liệu khác của người dùng này.",
+            "score": 0.01639344262295082,
+            "metadata": {
+              "source": "privacy-policy-shopee.md",
+              "type": "legal",
+              "customer_role": "both",
+              "chunk_index": 57
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "6.3. Vì Các Mục Đích mà chúng tôi sẽ/có thể thu thập, sử dụng, tiết lộ hoặc xử lý dữ liệu cá nhân của bạn phụ thuộc vào hoàn cảnh hiện có, mục đích đó có thể không xuất hiện bên trên. Tuy nhiên, chúng tôi sẽ thông báo cho bạn biết mục đích khác đó tại thời điểm xin sự cho phép của bạn, trừ phi việc xử lý dữ liệu áp dụng mà không có sự đồng ý của bạn là được phép theo các quy định của pháp luật về bảo vệ bí mật thông tin cá nhân hoặc theo quy định pháp luật.\n\n7. SHOPEE BẢO VỆ VÀ LƯU TRỮ THÔNG TIN KHÁCH HÀNG BẰNG CÁCH NÀO",
+            "score": 0.016129032258064516,
+            "metadata": {
+              "source": "privacy-policy-shopee.md",
+              "type": "legal",
+              "customer_role": "both",
+              "chunk_index": 40
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "8.6. Như được quy định trong Điều khoản dịch vụ của Shopee, Người dùng (bao gồm bất cứ người lao động, đại lý, người đại diện hoặc bất cứ bên nào khác hành động cho Người dùng đó hoặc thay mặt người dùng đó) sở hữu dữ liệu cá nhân của Người dùng khác thông qua việc sử dụng Dịch vụ (“Bên nhận dữ liệu”) tại đây đồng ý rằng, họ sẽ (i) tuân thủ với các quy định của pháp luật về bảo vệ dữ liệu cá nhân liên quan đến các dữ liệu này, bao gồm bất cứ hoạt động thu thập, xử lý, lưu giữ và chuyển giao các dữ liệu này; (ii) cho phép Shopee hoặc Người dùng mà dữ liệu cá nhân của Bên nhận được thu thập (“Bên tiết lộ”) được xóa dữ liệu của anh hoặc cô ấy đã bị thu thập khỏi cơ sở dữ liệu của Bên nhận dữ liệu; và (iii) cho phép Shopee hoặc Bên tiết lộ dữ liệu được rà soát những nội dung đã bị thu thập",
+            "score": 0.015873015873015872,
+            "metadata": {
+              "source": "privacy-policy-shopee.md",
+              "type": "legal",
+              "customer_role": "both",
+              "chunk_index": 54
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "# TOM TAT CHINH SACH\n\nChính sách bảo mật của Shopee.vn, được vận hành bởi Công ty TNHH Shopee, cam kết bảo vệ thông tin cá nhân của người dùng theo quy định của pháp luật Việt Nam. Chính sách này giải thích cách thức thu thập, sử dụng, tiết lộ và xử lý dữ liệu cá nhân của người dùng, bao gồm cả người mua và người bán. Khi sử dụng dịch vụ, người dùng đồng ý cho Shopee thu thập và xử lý dữ liệu cá nhân của họ. Shopee sẽ thu thập dữ liệu cá nhân khi người dùng đăng ký tài khoản, gửi biểu mẫu, ký kết thỏa thuận hoặc tương tác với dịch vụ của họ. Chính sách cũng nhấn mạnh rằng người dùng cần đồng ý với các điều khoản này để tiếp tục sử dụng dịch vụ, và mọi thay đổi trong chính sách sẽ được thông báo trên nền tảng của Shopee.\n\n---\n\n# NOI DUNG CHI TIET\n\nCHÍNH SÁCH BẢO MẬT",
+            "score": 0.015625,
+            "metadata": {
+              "source": "privacy-policy-shopee.md",
+              "type": "legal",
+              "customer_role": "both",
+              "chunk_index": 0
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": ". Các nhà cung cấp dịch vụ bên thứ ba, đại lý và/hoặc các công ty liên kết hoặc công ty liên quan và/hoặc các bên thứ ba khác như thế sẽ xử lý dữ liệu cá nhân của bạn hoặc thay mặt chúng tôi hoặc ngược lại, vì một hoặc nhiều Mục Đích nói trên. Chúng tôi cố gắng đảm bảo rằng các bên thứ ba và các công ty liên kết của chúng tôi giữ an toàn cho dữ liệu cá nhân của bạn khỏi bị truy cập, thu thập, sử dụng, tiết lộ, xử lý trái phép hoặc các rủi ro tương tự và chỉ lưu giữ dữ liệu cá nhân của bạn miễn là dữ liệu cá nhân của bạn vẫn còn cần thiết cho những việc nêu trên Mục đích Các bên thứ ba như thế bao gồm:",
+            "score": 0.015384615384615385,
+            "metadata": {
+              "source": "privacy-policy-shopee.md",
+              "type": "legal",
+              "customer_role": "both",
+              "chunk_index": 46
+            },
+            "source": "hybrid"
+          }
+        ],
+        "latency": 2.762104083001759,
+        "fallback": false
+      },
+      "B": {
+        "hit": 0,
+        "rr": 0.0,
+        "results": [],
+        "latency": 2.8362506670018774,
+        "fallback": false
+      }
+    },
+    {
+      "id": "PRI_05",
+      "question": "Shopee có thể chia sẻ dữ liệu cá nhân với những bên nào?",
+      "A": {
+        "hit": 1,
+        "rr": 1.0,
+        "results": [
+          {
+            "content": "13.1.2 Khi bạn chia sẻ nội dung trên YouTube, bên cạnh việc rút lại sự cho phép của bạn bằng việc gửi email cho chúng tôi phù hợp với quy định tại Điều 13.1.1, bạn cũng có thể rút lại quyền truy cập của Shopee vào dữ liệu cá nhân của bạn thông qua trang cài đặt an ninh của Google tại địa chỉ https://security.google.com/settings/security/permissions.\n\n13.2. Yêu cầu cung cấp Dữ Liệu Cá Nhân",
+            "score": 0.01639344262295082,
+            "metadata": {
+              "source": "privacy-policy-shopee.md",
+              "type": "legal",
+              "customer_role": "both",
+              "chunk_index": 72
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "- bên thứ ba mà chúng tôi tiết lộ thông tin vì một trong các Mục Đích và các bên thứ ba đó ngược lại họ sẽ thu thập và xử lý dữ liệu cá nhân của bạn vì một hoặc nhiều Mục Đích.\n\n8.2. Chúng tôi có thể chia sẻ thông tin bao gồm thông tin thống kê và nhân khẩu học về Người Dùng cũng như thông tin về việc sử dụng Các Dịch Vụ của người dùng với đối tác cung cấp dịch vụ quảng cáo và lập trình. Chúng tôi cũng sẽ chia sẻ thông tin thống kê và thông tin nhân khẩu học về người dùng của chúng tôi và việc họ sử dụng Các Dịch Vụ với các đối tác quảng cáo và bên thứ ba cung cấp dịch vụ quảng cáo, tái quảng cáo, và/hoặc lập trình.",
+            "score": 0.016129032258064516,
+            "metadata": {
+              "source": "privacy-policy-shopee.md",
+              "type": "legal",
+              "customer_role": "both",
+              "chunk_index": 50
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "8.5. Shopee cho phép bạn chia sẻ video từ YouTube trong tính năng Shopee Livestream (“Nội Dung YouTube”). Về mặt kỹ thuật, Shopee sử dụng Tính Năng YouTube API của chính YouTube. Thông qua việc chia sẻ Nội Dung YouTube, bạn theo đây đồng ý chịu sự điều chỉnh của Chính Sách Bảo Mật của YouTube (http://www.google.com/policies/privacy).",
+            "score": 0.015873015873015872,
+            "metadata": {
+              "source": "privacy-policy-shopee.md",
+              "type": "legal",
+              "customer_role": "both",
+              "chunk_index": 53
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "nền tảng Shopee; (iii) không được cho phép tiết lộ các dữ liệu cá nhân của Người mua này đến bất cứ bên thứ ba không được phép nào mà không có sự cho phép trước bằng văn bản của Người mua và Shopee; (iv) phải thực hiện các biện pháp an ninh thích hợp để bảo vệ từng dữ liệu cá nhân người dùng của Shopee mà họ đang sở hữu, chỉ lưu giữ dữ liệu này chừng nào vẫn còn cần thiết cho các mục đích ở trên và phù hợp với quy định của pháp luật bảo vệ dữ liệu cá nhân, và xóa hoặc hoàn trả các dữ liệu này cho Shopee theo yêu cầu từ Shopee hoặc trong thời gian sớm nhất có thể khi hoàn thành giao dịch; và (v) thông báo cho Bộ phận bảo vệ Dữ liệu Cá nhân của Shopee tại dpo.vn@shopee.com trong trường hợp có khả năng vi phạm dữ liệu hoặc mất dữ liệu khác của người dùng này.",
+            "score": 0.015625,
+            "metadata": {
+              "source": "privacy-policy-shopee.md",
+              "type": "legal",
+              "customer_role": "both",
+              "chunk_index": 57
+            },
+            "source": "hybrid"
+          },
+          {
+            "content": "12. SHOPEE SẼ CHUYỂN THÔNG TIN CỦA BẠN RA NƯỚC NGOÀI?\n\nThông tin và/hoặc dữ liệu cá nhân của bạn có thể được chuyển ra nước ngoài, lưu trữ hoặc xử lý bên ngoài quốc gia của bạn cho một hoặc nhiều Mục đích. Shopee sẽ chỉ chuyển dữ liệu cá nhân của bạn ra nước ngoài khi phù hợp với các quy định của pháp luật về bảo vệ dữ liệu cá nhân.\n\n13. BẠN CÓ THỂ RÚT LẠI SỰ ĐỒNG Ý, YÊU CẦU HẠN CHẾ XỬ LÝ, PHẢN ĐỐI XỬ LÝ, YÊU CẦU CUNG CẤP DỮ\n\nLIỆU CÁ NHÂN, TRUY CẬP HOẶC ĐIỀU CHỈNH THÔNG TIN BẠN ĐÃ CUNG CẤP CHO CHÚNG TÔI BẰNG CÁCH NÀO?\n\n13.1. Rút Lại Sự Đồng Ý, Yêu cầu hạn chế, phản đối xử lý dữ liệu",
+            "score": 0.015384615384615385,
+            "metadata": {
+              "source": "privacy-policy-shopee.md",
+              "type": "legal",
+              "customer_role": "both",
+              "chunk_index": 70
+            },
+            "source": "hybrid"
+          }
+        ],
+        "latency": 2.999522000001889,
+        "fallback": false
+      },
+      "B": {
+        "hit": 0,
+        "rr": 0.0,
+        "results": [],
+        "latency": 2.8407670830019924,
+        "fallback": false
+      }
+    }
+  ]
+}
