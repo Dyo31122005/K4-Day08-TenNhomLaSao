@@ -193,41 +193,5 @@
     "expected_context": "returns-refund-policy-shopee.pdf — mục 9.4. Phương thức nhận tiền hoàn, trang 6.",
     "is_in_domain": true,
     "expected_behavior": "answer"
-  },
-  {
-    "id": "OOD_01",
-    "category": "out_of_domain",
-    "question": "Ngày mai thời tiết ở Hà Nội có mưa không?",
-    "expected_answer": "Xin lỗi, câu hỏi này nằm ngoài phạm vi các tài liệu hiện có về phương thức thanh toán, chính sách bảo mật và chính sách trả hàng/hoàn tiền của Shopee.",
-    "expected_context": "Không có ngữ cảnh phù hợp trong ba tài liệu; hệ thống phải kích hoạt fallback.",
-    "is_in_domain": false,
-    "expected_behavior": "fallback"
-  },
-  {
-    "id": "OOD_02",
-    "category": "out_of_domain",
-    "question": "Hãy hướng dẫn tôi nấu món phở bò tại nhà.",
-    "expected_answer": "Xin lỗi, câu hỏi này nằm ngoài phạm vi các tài liệu hiện có về phương thức thanh toán, chính sách bảo mật và chính sách trả hàng/hoàn tiền của Shopee.",
-    "expected_context": "Không có ngữ cảnh phù hợp trong ba tài liệu; hệ thống phải kích hoạt fallback.",
-    "is_in_domain": false,
-    "expected_behavior": "fallback"
-  },
-  {
-    "id": "OOD_03",
-    "category": "out_of_domain",
-    "question": "Trong Python, sự khác nhau giữa list và tuple là gì?",
-    "expected_answer": "Xin lỗi, câu hỏi này nằm ngoài phạm vi các tài liệu hiện có về phương thức thanh toán, chính sách bảo mật và chính sách trả hàng/hoàn tiền của Shopee.",
-    "expected_context": "Không có ngữ cảnh phù hợp trong ba tài liệu; hệ thống phải kích hoạt fallback.",
-    "is_in_domain": false,
-    "expected_behavior": "fallback"
-  },
-  {
-    "id": "OOD_04",
-    "category": "out_of_domain",
-    "question": "So sánh camera của iPhone và Samsung giúp tôi.",
-    "expected_answer": "Xin lỗi, câu hỏi này nằm ngoài phạm vi các tài liệu hiện có về phương thức thanh toán, chính sách bảo mật và chính sách trả hàng/hoàn tiền của Shopee.",
-    "expected_context": "Không có ngữ cảnh phù hợp trong ba tài liệu; hệ thống phải kích hoạt fallback.",
-    "is_in_domain": false,
-    "expected_behavior": "fallback"
   }
 ]

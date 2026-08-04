@@ -1,3 +1,11 @@
+# TOM TAT CHINH SACH
+
+Shopee Việt Nam hiện hỗ trợ 09 hình thức thanh toán cho người dùng, bao gồm: Ví ShopeePay, Thẻ Tín dụng/Ghi nợ, Trả góp bằng Thẻ tín dụng, Thanh toán QR, Ứng dụng ngân hàng, Thẻ nội địa NAPAS, Apple Pay, Google Pay và Thanh toán khi nhận hàng (COD). Ví ShopeePay cho phép thanh toán trực tuyến và tại cửa hàng, trong khi Thẻ Tín dụng/Ghi nợ có thể sử dụng cho đơn hàng từ 10.000 VNĐ trở lên. Hình thức trả góp cũng được hỗ trợ nhưng không áp dụng cho đơn hàng quốc tế. Thanh toán QR và qua ứng dụng ngân hàng yêu cầu đơn hàng từ 10.000 VNĐ, trong khi Apple Pay và Google Pay có giới hạn giá trị thanh toán từ 10.000 VNĐ đến 120.000.000 VNĐ, tùy thuộc vào từng phương thức.
+
+---
+
+# NOI DUNG CHI TIET
+
 [Thành viên mới] Shopee hiện đang có những phương thức thanh toán nào?
 
 Nguồn: https://help.shopee.vn/portal/4/article/79198

@@ -1,3 +1,11 @@
+# TOM TAT CHINH SACH
+
+Chính sách bảo mật của Shopee.vn, được vận hành bởi Công ty TNHH Shopee, cam kết bảo vệ thông tin cá nhân của người dùng theo quy định của pháp luật Việt Nam. Chính sách này giải thích cách thức thu thập, sử dụng, tiết lộ và xử lý dữ liệu cá nhân của người dùng, bao gồm cả người mua và người bán. Khi sử dụng dịch vụ, người dùng đồng ý cho Shopee thu thập và xử lý dữ liệu cá nhân của họ. Shopee sẽ thu thập dữ liệu cá nhân khi người dùng đăng ký tài khoản, gửi biểu mẫu, ký kết thỏa thuận hoặc tương tác với dịch vụ của họ. Chính sách cũng nhấn mạnh rằng người dùng cần đồng ý với các điều khoản này để tiếp tục sử dụng dịch vụ, và mọi thay đổi trong chính sách sẽ được thông báo trên nền tảng của Shopee.
+
+---
+
+# NOI DUNG CHI TIET
+
 CHÍNH SÁCH BẢO MẬT
 
 Nguồn: https://help.shopee.vn/portal/4/article/77244

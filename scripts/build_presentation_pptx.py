@@ -634,7 +634,7 @@ def create_deck():
     team_data = [
         ("Nguyễn Minh Đạt", "Role 1: Team Leader & RAG Architect (Task 9 Hybrid Pipeline)", "Hoàn thành"),
         ("Nguyễn Hùng Mạnh", "Role 2: Data Dev (Task 1-3) & Role 5: Web UI & Task 10 Generation", "Hoàn thành"),
-        ("Nguyễn Tuấn Hà", "Role 3: Vector DB & Dense Search (Task 4, 5)", "Hoàn thành"),
+        ("Hà Anh Tuấn", "Role 3: Vector DB & Dense Search (Task 4, 5)", "Hoàn thành"),
         ("Trần Hoàng Mai Anh", "Role 4: Sparse Search & Rerank (Task 6..8)", "Hoàn thành"),
         ("Nguyễn Hương Trà", "Role 6: Evaluation & QA Engineer (Golden Dataset & RAGAS)", "Hoàn thành")
     ]

@@ -5,8 +5,8 @@
     "doc_type": "legal",
     "customer_role": "buyer",
     "chunk_index": 0,
-    "char_length": 732,
-    "content": "[Thành viên mới] Shopee hiện đang có những phương thức thanh toán nào?\n\nNguồn: https://help.shopee.vn/portal/4/article/79198\n\nHiện nay Shopee Việt Nam đang hỗ trợ 09 hình thức thanh toán, bao gồm:\n\n- Ví ShopeePay\n\n- Thẻ Tín dụng/Ghi nợ\n\n- Trả góp bằng Thẻ tín dụng\n\n- Thanh toán QR\n\n- Ứng dụng ngân hàng\n\n- Thẻ nội địa NAPAS\n\n- Apple Pay\n\n- Google Pay\n\n- Thanh toán khi nhận hàng (COD)\n\n- SPayLater\n\n1. Ví ShopeePay\n\nVí ShopeePay là một ví điện tử được tích hợp bên trong Ứng dụng Shopee Sau khi đã thiết lập thành công tài khoản Ví ShopeePay và tiến hành nạp đủ số dư, bạn có thể sử dụng Ví ShopeePay để thanh toán khi mua sắm trực tuyến, cũng như khi mua sắm trực tiếp tại các cửa hàng chấp nhận thanh toán\n\n2. Thẻ Tín dụng/Ghi nợ"
+    "char_length": 792,
+    "content": "# TOM TAT CHINH SACH\n\nShopee Việt Nam hiện hỗ trợ 09 hình thức thanh toán cho người dùng, bao gồm: Ví ShopeePay, Thẻ Tín dụng/Ghi nợ, Trả góp bằng Thẻ tín dụng, Thanh toán QR, Ứng dụng ngân hàng, Thẻ nội địa NAPAS, Apple Pay, Google Pay và Thanh toán khi nhận hàng (COD). Ví ShopeePay cho phép thanh toán trực tuyến và tại cửa hàng, trong khi Thẻ Tín dụng/Ghi nợ có thể sử dụng cho đơn hàng từ 10.000 VNĐ trở lên. Hình thức trả góp cũng được hỗ trợ nhưng không áp dụng cho đơn hàng quốc tế. Thanh toán QR và qua ứng dụng ngân hàng yêu cầu đơn hàng từ 10.000 VNĐ, trong khi Apple Pay và Google Pay có giới hạn giá trị thanh toán từ 10.000 VNĐ đến 120.000.000 VNĐ, tùy thuộc vào từng phương thức.\n\n---\n\n# NOI DUNG CHI TIET\n\n[Thành viên mới] Shopee hiện đang có những phương thức thanh toán nào?"
   },
   {
     "chunk_id": 2,
@@ -14,8 +14,8 @@
     "doc_type": "legal",
     "customer_role": "buyer",
     "chunk_index": 1,
-    "char_length": 630,
-    "content": "2. Thẻ Tín dụng/Ghi nợ\n\nBạn có thể sử dụng Thẻ tín dụng hoặc Thẻ ghi nợ thuộc các hệ thống thẻ Visa, thẻ Mastercard, thẻ JCB, và thẻ American Express (AMEX) khi thanh toán đơn hàng trên Shopee\n\nLưu ý: chỉ áp dụng cho đơn hàng có giá trị thanh toán (bao gồm phí vận chuyển và các chi phí phát sinh khác) từ 10.000 VNĐ trở lên\n\n3. Trả góp bằng Thẻ tín dụng\n\nBên cạnh hình thức thanh toán toàn bộ giá trị đơn hàng, Shopee cũng hỗ trợ khách hàng thanh toán thông qua hình thức trả góp khi sử dụng tính năng thanh toán bằng Thẻ tín dụng\n\nLưu ý: Phương thức Trả góp bằng Thẻ tín dụng KHÔNG áp dụng cho đơn hàng Quốc tế\n\n4. Thanh toán QR"
+    "char_length": 758,
+    "content": "---\n\n# NOI DUNG CHI TIET\n\n[Thành viên mới] Shopee hiện đang có những phương thức thanh toán nào?\n\nNguồn: https://help.shopee.vn/portal/4/article/79198\n\nHiện nay Shopee Việt Nam đang hỗ trợ 09 hình thức thanh toán, bao gồm:\n\n- Ví ShopeePay\n\n- Thẻ Tín dụng/Ghi nợ\n\n- Trả góp bằng Thẻ tín dụng\n\n- Thanh toán QR\n\n- Ứng dụng ngân hàng\n\n- Thẻ nội địa NAPAS\n\n- Apple Pay\n\n- Google Pay\n\n- Thanh toán khi nhận hàng (COD)\n\n- SPayLater\n\n1. Ví ShopeePay\n\nVí ShopeePay là một ví điện tử được tích hợp bên trong Ứng dụng Shopee Sau khi đã thiết lập thành công tài khoản Ví ShopeePay và tiến hành nạp đủ số dư, bạn có thể sử dụng Ví ShopeePay để thanh toán khi mua sắm trực tuyến, cũng như khi mua sắm trực tiếp tại các cửa hàng chấp nhận thanh toán\n\n2. Thẻ Tín dụng/Ghi nợ"
   },
   {
     "chunk_id": 3,
@@ -23,8 +23,8 @@
     "doc_type": "legal",
     "customer_role": "buyer",
     "chunk_index": 2,
-    "char_length": 792,
-    "content": "Lưu ý: Phương thức Trả góp bằng Thẻ tín dụng KHÔNG áp dụng cho đơn hàng Quốc tế\n\n4. Thanh toán QR\n\nLà hình thức thanh toán cho phép Người mua thanh toán bằng dịch vụ ngân hàng trực tuyến (internet banking) Và chỉ áp dụng cho đơn hàng có giá trị thanh toán cuối cùng (gồm phí vận chuyển và các chi phí phát sinh khác) từ 10.000 VNĐ trở lên (*)(*) đơn hàng không bao gồm các sản phẩm thuộc nhóm Nạp thẻ & Dịch vụ\n\n5. Ứng dụng ngân hàng\n\nLà hình thức thanh toán cho phép bạn hoàn tất giao dịch bằng cách chuyển hướng trực tiếp từ ứng dụng mua hàng Shopee sang ứng dụng của Ngân hàng đã cài đặt trên điện thoại Hình thức này nhanh chóng, bảo mật cao và chỉ áp dụng cho một số Người bán hoặc Ngân hàng có hỗ trợ liên kết Chi tiết tại bài viết [Thanh toán Ứng dụng Ngân hàng] Các câu hỏi thường gặp"
+    "char_length": 630,
+    "content": "2. Thẻ Tín dụng/Ghi nợ\n\nBạn có thể sử dụng Thẻ tín dụng hoặc Thẻ ghi nợ thuộc các hệ thống thẻ Visa, thẻ Mastercard, thẻ JCB, và thẻ American Express (AMEX) khi thanh toán đơn hàng trên Shopee\n\nLưu ý: chỉ áp dụng cho đơn hàng có giá trị thanh toán (bao gồm phí vận chuyển và các chi phí phát sinh khác) từ 10.000 VNĐ trở lên\n\n3. Trả góp bằng Thẻ tín dụng\n\nBên cạnh hình thức thanh toán toàn bộ giá trị đơn hàng, Shopee cũng hỗ trợ khách hàng thanh toán thông qua hình thức trả góp khi sử dụng tính năng thanh toán bằng Thẻ tín dụng\n\nLưu ý: Phương thức Trả góp bằng Thẻ tín dụng KHÔNG áp dụng cho đơn hàng Quốc tế\n\n4. Thanh toán QR"
   },
   {
     "chunk_id": 4,
@@ -32,8 +32,8 @@
     "doc_type": "legal",
     "customer_role": "buyer",
     "chunk_index": 3,
-    "char_length": 766,
-    "content": "6. Thẻ nội địa NAPAS\n\nBạn có thể sử dụng thẻ nội địa NAPAS có đăng ký dịch vụ Internet Banking để thanh toán các đơn hàng. Xem hướng dẫn thanh toán đơn hàng bằng thẻ nội địa NAPAS\n\nLưu ý: Chỉ áp dụng cho đơn hàng có giá trị thanh toán cuối cùng (gồm phí vận chuyển và các chi phí phát sinh khác) từ 10.000 VNĐ trở lên (*) (*) đơn hàng không bao gồm các sản phẩm thuộc nhóm Nạp thẻ & Dịch vụ Xem thêm: Danh sách các ngân hàng phát hành Thẻ nội địa Napas TẠI ĐÂY\n\n7. Apple Pay\n\nBạn có thể sử dụng Apple Pay để thanh toán đơn hàng khi mua sắm trên ứng dụng Shopee. Để lựa chọn/sử dụng được hình thức thanh toán này, đơn hàng phải có giá trị thanh toán cuối cùng (đã bao gồm phí vận chuyển và các chi phí phát sinh khác - nếu có) từ 10.000 VNĐ đến 25.000.000 VNĐ\n\nLưu ý:"
+    "char_length": 792,
+    "content": "Lưu ý: Phương thức Trả góp bằng Thẻ tín dụng KHÔNG áp dụng cho đơn hàng Quốc tế\n\n4. Thanh toán QR\n\nLà hình thức thanh toán cho phép Người mua thanh toán bằng dịch vụ ngân hàng trực tuyến (internet banking) Và chỉ áp dụng cho đơn hàng có giá trị thanh toán cuối cùng (gồm phí vận chuyển và các chi phí phát sinh khác) từ 10.000 VNĐ trở lên (*)(*) đơn hàng không bao gồm các sản phẩm thuộc nhóm Nạp thẻ & Dịch vụ\n\n5. Ứng dụng ngân hàng\n\nLà hình thức thanh toán cho phép bạn hoàn tất giao dịch bằng cách chuyển hướng trực tiếp từ ứng dụng mua hàng Shopee sang ứng dụng của Ngân hàng đã cài đặt trên điện thoại Hình thức này nhanh chóng, bảo mật cao và chỉ áp dụng cho một số Người bán hoặc Ngân hàng có hỗ trợ liên kết Chi tiết tại bài viết [Thanh toán Ứng dụng Ngân hàng] Các câu hỏi thường gặp"
   },
   {
     "chunk_id": 5,
@@ -41,8 +41,8 @@
     "doc_type": "legal",
     "customer_role": "buyer",
     "chunk_index": 4,
-    "char_length": 574,
-    "content": "Lưu ý:\n\n- Phương thức thanh toán Apple Pay chỉ được hỗ trợ trên một số thiết bị theo quy định của Apple. Trên các thiết bị này, bạn cần thiết lập Apple Pay bằng cách thêm thẻ tín dụng/thẻ ghi nợ vào ứng dụng Ví (Wallet) để hoàn tất thiết lập thanh toán. Bạn có thể xem hướng dẫn Thiết lập Apple Pay TẠI ĐÂY\n\n- Phương thức thanh toán Apple Pay KHÔNG áp dụng cho các đơn hàng sau:Đơn hàng có sản phẩm thuộc nhóm Nạp thẻ & Dịch vụ\n\n- Đơn hàng có phương thức vận chuyển “Người bán tự vận chuyển” hoặc “Seller Own Fleet - Vận chuyển quốc tế”\n\n- Đơn hàng ShopeeFood\n\n8. Google Pay"
+    "char_length": 766,
+    "content": "6. Thẻ nội địa NAPAS\n\nBạn có thể sử dụng thẻ nội địa NAPAS có đăng ký dịch vụ Internet Banking để thanh toán các đơn hàng. Xem hướng dẫn thanh toán đơn hàng bằng thẻ nội địa NAPAS\n\nLưu ý: Chỉ áp dụng cho đơn hàng có giá trị thanh toán cuối cùng (gồm phí vận chuyển và các chi phí phát sinh khác) từ 10.000 VNĐ trở lên (*) (*) đơn hàng không bao gồm các sản phẩm thuộc nhóm Nạp thẻ & Dịch vụ Xem thêm: Danh sách các ngân hàng phát hành Thẻ nội địa Napas TẠI ĐÂY\n\n7. Apple Pay\n\nBạn có thể sử dụng Apple Pay để thanh toán đơn hàng khi mua sắm trên ứng dụng Shopee. Để lựa chọn/sử dụng được hình thức thanh toán này, đơn hàng phải có giá trị thanh toán cuối cùng (đã bao gồm phí vận chuyển và các chi phí phát sinh khác - nếu có) từ 10.000 VNĐ đến 25.000.000 VNĐ\n\nLưu ý:"
   },
   {
     "chunk_id": 6,
@@ -50,8 +50,8 @@
     "doc_type": "legal",
     "customer_role": "buyer",
     "chunk_index": 5,
-    "char_length": 736,
-    "content": "- Đơn hàng ShopeeFood\n\n8. Google Pay\n\nGoogle Pay (Google Wallet) là phương thức thanh toán cho đơn hàng mua trên ứng dụng Shopee, được hỗ trợ trên một số thiết bị sử dụng hệ điều hành Android tương thích (xem chi tiết tại đây). Để sử dụng được hình thức thanh toán này khi mua sắm trên ứng dụng Shopee, đơn hàng phải có giá trị thanh toán cuối cùng (đã bao gồm phí vận chuyển và các chi phí phát sinh khác - nếu có) từ 10.000 VNĐ đến 120.000.000 VNĐ.\n\nLưu ý:\n\n- Để sử dụng phương thức thanh toán này, bạn cần tải về ứng dụng Google Pay (Google Wallet) trên Play Store (Cửa hàng Play), sau đó hoàn tất thiết lập Google Pay bằng cách thêm thẻ ghi nợ hoặc thẻ tín dụng vào ứng dụng. Bạn có thể xem hướng dẫn chi tiết cách thiết lập tại đây"
+    "char_length": 574,
+    "content": "Lưu ý:\n\n- Phương thức thanh toán Apple Pay chỉ được hỗ trợ trên một số thiết bị theo quy định của Apple. Trên các thiết bị này, bạn cần thiết lập Apple Pay bằng cách thêm thẻ tín dụng/thẻ ghi nợ vào ứng dụng Ví (Wallet) để hoàn tất thiết lập thanh toán. Bạn có thể xem hướng dẫn Thiết lập Apple Pay TẠI ĐÂY\n\n- Phương thức thanh toán Apple Pay KHÔNG áp dụng cho các đơn hàng sau:Đơn hàng có sản phẩm thuộc nhóm Nạp thẻ & Dịch vụ\n\n- Đơn hàng có phương thức vận chuyển “Người bán tự vận chuyển” hoặc “Seller Own Fleet - Vận chuyển quốc tế”\n\n- Đơn hàng ShopeeFood\n\n8. Google Pay"
   },
   {
     "chunk_id": 7,
@@ -59,8 +59,8 @@
     "doc_type": "legal",
     "customer_role": "buyer",
     "chunk_index": 6,
-    "char_length": 723,
-    "content": "- Phương thức thanh toán Google Pay KHÔNG áp dụng cho đơn hàng bao gồm các sản phẩm thuộc nhóm Nạp thẻ & Dịch vụ, đơn hàng ShopeeFood\n\n9. Thanh toán khi nhận hàng (COD)\n\nBên cạnh những hình thức thanh toán trên, bạn cũng có thể lựa chọn hình thức thanh toán khi nhận hàng. Tuy nhiên, cần chú ý rằng không phải tất cả các Shop trên Shopee đều cho phép sử dụng hình thức thanh toán trên\n\nLưu ý:\n\n- Shopee tuyệt đối không hỗ trợ cho những giao dịch sử dụng các hình thức thanh toán khác không được liệt kê ở trên hoặc giao dịch ngoài Shopee, như chuyển khoản hoặc đặt cọc,..v..v. Shopee sẽ có biện pháp xử lý nếu phát hiện hành vi gian lận hoặc giao dịch ngoài làm ảnh hưởng đến quyền lợi Người dùng trên Shopee\n\n10. SPayLater"
+    "char_length": 736,
+    "content": "- Đơn hàng ShopeeFood\n\n8. Google Pay\n\nGoogle Pay (Google Wallet) là phương thức thanh toán cho đơn hàng mua trên ứng dụng Shopee, được hỗ trợ trên một số thiết bị sử dụng hệ điều hành Android tương thích (xem chi tiết tại đây). Để sử dụng được hình thức thanh toán này khi mua sắm trên ứng dụng Shopee, đơn hàng phải có giá trị thanh toán cuối cùng (đã bao gồm phí vận chuyển và các chi phí phát sinh khác - nếu có) từ 10.000 VNĐ đến 120.000.000 VNĐ.\n\nLưu ý:\n\n- Để sử dụng phương thức thanh toán này, bạn cần tải về ứng dụng Google Pay (Google Wallet) trên Play Store (Cửa hàng Play), sau đó hoàn tất thiết lập Google Pay bằng cách thêm thẻ ghi nợ hoặc thẻ tín dụng vào ứng dụng. Bạn có thể xem hướng dẫn chi tiết cách thiết lập tại đây"
   },
   {
     "chunk_id": 8,
@@ -68,8 +68,8 @@
     "doc_type": "legal",
     "customer_role": "buyer",
     "chunk_index": 7,
-    "char_length": 682,
-    "content": "10. SPayLater\n\nSPayLater là phương thức thanh toán được cung cấp bởi (các) Ngân hàng đối tác uy tín, cho phép bạn mua trước trả sau trên sàn thương mại điện tử Shopee thông qua hình thức thẻ tín dụng phi vật lý. Khi kích hoạt SPayLater thành công, bạn có thể mua sắm trong hạn mức được cấp và trả sau theo số kỳ thanh toán đã chọn, như sau: 01, 02, 03 và 06 kỳ ( loại kỳ hạn 06 kỳ chỉ áp dụng cho một nhóm người dùng nhất định) Để sử dụng SPayLater trong phương thức thanh toán của đơn hàng, bạn cần hoàn tất các bước để kích hoạt SPayLater và nhận được thông báo về Hạn mức SPayLater tạm thời Bạn có thể tham khảo thêm một số thông tin về phương thức thanh toán này tại đây\n\nLưu ý:"
+    "char_length": 723,
+    "content": "- Phương thức thanh toán Google Pay KHÔNG áp dụng cho đơn hàng bao gồm các sản phẩm thuộc nhóm Nạp thẻ & Dịch vụ, đơn hàng ShopeeFood\n\n9. Thanh toán khi nhận hàng (COD)\n\nBên cạnh những hình thức thanh toán trên, bạn cũng có thể lựa chọn hình thức thanh toán khi nhận hàng. Tuy nhiên, cần chú ý rằng không phải tất cả các Shop trên Shopee đều cho phép sử dụng hình thức thanh toán trên\n\nLưu ý:\n\n- Shopee tuyệt đối không hỗ trợ cho những giao dịch sử dụng các hình thức thanh toán khác không được liệt kê ở trên hoặc giao dịch ngoài Shopee, như chuyển khoản hoặc đặt cọc,..v..v. Shopee sẽ có biện pháp xử lý nếu phát hiện hành vi gian lận hoặc giao dịch ngoài làm ảnh hưởng đến quyền lợi Người dùng trên Shopee\n\n10. SPayLater"
   },
   {
     "chunk_id": 9,
@@ -77,1010 +77,1037 @@
     "doc_type": "legal",
     "customer_role": "buyer",
     "chunk_index": 8,
-    "char_length": 323,
-    "content": "Lưu ý:\n\n- Hiện tại, dịch vụ SPayLater chỉ khả dụng cho Người dùng thoả mãn điều kiện theo chính sách của Shopee nên sẽ có trường hợp một số Người dùng chưa thể tìm và kích hoạt được dịch vụ này. Shopee sẽ liên tục hoàn thiện dịch vụ SPayLater để mở rộng phạm vi phục vụ đến nhiều Người dùng hơn nữa trong thời gian sắp tới."
+    "char_length": 682,
+    "content": "10. SPayLater\n\nSPayLater là phương thức thanh toán được cung cấp bởi (các) Ngân hàng đối tác uy tín, cho phép bạn mua trước trả sau trên sàn thương mại điện tử Shopee thông qua hình thức thẻ tín dụng phi vật lý. Khi kích hoạt SPayLater thành công, bạn có thể mua sắm trong hạn mức được cấp và trả sau theo số kỳ thanh toán đã chọn, như sau: 01, 02, 03 và 06 kỳ ( loại kỳ hạn 06 kỳ chỉ áp dụng cho một nhóm người dùng nhất định) Để sử dụng SPayLater trong phương thức thanh toán của đơn hàng, bạn cần hoàn tất các bước để kích hoạt SPayLater và nhận được thông báo về Hạn mức SPayLater tạm thời Bạn có thể tham khảo thêm một số thông tin về phương thức thanh toán này tại đây\n\nLưu ý:"
   },
   {
     "chunk_id": 10,
-    "source": "privacy-policy-shopee.md",
+    "source": "payment-methods-shopee.md",
     "doc_type": "legal",
-    "customer_role": "both",
-    "chunk_index": 0,
-    "char_length": 314,
-    "content": "CHÍNH SÁCH BẢO MẬT\n\nNguồn: https://help.shopee.vn/portal/4/article/77244\n\n1. GIỚI THIỆU\n\n1.1. Chào mừng bạn đến với nền tảng Shopee.vn (bao gồm website và ứng dụng di động Shopee) được vận hành bởi Công ty TNHH Shopee và các công ty liên kết (gọi riêng và gọi chung là, \"Shopee\", \"chúng tôi\", hay \"của chúng tôi\")."
+    "customer_role": "buyer",
+    "chunk_index": 9,
+    "char_length": 323,
+    "content": "Lưu ý:\n\n- Hiện tại, dịch vụ SPayLater chỉ khả dụng cho Người dùng thoả mãn điều kiện theo chính sách của Shopee nên sẽ có trường hợp một số Người dùng chưa thể tìm và kích hoạt được dịch vụ này. Shopee sẽ liên tục hoàn thiện dịch vụ SPayLater để mở rộng phạm vi phục vụ đến nhiều Người dùng hơn nữa trong thời gian sắp tới."
   },
   {
     "chunk_id": 11,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 1,
-    "char_length": 627,
-    "content": "Shopee nghiêm túc thực hiện trách nhiệm của mình liên quan đến bảo mật thông tin theo các quy định về bảo vệ bí mật thông tin cá nhân của pháp luật Việt Nam (“Luật riêng tư”) và cam kết tôn trọng quyền riêng tư và sự quan tâm của tất cả người dùng đối với website và ứng dụng di động của chúng tôi (“Nền tảng”) (chúng tôi gọi chung Các Nền tảng và các dịch vụ chúng tôi cung cấp như được mô tả trong Nền tảng của chúng tôi là \"các Dịch Vụ\"). Người dùng có nghĩa là người đăng ký tài khoản với chúng tôi để sử dụng các Dịch Vụ, bao gồm cả người mua và người bán (gọi chung và gọi riêng là “Các Người Dùng”, “bạn” hoặc “của bạn”)"
+    "chunk_index": 0,
+    "char_length": 775,
+    "content": "# TOM TAT CHINH SACH\n\nChính sách bảo mật của Shopee.vn, được vận hành bởi Công ty TNHH Shopee, cam kết bảo vệ thông tin cá nhân của người dùng theo quy định của pháp luật Việt Nam. Chính sách này giải thích cách thức thu thập, sử dụng, tiết lộ và xử lý dữ liệu cá nhân của người dùng, bao gồm cả người mua và người bán. Khi sử dụng dịch vụ, người dùng đồng ý cho Shopee thu thập và xử lý dữ liệu cá nhân của họ. Shopee sẽ thu thập dữ liệu cá nhân khi người dùng đăng ký tài khoản, gửi biểu mẫu, ký kết thỏa thuận hoặc tương tác với dịch vụ của họ. Chính sách cũng nhấn mạnh rằng người dùng cần đồng ý với các điều khoản này để tiếp tục sử dụng dịch vụ, và mọi thay đổi trong chính sách sẽ được thông báo trên nền tảng của Shopee.\n\n---\n\n# NOI DUNG CHI TIET\n\nCHÍNH SÁCH BẢO MẬT"
   },
   {
     "chunk_id": 12,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 2,
-    "char_length": 593,
-    "content": ". Chúng tôi nhận biết tầm quan trọng của dữ liệu cá nhân mà bạn đã tin tưởng giao cho chúng tôi và tin rằng chúng tôi có trách nhiệm quản lý, bảo vệ và xử lý dữ liệu cá nhân của bạn một cách thích hợp. Chính sách bảo mật này (\"Chính sách bảo mật\" hay \"Chính sách\") được thiết kế để giúp bạn hiểu được cách thức chúng tôi thu thập, sử dụng, tiết lộ và/hoặc xử lý dữ liệu cá nhân mà bạn đã cung cấp cho chúng tôi và/hoặc lưu giữ về bạn, cho dù là hiện nay hoặc trong tương lai, cũng như để giúp bạn đưa ra quyết định sáng suốt trước khi cung cấp cho chúng tôi bất kỳ dữ liệu cá nhân nào của bạn."
+    "chunk_index": 1,
+    "char_length": 340,
+    "content": "---\n\n# NOI DUNG CHI TIET\n\nCHÍNH SÁCH BẢO MẬT\n\nNguồn: https://help.shopee.vn/portal/4/article/77244\n\n1. GIỚI THIỆU\n\n1.1. Chào mừng bạn đến với nền tảng Shopee.vn (bao gồm website và ứng dụng di động Shopee) được vận hành bởi Công ty TNHH Shopee và các công ty liên kết (gọi riêng và gọi chung là, \"Shopee\", \"chúng tôi\", hay \"của chúng tôi\")."
   },
   {
     "chunk_id": 13,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 3,
-    "char_length": 338,
-    "content": "1.2. \"Dữ Liệu Cá Nhân\" hay \"dữ liệu cá nhân\" có nghĩa là dữ liệu, dù đúng hay không, về một cá nhân mà thông qua đó có thể được xác định được danh tính, hoặc từ dữ liệu đó và thông tin khác mà một tổ chức có hoặc có khả năng tiếp cận. Các ví dụ thường gặp về dữ liệu cá nhân có thể gồm có tên, số chứng minh nhân dân và thông tin liên hệ."
+    "chunk_index": 2,
+    "char_length": 627,
+    "content": "Shopee nghiêm túc thực hiện trách nhiệm của mình liên quan đến bảo mật thông tin theo các quy định về bảo vệ bí mật thông tin cá nhân của pháp luật Việt Nam (“Luật riêng tư”) và cam kết tôn trọng quyền riêng tư và sự quan tâm của tất cả người dùng đối với website và ứng dụng di động của chúng tôi (“Nền tảng”) (chúng tôi gọi chung Các Nền tảng và các dịch vụ chúng tôi cung cấp như được mô tả trong Nền tảng của chúng tôi là \"các Dịch Vụ\"). Người dùng có nghĩa là người đăng ký tài khoản với chúng tôi để sử dụng các Dịch Vụ, bao gồm cả người mua và người bán (gọi chung và gọi riêng là “Các Người Dùng”, “bạn” hoặc “của bạn”)"
   },
   {
     "chunk_id": 14,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 4,
-    "char_length": 775,
-    "content": "1.3. Bằng việc sử dụng Các Dịch Vụ, đăng ký một tài khoản với chúng tôi hoặc truy cập Nền tảng, bạn xác nhận và đồng ý rằng bạn chấp nhận các phương pháp, yêu cầu, và/hoặc chính sách được mô tả trong Chính sách bảo mật này, và theo đây bạn xác nhận bạn đã biết rõ và đồng ý toàn bộ cho phép chúng tôi thu thập, sử dụng, tiết lộ và/hoặc xử lý dữ liệu cá nhân của bạn như mô tả trong đây. NẾU BẠN KHÔNG ĐỒNG Ý CHO PHÉP XỬ LÝ DỮ LIỆU CÁ NHÂN CỦA BẠN NHƯ MÔ TẢ TRONG CHÍNH SÁCH NÀY, VUI LÒNG KHÔNG SỬ DỤNG CÁC DỊCH VỤ CỦA CHÚNG TÔI HAY TRUY CẬP NỀN TẢNG HOẶC TRANG WEB CỦA CHÚNG TÔI. Nếu chúng tôi thay đổi Chính sách bảo mật của mình, chúng tôi sẽ thông báo cho bạn bao gồm cả thông qua việc đăng tải những thay đổi đó hoặc Chính sách bảo mật sửa đổi trên Nền tảng của chúng tôi"
+    "chunk_index": 3,
+    "char_length": 593,
+    "content": ". Chúng tôi nhận biết tầm quan trọng của dữ liệu cá nhân mà bạn đã tin tưởng giao cho chúng tôi và tin rằng chúng tôi có trách nhiệm quản lý, bảo vệ và xử lý dữ liệu cá nhân của bạn một cách thích hợp. Chính sách bảo mật này (\"Chính sách bảo mật\" hay \"Chính sách\") được thiết kế để giúp bạn hiểu được cách thức chúng tôi thu thập, sử dụng, tiết lộ và/hoặc xử lý dữ liệu cá nhân mà bạn đã cung cấp cho chúng tôi và/hoặc lưu giữ về bạn, cho dù là hiện nay hoặc trong tương lai, cũng như để giúp bạn đưa ra quyết định sáng suốt trước khi cung cấp cho chúng tôi bất kỳ dữ liệu cá nhân nào của bạn."
   },
   {
     "chunk_id": 15,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 5,
-    "char_length": 197,
-    "content": ". Trong phạm vi pháp luật cho phép, việc tiếp tục sử dụng các Dịch Vụ hoặc Nền Tảng, bao gồm giao dịch của bạn, được xem là bạn đã công nhận và đồng ý với các thay đổi trong Chính Sách Bảo Mật này."
+    "chunk_index": 4,
+    "char_length": 338,
+    "content": "1.2. \"Dữ Liệu Cá Nhân\" hay \"dữ liệu cá nhân\" có nghĩa là dữ liệu, dù đúng hay không, về một cá nhân mà thông qua đó có thể được xác định được danh tính, hoặc từ dữ liệu đó và thông tin khác mà một tổ chức có hoặc có khả năng tiếp cận. Các ví dụ thường gặp về dữ liệu cá nhân có thể gồm có tên, số chứng minh nhân dân và thông tin liên hệ."
   },
   {
     "chunk_id": 16,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 6,
-    "char_length": 655,
-    "content": "1.4. Chính sách này áp dụng cùng với các thông báo, điều khoản hợp đồng, điều khoản chấp thuận khác áp dụng liên quan đến việc chúng tôi thu thập, lưu trữ, sử dụng, tiết lộ và/hoặc xử lý dữ liệu cá nhân của bạn và không nhằm ghi đè những thông báo hoặc các điều khoản đó trừ khi chúng tôi có tuyên bố ràng khác.\n\n1.5. Chính sách này được áp dụng cho cả Người bán và Người mua đang sử dụng Dịch vụ trừ khi có tuyên bố rõ ràng ngược lại.\n\n2. KHI NÀO SHOPEE SẼ THU THẬP DỮ LIỆU CÁ NHÂN?\n\n2.1. Chúng tôi sẽ/có thể thu thập dữ liệu cá nhân về bạn:\n\n- khi bạn đăng ký và/hoặc sử dụng Các Dịch Vụ hoặc Nền tảng của chúng tôi, hoặc mở một tài khoản với chúng tôi;"
+    "chunk_index": 5,
+    "char_length": 775,
+    "content": "1.3. Bằng việc sử dụng Các Dịch Vụ, đăng ký một tài khoản với chúng tôi hoặc truy cập Nền tảng, bạn xác nhận và đồng ý rằng bạn chấp nhận các phương pháp, yêu cầu, và/hoặc chính sách được mô tả trong Chính sách bảo mật này, và theo đây bạn xác nhận bạn đã biết rõ và đồng ý toàn bộ cho phép chúng tôi thu thập, sử dụng, tiết lộ và/hoặc xử lý dữ liệu cá nhân của bạn như mô tả trong đây. NẾU BẠN KHÔNG ĐỒNG Ý CHO PHÉP XỬ LÝ DỮ LIỆU CÁ NHÂN CỦA BẠN NHƯ MÔ TẢ TRONG CHÍNH SÁCH NÀY, VUI LÒNG KHÔNG SỬ DỤNG CÁC DỊCH VỤ CỦA CHÚNG TÔI HAY TRUY CẬP NỀN TẢNG HOẶC TRANG WEB CỦA CHÚNG TÔI. Nếu chúng tôi thay đổi Chính sách bảo mật của mình, chúng tôi sẽ thông báo cho bạn bao gồm cả thông qua việc đăng tải những thay đổi đó hoặc Chính sách bảo mật sửa đổi trên Nền tảng của chúng tôi"
   },
   {
     "chunk_id": 17,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 7,
-    "char_length": 570,
-    "content": "- khi bạn gửi bất kỳ biểu mẫu nào, bao gồm đơn đăng ký hoặc các mẫu đơn khác liên quan đến bất kỳ sản phẩm và dịch vụ nào của chúng tôi, bằng hình thức trực tuyến hay dưới hình thức khác;\n\n- khi bạn ký kết bất kỳ thỏa thuận nào hoặc cung cấp các tài liệu hoặc thông tin khác liên quan đến tương tác giữa bạn với chúng tôi, hoặc khi bạn sử dụng các sản phẩm và dịch vụ của chúng tôi;\n\n- khi bạn tương tác với chúng tôi, chẳng hạn như thông qua các cuộc gọi điện thoại (có thể được ghi âm lại), thư từ, fax, gặp gỡ trực tiếp, các nền ứng dụng truyền thông xã hội và email;"
+    "chunk_index": 6,
+    "char_length": 197,
+    "content": ". Trong phạm vi pháp luật cho phép, việc tiếp tục sử dụng các Dịch Vụ hoặc Nền Tảng, bao gồm giao dịch của bạn, được xem là bạn đã công nhận và đồng ý với các thay đổi trong Chính Sách Bảo Mật này."
   },
   {
     "chunk_id": 18,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 8,
-    "char_length": 734,
-    "content": "- khi bạn sử dụng các dịch vụ điện tử của chúng tôi, hoặc tương tác với chúng tôi qua Nền tảng hoặc Trang Web hoặc Các Dịch Vụ của chúng tôi. Trường hợp này bao gồm thông qua tập tin cookie mà chúng tôi có thể triển khai khi bạn tương tác với các Nền tảng hoặc Trang Web của chúng tôi;\n\n- khi bạn cấp quyền trên thiết bị của bạn để chia sẻ thông tin với ứng dụng hoặc Nền tảng của chúng tôi\n\n- khi bạn liên kết tài khoản Shopee với tài khoản mạng xã hội của bạn hoặc các tài khoản bên ngoài khác hoặc sử dụng các tính năng mạng xã hội khác, phù hợp với các chính sách của nhà cung cấp;\n\n- khi bạn thực hiện các giao dịch thông qua Dịch vụ của chúng tôi chẳng hạn như mỗi khi bạn đặt mua hàng hoặc chấp nhận đơn đặt hàng của Người mua;"
+    "chunk_index": 7,
+    "char_length": 655,
+    "content": "1.4. Chính sách này áp dụng cùng với các thông báo, điều khoản hợp đồng, điều khoản chấp thuận khác áp dụng liên quan đến việc chúng tôi thu thập, lưu trữ, sử dụng, tiết lộ và/hoặc xử lý dữ liệu cá nhân của bạn và không nhằm ghi đè những thông báo hoặc các điều khoản đó trừ khi chúng tôi có tuyên bố ràng khác.\n\n1.5. Chính sách này được áp dụng cho cả Người bán và Người mua đang sử dụng Dịch vụ trừ khi có tuyên bố rõ ràng ngược lại.\n\n2. KHI NÀO SHOPEE SẼ THU THẬP DỮ LIỆU CÁ NHÂN?\n\n2.1. Chúng tôi sẽ/có thể thu thập dữ liệu cá nhân về bạn:\n\n- khi bạn đăng ký và/hoặc sử dụng Các Dịch Vụ hoặc Nền tảng của chúng tôi, hoặc mở một tài khoản với chúng tôi;"
   },
   {
     "chunk_id": 19,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 9,
-    "char_length": 429,
-    "content": "- khi bạn cung cấp ý kiến phản hồi hoặc gửi khiếu nại cho chúng tôi;\n\n- khi bạn đăng ký tham gia một cuộc thi;\n\n- khi bạn gửi dữ liệu cá nhân của bạn cho chúng tôi vì bất kỳ lý do gì; và/hoặc\n\n- khi bạn thực hiện các hoạt động khác trên Nền tảng của chúng tôi.\n\nCác trường hợp trên không nhằm mục đích liệt kê đầy đủ các trường hợp và chỉ đưa ra một số trường hợp phổ biến về thời điểm dữ liệu cá nhân của bạn có thể bị thu thập."
+    "chunk_index": 8,
+    "char_length": 570,
+    "content": "- khi bạn gửi bất kỳ biểu mẫu nào, bao gồm đơn đăng ký hoặc các mẫu đơn khác liên quan đến bất kỳ sản phẩm và dịch vụ nào của chúng tôi, bằng hình thức trực tuyến hay dưới hình thức khác;\n\n- khi bạn ký kết bất kỳ thỏa thuận nào hoặc cung cấp các tài liệu hoặc thông tin khác liên quan đến tương tác giữa bạn với chúng tôi, hoặc khi bạn sử dụng các sản phẩm và dịch vụ của chúng tôi;\n\n- khi bạn tương tác với chúng tôi, chẳng hạn như thông qua các cuộc gọi điện thoại (có thể được ghi âm lại), thư từ, fax, gặp gỡ trực tiếp, các nền ứng dụng truyền thông xã hội và email;"
   },
   {
     "chunk_id": 20,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 10,
-    "char_length": 484,
-    "content": "2.2. Chúng tôi có thể thu thập thông tin của bạn từ bạn, các công ty liên kết, các bên thứ ba và từ các nguồn khác, bao gồm nhưng không giới hạn ở đối tác kinh doanh (ví dụ như đơn vị cung ứng dịch vụ vận chuyển, thanh toán), cơ quan đánh giá tín dụng, các đơn vị, đối tác cung cấp dịch vụ marketing, giới thiệu, các chương trình khách hàng thân thiết, những người dùng khác sử dụng Các Dịch Vụ của chúng tôi hoặc các nguồn dữ liệu công khai có sẵn hay các nguồn dữ liệu của nhà nước."
+    "chunk_index": 9,
+    "char_length": 734,
+    "content": "- khi bạn sử dụng các dịch vụ điện tử của chúng tôi, hoặc tương tác với chúng tôi qua Nền tảng hoặc Trang Web hoặc Các Dịch Vụ của chúng tôi. Trường hợp này bao gồm thông qua tập tin cookie mà chúng tôi có thể triển khai khi bạn tương tác với các Nền tảng hoặc Trang Web của chúng tôi;\n\n- khi bạn cấp quyền trên thiết bị của bạn để chia sẻ thông tin với ứng dụng hoặc Nền tảng của chúng tôi\n\n- khi bạn liên kết tài khoản Shopee với tài khoản mạng xã hội của bạn hoặc các tài khoản bên ngoài khác hoặc sử dụng các tính năng mạng xã hội khác, phù hợp với các chính sách của nhà cung cấp;\n\n- khi bạn thực hiện các giao dịch thông qua Dịch vụ của chúng tôi chẳng hạn như mỗi khi bạn đặt mua hàng hoặc chấp nhận đơn đặt hàng của Người mua;"
   },
   {
     "chunk_id": 21,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 11,
-    "char_length": 787,
-    "content": "2.3. Trong một số trường hợp, bạn có thể cung cấp dữ liệu cá nhân của các cá nhân khác cho chúng tôi (ví dụ như thành viên gia đình, bạn bè hoặc những người trong danh sách liên hệ của bạn). Nếu bạn cung cấp cho chúng tôi dữ liệu cá nhân của họ, bạn tuyên bố và đảm bảo rằng bạn đã nhận được sự đồng ý của họ để xử lý dữ liệu cá nhân của họ theo Chính sách này.\n\n3. SHOPEE SẼ THU THẬP NHỮNG DỮ LIỆU GÌ?\n\n3.1. Trừ trường hợp được quy định khác đi trong Chính sách này, dữ liệu cá nhân mà Shopee có thể thu thập bao gồm dữ liệu cá nhân cơ bản và dữ liệu cá nhân nhạy cảm (theo quy định của Luật riêng tư) như được liệt kê dưới đây:\n\n- họ tên;\n\n- địa chỉ email;\n\n- ngày sinh;\n\n- địa chỉ thanh toán và/hoặc giao nhận hàng hóa;\n\n- tài khoản ngân hàng và thông tin thanh toán\n\n- số điện thoại;"
+    "chunk_index": 10,
+    "char_length": 429,
+    "content": "- khi bạn cung cấp ý kiến phản hồi hoặc gửi khiếu nại cho chúng tôi;\n\n- khi bạn đăng ký tham gia một cuộc thi;\n\n- khi bạn gửi dữ liệu cá nhân của bạn cho chúng tôi vì bất kỳ lý do gì; và/hoặc\n\n- khi bạn thực hiện các hoạt động khác trên Nền tảng của chúng tôi.\n\nCác trường hợp trên không nhằm mục đích liệt kê đầy đủ các trường hợp và chỉ đưa ra một số trường hợp phổ biến về thời điểm dữ liệu cá nhân của bạn có thể bị thu thập."
   },
   {
     "chunk_id": 22,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 12,
-    "char_length": 601,
-    "content": "- tài khoản ngân hàng và thông tin thanh toán\n\n- số điện thoại;\n\n- giới tính;\n\n- thông tin được gửi bởi hoặc liên quan đến (các) thiết bị được sử dụng để truy cập vào Các Dịch vụ hoặc Nền tảng của chúng tôi;\n\n- thông tin về mạng của bạn, bao gồm danh sách liên hệ của bạn khi đồng ý chia sẻ trên thiết bị của bạn, và những người và tài khoản mà bạn có tương tác;\n\n- hình ảnh hoặc âm thanh hoặc video;\n\n- thông tin về nhân thân được cấp bởi chính phủ hoặc các thông tin khác phục vụ cho các mục đích đánh giá pháp lý, nhận biết khách hàng, xác minh thông tin và/hoặc phòng chống gian lận của chúng tôi;"
+    "chunk_index": 11,
+    "char_length": 484,
+    "content": "2.2. Chúng tôi có thể thu thập thông tin của bạn từ bạn, các công ty liên kết, các bên thứ ba và từ các nguồn khác, bao gồm nhưng không giới hạn ở đối tác kinh doanh (ví dụ như đơn vị cung ứng dịch vụ vận chuyển, thanh toán), cơ quan đánh giá tín dụng, các đơn vị, đối tác cung cấp dịch vụ marketing, giới thiệu, các chương trình khách hàng thân thiết, những người dùng khác sử dụng Các Dịch Vụ của chúng tôi hoặc các nguồn dữ liệu công khai có sẵn hay các nguồn dữ liệu của nhà nước."
   },
   {
     "chunk_id": 23,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 13,
-    "char_length": 762,
-    "content": "- dữ liệu truyền thông hoặc liên lạc, ví dụ như các tùy chọn nhận thông tin quảng cáo từ chúng tôi hoặc các bên thứ ba của bạn, tùy chọn phương tiện liên lạc và lịch sử thông tin liên lạc với chúng tôi, các nhà cung cấp dịch vụ của chúng tôi, và các bên thứ ba khác;\n\n- thông tin sử dụng và giao dịch, bao gồm chi tiết về lịch sử tìm kiếm, giao dịch, quảng cáo và nội dung hiển thị mà tương tác với Nền Tảng, cũng như các sản phẩm và dịch vụ có liên quan của bạn;\n\n- dữ liệu về địa điểm;\n\n- bất kỳ thông tin nào khác về người dùng khi người dùng đăng nhập để sử dụng Các Dịch Vụ hoặc Nền tảng của chúng tôi, và khi người dùng sử dụng Các Dịch Vụ hoặc Nền tảng, cũng như thông tin về việc người dùng sử dụng Các Dịch Vụ hoặc Nền tảng của chúng tôi như thế nào; và"
+    "chunk_index": 12,
+    "char_length": 787,
+    "content": "2.3. Trong một số trường hợp, bạn có thể cung cấp dữ liệu cá nhân của các cá nhân khác cho chúng tôi (ví dụ như thành viên gia đình, bạn bè hoặc những người trong danh sách liên hệ của bạn). Nếu bạn cung cấp cho chúng tôi dữ liệu cá nhân của họ, bạn tuyên bố và đảm bảo rằng bạn đã nhận được sự đồng ý của họ để xử lý dữ liệu cá nhân của họ theo Chính sách này.\n\n3. SHOPEE SẼ THU THẬP NHỮNG DỮ LIỆU GÌ?\n\n3.1. Trừ trường hợp được quy định khác đi trong Chính sách này, dữ liệu cá nhân mà Shopee có thể thu thập bao gồm dữ liệu cá nhân cơ bản và dữ liệu cá nhân nhạy cảm (theo quy định của Luật riêng tư) như được liệt kê dưới đây:\n\n- họ tên;\n\n- địa chỉ email;\n\n- ngày sinh;\n\n- địa chỉ thanh toán và/hoặc giao nhận hàng hóa;\n\n- tài khoản ngân hàng và thông tin thanh toán\n\n- số điện thoại;"
   },
   {
     "chunk_id": 24,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 14,
-    "char_length": 421,
-    "content": "- dữ liệu tổng hợp về nội dung người dùng sử dụng.\n\n3.2. Bạn đồng ý không cung cấp cho chúng tôi bất cứ thông tin nào không chính xác hoặc gây hiểu nhầm và bạn đồng ý sẽ thông báo cho chúng tôi về bất cứ thông tin nào không chính xác hoặc khi có sự thay đổi thông tin. Chúng tôi bảo lưu quyền theo quyết định riêng của chúng tôi được yêu cầu các tài liệu cần thiết khác để xác minh bất cứ thông tin nào được bạn cung cấp."
+    "chunk_index": 13,
+    "char_length": 601,
+    "content": "- tài khoản ngân hàng và thông tin thanh toán\n\n- số điện thoại;\n\n- giới tính;\n\n- thông tin được gửi bởi hoặc liên quan đến (các) thiết bị được sử dụng để truy cập vào Các Dịch vụ hoặc Nền tảng của chúng tôi;\n\n- thông tin về mạng của bạn, bao gồm danh sách liên hệ của bạn khi đồng ý chia sẻ trên thiết bị của bạn, và những người và tài khoản mà bạn có tương tác;\n\n- hình ảnh hoặc âm thanh hoặc video;\n\n- thông tin về nhân thân được cấp bởi chính phủ hoặc các thông tin khác phục vụ cho các mục đích đánh giá pháp lý, nhận biết khách hàng, xác minh thông tin và/hoặc phòng chống gian lận của chúng tôi;"
   },
   {
     "chunk_id": 25,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 15,
-    "char_length": 583,
-    "content": "3.3. Nếu bạn đăng nhập để trở thành Người sử dụng các Nền tảng của chúng tôi sử dụng tài khoản mạng xã hội của Bạn (“Tài khoản Mạng Xã hội”), liên kết tài khoản của bạn với Tài khoản Mạng Xã hội của bạn hoặc sử dụng bất cứ tính năng mạng xã hội Shopee nào, chúng tôi có quyền truy cập thông tin về bạn mà bạn đã cung cấp một cách tự nguyên cho nhà cung cấp dịch vụ Tài khoản Mạng Xã hội của Bạn tuân theo các chính sách của các nhà cung cấp dịch vụ này, và chúng tôi sẽ quản lý, xử lý và sử dụng các dữ liệu cá nhân này của bạn theo các quy định của Chính sách này tại mọi thời điểm."
+    "chunk_index": 14,
+    "char_length": 762,
+    "content": "- dữ liệu truyền thông hoặc liên lạc, ví dụ như các tùy chọn nhận thông tin quảng cáo từ chúng tôi hoặc các bên thứ ba của bạn, tùy chọn phương tiện liên lạc và lịch sử thông tin liên lạc với chúng tôi, các nhà cung cấp dịch vụ của chúng tôi, và các bên thứ ba khác;\n\n- thông tin sử dụng và giao dịch, bao gồm chi tiết về lịch sử tìm kiếm, giao dịch, quảng cáo và nội dung hiển thị mà tương tác với Nền Tảng, cũng như các sản phẩm và dịch vụ có liên quan của bạn;\n\n- dữ liệu về địa điểm;\n\n- bất kỳ thông tin nào khác về người dùng khi người dùng đăng nhập để sử dụng Các Dịch Vụ hoặc Nền tảng của chúng tôi, và khi người dùng sử dụng Các Dịch Vụ hoặc Nền tảng, cũng như thông tin về việc người dùng sử dụng Các Dịch Vụ hoặc Nền tảng của chúng tôi như thế nào; và"
   },
   {
     "chunk_id": 26,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 16,
-    "char_length": 790,
-    "content": "3.4. Nếu bạn không muốn chúng tôi thu thập thông tin/dữ liệu cá nhân nói trên, bạn có thể chọn không tham gia vào bất kỳ lúc nào bằng cách thông báo bằng văn bản đến Chuyên viên Bảo Vệ Dữ Liệu Cá Nhân của chúng tôi. Có thể tìm thấy thêm thông tin về nội dung trong mục \"Bạn có thể rút lại sự đồng ý, yêu cầu xóa, hạn chế xử lý, phản đối xử lý, yêu cầu cung cấp dữ liệu cá nhân, truy cập hoặc điều chỉnh thông tin bạn đã cung cấp cho chúng tôi bằng cách nào?\" dưới đây. Tuy nhiên, lưu ý rằng việc từ chối hoặc hủy bỏ cho phép chúng tôi thu thập, sử dụng hoặc xử lý dữ liệu cá nhân của bạn có thể ảnh hưởng đến việc bạn sử dụng Các Dịch Vụ và Nền tảng. Ví dụ như dịch vụ xác định vị trí sẽ không hoạt động nếu bạn không cho phép ứng dụng truy cập vị trí của bạn.\n\n4. THU THẬP CÁC DỮ LIỆU KHÁC"
+    "chunk_index": 15,
+    "char_length": 421,
+    "content": "- dữ liệu tổng hợp về nội dung người dùng sử dụng.\n\n3.2. Bạn đồng ý không cung cấp cho chúng tôi bất cứ thông tin nào không chính xác hoặc gây hiểu nhầm và bạn đồng ý sẽ thông báo cho chúng tôi về bất cứ thông tin nào không chính xác hoặc khi có sự thay đổi thông tin. Chúng tôi bảo lưu quyền theo quyết định riêng của chúng tôi được yêu cầu các tài liệu cần thiết khác để xác minh bất cứ thông tin nào được bạn cung cấp."
   },
   {
     "chunk_id": 27,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 17,
-    "char_length": 790,
-    "content": "4.1 Như với hầu hết các trang web và các ứng dụng di động khác, thiết bị của bạn gửi thông tin có thể gồm có dữ liệu về bạn, được một máy chủ web ghi lại khi bạn sử dụng Nền tảng của chúng tôi. Thông tin này thông thường bao gồm nhưng không giới hạn địa chỉ IP, hệ điều hành của máy tính/thiết bị di động, loại trình duyệt, loại thiết bị di động, các đặc điểm của thiết bị di động, mã định danh thiết bị thống nhất (UDID) hoặc mã định danh thiết bị di động (MEID) của thiết bị di động của bạn, địa chỉ tham chiếu của Trang Web (nếu có), các trang mà bạn đã truy cập đến trên trang web hoặc ứng dụng di động của chúng tôi và thời gian truy cập và đôi khi là \"cookie\" (có thể vô hiệu hóa bằng cách sử dụng tùy chọn trình duyệt của bạn) để giúp trang web ghi nhớ lần truy cập cuối cùng của bạn"
+    "chunk_index": 16,
+    "char_length": 583,
+    "content": "3.3. Nếu bạn đăng nhập để trở thành Người sử dụng các Nền tảng của chúng tôi sử dụng tài khoản mạng xã hội của Bạn (“Tài khoản Mạng Xã hội”), liên kết tài khoản của bạn với Tài khoản Mạng Xã hội của bạn hoặc sử dụng bất cứ tính năng mạng xã hội Shopee nào, chúng tôi có quyền truy cập thông tin về bạn mà bạn đã cung cấp một cách tự nguyên cho nhà cung cấp dịch vụ Tài khoản Mạng Xã hội của Bạn tuân theo các chính sách của các nhà cung cấp dịch vụ này, và chúng tôi sẽ quản lý, xử lý và sử dụng các dữ liệu cá nhân này của bạn theo các quy định của Chính sách này tại mọi thời điểm."
   },
   {
     "chunk_id": 28,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 18,
-    "char_length": 228,
-    "content": ". Nếu bạn đăng nhập, thông tin này được liên kết với tài khoản cá nhân của bạn. Thông tin này cũng được đưa vào các số liệu thống kê ẩn danh để giúp chúng tôi hiểu được khách truy cập sử dụng Trang Web của chúng tôi như thế nào."
+    "chunk_index": 17,
+    "char_length": 790,
+    "content": "3.4. Nếu bạn không muốn chúng tôi thu thập thông tin/dữ liệu cá nhân nói trên, bạn có thể chọn không tham gia vào bất kỳ lúc nào bằng cách thông báo bằng văn bản đến Chuyên viên Bảo Vệ Dữ Liệu Cá Nhân của chúng tôi. Có thể tìm thấy thêm thông tin về nội dung trong mục \"Bạn có thể rút lại sự đồng ý, yêu cầu xóa, hạn chế xử lý, phản đối xử lý, yêu cầu cung cấp dữ liệu cá nhân, truy cập hoặc điều chỉnh thông tin bạn đã cung cấp cho chúng tôi bằng cách nào?\" dưới đây. Tuy nhiên, lưu ý rằng việc từ chối hoặc hủy bỏ cho phép chúng tôi thu thập, sử dụng hoặc xử lý dữ liệu cá nhân của bạn có thể ảnh hưởng đến việc bạn sử dụng Các Dịch Vụ và Nền tảng. Ví dụ như dịch vụ xác định vị trí sẽ không hoạt động nếu bạn không cho phép ứng dụng truy cập vị trí của bạn.\n\n4. THU THẬP CÁC DỮ LIỆU KHÁC"
   },
   {
     "chunk_id": 29,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 19,
-    "char_length": 736,
-    "content": "4.2 Các ứng dụng di động của chúng tôi có thể thu thập thông tin chính xác về địa chỉ của thiết bị di động của bạn sử dụng các công nghệ như GPS, Wi-Fi,…. Chúng tôi thu thập, sử dụng, công bố và/hoặc xử lý các thông tin này cho một hoặc nhiều mục đích bao gồm nhưng không giới hạn các dịch vụ được cung cấp dựa trên vị trí mà bạn yêu cầu hoặc chuyển các nội dung có liên quan đến bạn dựa trên vị trí của bạn hoặc cho phép bạn chia sẻ vị trí của bạn cho các Người sử dụng khác như là một phần của các Dịch vụ được cung cấp bởi các ứng dụng di động của chúng tôi. Đối với phần lớn các thiết bị di động, bạn có thể rút lại sự cho phép để chúng tôi được thu thập các thông tin này dựa trên vị trí của bạn thông qua các cài đặt trên thiết bị"
+    "chunk_index": 18,
+    "char_length": 790,
+    "content": "4.1 Như với hầu hết các trang web và các ứng dụng di động khác, thiết bị của bạn gửi thông tin có thể gồm có dữ liệu về bạn, được một máy chủ web ghi lại khi bạn sử dụng Nền tảng của chúng tôi. Thông tin này thông thường bao gồm nhưng không giới hạn địa chỉ IP, hệ điều hành của máy tính/thiết bị di động, loại trình duyệt, loại thiết bị di động, các đặc điểm của thiết bị di động, mã định danh thiết bị thống nhất (UDID) hoặc mã định danh thiết bị di động (MEID) của thiết bị di động của bạn, địa chỉ tham chiếu của Trang Web (nếu có), các trang mà bạn đã truy cập đến trên trang web hoặc ứng dụng di động của chúng tôi và thời gian truy cập và đôi khi là \"cookie\" (có thể vô hiệu hóa bằng cách sử dụng tùy chọn trình duyệt của bạn) để giúp trang web ghi nhớ lần truy cập cuối cùng của bạn"
   },
   {
     "chunk_id": 30,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 20,
-    "char_length": 198,
-    "content": ". Nếu bạn có câu hỏi nào về cách thức vô hiệu hóa các dịch vụ vị trí trên thiết bị di động của bạn, vui lòng liên hệ với các nhà cung cấp dịch vụ thiết bị di động hoặc nhà sản xuất thiết bị của bạn."
+    "chunk_index": 19,
+    "char_length": 228,
+    "content": ". Nếu bạn đăng nhập, thông tin này được liên kết với tài khoản cá nhân của bạn. Thông tin này cũng được đưa vào các số liệu thống kê ẩn danh để giúp chúng tôi hiểu được khách truy cập sử dụng Trang Web của chúng tôi như thế nào."
   },
   {
     "chunk_id": 31,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 21,
-    "char_length": 518,
-    "content": "4.3. Như khi bạn xem các trang trên trang web hoặc ứng dụng di động của chúng tôi, khi bạn xem các nội dung và quảng cáo và truy cập vào phần mềm khác trên Nền tảng của chúng tôi hoặc thông qua Dịch vụ, các thông tin có thể được gửi đến cho chúng tôi (bao gồm nhưng không giới hạn, địa chỉ IP, hệ điều hành, v.v..); nhưng, thay vì các số lượt xem trang, thiết bị của bạn gửi đến chúng tôi các thông tin về nội dung, quảng cáo được xem và/hoặc phần mềm được cài đặt bởi các Dịch vụ và Nền tảng và thời điểm.\n\n5. COOKIES"
+    "chunk_index": 20,
+    "char_length": 736,
+    "content": "4.2 Các ứng dụng di động của chúng tôi có thể thu thập thông tin chính xác về địa chỉ của thiết bị di động của bạn sử dụng các công nghệ như GPS, Wi-Fi,…. Chúng tôi thu thập, sử dụng, công bố và/hoặc xử lý các thông tin này cho một hoặc nhiều mục đích bao gồm nhưng không giới hạn các dịch vụ được cung cấp dựa trên vị trí mà bạn yêu cầu hoặc chuyển các nội dung có liên quan đến bạn dựa trên vị trí của bạn hoặc cho phép bạn chia sẻ vị trí của bạn cho các Người sử dụng khác như là một phần của các Dịch vụ được cung cấp bởi các ứng dụng di động của chúng tôi. Đối với phần lớn các thiết bị di động, bạn có thể rút lại sự cho phép để chúng tôi được thu thập các thông tin này dựa trên vị trí của bạn thông qua các cài đặt trên thiết bị"
   },
   {
     "chunk_id": 32,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 22,
-    "char_length": 563,
-    "content": "5.1. Đôi khi chúng tôi hoặc các nhà cung cấp dịch vụ được cho phép và các đối tác quảng cáo của chúng tôi có thể sử dụng \"cookie\" hoặc các tính năng khác để cho phép chúng tôi hoặc các bên thứ ba thu thập hoặc chia sẻ thông tin liên quan đến việc sử dụng của bạn đối với Dịch vụ hoặc Nền tảng của chúng tôi. Các tính năng này sẽ giúp chúng tôi cải thiện Nền tảng và Các Dịch Vụ chúng tôi cung cấp, giúp chúng tôi đề xuất các dịch vụ và tính năng mới, và/hoặc cho phép chúng tôi và các đối tác quảng cáo của chúng tôi cung cấp các nội dung có liên quan hơn đến bạn"
+    "chunk_index": 21,
+    "char_length": 198,
+    "content": ". Nếu bạn có câu hỏi nào về cách thức vô hiệu hóa các dịch vụ vị trí trên thiết bị di động của bạn, vui lòng liên hệ với các nhà cung cấp dịch vụ thiết bị di động hoặc nhà sản xuất thiết bị của bạn."
   },
   {
     "chunk_id": 33,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 23,
-    "char_length": 361,
-    "content": ". \"Cookie\" là các mã danh định được lưu trữ trên máy tính hoặc thiết bị di động của bạn lưu trữ các dữ liệu về máy tính hoặc thiết bị, bằng cách nào và khi nào Các Dịch Vụ hoặc Nền tảng được sử dụng hay truy cập, bởi bao nhiêu người và để theo dõi những hoạt động trong Các Nền tảng của chúng tôi. Chúng tôi có thể liên kết thông tin cookie với dữ liệu cá nhân."
+    "chunk_index": 22,
+    "char_length": 518,
+    "content": "4.3. Như khi bạn xem các trang trên trang web hoặc ứng dụng di động của chúng tôi, khi bạn xem các nội dung và quảng cáo và truy cập vào phần mềm khác trên Nền tảng của chúng tôi hoặc thông qua Dịch vụ, các thông tin có thể được gửi đến cho chúng tôi (bao gồm nhưng không giới hạn, địa chỉ IP, hệ điều hành, v.v..); nhưng, thay vì các số lượt xem trang, thiết bị của bạn gửi đến chúng tôi các thông tin về nội dung, quảng cáo được xem và/hoặc phần mềm được cài đặt bởi các Dịch vụ và Nền tảng và thời điểm.\n\n5. COOKIES"
   },
   {
     "chunk_id": 34,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 24,
-    "char_length": 749,
-    "content": "Cookie cũng liên kết với thông tin về những nội dung bạn đã chọn để mua sắm và các trang web mà bạn đã xem.\n\nThông tin này được sử dụng để theo dõi giỏ hàng, để chuyển tải nội dung phù hợp với sở thích của bạn, để cho phép các đối tác cung cấp dịch vụ quảng cáo cung cấp dịch vụ quảng cáo trên các trang thông qua mạng Internet và để thực hiện phân tích dữ liệu và hoặc theo dõi việc sử dụng Dịch vụ\n\n5.2. Bạn có thể từ chối sử dụng cookie bằng cách chọn các thiết lập thích hợp trên trình duyệt hoặc thiết bị của bạn.\n\nTuy nhiên, vui lòng lưu ý rằng nếu bạn thực hiện thao tác này bạn có thể không sử dụng được các chức năng đầy đủ của Nền tảng hoặc Các Dịch Vụ của chúng tôi.\n\n6. CHÚNG TÔI SỬ DỤNG THÔNG TIN BẠN CUNG CẤP CHO CHÚNG TÔI NHƯ THẾ NÀO?"
+    "chunk_index": 23,
+    "char_length": 563,
+    "content": "5.1. Đôi khi chúng tôi hoặc các nhà cung cấp dịch vụ được cho phép và các đối tác quảng cáo của chúng tôi có thể sử dụng \"cookie\" hoặc các tính năng khác để cho phép chúng tôi hoặc các bên thứ ba thu thập hoặc chia sẻ thông tin liên quan đến việc sử dụng của bạn đối với Dịch vụ hoặc Nền tảng của chúng tôi. Các tính năng này sẽ giúp chúng tôi cải thiện Nền tảng và Các Dịch Vụ chúng tôi cung cấp, giúp chúng tôi đề xuất các dịch vụ và tính năng mới, và/hoặc cho phép chúng tôi và các đối tác quảng cáo của chúng tôi cung cấp các nội dung có liên quan hơn đến bạn"
   },
   {
     "chunk_id": 35,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 25,
-    "char_length": 773,
-    "content": "6. CHÚNG TÔI SỬ DỤNG THÔNG TIN BẠN CUNG CẤP CHO CHÚNG TÔI NHƯ THẾ NÀO?\n\n6.1. Chúng tôi có thể thu thập, sử dụng, tiết lộ và/hoặc xử lý dữ liệu cá nhân của bạn cho các mục đích sau đây:\n\n- để xem xét và/hoặc xử lý đơn đăng ký/giao dịch của bạn với chúng tôi hoặc giao dịch hay thư từ của bạn với các bên thứ ba qua Các Dịch Vụ;\n\n- để quản lý, điều hành, cung cấp và/hoặc quản lý việc bạn sử dụng và/hoặc truy cập Các Dịch Vụ và các Nền tảng của chúng tôi (bao gồm các sở thích của bạn), cũng như quan hệ và tài khoản người dùng của bạn với chúng tôi;\n\n- để đáp ứng, xử lý, giải quyết hoặc hoàn tất một giao dịch và/hoặc đáp ứng các yêu cầu của bạn đối với các sản phẩm và dịch vụ nhất định và thông báo cho bạn về các vấn đề dịch vụ và các hoạt động tài khoản bất thường;"
+    "chunk_index": 24,
+    "char_length": 361,
+    "content": ". \"Cookie\" là các mã danh định được lưu trữ trên máy tính hoặc thiết bị di động của bạn lưu trữ các dữ liệu về máy tính hoặc thiết bị, bằng cách nào và khi nào Các Dịch Vụ hoặc Nền tảng được sử dụng hay truy cập, bởi bao nhiêu người và để theo dõi những hoạt động trong Các Nền tảng của chúng tôi. Chúng tôi có thể liên kết thông tin cookie với dữ liệu cá nhân."
   },
   {
     "chunk_id": 36,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 26,
-    "char_length": 644,
-    "content": "- để thực thi các Điều Khoản Dịch Vụ của chúng tôi hoặc bất kỳ thỏa thuận giấy phép người dùng cuối nào áp dụng;\n\n- để bảo vệ sự an toàn cá nhân và các quyền, tài sản hoặc sự an toàn của người khác;\n\n- để phục vụ mục đích nhận dạng, xác minh, đánh giá pháp lý hoặc để nhận biết khách hàng;\n\n- để đánh giá và đưa ra các quyết định liên quan đến hồ sơ tín dụng và rủi ro của bạn và tính đủ điều kiện để cho vay, trả sau hoặc cho các sản phẩm tín dụng, nếu có;\n\n- để duy trì và quản lý bất kỳ bản cập nhật phần mềm nào và/hoặc các bản cập nhật khác và sự hỗ trợ có thể được yêu cầu tùy lúc nhằm đảm bảo Các Dịch Vụ của chúng tôi hoạt động suôn sẻ;"
+    "chunk_index": 25,
+    "char_length": 749,
+    "content": "Cookie cũng liên kết với thông tin về những nội dung bạn đã chọn để mua sắm và các trang web mà bạn đã xem.\n\nThông tin này được sử dụng để theo dõi giỏ hàng, để chuyển tải nội dung phù hợp với sở thích của bạn, để cho phép các đối tác cung cấp dịch vụ quảng cáo cung cấp dịch vụ quảng cáo trên các trang thông qua mạng Internet và để thực hiện phân tích dữ liệu và hoặc theo dõi việc sử dụng Dịch vụ\n\n5.2. Bạn có thể từ chối sử dụng cookie bằng cách chọn các thiết lập thích hợp trên trình duyệt hoặc thiết bị của bạn.\n\nTuy nhiên, vui lòng lưu ý rằng nếu bạn thực hiện thao tác này bạn có thể không sử dụng được các chức năng đầy đủ của Nền tảng hoặc Các Dịch Vụ của chúng tôi.\n\n6. CHÚNG TÔI SỬ DỤNG THÔNG TIN BẠN CUNG CẤP CHO CHÚNG TÔI NHƯ THẾ NÀO?"
   },
   {
     "chunk_id": 37,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 27,
-    "char_length": 556,
-    "content": "- để giải quyết hoặc tạo điều kiện thuận lợi cho dịch vụ khách hàng, thực hiện các chỉ thị của bạn, giải quyết hoặc trả lời bất kỳ thắc mắc nào được gửi bởi (hoặc nhằm được gửi bởi) bạn hoặc thay mặt bạn;\n\n- để liên hệ với bạn hoặc liên lạc với bạn qua điện thoại, tin nhắn văn bản và/hoặc tin nhắn fax, email và/hoặc thư hoặc cách khác nhằm mục đích quản trị và/hoặc quản lý quan hệ của bạn với chúng tôi hoặc việc bạn sử dụng Các Dịch Vụ của chúng tôi, chẳng hạn như ở việc truyền đạt thông tin hành chính cho bạn liên quan đến Các Dịch Vụ của chúng tôi."
+    "chunk_index": 26,
+    "char_length": 773,
+    "content": "6. CHÚNG TÔI SỬ DỤNG THÔNG TIN BẠN CUNG CẤP CHO CHÚNG TÔI NHƯ THẾ NÀO?\n\n6.1. Chúng tôi có thể thu thập, sử dụng, tiết lộ và/hoặc xử lý dữ liệu cá nhân của bạn cho các mục đích sau đây:\n\n- để xem xét và/hoặc xử lý đơn đăng ký/giao dịch của bạn với chúng tôi hoặc giao dịch hay thư từ của bạn với các bên thứ ba qua Các Dịch Vụ;\n\n- để quản lý, điều hành, cung cấp và/hoặc quản lý việc bạn sử dụng và/hoặc truy cập Các Dịch Vụ và các Nền tảng của chúng tôi (bao gồm các sở thích của bạn), cũng như quan hệ và tài khoản người dùng của bạn với chúng tôi;\n\n- để đáp ứng, xử lý, giải quyết hoặc hoàn tất một giao dịch và/hoặc đáp ứng các yêu cầu của bạn đối với các sản phẩm và dịch vụ nhất định và thông báo cho bạn về các vấn đề dịch vụ và các hoạt động tài khoản bất thường;"
   },
   {
     "chunk_id": 38,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 28,
-    "char_length": 577,
-    "content": "Bạn xác nhận và đồng ý rằng sự liên lạc như thế của chúng tôi có thể là theo cách gửi thư qua đường bưu điện, tài liệu hoặc thông báo cho bạn, có thể gồm có tiết lộ dữ liệu cá nhân nhất định về bạn để cung cấp các tài liệu đó cũng như trên bao bì/phong bì;\n\n- để cho phép các người dùng khác tương tác hoặc liên lạc với bạn hoặc thấy một số hoạt động của bạn trên Nền tảng, bao gồm để thông báo cho bạn khi một người dùng khác đã gửi cho bạn một tin nhắn riêng tư hoặc đăng nhận xét về bạn trên Nền tảng hoặc để liên kết với việc bạn sử dụng các tính năng xã hội trên Nền tảng;"
+    "chunk_index": 27,
+    "char_length": 644,
+    "content": "- để thực thi các Điều Khoản Dịch Vụ của chúng tôi hoặc bất kỳ thỏa thuận giấy phép người dùng cuối nào áp dụng;\n\n- để bảo vệ sự an toàn cá nhân và các quyền, tài sản hoặc sự an toàn của người khác;\n\n- để phục vụ mục đích nhận dạng, xác minh, đánh giá pháp lý hoặc để nhận biết khách hàng;\n\n- để đánh giá và đưa ra các quyết định liên quan đến hồ sơ tín dụng và rủi ro của bạn và tính đủ điều kiện để cho vay, trả sau hoặc cho các sản phẩm tín dụng, nếu có;\n\n- để duy trì và quản lý bất kỳ bản cập nhật phần mềm nào và/hoặc các bản cập nhật khác và sự hỗ trợ có thể được yêu cầu tùy lúc nhằm đảm bảo Các Dịch Vụ của chúng tôi hoạt động suôn sẻ;"
   },
   {
     "chunk_id": 39,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 29,
-    "char_length": 611,
-    "content": "- để tiến hành các hoạt động nghiên cứu, phân tích và phát triển (bao gồm nhưng không giới hạn phân tích dữ liệu, khảo sát, phát triển và/hoặc lập đặc tính sản phẩm và dịch vụ), để phân tích cách thức bạn sử dụng Các Dịch Vụ của chúng tôi, để giới thiệu sản phẩm và/hoặc dịch vụ theo sự quan tâm của bạn, để cải thiện Các Dịch Vụ hoặc sản phẩm của chúng tôi và/hoặc để cải thiện trải nghiệm khách hàng của bạn;\n\n- để cho phép kiểm tra và khảo sát khác để, ngoài những hoạt động khác, xác thực quy mô và thành phần của đối tượng mục tiêu của chúng tôi, và hiểu được trải nghiệm của họ với Các Dịch Vụ của Shopee;"
+    "chunk_index": 28,
+    "char_length": 556,
+    "content": "- để giải quyết hoặc tạo điều kiện thuận lợi cho dịch vụ khách hàng, thực hiện các chỉ thị của bạn, giải quyết hoặc trả lời bất kỳ thắc mắc nào được gửi bởi (hoặc nhằm được gửi bởi) bạn hoặc thay mặt bạn;\n\n- để liên hệ với bạn hoặc liên lạc với bạn qua điện thoại, tin nhắn văn bản và/hoặc tin nhắn fax, email và/hoặc thư hoặc cách khác nhằm mục đích quản trị và/hoặc quản lý quan hệ của bạn với chúng tôi hoặc việc bạn sử dụng Các Dịch Vụ của chúng tôi, chẳng hạn như ở việc truyền đạt thông tin hành chính cho bạn liên quan đến Các Dịch Vụ của chúng tôi."
   },
   {
     "chunk_id": 40,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 30,
-    "char_length": 681,
-    "content": "- vì mục đích tiếp thị và quảng cáo, trong trường hợp này, để gửi cho bạn qua các phương tiện và phương thức liên lạc khác nhau, thông tin và tài liệu tiếp thị và quảng bá liên quan đến các sản phẩm và/hoặc dịch vụ (bao gồm, nhưng không giới hạn các sản phẩm và/hoặc dịch vụ của các bên thứ ba mà Shopee có thể hợp tác hoặc liên kết) mà Shopee (và/hoặc các bên liên kết hoặc công ty có liên quan của nó) có thể bán, tiếp thị hoặc quảng bá, cho dù các sản phẩm hoặc dịch vụ đó tồn tại vào lúc này hoặc được tạo ra trong tương lai. Bạn có thể hủy đăng ký nhận các thông tin tiếp thị tại bất cứ thời điểm nào bằng cách sử dụng chức năng hủy đăng ký trong các tài liệu tiếp thị điện tử"
+    "chunk_index": 29,
+    "char_length": 577,
+    "content": "Bạn xác nhận và đồng ý rằng sự liên lạc như thế của chúng tôi có thể là theo cách gửi thư qua đường bưu điện, tài liệu hoặc thông báo cho bạn, có thể gồm có tiết lộ dữ liệu cá nhân nhất định về bạn để cung cấp các tài liệu đó cũng như trên bao bì/phong bì;\n\n- để cho phép các người dùng khác tương tác hoặc liên lạc với bạn hoặc thấy một số hoạt động của bạn trên Nền tảng, bao gồm để thông báo cho bạn khi một người dùng khác đã gửi cho bạn một tin nhắn riêng tư hoặc đăng nhận xét về bạn trên Nền tảng hoặc để liên kết với việc bạn sử dụng các tính năng xã hội trên Nền tảng;"
   },
   {
     "chunk_id": 41,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 31,
-    "char_length": 166,
-    "content": ". Chúng tôi có thể sử dụng các thông tin liên hệ của bạn để gửi các bản tin và/hoặc tài liệu truyền thông từ chúng tôi hoặc từ các công ty có liên quan của chúng tôi;"
+    "chunk_index": 30,
+    "char_length": 611,
+    "content": "- để tiến hành các hoạt động nghiên cứu, phân tích và phát triển (bao gồm nhưng không giới hạn phân tích dữ liệu, khảo sát, phát triển và/hoặc lập đặc tính sản phẩm và dịch vụ), để phân tích cách thức bạn sử dụng Các Dịch Vụ của chúng tôi, để giới thiệu sản phẩm và/hoặc dịch vụ theo sự quan tâm của bạn, để cải thiện Các Dịch Vụ hoặc sản phẩm của chúng tôi và/hoặc để cải thiện trải nghiệm khách hàng của bạn;\n\n- để cho phép kiểm tra và khảo sát khác để, ngoài những hoạt động khác, xác thực quy mô và thành phần của đối tượng mục tiêu của chúng tôi, và hiểu được trải nghiệm của họ với Các Dịch Vụ của Shopee;"
   },
   {
     "chunk_id": 42,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 32,
-    "char_length": 298,
-    "content": "- để cung cấp các chương trình và ưu đãi khách hàng thường xuyên, đối tác và tiền thưởng, cũng như các chiến dịch marketing đồng thương hiệu khác, ví dụ như: chương trình khách hàng thân thiết của người bán, ưu đãi của người bán hoặc thẻ tín dụng đồng thương hiệu với sự hợp tác của các bên thứ ba;"
+    "chunk_index": 31,
+    "char_length": 681,
+    "content": "- vì mục đích tiếp thị và quảng cáo, trong trường hợp này, để gửi cho bạn qua các phương tiện và phương thức liên lạc khác nhau, thông tin và tài liệu tiếp thị và quảng bá liên quan đến các sản phẩm và/hoặc dịch vụ (bao gồm, nhưng không giới hạn các sản phẩm và/hoặc dịch vụ của các bên thứ ba mà Shopee có thể hợp tác hoặc liên kết) mà Shopee (và/hoặc các bên liên kết hoặc công ty có liên quan của nó) có thể bán, tiếp thị hoặc quảng bá, cho dù các sản phẩm hoặc dịch vụ đó tồn tại vào lúc này hoặc được tạo ra trong tương lai. Bạn có thể hủy đăng ký nhận các thông tin tiếp thị tại bất cứ thời điểm nào bằng cách sử dụng chức năng hủy đăng ký trong các tài liệu tiếp thị điện tử"
   },
   {
     "chunk_id": 43,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 33,
-    "char_length": 666,
-    "content": "- để đáp ứng các thủ tục pháp lý hoặc để tuân thủ hoặc theo quy định của pháp luật hiện hành, và các yêu cầu của cơ quan nhà nước có thẩm quyền hoặc yêu cầu của bất cứ cơ quan tài phán nào hoặc khi chúng tôi thực sự tin tưởng rằng việc tiết lộ thông tin là cần thiết, bao gồm nhưng không giới hạn, đáp ứng các yêu cầu đáp ứng các yêu cầu công bố thông tin theo yêu cầu của bất kỳ luật ràng buộc nào đối với Shopee hoặc các công ty hoặc chi nhánh liên quan của Shopee (bao gồm, nếu có, việc hiển thị tên, chi tiết liên hệ và chi tiết công ty của bạn);\n\n- để lập số liệu thống kê và nghiên cứu đáp ứng yêu cầu báo cáo và/hoặc duy trì sổ sách nội bộ hoặc theo quy định;"
+    "chunk_index": 32,
+    "char_length": 166,
+    "content": ". Chúng tôi có thể sử dụng các thông tin liên hệ của bạn để gửi các bản tin và/hoặc tài liệu truyền thông từ chúng tôi hoặc từ các công ty có liên quan của chúng tôi;"
   },
   {
     "chunk_id": 44,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 34,
-    "char_length": 731,
-    "content": "- để thực hiện quy trình tìm hiểu và xác minh hoặc các hoạt động sàng lọc khác (bao gồm nhưng không giới hạn kiểm tra lý lịch) tuân thủ các nghĩa vụ theo quy định pháp luật hoặc cơ quan nhà nước có thẩm quyền hoặc các thủ tục kiểm soát rủi ro của chúng tôi, có thể được pháp luật yêu cầu hoặc có thể đã được chúng tôi áp dụng;\n\n- để kiểm tra Các Dịch Vụ của chúng tôi hoặc hoạt động của Shopee\n\n- để ngăn chặn hoặc điều tra bất kỳ hoạt động gian lận thực tế hoặc bị nghi ngờ nào đối với Điều khoản dịch vụ của chúng tôi, gian lận, các hành vi phi pháp, thiếu sót hay hành vi sai trái nào, cho dù có liên quan đến việc bạn sử dụng Các Dịch Vụ của chúng tôi hay không hay bất kỳ vấn đề nào phát sinh từ quan hệ của bạn với chúng tôi;"
+    "chunk_index": 33,
+    "char_length": 298,
+    "content": "- để cung cấp các chương trình và ưu đãi khách hàng thường xuyên, đối tác và tiền thưởng, cũng như các chiến dịch marketing đồng thương hiệu khác, ví dụ như: chương trình khách hàng thân thiết của người bán, ưu đãi của người bán hoặc thẻ tín dụng đồng thương hiệu với sự hợp tác của các bên thứ ba;"
   },
   {
     "chunk_id": 45,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 35,
-    "char_length": 777,
-    "content": "- Để đáp ứng bất cứ các mối đe dọa hoặc yêu cầu thực tế nào được khẳng định chống lại Shopee hoặc các yêu cầu khác liên quan đến các Nội dung vi phạm quy định của các bên thứ ba;\n\n- để lưu trữ, lập máy chủ, sao lưu (cho dù là vì mục đích khôi phục sau thảm họa hoặc mục đích khác) đối với dữ liệu cá nhân của bạn;\n\n- để xử lý và/hoặc tạo thuận tiện cho một giao dịch tài sản kinh doanh hoặc một giao dịch tài sản kinh doanh tiềm năng, trường hợp giao dịch đó liên quan đến Shopee như một bên tham gia hoặc chỉ liên quan đến một công ty hay công ty liên kết của Shopee như một bên tham gia hoặc liên quan đến Shopee và/hoặc bất kỳ một hay nhiều công ty hoặc công ty liên kết của Shopee như (các) bên tham gia, và có thể có các tổ chức bên thứ ba khác tham gia giao dịch như thế."
+    "chunk_index": 34,
+    "char_length": 666,
+    "content": "- để đáp ứng các thủ tục pháp lý hoặc để tuân thủ hoặc theo quy định của pháp luật hiện hành, và các yêu cầu của cơ quan nhà nước có thẩm quyền hoặc yêu cầu của bất cứ cơ quan tài phán nào hoặc khi chúng tôi thực sự tin tưởng rằng việc tiết lộ thông tin là cần thiết, bao gồm nhưng không giới hạn, đáp ứng các yêu cầu đáp ứng các yêu cầu công bố thông tin theo yêu cầu của bất kỳ luật ràng buộc nào đối với Shopee hoặc các công ty hoặc chi nhánh liên quan của Shopee (bao gồm, nếu có, việc hiển thị tên, chi tiết liên hệ và chi tiết công ty của bạn);\n\n- để lập số liệu thống kê và nghiên cứu đáp ứng yêu cầu báo cáo và/hoặc duy trì sổ sách nội bộ hoặc theo quy định;"
   },
   {
     "chunk_id": 46,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 36,
-    "char_length": 390,
-    "content": "\"Giao dịch tài sản kinh doanh\" là các giao dịch mua, bán, cho thuê, sáp nhập, hợp nhất hoặc bất kỳ hoạt động mua lại, thanh lý hay tài trợ nào của một tổ chức hoặc một phần của một tổ chức hoặc của bất kỳ hoạt động kinh doanh hay tài sản nào của một tổ chức; và/hoặc\n\n- bất kỳ mục đích nào mà chúng tôi thông báo cho bạn tại thời điểm xin sự cho phép của bạn.\n\n(gọi chung là “Các Mục Đích”)"
+    "chunk_index": 35,
+    "char_length": 731,
+    "content": "- để thực hiện quy trình tìm hiểu và xác minh hoặc các hoạt động sàng lọc khác (bao gồm nhưng không giới hạn kiểm tra lý lịch) tuân thủ các nghĩa vụ theo quy định pháp luật hoặc cơ quan nhà nước có thẩm quyền hoặc các thủ tục kiểm soát rủi ro của chúng tôi, có thể được pháp luật yêu cầu hoặc có thể đã được chúng tôi áp dụng;\n\n- để kiểm tra Các Dịch Vụ của chúng tôi hoặc hoạt động của Shopee\n\n- để ngăn chặn hoặc điều tra bất kỳ hoạt động gian lận thực tế hoặc bị nghi ngờ nào đối với Điều khoản dịch vụ của chúng tôi, gian lận, các hành vi phi pháp, thiếu sót hay hành vi sai trái nào, cho dù có liên quan đến việc bạn sử dụng Các Dịch Vụ của chúng tôi hay không hay bất kỳ vấn đề nào phát sinh từ quan hệ của bạn với chúng tôi;"
   },
   {
     "chunk_id": 47,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 37,
-    "char_length": 794,
-    "content": "6.2. Bạn xác nhận, cho phép và đồng ý rằng chúng tôi có thể truy cập, lưu trữ, xử lý và tiết lộ thông tin Tài khoản và Nội dung của bạn nếu luật pháp yêu cầu làm như vậy hoặc theo lệnh của tòa án hoặc của bất kỳ cơ quan chính phủ hoặc cơ quan quản lý nào có thẩm quyền đối với Shopee hoặc các chi nhánh của Shopee hoặc với lý do chính đáng Shopee tin rằng việc truy cập, lưu giữ hoặc tiết lộ đó là cần thiết và chính đáng để: (a) tuân thủ quy trình pháp lý; (b) tuân thủ yêu cầu từ bất kỳ cơ quan chính phủ hoặc cơ quan quản lý nào có thẩm quyền đối với Shopee hoặc các chi nhánh có liên quan của Shopee; (c) thực thi Điều khoản Dịch vụ của chúng tôi hoặc Chính sách Bảo mật này; (d) phản hồi bất kỳ khiếu nại nào du cho là nguy cơ hoặc đang xảy ra trên thực tế để chống lại Shopee hoặc các chi"
+    "chunk_index": 36,
+    "char_length": 777,
+    "content": "- Để đáp ứng bất cứ các mối đe dọa hoặc yêu cầu thực tế nào được khẳng định chống lại Shopee hoặc các yêu cầu khác liên quan đến các Nội dung vi phạm quy định của các bên thứ ba;\n\n- để lưu trữ, lập máy chủ, sao lưu (cho dù là vì mục đích khôi phục sau thảm họa hoặc mục đích khác) đối với dữ liệu cá nhân của bạn;\n\n- để xử lý và/hoặc tạo thuận tiện cho một giao dịch tài sản kinh doanh hoặc một giao dịch tài sản kinh doanh tiềm năng, trường hợp giao dịch đó liên quan đến Shopee như một bên tham gia hoặc chỉ liên quan đến một công ty hay công ty liên kết của Shopee như một bên tham gia hoặc liên quan đến Shopee và/hoặc bất kỳ một hay nhiều công ty hoặc công ty liên kết của Shopee như (các) bên tham gia, và có thể có các tổ chức bên thứ ba khác tham gia giao dịch như thế."
   },
   {
     "chunk_id": 48,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 38,
-    "char_length": 378,
-    "content": "kỳ khiếu nại nào du cho là nguy cơ hoặc đang xảy ra trên thực tế để chống lại Shopee hoặc các chi nhánh có liên quan hoặc khiếu nại khác rằng bất kỳ Nội dung nào vi phạm quyền của bên thứ ba; (e) đáp ứng các yêu cầu của bạn về dịch vụ khách hàng; hoặc (f) bảo vệ quyền, tài sản hoặc sự an toàn cá nhân của Shopee hoặc các chi nhánh có liên quan, người dùng và / hoặc công chúng."
+    "chunk_index": 37,
+    "char_length": 390,
+    "content": "\"Giao dịch tài sản kinh doanh\" là các giao dịch mua, bán, cho thuê, sáp nhập, hợp nhất hoặc bất kỳ hoạt động mua lại, thanh lý hay tài trợ nào của một tổ chức hoặc một phần của một tổ chức hoặc của bất kỳ hoạt động kinh doanh hay tài sản nào của một tổ chức; và/hoặc\n\n- bất kỳ mục đích nào mà chúng tôi thông báo cho bạn tại thời điểm xin sự cho phép của bạn.\n\n(gọi chung là “Các Mục Đích”)"
   },
   {
     "chunk_id": 49,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 39,
-    "char_length": 525,
-    "content": "6.3. Vì Các Mục Đích mà chúng tôi sẽ/có thể thu thập, sử dụng, tiết lộ hoặc xử lý dữ liệu cá nhân của bạn phụ thuộc vào hoàn cảnh hiện có, mục đích đó có thể không xuất hiện bên trên. Tuy nhiên, chúng tôi sẽ thông báo cho bạn biết mục đích khác đó tại thời điểm xin sự cho phép của bạn, trừ phi việc xử lý dữ liệu áp dụng mà không có sự đồng ý của bạn là được phép theo các quy định của pháp luật về bảo vệ bí mật thông tin cá nhân hoặc theo quy định pháp luật.\n\n7. SHOPEE BẢO VỆ VÀ LƯU TRỮ THÔNG TIN KHÁCH HÀNG BẰNG CÁCH NÀO"
+    "chunk_index": 38,
+    "char_length": 794,
+    "content": "6.2. Bạn xác nhận, cho phép và đồng ý rằng chúng tôi có thể truy cập, lưu trữ, xử lý và tiết lộ thông tin Tài khoản và Nội dung của bạn nếu luật pháp yêu cầu làm như vậy hoặc theo lệnh của tòa án hoặc của bất kỳ cơ quan chính phủ hoặc cơ quan quản lý nào có thẩm quyền đối với Shopee hoặc các chi nhánh của Shopee hoặc với lý do chính đáng Shopee tin rằng việc truy cập, lưu giữ hoặc tiết lộ đó là cần thiết và chính đáng để: (a) tuân thủ quy trình pháp lý; (b) tuân thủ yêu cầu từ bất kỳ cơ quan chính phủ hoặc cơ quan quản lý nào có thẩm quyền đối với Shopee hoặc các chi nhánh có liên quan của Shopee; (c) thực thi Điều khoản Dịch vụ của chúng tôi hoặc Chính sách Bảo mật này; (d) phản hồi bất kỳ khiếu nại nào du cho là nguy cơ hoặc đang xảy ra trên thực tế để chống lại Shopee hoặc các chi"
   },
   {
     "chunk_id": 50,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 40,
-    "char_length": 460,
-    "content": "7. SHOPEE BẢO VỆ VÀ LƯU TRỮ THÔNG TIN KHÁCH HÀNG BẰNG CÁCH NÀO\n\n7.1. Chúng tôi thực hiện các biện pháp bảo mật khác nhau và luôn nỗ lực để đảm bảo sự an toàn của dữ liệu cá nhân của bạn trên các hệ thống của chúng tôi. Dữ liệu cá nhân của người dùng được lưu trữ đằng sau các mạng bảo mật và chỉ có thể được truy cập bởi một số nhân viên có quyền truy cập đặc biệt đến các hệ thống của chúng tôi. Tuy nhiên, chắc chắn không thể có sự đảm bảo an ninh tuyệt đối."
+    "chunk_index": 39,
+    "char_length": 378,
+    "content": "kỳ khiếu nại nào du cho là nguy cơ hoặc đang xảy ra trên thực tế để chống lại Shopee hoặc các chi nhánh có liên quan hoặc khiếu nại khác rằng bất kỳ Nội dung nào vi phạm quyền của bên thứ ba; (e) đáp ứng các yêu cầu của bạn về dịch vụ khách hàng; hoặc (f) bảo vệ quyền, tài sản hoặc sự an toàn cá nhân của Shopee hoặc các chi nhánh có liên quan, người dùng và / hoặc công chúng."
   },
   {
     "chunk_id": 51,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 41,
-    "char_length": 671,
-    "content": "7.2. Chúng tôi sẽ duy trì dữ liệu cá nhân tuân theo các quy định của pháp luật về bảo vệ bí mật thông tin cá nhân và/hoặc các điều luật hiện hành khác. Có nghĩa là, chúng tôi sẽ hủy hoặc xóa thông tin nhận dạng ra khỏi dữ liệu cá nhân của bạn khi chúng tôi nhận được yêu cầu của bạn phù hợp với các quy định của Luật riêng tư hiện hành hoặc khi chúng tôi có lý do hợp lý để xác định rằng (i) việc lưu trữ dữ liệu cá nhân đó không còn phục vụ mục đích thu thập dữ liệu cá nhân đó nữa; (ii) việc lưu giữ không còn cần thiết cho bất kỳ mục đích hợp pháp hay mục đích kinh doanh nào và (iii) không còn các lợi ích hợp pháp nào khác để tiếp tục lưu giữ các dữ liệu cá nhân này"
+    "chunk_index": 40,
+    "char_length": 525,
+    "content": "6.3. Vì Các Mục Đích mà chúng tôi sẽ/có thể thu thập, sử dụng, tiết lộ hoặc xử lý dữ liệu cá nhân của bạn phụ thuộc vào hoàn cảnh hiện có, mục đích đó có thể không xuất hiện bên trên. Tuy nhiên, chúng tôi sẽ thông báo cho bạn biết mục đích khác đó tại thời điểm xin sự cho phép của bạn, trừ phi việc xử lý dữ liệu áp dụng mà không có sự đồng ý của bạn là được phép theo các quy định của pháp luật về bảo vệ bí mật thông tin cá nhân hoặc theo quy định pháp luật.\n\n7. SHOPEE BẢO VỆ VÀ LƯU TRỮ THÔNG TIN KHÁCH HÀNG BẰNG CÁCH NÀO"
   },
   {
     "chunk_id": 52,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 42,
-    "char_length": 486,
-    "content": ". Nếu bạn ngưng sử dụng Nền tảng của chúng tôi, hoặc quyền của bạn được sử dụng Nền tảng và/hoặc Các Dịch Vụ bị chấm dứt hoặc hủy bỏ, chúng tôi có thể tiếp tục lưu, sử dụng và/hoặc tiết lộ dữ liệu cá nhân của bạn tuân theo Chính sách bảo mật này và các nghĩa vụ của chúng tôi theo các quy định của pháp luật về bảo vệ bí mật thông tin cá nhân. Tùy thuộc vào quy định của pháp luật, chúng tôi có thể tiêu hủy dữ liệu cá nhân của bạn một cách an toàn mà không cần thông báo trước cho bạn."
+    "chunk_index": 41,
+    "char_length": 460,
+    "content": "7. SHOPEE BẢO VỆ VÀ LƯU TRỮ THÔNG TIN KHÁCH HÀNG BẰNG CÁCH NÀO\n\n7.1. Chúng tôi thực hiện các biện pháp bảo mật khác nhau và luôn nỗ lực để đảm bảo sự an toàn của dữ liệu cá nhân của bạn trên các hệ thống của chúng tôi. Dữ liệu cá nhân của người dùng được lưu trữ đằng sau các mạng bảo mật và chỉ có thể được truy cập bởi một số nhân viên có quyền truy cập đặc biệt đến các hệ thống của chúng tôi. Tuy nhiên, chắc chắn không thể có sự đảm bảo an ninh tuyệt đối."
   },
   {
     "chunk_id": 53,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 43,
-    "char_length": 338,
-    "content": "7.3. Chúng tôi bảo lưu quyền từ chối xóa, tiêu hủy dữ liệu trong trường hợp yêu cầu của bạn không phù hợp với quy định của Luật riêng tư hiện hành, hoặc mặc dù phù hợp nhưng thuộc trường hợp Chúng tôi không được xóa, tiêu hủy theo quy định của Luật riêng tư hiện hành.\n\n8. SHOPEE CÓ TIẾT LỘ THÔNG TIN THU THẬP TỪ NGƯỜI TRUY CẬP HAY KHÔNG?"
+    "chunk_index": 42,
+    "char_length": 671,
+    "content": "7.2. Chúng tôi sẽ duy trì dữ liệu cá nhân tuân theo các quy định của pháp luật về bảo vệ bí mật thông tin cá nhân và/hoặc các điều luật hiện hành khác. Có nghĩa là, chúng tôi sẽ hủy hoặc xóa thông tin nhận dạng ra khỏi dữ liệu cá nhân của bạn khi chúng tôi nhận được yêu cầu của bạn phù hợp với các quy định của Luật riêng tư hiện hành hoặc khi chúng tôi có lý do hợp lý để xác định rằng (i) việc lưu trữ dữ liệu cá nhân đó không còn phục vụ mục đích thu thập dữ liệu cá nhân đó nữa; (ii) việc lưu giữ không còn cần thiết cho bất kỳ mục đích hợp pháp hay mục đích kinh doanh nào và (iii) không còn các lợi ích hợp pháp nào khác để tiếp tục lưu giữ các dữ liệu cá nhân này"
   },
   {
     "chunk_id": 54,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 44,
-    "char_length": 795,
-    "content": "8.1 Trong quá trình thực hiện hoạt động kinh doanh, chúng tôi sẽ/có thể cần phải sử dụng, xử lý, tiết lộ và/hoặc chuyển giao dữ liệu cá nhân của bạn cho các nhà cung cấp dịch vụ bên thứ ba, đại lý và/hoặc các công ty liên kết hoặc công ty liên quan của chúng tôi, và/hoặc các bên thứ ba khác có thể ở Việt Nam hoặc bên ngoài Việt Nam, vì một hay nhiều Mục Đích nói trên, và việc tiết lộ này sẽ được thực hiện theo đúng trình tự và quy định của pháp luật hiện hành. Chúng tôi cũng có thể sử dụng, xử lý, tiết lộ và/hoặc chuyển giao dữ liệu cá nhân của bạn cho các nhà cung cấp dịch vụ, đại lý và bên thứ ba khác khi bạn yêu cầu hoặc chỉ thị chúng tôi thực hiện, bao gồm việc liên kết hoặc tích hợp tài khoản Shopee của bạn với các tài khoản khác mà bạn đang sở hữu với các nhà cung cấp bên thứ ba"
+    "chunk_index": 43,
+    "char_length": 486,
+    "content": ". Nếu bạn ngưng sử dụng Nền tảng của chúng tôi, hoặc quyền của bạn được sử dụng Nền tảng và/hoặc Các Dịch Vụ bị chấm dứt hoặc hủy bỏ, chúng tôi có thể tiếp tục lưu, sử dụng và/hoặc tiết lộ dữ liệu cá nhân của bạn tuân theo Chính sách bảo mật này và các nghĩa vụ của chúng tôi theo các quy định của pháp luật về bảo vệ bí mật thông tin cá nhân. Tùy thuộc vào quy định của pháp luật, chúng tôi có thể tiêu hủy dữ liệu cá nhân của bạn một cách an toàn mà không cần thông báo trước cho bạn."
   },
   {
     "chunk_id": 55,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 45,
-    "char_length": 608,
-    "content": ". Các nhà cung cấp dịch vụ bên thứ ba, đại lý và/hoặc các công ty liên kết hoặc công ty liên quan và/hoặc các bên thứ ba khác như thế sẽ xử lý dữ liệu cá nhân của bạn hoặc thay mặt chúng tôi hoặc ngược lại, vì một hoặc nhiều Mục Đích nói trên. Chúng tôi cố gắng đảm bảo rằng các bên thứ ba và các công ty liên kết của chúng tôi giữ an toàn cho dữ liệu cá nhân của bạn khỏi bị truy cập, thu thập, sử dụng, tiết lộ, xử lý trái phép hoặc các rủi ro tương tự và chỉ lưu giữ dữ liệu cá nhân của bạn miễn là dữ liệu cá nhân của bạn vẫn còn cần thiết cho những việc nêu trên Mục đích Các bên thứ ba như thế bao gồm:"
+    "chunk_index": 44,
+    "char_length": 338,
+    "content": "7.3. Chúng tôi bảo lưu quyền từ chối xóa, tiêu hủy dữ liệu trong trường hợp yêu cầu của bạn không phù hợp với quy định của Luật riêng tư hiện hành, hoặc mặc dù phù hợp nhưng thuộc trường hợp Chúng tôi không được xóa, tiêu hủy theo quy định của Luật riêng tư hiện hành.\n\n8. SHOPEE CÓ TIẾT LỘ THÔNG TIN THU THẬP TỪ NGƯỜI TRUY CẬP HAY KHÔNG?"
   },
   {
     "chunk_id": 56,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 46,
-    "char_length": 344,
-    "content": "- công ty mẹ, công ty con, công ty liên kết và công ty liên quan của chúng tôi;\n\n- người bán hoặc người mua mà bạn đã thực hiện giao dịch hoặc tương tác trên Nền tảng hoặc liên quan đến việc bạn sử dụng Dịch vụ cho các Mục đích đã nêu ở trên;\n\n- những người sử dụng khác của Nền tảng của chúng tôi cho một hoặc nhiều các Mục đích đã nêu ở trên;"
+    "chunk_index": 45,
+    "char_length": 795,
+    "content": "8.1 Trong quá trình thực hiện hoạt động kinh doanh, chúng tôi sẽ/có thể cần phải sử dụng, xử lý, tiết lộ và/hoặc chuyển giao dữ liệu cá nhân của bạn cho các nhà cung cấp dịch vụ bên thứ ba, đại lý và/hoặc các công ty liên kết hoặc công ty liên quan của chúng tôi, và/hoặc các bên thứ ba khác có thể ở Việt Nam hoặc bên ngoài Việt Nam, vì một hay nhiều Mục Đích nói trên, và việc tiết lộ này sẽ được thực hiện theo đúng trình tự và quy định của pháp luật hiện hành. Chúng tôi cũng có thể sử dụng, xử lý, tiết lộ và/hoặc chuyển giao dữ liệu cá nhân của bạn cho các nhà cung cấp dịch vụ, đại lý và bên thứ ba khác khi bạn yêu cầu hoặc chỉ thị chúng tôi thực hiện, bao gồm việc liên kết hoặc tích hợp tài khoản Shopee của bạn với các tài khoản khác mà bạn đang sở hữu với các nhà cung cấp bên thứ ba"
   },
   {
     "chunk_id": 57,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 47,
-    "char_length": 760,
-    "content": "- nhà thầu, đại lý, nhà cung cấp dịch vụ và các bên thứ ba khác mà chúng tôi thuê để hỗ trợ hoặc bổ sung cho hoạt động kinh doanh của chúng tôi, hoặc bên mà bạn đã chọn liên kết tài khoản Shopee của mình hoặc cho phép tích hợp một cách rõ ràng. Những bên này bao gồm, nhưng không giới hạn ở những bên cung cấp các dịch vụ quản trị hoặc các dịch vụ khác cho chúng tôi chẳng hạn như công ty bưu chính, công ty viễn thông, đối tác quảng cáo và truyền thông, công ty công nghệ thông tin, lưu trữ đám mây, dịch vụ AI tạo sinh và sáng tạo nội dung, các tổ chức hoạt động thương mại điện tử, và trung tâm dữ liệu. Dữ liệu đầu vào và thông tin của bạn cũng có thể được chuyển đến các mô hình AI hoặc nhà cung cấp xử lý dữ liệu theo chính sách bảo mật tương ứng của họ;"
+    "chunk_index": 46,
+    "char_length": 608,
+    "content": ". Các nhà cung cấp dịch vụ bên thứ ba, đại lý và/hoặc các công ty liên kết hoặc công ty liên quan và/hoặc các bên thứ ba khác như thế sẽ xử lý dữ liệu cá nhân của bạn hoặc thay mặt chúng tôi hoặc ngược lại, vì một hoặc nhiều Mục Đích nói trên. Chúng tôi cố gắng đảm bảo rằng các bên thứ ba và các công ty liên kết của chúng tôi giữ an toàn cho dữ liệu cá nhân của bạn khỏi bị truy cập, thu thập, sử dụng, tiết lộ, xử lý trái phép hoặc các rủi ro tương tự và chỉ lưu giữ dữ liệu cá nhân của bạn miễn là dữ liệu cá nhân của bạn vẫn còn cần thiết cho những việc nêu trên Mục đích Các bên thứ ba như thế bao gồm:"
   },
   {
     "chunk_id": 58,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 48,
-    "char_length": 656,
-    "content": "- các cơ quan chính phủ hoặc cơ quan quản lý có thẩm quyền đối với Shopee hoặc nếu được cho phép theo Mục 6.2;\n\n- người mua hoặc người thừa nhiệm khác trong trường hợp sáp nhập, thoái vốn, tái cơ cấu, tái tổ chức, giải thể hoặc bán hay chuyển nhượng một phần hoặc tất cả tài sản của Shopee, cho dù là vấn đề đang diễn ra hay đang trong thủ tục phá sản, thanh lý hoặc thủ tục tương tự, trong đó dữ liệu cá nhân Shopee lưu giữ về người dùng của chúng tôi nằm trong các tài sản được chuyển nhượng; hoặc cho một bên đối tác trong một giao dịch tài sản kinh doanh mà Shopee hoặc bất kỳ công ty liên kết hay công ty liên quan nào của nó có tham gia giao dịch; và"
+    "chunk_index": 47,
+    "char_length": 344,
+    "content": "- công ty mẹ, công ty con, công ty liên kết và công ty liên quan của chúng tôi;\n\n- người bán hoặc người mua mà bạn đã thực hiện giao dịch hoặc tương tác trên Nền tảng hoặc liên quan đến việc bạn sử dụng Dịch vụ cho các Mục đích đã nêu ở trên;\n\n- những người sử dụng khác của Nền tảng của chúng tôi cho một hoặc nhiều các Mục đích đã nêu ở trên;"
   },
   {
     "chunk_id": 59,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 49,
-    "char_length": 623,
-    "content": "- bên thứ ba mà chúng tôi tiết lộ thông tin vì một trong các Mục Đích và các bên thứ ba đó ngược lại họ sẽ thu thập và xử lý dữ liệu cá nhân của bạn vì một hoặc nhiều Mục Đích.\n\n8.2. Chúng tôi có thể chia sẻ thông tin bao gồm thông tin thống kê và nhân khẩu học về Người Dùng cũng như thông tin về việc sử dụng Các Dịch Vụ của người dùng với đối tác cung cấp dịch vụ quảng cáo và lập trình. Chúng tôi cũng sẽ chia sẻ thông tin thống kê và thông tin nhân khẩu học về người dùng của chúng tôi và việc họ sử dụng Các Dịch Vụ với các đối tác quảng cáo và bên thứ ba cung cấp dịch vụ quảng cáo, tái quảng cáo, và/hoặc lập trình."
+    "chunk_index": 48,
+    "char_length": 760,
+    "content": "- nhà thầu, đại lý, nhà cung cấp dịch vụ và các bên thứ ba khác mà chúng tôi thuê để hỗ trợ hoặc bổ sung cho hoạt động kinh doanh của chúng tôi, hoặc bên mà bạn đã chọn liên kết tài khoản Shopee của mình hoặc cho phép tích hợp một cách rõ ràng. Những bên này bao gồm, nhưng không giới hạn ở những bên cung cấp các dịch vụ quản trị hoặc các dịch vụ khác cho chúng tôi chẳng hạn như công ty bưu chính, công ty viễn thông, đối tác quảng cáo và truyền thông, công ty công nghệ thông tin, lưu trữ đám mây, dịch vụ AI tạo sinh và sáng tạo nội dung, các tổ chức hoạt động thương mại điện tử, và trung tâm dữ liệu. Dữ liệu đầu vào và thông tin của bạn cũng có thể được chuyển đến các mô hình AI hoặc nhà cung cấp xử lý dữ liệu theo chính sách bảo mật tương ứng của họ;"
   },
   {
     "chunk_id": 60,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 50,
-    "char_length": 782,
-    "content": "8.3. Để tránh nghi ngờ, trong trường hợp các quy định của pháp luật về bảo vệ bí mật thông tin cá nhân hoặc các điều luật hiện hành khác cho phép một tổ chức chẳng hạn như chúng tôi thu thập, sử dụng hoặc tiết lộ dữ liệu cá nhân của bạn mà không cần sự đồng ý của bạn, sự cho phép như thế của pháp luật sẽ tiếp tục áp dụng. Phù hợp với các quy định nêu trên và theo các quy định của pháp luật hiện hành, chúng tôi có thể sử dụng dữ liệu cá nhân của bạn cho các cơ sở pháp lý đã được công nhận, bao gồm tuân thủ các nghĩa vụ pháp lý của chúng tôi, để thực hiện hợp đồng của chúng tôi với bạn, để đạt được lợi ích hợp pháp và lý do của chúng tôi để sử dụng dữ liệu đó cao hơn bất kỳ phương hại nào đến quyền bảo vệ dữ liệu của bạn hoặc khi cần thiết liên quan với một yêu cầu pháp lý."
+    "chunk_index": 49,
+    "char_length": 656,
+    "content": "- các cơ quan chính phủ hoặc cơ quan quản lý có thẩm quyền đối với Shopee hoặc nếu được cho phép theo Mục 6.2;\n\n- người mua hoặc người thừa nhiệm khác trong trường hợp sáp nhập, thoái vốn, tái cơ cấu, tái tổ chức, giải thể hoặc bán hay chuyển nhượng một phần hoặc tất cả tài sản của Shopee, cho dù là vấn đề đang diễn ra hay đang trong thủ tục phá sản, thanh lý hoặc thủ tục tương tự, trong đó dữ liệu cá nhân Shopee lưu giữ về người dùng của chúng tôi nằm trong các tài sản được chuyển nhượng; hoặc cho một bên đối tác trong một giao dịch tài sản kinh doanh mà Shopee hoặc bất kỳ công ty liên kết hay công ty liên quan nào của nó có tham gia giao dịch; và"
   },
   {
     "chunk_id": 61,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 51,
-    "char_length": 682,
-    "content": "8.4. Các bên thứ ba có thể chặn hoặc truy cập trái phép dữ liệu cá nhân được gửi đến hoặc có trên trang web, các công nghệ có thể hoạt động không chính xác hoặc không hoạt động như dự kiến, hoặc có người có thể truy cập, lạm dụng hoặc sử dụng sai trái thông tin mà không phải lỗi của chúng tôi. Tuy nhiên chúng tôi sẽ triển khai các biện pháp bảo mật hợp lý để bảo vệ dữ liệu cá nhân của bạn theo quy định của các quy định của pháp luật về bảo vệ bí mật thông tin cá nhân; tuy nhiên không thể đảm bảo sự bảo mật tuyệt đối chẳng hạn như trường hợp tiết lộ trái phép phát sinh từ hoạt động tin tặc vì ý đồ xấu hoặc hành vi tấn cung tinh vi bưởi kẻ xấu mà không phải lỗi của chúng tôi."
+    "chunk_index": 50,
+    "char_length": 623,
+    "content": "- bên thứ ba mà chúng tôi tiết lộ thông tin vì một trong các Mục Đích và các bên thứ ba đó ngược lại họ sẽ thu thập và xử lý dữ liệu cá nhân của bạn vì một hoặc nhiều Mục Đích.\n\n8.2. Chúng tôi có thể chia sẻ thông tin bao gồm thông tin thống kê và nhân khẩu học về Người Dùng cũng như thông tin về việc sử dụng Các Dịch Vụ của người dùng với đối tác cung cấp dịch vụ quảng cáo và lập trình. Chúng tôi cũng sẽ chia sẻ thông tin thống kê và thông tin nhân khẩu học về người dùng của chúng tôi và việc họ sử dụng Các Dịch Vụ với các đối tác quảng cáo và bên thứ ba cung cấp dịch vụ quảng cáo, tái quảng cáo, và/hoặc lập trình."
   },
   {
     "chunk_id": 62,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 52,
-    "char_length": 335,
-    "content": "8.5. Shopee cho phép bạn chia sẻ video từ YouTube trong tính năng Shopee Livestream (“Nội Dung YouTube”). Về mặt kỹ thuật, Shopee sử dụng Tính Năng YouTube API của chính YouTube. Thông qua việc chia sẻ Nội Dung YouTube, bạn theo đây đồng ý chịu sự điều chỉnh của Chính Sách Bảo Mật của YouTube (http://www.google.com/policies/privacy)."
+    "chunk_index": 51,
+    "char_length": 782,
+    "content": "8.3. Để tránh nghi ngờ, trong trường hợp các quy định của pháp luật về bảo vệ bí mật thông tin cá nhân hoặc các điều luật hiện hành khác cho phép một tổ chức chẳng hạn như chúng tôi thu thập, sử dụng hoặc tiết lộ dữ liệu cá nhân của bạn mà không cần sự đồng ý của bạn, sự cho phép như thế của pháp luật sẽ tiếp tục áp dụng. Phù hợp với các quy định nêu trên và theo các quy định của pháp luật hiện hành, chúng tôi có thể sử dụng dữ liệu cá nhân của bạn cho các cơ sở pháp lý đã được công nhận, bao gồm tuân thủ các nghĩa vụ pháp lý của chúng tôi, để thực hiện hợp đồng của chúng tôi với bạn, để đạt được lợi ích hợp pháp và lý do của chúng tôi để sử dụng dữ liệu đó cao hơn bất kỳ phương hại nào đến quyền bảo vệ dữ liệu của bạn hoặc khi cần thiết liên quan với một yêu cầu pháp lý."
   },
   {
     "chunk_id": 63,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 53,
-    "char_length": 796,
-    "content": "8.6. Như được quy định trong Điều khoản dịch vụ của Shopee, Người dùng (bao gồm bất cứ người lao động, đại lý, người đại diện hoặc bất cứ bên nào khác hành động cho Người dùng đó hoặc thay mặt người dùng đó) sở hữu dữ liệu cá nhân của Người dùng khác thông qua việc sử dụng Dịch vụ (“Bên nhận dữ liệu”) tại đây đồng ý rằng, họ sẽ (i) tuân thủ với các quy định của pháp luật về bảo vệ dữ liệu cá nhân liên quan đến các dữ liệu này, bao gồm bất cứ hoạt động thu thập, xử lý, lưu giữ và chuyển giao các dữ liệu này; (ii) cho phép Shopee hoặc Người dùng mà dữ liệu cá nhân của Bên nhận được thu thập (“Bên tiết lộ”) được xóa dữ liệu của anh hoặc cô ấy đã bị thu thập khỏi cơ sở dữ liệu của Bên nhận dữ liệu; và (iii) cho phép Shopee hoặc Bên tiết lộ dữ liệu được rà soát những nội dung đã bị thu thập"
+    "chunk_index": 52,
+    "char_length": 682,
+    "content": "8.4. Các bên thứ ba có thể chặn hoặc truy cập trái phép dữ liệu cá nhân được gửi đến hoặc có trên trang web, các công nghệ có thể hoạt động không chính xác hoặc không hoạt động như dự kiến, hoặc có người có thể truy cập, lạm dụng hoặc sử dụng sai trái thông tin mà không phải lỗi của chúng tôi. Tuy nhiên chúng tôi sẽ triển khai các biện pháp bảo mật hợp lý để bảo vệ dữ liệu cá nhân của bạn theo quy định của các quy định của pháp luật về bảo vệ bí mật thông tin cá nhân; tuy nhiên không thể đảm bảo sự bảo mật tuyệt đối chẳng hạn như trường hợp tiết lộ trái phép phát sinh từ hoạt động tin tặc vì ý đồ xấu hoặc hành vi tấn cung tinh vi bưởi kẻ xấu mà không phải lỗi của chúng tôi."
   },
   {
     "chunk_id": 64,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 54,
-    "char_length": 260,
-    "content": "liệu; và (iii) cho phép Shopee hoặc Bên tiết lộ dữ liệu được rà soát những nội dung đã bị thu thập liên quan đến họ bởi Bên nhận dữ liệu, trong mỗi trường hợp (ii) và (iii) nêu trên, tuân thủ với và khi được yêu cầu bởi các quy định của pháp luật có liên quan."
+    "chunk_index": 53,
+    "char_length": 335,
+    "content": "8.5. Shopee cho phép bạn chia sẻ video từ YouTube trong tính năng Shopee Livestream (“Nội Dung YouTube”). Về mặt kỹ thuật, Shopee sử dụng Tính Năng YouTube API của chính YouTube. Thông qua việc chia sẻ Nội Dung YouTube, bạn theo đây đồng ý chịu sự điều chỉnh của Chính Sách Bảo Mật của YouTube (http://www.google.com/policies/privacy)."
   },
   {
     "chunk_id": 65,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 55,
-    "char_length": 797,
-    "content": "8.7. Bất kể quy định nào được quy định tại đây, Người bán (bao gồm bất cứ người lao động, đại lý, người đại diện hoặc bất cứ bên nào khác hành động cho Người dùng đó hoặc thay mặt người dùng đó) phải tuân thủ các quy định của pháp luật có liên quan và, liên quan đến bất cứ dữ liệu cá nhân nào của Người mua nhận được từ Shopee, (i) không được cho phép sử dụng các dữ liệu cá nhân của Người mua này trừ khi có lý do chính đáng cần thiết để phản hồi các yêu cầu của Người mua và để thực hiện việc trả lời, xử lý, giải quyết hoặc hoàn thành các giao dịch mà không có sự cho phép trước bằng văn bản của Người mua và Shopee; (ii) phải ngưng việc liên lạc với Người mua sử dụng các thông tin này bên ngoài nền tảng Shopee; (iii) không được cho phép tiết lộ các dữ liệu cá nhân của Người mua này đến bất"
+    "chunk_index": 54,
+    "char_length": 796,
+    "content": "8.6. Như được quy định trong Điều khoản dịch vụ của Shopee, Người dùng (bao gồm bất cứ người lao động, đại lý, người đại diện hoặc bất cứ bên nào khác hành động cho Người dùng đó hoặc thay mặt người dùng đó) sở hữu dữ liệu cá nhân của Người dùng khác thông qua việc sử dụng Dịch vụ (“Bên nhận dữ liệu”) tại đây đồng ý rằng, họ sẽ (i) tuân thủ với các quy định của pháp luật về bảo vệ dữ liệu cá nhân liên quan đến các dữ liệu này, bao gồm bất cứ hoạt động thu thập, xử lý, lưu giữ và chuyển giao các dữ liệu này; (ii) cho phép Shopee hoặc Người dùng mà dữ liệu cá nhân của Bên nhận được thu thập (“Bên tiết lộ”) được xóa dữ liệu của anh hoặc cô ấy đã bị thu thập khỏi cơ sở dữ liệu của Bên nhận dữ liệu; và (iii) cho phép Shopee hoặc Bên tiết lộ dữ liệu được rà soát những nội dung đã bị thu thập"
   },
   {
     "chunk_id": 66,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 56,
-    "char_length": 766,
-    "content": "nền tảng Shopee; (iii) không được cho phép tiết lộ các dữ liệu cá nhân của Người mua này đến bất cứ bên thứ ba không được phép nào mà không có sự cho phép trước bằng văn bản của Người mua và Shopee; (iv) phải thực hiện các biện pháp an ninh thích hợp để bảo vệ từng dữ liệu cá nhân người dùng của Shopee mà họ đang sở hữu, chỉ lưu giữ dữ liệu này chừng nào vẫn còn cần thiết cho các mục đích ở trên và phù hợp với quy định của pháp luật bảo vệ dữ liệu cá nhân, và xóa hoặc hoàn trả các dữ liệu này cho Shopee theo yêu cầu từ Shopee hoặc trong thời gian sớm nhất có thể khi hoàn thành giao dịch; và (v) thông báo cho Bộ phận bảo vệ Dữ liệu Cá nhân của Shopee tại dpo.vn@shopee.com trong trường hợp có khả năng vi phạm dữ liệu hoặc mất dữ liệu khác của người dùng này."
+    "chunk_index": 55,
+    "char_length": 260,
+    "content": "liệu; và (iii) cho phép Shopee hoặc Bên tiết lộ dữ liệu được rà soát những nội dung đã bị thu thập liên quan đến họ bởi Bên nhận dữ liệu, trong mỗi trường hợp (ii) và (iii) nêu trên, tuân thủ với và khi được yêu cầu bởi các quy định của pháp luật có liên quan."
   },
   {
     "chunk_id": 67,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 57,
-    "char_length": 22,
-    "content": "9. THÔNG TIN VỀ TRẺ EM"
+    "chunk_index": 56,
+    "char_length": 797,
+    "content": "8.7. Bất kể quy định nào được quy định tại đây, Người bán (bao gồm bất cứ người lao động, đại lý, người đại diện hoặc bất cứ bên nào khác hành động cho Người dùng đó hoặc thay mặt người dùng đó) phải tuân thủ các quy định của pháp luật có liên quan và, liên quan đến bất cứ dữ liệu cá nhân nào của Người mua nhận được từ Shopee, (i) không được cho phép sử dụng các dữ liệu cá nhân của Người mua này trừ khi có lý do chính đáng cần thiết để phản hồi các yêu cầu của Người mua và để thực hiện việc trả lời, xử lý, giải quyết hoặc hoàn thành các giao dịch mà không có sự cho phép trước bằng văn bản của Người mua và Shopee; (ii) phải ngưng việc liên lạc với Người mua sử dụng các thông tin này bên ngoài nền tảng Shopee; (iii) không được cho phép tiết lộ các dữ liệu cá nhân của Người mua này đến bất"
   },
   {
     "chunk_id": 68,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 58,
-    "char_length": 772,
-    "content": "Các Dịch Vụ này không dành cho trẻ em dưới 13 tuổi. Chúng tôi không cố tình thu thập hay lưu giữ bất kỳ dữ liệu cá nhân hay thông tin không nhận dạng cá nhân nào của bất kỳ ai dưới 13 tuổi, bất kỳ phần nào của Nền tảng của chúng tôi hoặc Các Dịch Vụ khác cũng không dành cho trẻ em dưới 13 tuổi. Bố/mẹ hoặc người giám hộ của trẻ em dưới 13 tuổi vui lòng giám sát và đảm bảo thông tin cá nhân của trẻ dưới 13 tuổi mà mình đang giám hộ không đăng tải thông tin cá nhân cho Shopee. Trong trường hợp thông tin cá nhân của của trẻ em dưới 13 tuổi do quý phụ huynh giám hộ được cung cấp cho Shopee, Bố/mẹ hoặc người giám hộ theo đồng ý với việc xử lý thông tin của trẻ em dưới 13 tuổi có liên quan, và đồng ý chịu sự điều chỉnh của Chính Sách này thay mặt cho người được giám hộ"
+    "chunk_index": 57,
+    "char_length": 766,
+    "content": "nền tảng Shopee; (iii) không được cho phép tiết lộ các dữ liệu cá nhân của Người mua này đến bất cứ bên thứ ba không được phép nào mà không có sự cho phép trước bằng văn bản của Người mua và Shopee; (iv) phải thực hiện các biện pháp an ninh thích hợp để bảo vệ từng dữ liệu cá nhân người dùng của Shopee mà họ đang sở hữu, chỉ lưu giữ dữ liệu này chừng nào vẫn còn cần thiết cho các mục đích ở trên và phù hợp với quy định của pháp luật bảo vệ dữ liệu cá nhân, và xóa hoặc hoàn trả các dữ liệu này cho Shopee theo yêu cầu từ Shopee hoặc trong thời gian sớm nhất có thể khi hoàn thành giao dịch; và (v) thông báo cho Bộ phận bảo vệ Dữ liệu Cá nhân của Shopee tại dpo.vn@shopee.com trong trường hợp có khả năng vi phạm dữ liệu hoặc mất dữ liệu khác của người dùng này."
   },
   {
     "chunk_id": 69,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 59,
-    "char_length": 202,
-    "content": ". Chúng tôi sẽ khóa bất kỳ tài khoản nào chỉ được sử dụng bởi đối tượng trẻ em như vậy và sẽ gỡ và/hoặc xóa bất kỳ dữ liệu cá nhân nào mà chúng tôi cho là đã được gửi bởi bất kỳ trẻ em nào dưới 13 tuổi."
+    "chunk_index": 58,
+    "char_length": 22,
+    "content": "9. THÔNG TIN VỀ TRẺ EM"
   },
   {
     "chunk_id": 70,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 60,
-    "char_length": 724,
-    "content": "10. THÔNG TIN THU THẬP BỞI CÁC BÊN THỨ BA\n\n10.1. Nền tảng của chúng tôi sử dụng Google Analytics, một dịch vụ phân tích web được cung cấp bởi Google, Inc.\n\n(\"Google\"). Google Analytics sử dụng cookie, là các tập tin văn bản trên thiết bị của bạn, để giúp Nền tảng phân tích cách thức người dùng sử dụng Nền tảng của chúng tôi. Thông tin được tạo bởi cookie về việc bạn sử dụng Nền tảng (bao gồm địa chỉ IP của bạn) sẽ được gửi đến và lưu bởi Google trên các máy chủ tại Hoa Kỳ. Google sẽ sử dụng thông tin này để đánh giá việc bạn sử dụng Nền tảng của chúng tôi, soạn báo cáo về hoạt động trang web dành cho các nhà điều hành trang web và cung cấp các dịch vụ khác liên quan đến hoạt động trang web và việc sử dụng Internet."
+    "chunk_index": 59,
+    "char_length": 772,
+    "content": "Các Dịch Vụ này không dành cho trẻ em dưới 13 tuổi. Chúng tôi không cố tình thu thập hay lưu giữ bất kỳ dữ liệu cá nhân hay thông tin không nhận dạng cá nhân nào của bất kỳ ai dưới 13 tuổi, bất kỳ phần nào của Nền tảng của chúng tôi hoặc Các Dịch Vụ khác cũng không dành cho trẻ em dưới 13 tuổi. Bố/mẹ hoặc người giám hộ của trẻ em dưới 13 tuổi vui lòng giám sát và đảm bảo thông tin cá nhân của trẻ dưới 13 tuổi mà mình đang giám hộ không đăng tải thông tin cá nhân cho Shopee. Trong trường hợp thông tin cá nhân của của trẻ em dưới 13 tuổi do quý phụ huynh giám hộ được cung cấp cho Shopee, Bố/mẹ hoặc người giám hộ theo đồng ý với việc xử lý thông tin của trẻ em dưới 13 tuổi có liên quan, và đồng ý chịu sự điều chỉnh của Chính Sách này thay mặt cho người được giám hộ"
   },
   {
     "chunk_id": 71,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 61,
-    "char_length": 260,
-    "content": "Google cũng có thể gửi thông tin này cho các bên thứ ba trong trường hợp luật pháp có quy định như thế, hoặc trường hợp các bên thứ ba đó xử lý thông tin thay mặt Google. Google sẽ không liên kết địa chỉ IP của bạn với bất kỳ dữ liệu nào khác mà Google nắm giữ"
+    "chunk_index": 60,
+    "char_length": 202,
+    "content": ". Chúng tôi sẽ khóa bất kỳ tài khoản nào chỉ được sử dụng bởi đối tượng trẻ em như vậy và sẽ gỡ và/hoặc xóa bất kỳ dữ liệu cá nhân nào mà chúng tôi cho là đã được gửi bởi bất kỳ trẻ em nào dưới 13 tuổi."
   },
   {
     "chunk_id": 72,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 62,
-    "char_length": 670,
-    "content": "10.2. Chúng tôi, và các bên thứ ba, có thể trong từng thời điểm cung cấp các bản tải về ứng dụng phần mềm cho bạn sử dụng bởi Nền tảng hoặc thông qua Các Dịch Vụ. Những ứng dụng này có thể truy cập riêng, và cho phép một bên thứ ba xem, thông tin nhận dạng của bạn, chẳng hạn như tên, ID người dùng của bạn, Địa chỉ IP của thiết bị của bạn hoặc thông tin khác chẳng hạn như game bạn đang chơi trong bất kỳ phiên truy cập cụ thể nào, và bất kỳ cookie nào trước đây bạn có thể đã cài đặt hoặc đã được cài đặt cho bạn bởi một ứng dụng phần mềm hoặc trang web của bên thứ ba. Ngoài ra, các ứng dụng này có thể yêu cầu bạn cung cấp thêm thông tin trực tiếp cho các bên thứ ba"
+    "chunk_index": 61,
+    "char_length": 724,
+    "content": "10. THÔNG TIN THU THẬP BỞI CÁC BÊN THỨ BA\n\n10.1. Nền tảng của chúng tôi sử dụng Google Analytics, một dịch vụ phân tích web được cung cấp bởi Google, Inc.\n\n(\"Google\"). Google Analytics sử dụng cookie, là các tập tin văn bản trên thiết bị của bạn, để giúp Nền tảng phân tích cách thức người dùng sử dụng Nền tảng của chúng tôi. Thông tin được tạo bởi cookie về việc bạn sử dụng Nền tảng (bao gồm địa chỉ IP của bạn) sẽ được gửi đến và lưu bởi Google trên các máy chủ tại Hoa Kỳ. Google sẽ sử dụng thông tin này để đánh giá việc bạn sử dụng Nền tảng của chúng tôi, soạn báo cáo về hoạt động trang web dành cho các nhà điều hành trang web và cung cấp các dịch vụ khác liên quan đến hoạt động trang web và việc sử dụng Internet."
   },
   {
     "chunk_id": 73,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 63,
-    "char_length": 356,
-    "content": ". Ngoài ra, các ứng dụng này có thể yêu cầu bạn cung cấp thêm thông tin trực tiếp cho các bên thứ ba. Các sản phẩm hoặc dịch vụ của bên thứ ba được cung cấp thông qua các ứng dụng này không thuộc sở hữu hay quyền kiểm soát của Shopee. Bạn nên đọc các điều khoản và các chính sách khác được công bố bởi các bên thứ ba đó trên trang web của họ hoặc nơi khác."
+    "chunk_index": 62,
+    "char_length": 260,
+    "content": "Google cũng có thể gửi thông tin này cho các bên thứ ba trong trường hợp luật pháp có quy định như thế, hoặc trường hợp các bên thứ ba đó xử lý thông tin thay mặt Google. Google sẽ không liên kết địa chỉ IP của bạn với bất kỳ dữ liệu nào khác mà Google nắm giữ"
   },
   {
     "chunk_id": 74,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 64,
-    "char_length": 72,
-    "content": "11. LOẠI TRỪ TRÁCH NHIỆM VỀ NGHĨA VỤ BẢO MẬT VÀ CÁC TRANG WEB BÊN THỨ BA"
+    "chunk_index": 63,
+    "char_length": 670,
+    "content": "10.2. Chúng tôi, và các bên thứ ba, có thể trong từng thời điểm cung cấp các bản tải về ứng dụng phần mềm cho bạn sử dụng bởi Nền tảng hoặc thông qua Các Dịch Vụ. Những ứng dụng này có thể truy cập riêng, và cho phép một bên thứ ba xem, thông tin nhận dạng của bạn, chẳng hạn như tên, ID người dùng của bạn, Địa chỉ IP của thiết bị của bạn hoặc thông tin khác chẳng hạn như game bạn đang chơi trong bất kỳ phiên truy cập cụ thể nào, và bất kỳ cookie nào trước đây bạn có thể đã cài đặt hoặc đã được cài đặt cho bạn bởi một ứng dụng phần mềm hoặc trang web của bên thứ ba. Ngoài ra, các ứng dụng này có thể yêu cầu bạn cung cấp thêm thông tin trực tiếp cho các bên thứ ba"
   },
   {
     "chunk_id": 75,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 65,
-    "char_length": 754,
-    "content": "11.1. CHÚNG TÔI KHÔNG ĐẢM BẢO TÍNH BẢO MẬT ĐỐI VỚI DỮ LIỆU CÁ NHÂN VÀ/HOẶC THÔNG TIN KHÁC MÀ BẠN CUNG CẤP TRÊN CÁC TRANG WEB CỦA BÊN THỨ BA. Chúng tôi thực hiện các biện pháp bảo mật khác nhau để duy trì sự an toàn của dữ liệu cá nhân của bạn mà chúng tôi lưu giữ hoặc kiểm soát. Dữ liệu cá nhân của bạn được lưu đằng sau các mạng bảo mật và chỉ có thể được truy cập bởi một số cá nhân giới hạn có quyền truy cập đặc biệt đến các hệ thống của chúng tôi, và đã được yêu cầu bảo mật dữ liệu cá nhân đó. Khi bạn đặt hàng hoặc truy cập dữ liệu cá nhân của bạn, chúng tôi đề nghị sử dụng một máy chủ bảo mật. Tất cả dữ liệu cá nhân hoặc thông tin cá nhân bạn cung cấp sẽ được mã hóa vào các cơ sở dữ liệu của chúng tôi để chỉ được truy cập như mô tả bên trên."
+    "chunk_index": 64,
+    "char_length": 356,
+    "content": ". Ngoài ra, các ứng dụng này có thể yêu cầu bạn cung cấp thêm thông tin trực tiếp cho các bên thứ ba. Các sản phẩm hoặc dịch vụ của bên thứ ba được cung cấp thông qua các ứng dụng này không thuộc sở hữu hay quyền kiểm soát của Shopee. Bạn nên đọc các điều khoản và các chính sách khác được công bố bởi các bên thứ ba đó trên trang web của họ hoặc nơi khác."
   },
   {
     "chunk_id": 76,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 66,
-    "char_length": 465,
-    "content": "11.2. Nhằm cung cấp cho bạn giá trị gia tăng, chúng tôi có thể chọn các trang web hoặc ứng dụng hoặc dịch vụ của bên thứ ba khác nhau để liên kết, và đóng khung bên trong Nền tảng. Chúng tôi cũng có thể tham gia các quan hệ cùng tiếp thị và các quan hệ khác để cung cấp dịch vụ thương mại điện tử và các dịch vụ và tính năng khác cho khách truy cập.\n\nNhững trang được liên kết này có các chính sách về quyền riêng tư cũng như các biện pháp bảo mật riêng và độc lập."
+    "chunk_index": 65,
+    "char_length": 72,
+    "content": "11. LOẠI TRỪ TRÁCH NHIỆM VỀ NGHĨA VỤ BẢO MẬT VÀ CÁC TRANG WEB BÊN THỨ BA"
   },
   {
     "chunk_id": 77,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 67,
-    "char_length": 479,
-    "content": "Ngay cả khi bên thứ ba đó có liên kết với chúng tôi, chúng tôi cũng không kiểm soát các trang web/ứng dụng/dịch vụ được liên kết này, mỗi trang đó có các phương pháp bảo vệ quyền riêng tư và thu thập dữ liệu riêng biệt, độc lập với chúng tôi. Dữ liệu thu thập bởi các đối tác cùng tiếp thị của chúng tôi hoặc các trang web/ứng dụng/dịch vụ của bên thứ ba (ngay cả khi được cung cấp trên hoặc thông qua Nền tảng của chúng tôi) có thể không được chúng tôi tiếp cận và/hoặc lưu giữ."
+    "chunk_index": 66,
+    "char_length": 754,
+    "content": "11.1. CHÚNG TÔI KHÔNG ĐẢM BẢO TÍNH BẢO MẬT ĐỐI VỚI DỮ LIỆU CÁ NHÂN VÀ/HOẶC THÔNG TIN KHÁC MÀ BẠN CUNG CẤP TRÊN CÁC TRANG WEB CỦA BÊN THỨ BA. Chúng tôi thực hiện các biện pháp bảo mật khác nhau để duy trì sự an toàn của dữ liệu cá nhân của bạn mà chúng tôi lưu giữ hoặc kiểm soát. Dữ liệu cá nhân của bạn được lưu đằng sau các mạng bảo mật và chỉ có thể được truy cập bởi một số cá nhân giới hạn có quyền truy cập đặc biệt đến các hệ thống của chúng tôi, và đã được yêu cầu bảo mật dữ liệu cá nhân đó. Khi bạn đặt hàng hoặc truy cập dữ liệu cá nhân của bạn, chúng tôi đề nghị sử dụng một máy chủ bảo mật. Tất cả dữ liệu cá nhân hoặc thông tin cá nhân bạn cung cấp sẽ được mã hóa vào các cơ sở dữ liệu của chúng tôi để chỉ được truy cập như mô tả bên trên."
   },
   {
     "chunk_id": 78,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 68,
-    "char_length": 661,
-    "content": "11.3. Do đó chúng tôi không chịu trách nhiệm hay trách nhiệm pháp lý đối với nội dung, các biện pháp bảo mật (hoặc sự thiếu biện pháp bảo mật) và các hoạt động của các trang web/ứng dụng/dịch vụ được liên kết này. Những trang web/ứng dụng/dịch vụ được liên kết này chỉ vì sự thuận tiện cho bạn và do đó bạn tự chịu trách nhiệm khi truy cập chúng. Tuy nhiên, chúng tôi tìm cách bảo vệ tính toàn vẹn của Nền tảng của chúng tôi và các liên kết được đặt trên từng trang web đó và do đó chúng tôi hoan nghênh ý kiến phản hồi về các trang web được liên kết này (bao gồm nếu một trang web cụ thể không hoạt động).\n\n12. SHOPEE SẼ CHUYỂN THÔNG TIN CỦA BẠN RA NƯỚC NGOÀI?"
+    "chunk_index": 67,
+    "char_length": 465,
+    "content": "11.2. Nhằm cung cấp cho bạn giá trị gia tăng, chúng tôi có thể chọn các trang web hoặc ứng dụng hoặc dịch vụ của bên thứ ba khác nhau để liên kết, và đóng khung bên trong Nền tảng. Chúng tôi cũng có thể tham gia các quan hệ cùng tiếp thị và các quan hệ khác để cung cấp dịch vụ thương mại điện tử và các dịch vụ và tính năng khác cho khách truy cập.\n\nNhững trang được liên kết này có các chính sách về quyền riêng tư cũng như các biện pháp bảo mật riêng và độc lập."
   },
   {
     "chunk_id": 79,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 69,
-    "char_length": 589,
-    "content": "12. SHOPEE SẼ CHUYỂN THÔNG TIN CỦA BẠN RA NƯỚC NGOÀI?\n\nThông tin và/hoặc dữ liệu cá nhân của bạn có thể được chuyển ra nước ngoài, lưu trữ hoặc xử lý bên ngoài quốc gia của bạn cho một hoặc nhiều Mục đích. Shopee sẽ chỉ chuyển dữ liệu cá nhân của bạn ra nước ngoài khi phù hợp với các quy định của pháp luật về bảo vệ dữ liệu cá nhân.\n\n13. BẠN CÓ THỂ RÚT LẠI SỰ ĐỒNG Ý, YÊU CẦU HẠN CHẾ XỬ LÝ, PHẢN ĐỐI XỬ LÝ, YÊU CẦU CUNG CẤP DỮ\n\nLIỆU CÁ NHÂN, TRUY CẬP HOẶC ĐIỀU CHỈNH THÔNG TIN BẠN ĐÃ CUNG CẤP CHO CHÚNG TÔI BẰNG CÁCH NÀO?\n\n13.1. Rút Lại Sự Đồng Ý, Yêu cầu hạn chế, phản đối xử lý dữ liệu"
+    "chunk_index": 68,
+    "char_length": 479,
+    "content": "Ngay cả khi bên thứ ba đó có liên kết với chúng tôi, chúng tôi cũng không kiểm soát các trang web/ứng dụng/dịch vụ được liên kết này, mỗi trang đó có các phương pháp bảo vệ quyền riêng tư và thu thập dữ liệu riêng biệt, độc lập với chúng tôi. Dữ liệu thu thập bởi các đối tác cùng tiếp thị của chúng tôi hoặc các trang web/ứng dụng/dịch vụ của bên thứ ba (ngay cả khi được cung cấp trên hoặc thông qua Nền tảng của chúng tôi) có thể không được chúng tôi tiếp cận và/hoặc lưu giữ."
   },
   {
     "chunk_id": 80,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 70,
-    "char_length": 776,
-    "content": "13.1. Rút Lại Sự Đồng Ý, Yêu cầu hạn chế, phản đối xử lý dữ liệu\n\n13.1.1 Bạn có thể rút lại sự đồng ý cho phép, yêu cầu hạn chế, phản đối trong việc thu thập, xử lý, sử dụng và/hoặc tiết lộ dữ liệu cá nhân của bạn mà chúng tôi đang lưu giữ hoặc kiểm soát bằng cách gửi email cho Chuyên viên Bảo Vệ Dữ Liệu Cá Nhân của chúng tôi tại địa chỉ email dpo.vn@shopee.com hoặc qua ĐÂY, và chúng tôi sẽ xử lý các yêu cầu này theo Chính Sách Bảo Mật cũng như quy định pháp luật có liên quan. Tuy nhiên, việc bạn rút lại sự cho phép, yêu cầu hạn chế, phản đối xử lý dữ liệu cá nhân của bạn có thể đồng nghĩa với việc chúng tôi sẽ không thể tiếp tục cung cấp các Dịch vụ đến bạn và chúng tôi có thể cần phải chấm dứt mối quan hệ hiện tại giữa bạn và/hoặc hợp đồng mà bạn có với Chúng tôi."
+    "chunk_index": 69,
+    "char_length": 661,
+    "content": "11.3. Do đó chúng tôi không chịu trách nhiệm hay trách nhiệm pháp lý đối với nội dung, các biện pháp bảo mật (hoặc sự thiếu biện pháp bảo mật) và các hoạt động của các trang web/ứng dụng/dịch vụ được liên kết này. Những trang web/ứng dụng/dịch vụ được liên kết này chỉ vì sự thuận tiện cho bạn và do đó bạn tự chịu trách nhiệm khi truy cập chúng. Tuy nhiên, chúng tôi tìm cách bảo vệ tính toàn vẹn của Nền tảng của chúng tôi và các liên kết được đặt trên từng trang web đó và do đó chúng tôi hoan nghênh ý kiến phản hồi về các trang web được liên kết này (bao gồm nếu một trang web cụ thể không hoạt động).\n\n12. SHOPEE SẼ CHUYỂN THÔNG TIN CỦA BẠN RA NƯỚC NGOÀI?"
   },
   {
     "chunk_id": 81,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 71,
-    "char_length": 391,
-    "content": "13.1.2 Khi bạn chia sẻ nội dung trên YouTube, bên cạnh việc rút lại sự cho phép của bạn bằng việc gửi email cho chúng tôi phù hợp với quy định tại Điều 13.1.1, bạn cũng có thể rút lại quyền truy cập của Shopee vào dữ liệu cá nhân của bạn thông qua trang cài đặt an ninh của Google tại địa chỉ https://security.google.com/settings/security/permissions.\n\n13.2. Yêu cầu cung cấp Dữ Liệu Cá Nhân"
+    "chunk_index": 70,
+    "char_length": 589,
+    "content": "12. SHOPEE SẼ CHUYỂN THÔNG TIN CỦA BẠN RA NƯỚC NGOÀI?\n\nThông tin và/hoặc dữ liệu cá nhân của bạn có thể được chuyển ra nước ngoài, lưu trữ hoặc xử lý bên ngoài quốc gia của bạn cho một hoặc nhiều Mục đích. Shopee sẽ chỉ chuyển dữ liệu cá nhân của bạn ra nước ngoài khi phù hợp với các quy định của pháp luật về bảo vệ dữ liệu cá nhân.\n\n13. BẠN CÓ THỂ RÚT LẠI SỰ ĐỒNG Ý, YÊU CẦU HẠN CHẾ XỬ LÝ, PHẢN ĐỐI XỬ LÝ, YÊU CẦU CUNG CẤP DỮ\n\nLIỆU CÁ NHÂN, TRUY CẬP HOẶC ĐIỀU CHỈNH THÔNG TIN BẠN ĐÃ CUNG CẤP CHO CHÚNG TÔI BẰNG CÁCH NÀO?\n\n13.1. Rút Lại Sự Đồng Ý, Yêu cầu hạn chế, phản đối xử lý dữ liệu"
   },
   {
     "chunk_id": 82,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 72,
-    "char_length": 722,
-    "content": "13.2. Yêu cầu cung cấp Dữ Liệu Cá Nhân\n\n13.2.1. Bạn có quyền yêu cầu chúng tôi cung cấp Dữ Liệu Cá Nhân của chính bản thân bạn cho bạn bằng cách gửi yêu cầu cho Chuyên viên Bảo Vệ Dữ Liệu Cá Nhân của chúng tôi tại địa chỉ email dpo.vn@shopee.com hoặc qua ĐÂY. Bạn cũng có quyền yêu cầu chúng tôi cung cấp Dữ Liệu Cá Nhân của bạn cho các tổ chức, cá nhân khác hoặc của các tổ chức, cá nhân khác cho bạn với điều kiện bạn phải cung cấp được ủy quyền hợp lệ hoặc tài liệu khác chứng minh chấp thuận của chủ thể dữ liệu theo quy định của pháp luật.\n\n13.2.2. Yêu cầu của bạn chỉ được coi là hợp lệ và được chấp nhận xử lý khi có đầy đủ các thông tin cần thiết và sử dụng đúng biểu mẫu theo quy định của Luật riêng tư hiện hành."
+    "chunk_index": 71,
+    "char_length": 776,
+    "content": "13.1. Rút Lại Sự Đồng Ý, Yêu cầu hạn chế, phản đối xử lý dữ liệu\n\n13.1.1 Bạn có thể rút lại sự đồng ý cho phép, yêu cầu hạn chế, phản đối trong việc thu thập, xử lý, sử dụng và/hoặc tiết lộ dữ liệu cá nhân của bạn mà chúng tôi đang lưu giữ hoặc kiểm soát bằng cách gửi email cho Chuyên viên Bảo Vệ Dữ Liệu Cá Nhân của chúng tôi tại địa chỉ email dpo.vn@shopee.com hoặc qua ĐÂY, và chúng tôi sẽ xử lý các yêu cầu này theo Chính Sách Bảo Mật cũng như quy định pháp luật có liên quan. Tuy nhiên, việc bạn rút lại sự cho phép, yêu cầu hạn chế, phản đối xử lý dữ liệu cá nhân của bạn có thể đồng nghĩa với việc chúng tôi sẽ không thể tiếp tục cung cấp các Dịch vụ đến bạn và chúng tôi có thể cần phải chấm dứt mối quan hệ hiện tại giữa bạn và/hoặc hợp đồng mà bạn có với Chúng tôi."
   },
   {
     "chunk_id": 83,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 73,
-    "char_length": 693,
-    "content": "13.2.3. Chúng tôi có thể tính một khoản phí hợp lý cho bạn để giải quyết và xử lý yêu cầu cung cấp dữ liệu cá nhân của bạn. Nếu chúng tôi có tính phí, chúng tôi sẽ cung cấp cho bạn ước tính lệ phí bằng văn bản tùy thuộc vào từng trường hợp cụ thể.\n\n13.2.4. Trong trường hợp yêu cầu của bạn là hợp lệ theo quy định của pháp luật và thuộc trường hợp chúng tôi được phép cung cấp dữ liệu, chúng tôi sẽ thông báo đến bạn thông qua các phương thức liên lạc phù hợp về thời gian, địa điểm, hình thức cung cấp dữ liệu cá nhân, chi phí (nếu có), phương thức, thời hạn thanh toán (nếu có) và chúng tôi sẽ cung cấp dữ liệu cá nhân theo đúng thông báo này và các thủ tục khác theo quy định của pháp luật."
+    "chunk_index": 72,
+    "char_length": 391,
+    "content": "13.1.2 Khi bạn chia sẻ nội dung trên YouTube, bên cạnh việc rút lại sự cho phép của bạn bằng việc gửi email cho chúng tôi phù hợp với quy định tại Điều 13.1.1, bạn cũng có thể rút lại quyền truy cập của Shopee vào dữ liệu cá nhân của bạn thông qua trang cài đặt an ninh của Google tại địa chỉ https://security.google.com/settings/security/permissions.\n\n13.2. Yêu cầu cung cấp Dữ Liệu Cá Nhân"
   },
   {
     "chunk_id": 84,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 74,
-    "char_length": 526,
-    "content": "13.2.5. Vui lòng lưu ý rằng chúng tôi không buộc phải đáp ứng hay giải quyết yêu cầu cung cấp Dữ Liệu Cá Nhân của bạn trừ phi bạn đã đồng ý đóng phí theo thông báo được quy định tại Điều 13.2.4 nêu trên.\n\n13.2.6. Chúng tôi bảo lưu quyền từ chối cung cấp dữ liệu cá nhân của bạn theo các quy định của pháp luật về bảo vệ bí mật thông tin cá nhân, trường hợp các điều luật đó yêu cầu và/hoặc cho phép một tổ chức từ chối cung cấp dữ liệu cá nhân trong các trường hợp như thế.\n\n13.3. Yêu Cầu Truy Cập đến hoặc Sửa Dữ Liệu Cá Nhân"
+    "chunk_index": 73,
+    "char_length": 722,
+    "content": "13.2. Yêu cầu cung cấp Dữ Liệu Cá Nhân\n\n13.2.1. Bạn có quyền yêu cầu chúng tôi cung cấp Dữ Liệu Cá Nhân của chính bản thân bạn cho bạn bằng cách gửi yêu cầu cho Chuyên viên Bảo Vệ Dữ Liệu Cá Nhân của chúng tôi tại địa chỉ email dpo.vn@shopee.com hoặc qua ĐÂY. Bạn cũng có quyền yêu cầu chúng tôi cung cấp Dữ Liệu Cá Nhân của bạn cho các tổ chức, cá nhân khác hoặc của các tổ chức, cá nhân khác cho bạn với điều kiện bạn phải cung cấp được ủy quyền hợp lệ hoặc tài liệu khác chứng minh chấp thuận của chủ thể dữ liệu theo quy định của pháp luật.\n\n13.2.2. Yêu cầu của bạn chỉ được coi là hợp lệ và được chấp nhận xử lý khi có đầy đủ các thông tin cần thiết và sử dụng đúng biểu mẫu theo quy định của Luật riêng tư hiện hành."
   },
   {
     "chunk_id": 85,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 75,
-    "char_length": 787,
-    "content": "13.3. Yêu Cầu Truy Cập đến hoặc Sửa Dữ Liệu Cá Nhân\n\n13.3.1. Nếu bạn đã đăng ký một tài khoản với chúng tôi, cá nhân bạn có thể truy cập và/hoặc sửa dữ liệu cá nhân của bạn mà chúng tôi đang lưu giữ hoặc kiểm soát thông qua trang Thiết Lập Tài Khoản trên Nền tàng. Nếu bạn chưa đăng ký tài khoản với chúng tôi, cá nhân bạn có thể yêu cầu truy cập và/hoặc sửa dữ liệu cá nhân của bạn mà chúng tôi đang lưu giữ hoặc kiểm soát bằng cách gửi yêu cầu bằng văn bản cho chúng tôi. Chúng tôi sẽ cần có đủ thông tin từ bạn để xác định danh tính của bạn cũng như bản chất yêu cầu của bạn để có thể giải quyết yêu cầu của bạn. Do đó, vui lòng gửi yêu cầu bằng văn bản của bạn bằng cách gửi email cho Chuyên viên Bảo Vệ Dữ Liệu Cá Nhân của chúng tôi tại địa chỉ email dpo.vn@shopee.com hoặc tại ĐÂY."
+    "chunk_index": 74,
+    "char_length": 693,
+    "content": "13.2.3. Chúng tôi có thể tính một khoản phí hợp lý cho bạn để giải quyết và xử lý yêu cầu cung cấp dữ liệu cá nhân của bạn. Nếu chúng tôi có tính phí, chúng tôi sẽ cung cấp cho bạn ước tính lệ phí bằng văn bản tùy thuộc vào từng trường hợp cụ thể.\n\n13.2.4. Trong trường hợp yêu cầu của bạn là hợp lệ theo quy định của pháp luật và thuộc trường hợp chúng tôi được phép cung cấp dữ liệu, chúng tôi sẽ thông báo đến bạn thông qua các phương thức liên lạc phù hợp về thời gian, địa điểm, hình thức cung cấp dữ liệu cá nhân, chi phí (nếu có), phương thức, thời hạn thanh toán (nếu có) và chúng tôi sẽ cung cấp dữ liệu cá nhân theo đúng thông báo này và các thủ tục khác theo quy định của pháp luật."
   },
   {
     "chunk_id": 86,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 76,
-    "char_length": 657,
-    "content": "13.3.2 Chúng tôi có thể tính một khoản phí hợp lý cho bạn để giải quyết và xử lý yêu cầu truy cập dữ liệu cá nhân của bạn. Nếu chúng tôi có tính phí, chúng tôi sẽ cung cấp cho bạn ước tính lệ phí bằng văn bản. Vui lòng lưu ý rằng chúng tôi không buộc phải đáp ứng hay giải quyết yêu cầu truy cập của bạn trừ phi bạn đã đồng ý đóng phí.\n\n13.3.3 Chúng tôi bảo lưu quyền từ chối sửa dữ liệu cá nhân của bạn theo các quy định của pháp luật về bảo vệ bí mật thông tin cá nhân, trường hợp các điều luật đó yêu cầu và/hoặc cho phép một tổ chức từ chối sửa dữ liệu cá nhân trong các trường hợp như thế.\n\n14. THẮC MẮC, QUAN NGẠI HOẶC KHIẾU NẠI? LIÊN HỆ VỚI CHÚNG TÔI"
+    "chunk_index": 75,
+    "char_length": 526,
+    "content": "13.2.5. Vui lòng lưu ý rằng chúng tôi không buộc phải đáp ứng hay giải quyết yêu cầu cung cấp Dữ Liệu Cá Nhân của bạn trừ phi bạn đã đồng ý đóng phí theo thông báo được quy định tại Điều 13.2.4 nêu trên.\n\n13.2.6. Chúng tôi bảo lưu quyền từ chối cung cấp dữ liệu cá nhân của bạn theo các quy định của pháp luật về bảo vệ bí mật thông tin cá nhân, trường hợp các điều luật đó yêu cầu và/hoặc cho phép một tổ chức từ chối cung cấp dữ liệu cá nhân trong các trường hợp như thế.\n\n13.3. Yêu Cầu Truy Cập đến hoặc Sửa Dữ Liệu Cá Nhân"
   },
   {
     "chunk_id": 87,
     "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "both",
-    "chunk_index": 77,
-    "char_length": 593,
-    "content": "14. THẮC MẮC, QUAN NGẠI HOẶC KHIẾU NẠI? LIÊN HỆ VỚI CHÚNG TÔI\n\nNếu bạn có bất kỳ thắc mắc, yêu cầu bảo vệ hoặc khiếu nại nào về các phương pháp bảo vệ quyền riêng tư của chúng tôi vui lòng liên hệ với chúng tôi theo thông tin sau:\n\nCÔNG TY TNHH SHOPEE Địa chỉ: Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu Giai, Phường Ngọc Hà, Thành phố Hà Nội, Việt Nam Email: dpo.vn@shopee.com hoặc tại ĐÂY.\n\nChính sách này được cập nhật vào ngày 04/6/2026 và có hiệu lực sau 07 (bảy) ngày kể từ ngày đăng tải. Để tham khảo phiên bản trước của Chính sách Bảo mật, vui lòng bấm vào ĐÂY."
+    "chunk_index": 76,
+    "char_length": 787,
+    "content": "13.3. Yêu Cầu Truy Cập đến hoặc Sửa Dữ Liệu Cá Nhân\n\n13.3.1. Nếu bạn đã đăng ký một tài khoản với chúng tôi, cá nhân bạn có thể truy cập và/hoặc sửa dữ liệu cá nhân của bạn mà chúng tôi đang lưu giữ hoặc kiểm soát thông qua trang Thiết Lập Tài Khoản trên Nền tàng. Nếu bạn chưa đăng ký tài khoản với chúng tôi, cá nhân bạn có thể yêu cầu truy cập và/hoặc sửa dữ liệu cá nhân của bạn mà chúng tôi đang lưu giữ hoặc kiểm soát bằng cách gửi yêu cầu bằng văn bản cho chúng tôi. Chúng tôi sẽ cần có đủ thông tin từ bạn để xác định danh tính của bạn cũng như bản chất yêu cầu của bạn để có thể giải quyết yêu cầu của bạn. Do đó, vui lòng gửi yêu cầu bằng văn bản của bạn bằng cách gửi email cho Chuyên viên Bảo Vệ Dữ Liệu Cá Nhân của chúng tôi tại địa chỉ email dpo.vn@shopee.com hoặc tại ĐÂY."
   },
   {
     "chunk_id": 88,
-    "source": "returns-refund-policy-shopee.md",
+    "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
-    "customer_role": "seller",
-    "chunk_index": 0,
-    "char_length": 711,
-    "content": "CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN\n\nNguồn: https://help.shopee.vn/portal/4/article/77251\n\n1. ĐỐI TƯỢNG VÀ PHẠM VI ÁP DỤNG\n\n1.1. Đối Tượng Áp Dụng\n\n- Chính Sách Trả Hàng và Hoàn Tiền này áp dụng đối với Người Mua, Người Bán, các đơn vị cung cấp dịch vụ vận chuyển, nhân viên giao nhận (shipper) của các đơn vị cung cấp dịch vụ vận chuyển trên Sàn Giao Dịch Thương Mại Điện Tử Shopee (“Sàn Shopee”) và/hoặc các bên khác có liên quan.\n\n- Khái niệm Người Mua sẽ được dùng để chỉ Người Mua hoặc Người Nhận Hàng trong từng trường hợp; Khái niệm Người Bán sẽ được dùng để chỉ Người Bán hoặc Người Gửi Hàng trong từng trường hợp. Shopee bảo lưu quyền sửa đổi Chính Sách Trả Hàng và Hoàn Tiền này vào bất cứ thời điểm nào."
+    "customer_role": "both",
+    "chunk_index": 77,
+    "char_length": 657,
+    "content": "13.3.2 Chúng tôi có thể tính một khoản phí hợp lý cho bạn để giải quyết và xử lý yêu cầu truy cập dữ liệu cá nhân của bạn. Nếu chúng tôi có tính phí, chúng tôi sẽ cung cấp cho bạn ước tính lệ phí bằng văn bản. Vui lòng lưu ý rằng chúng tôi không buộc phải đáp ứng hay giải quyết yêu cầu truy cập của bạn trừ phi bạn đã đồng ý đóng phí.\n\n13.3.3 Chúng tôi bảo lưu quyền từ chối sửa dữ liệu cá nhân của bạn theo các quy định của pháp luật về bảo vệ bí mật thông tin cá nhân, trường hợp các điều luật đó yêu cầu và/hoặc cho phép một tổ chức từ chối sửa dữ liệu cá nhân trong các trường hợp như thế.\n\n14. THẮC MẮC, QUAN NGẠI HOẶC KHIẾU NẠI? LIÊN HỆ VỚI CHÚNG TÔI"
   },
   {
     "chunk_id": 89,
-    "source": "returns-refund-policy-shopee.md",
+    "source": "privacy-policy-shopee.md",
     "doc_type": "legal",
-    "customer_role": "seller",
-    "chunk_index": 1,
-    "char_length": 708,
-    "content": "1.2. Phạm Vi Áp Dụng Chính Sách Trả Hàng và Hoàn Tiền này quy định về quyền và nghĩa vụ của Người Mua được yêu cầu trả hàng, hoàn tiền; cũng như quyền và nghĩa vụ của Shopee, Người Bán, đơn vị vận chuyển và/hoặc các bên có liên quan trong quá trình giải quyết yêu cầu của Người Mua.\n\n2. ĐIỀU KIỆN ÁP DỤNG\n\n2.1. Theo các điều khoản và điều kiện được quy định trong Chính Sách Trả Hàng và Hoàn Tiền này và tạo thành một phần của Điều Khoản Dịch Vụ, Shopee đảm bảo quyền lợi của Người Mua bằng cách cho phép Người Mua gửi yêu cầu hoàn trả sản phẩm đã mua (“Sản Phẩm Hoàn Trả”) và/hoặc hoàn tiền trước hoặc sau khi hết Thời Gian Shopee Đảm Bảo. Thời Gian Shopee Đảm Bảo đã được quy định trong Điều Khoản Dịch Vụ."
+    "customer_role": "both",
+    "chunk_index": 78,
+    "char_length": 593,
+    "content": "14. THẮC MẮC, QUAN NGẠI HOẶC KHIẾU NẠI? LIÊN HỆ VỚI CHÚNG TÔI\n\nNếu bạn có bất kỳ thắc mắc, yêu cầu bảo vệ hoặc khiếu nại nào về các phương pháp bảo vệ quyền riêng tư của chúng tôi vui lòng liên hệ với chúng tôi theo thông tin sau:\n\nCÔNG TY TNHH SHOPEE Địa chỉ: Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu Giai, Phường Ngọc Hà, Thành phố Hà Nội, Việt Nam Email: dpo.vn@shopee.com hoặc tại ĐÂY.\n\nChính sách này được cập nhật vào ngày 04/6/2026 và có hiệu lực sau 07 (bảy) ngày kể từ ngày đăng tải. Để tham khảo phiên bản trước của Chính sách Bảo mật, vui lòng bấm vào ĐÂY."
   },
   {
     "chunk_id": 90,
     "source": "returns-refund-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "seller",
-    "chunk_index": 2,
-    "char_length": 740,
-    "content": "2.2. Thời Gian Shopee Đảm Bảo thực hiện bởi Shopee, theo yêu cầu của Người Dùng, để hỗ trợ Người Dùng trong việc giải quyết các xung đột, tranh chấp, khiếu nại có thể phát sinh trong quá trình giao dịch trên Sàn Shopee. Người Dùng có thể liên hệ với nhau để thỏa thuận về việc giải quyết tranh chấp của họ hoặc báo cáo lên Shopee hoặc cơ quan nhà nước có thẩm quyền để được hỗ trợ trong việc giải quyết bất kỳ tranh chấp xảy ra trước, trong hoặc sau Thời Gian Shopee Đảm Bảo.\n\n2.3. Chính Sách Trả Hàng và Hoàn Tiền cho sản phẩm thuộc Shopee Mall được quy định tại Điều Khoản Dịch Vụ Shopee Mall.\n\n3. ĐIỀU KIỆN YÊU CẦU TRẢ HÀNG/HOÀN TIỀN\n\n3.1. Người Mua đồng ý rằng Người Mua chỉ có thể yêu cầu trả hàng/hoàn tiền trong các trường hợp sau:"
+    "chunk_index": 0,
+    "char_length": 770,
+    "content": "# TOM TAT CHINH SACH\n\nChính sách Trả hàng và Hoàn tiền của Shopee áp dụng cho Người Mua, Người Bán, các đơn vị vận chuyển và các bên liên quan. Chính sách này quy định quyền và nghĩa vụ của các bên trong việc xử lý yêu cầu trả hàng và hoàn tiền. Người Mua có thể yêu cầu trả hàng/hoàn tiền trong các trường hợp như không nhận được sản phẩm, sản phẩm bị lỗi, giao sai hàng hoặc không đúng mô tả. Thời gian yêu cầu trả hàng là 15 ngày kể từ khi giao hàng thành công, riêng thực phẩm tươi sống là 24 giờ. Người Mua cần liên kết tài khoản Shopee với phương thức nhận hoàn tiền hợp lệ để thực hiện yêu cầu. Shopee có quyền sửa đổi chính sách này bất cứ lúc nào.\n\n---\n\n# NOI DUNG CHI TIET\n\nCHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN\n\nNguồn: https://help.shopee.vn/portal/4/article/77251"
   },
   {
     "chunk_id": 91,
     "source": "returns-refund-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "seller",
-    "chunk_index": 3,
-    "char_length": 676,
-    "content": "- Người Mua đã thanh toán bằng các phương thức thanh toán hợp lệ và trực tiếp trên Trang Shopee nhưng (i) không nhận được Sản Phẩm, hoặc (ii) không nhận được toàn bộ các Sản Phẩm đã đặt, hoặc (iii) nhận được Sản Phẩm là hàng giả, hàng nhái;\n\n- Sản Phẩm bị lỗi hoặc bị hư hại trong quá trình vận chuyển;\n\n- Người Bán giao sai Sản Phẩm cho Người Mua (ví dụ: sai kích cỡ, sai màu sắc, v.v);\n\n- Sản Phẩm mà Người Mua nhận được khác biệt một cách rõ rệt so với thông tin mà Người Bán cung cấp trong mục mô tả sản phẩm;\n\n- Sản Phẩm hết hạn sử dụng;\n\n- Người Bán đã tự thỏa thuận và đồng ý cho Người Mua trả hàng (tuy nhiên Shopee sẽ cần Người Bán xác nhận lại những thỏa thuận này)."
+    "chunk_index": 1,
+    "char_length": 711,
+    "content": "CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN\n\nNguồn: https://help.shopee.vn/portal/4/article/77251\n\n1. ĐỐI TƯỢNG VÀ PHẠM VI ÁP DỤNG\n\n1.1. Đối Tượng Áp Dụng\n\n- Chính Sách Trả Hàng và Hoàn Tiền này áp dụng đối với Người Mua, Người Bán, các đơn vị cung cấp dịch vụ vận chuyển, nhân viên giao nhận (shipper) của các đơn vị cung cấp dịch vụ vận chuyển trên Sàn Giao Dịch Thương Mại Điện Tử Shopee (“Sàn Shopee”) và/hoặc các bên khác có liên quan.\n\n- Khái niệm Người Mua sẽ được dùng để chỉ Người Mua hoặc Người Nhận Hàng trong từng trường hợp; Khái niệm Người Bán sẽ được dùng để chỉ Người Bán hoặc Người Gửi Hàng trong từng trường hợp. Shopee bảo lưu quyền sửa đổi Chính Sách Trả Hàng và Hoàn Tiền này vào bất cứ thời điểm nào."
   },
   {
     "chunk_id": 92,
     "source": "returns-refund-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "seller",
-    "chunk_index": 4,
-    "char_length": 649,
-    "content": "- Sản Phẩm ở trạng thái nguyên vẹn và nguyên bao bì nhưng Người Mua không còn nhu cầu (\"Trả hàng COM\"), theo yêu cầu tại Điều 4 dưới đây.\n\n3.2. Người Mua có thể gửi yêu cầu trả hàng/hoàn tiền trong vòng 15 (mười lăm) ngày kể từ lúc đơn hàng được cập nhật giao hàng thành công. Riêng đối với các Sản Phẩm là thực phẩm tươi sống và đông lạnh, Người Mua cần gửi yêu cầu trả hàng/hoàn tiền trong vòng 24 giờ kể từ lúc đơn hàng được cập nhật giao hàng thành công. Một số trường hợp Người Mua có nhu cầu trả hàng/hoàn tiền sau thời hạn trên, Shopee sẽ xem xét và có thể hỗ trợ Người Mua được trả hàng/hoàn tiền trong phạm vi phù hợp với Chính Sách Shopee."
+    "chunk_index": 2,
+    "char_length": 708,
+    "content": "1.2. Phạm Vi Áp Dụng Chính Sách Trả Hàng và Hoàn Tiền này quy định về quyền và nghĩa vụ của Người Mua được yêu cầu trả hàng, hoàn tiền; cũng như quyền và nghĩa vụ của Shopee, Người Bán, đơn vị vận chuyển và/hoặc các bên có liên quan trong quá trình giải quyết yêu cầu của Người Mua.\n\n2. ĐIỀU KIỆN ÁP DỤNG\n\n2.1. Theo các điều khoản và điều kiện được quy định trong Chính Sách Trả Hàng và Hoàn Tiền này và tạo thành một phần của Điều Khoản Dịch Vụ, Shopee đảm bảo quyền lợi của Người Mua bằng cách cho phép Người Mua gửi yêu cầu hoàn trả sản phẩm đã mua (“Sản Phẩm Hoàn Trả”) và/hoặc hoàn tiền trước hoặc sau khi hết Thời Gian Shopee Đảm Bảo. Thời Gian Shopee Đảm Bảo đã được quy định trong Điều Khoản Dịch Vụ."
   },
   {
     "chunk_id": 93,
     "source": "returns-refund-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "seller",
-    "chunk_index": 5,
-    "char_length": 704,
-    "content": "3.3. Đối với các đơn hàng được thanh toán bằng hình thức Thanh toán khi nhận hàng (COD) và/hoặc Chuyển khoản ngân hàng, tài khoản Shopee của Người Mua phải liên kết với các phương thức nhận hoàn tiền hợp lệ theo quy định áp dụng của Shopee (ví dụ như Tài Khoản Ngân Hàng và/hoặc các ví điện tử hợp lệ như Ví ShopeePay) trước khi thực hiện yêu cầu Trả hàng / Hoàn tiền. Để làm rõ, Người Mua sẽ không thể thực hiện yêu cầu Trả hàng/ Hoàn tiền trong trường hợp tài khoản Shopee của Người Mua không liên kết thành công với các phương thức nhận hoàn tiền theo quy định tại Điều 3.3 này.\n\n3.4. Tất cả các yêu cầu trả hàng hoàn tiền phải được thực hiện trên tài khoản Shopee của chính Người Mua đã đặt đơn hàng."
+    "chunk_index": 3,
+    "char_length": 740,
+    "content": "2.2. Thời Gian Shopee Đảm Bảo thực hiện bởi Shopee, theo yêu cầu của Người Dùng, để hỗ trợ Người Dùng trong việc giải quyết các xung đột, tranh chấp, khiếu nại có thể phát sinh trong quá trình giao dịch trên Sàn Shopee. Người Dùng có thể liên hệ với nhau để thỏa thuận về việc giải quyết tranh chấp của họ hoặc báo cáo lên Shopee hoặc cơ quan nhà nước có thẩm quyền để được hỗ trợ trong việc giải quyết bất kỳ tranh chấp xảy ra trước, trong hoặc sau Thời Gian Shopee Đảm Bảo.\n\n2.3. Chính Sách Trả Hàng và Hoàn Tiền cho sản phẩm thuộc Shopee Mall được quy định tại Điều Khoản Dịch Vụ Shopee Mall.\n\n3. ĐIỀU KIỆN YÊU CẦU TRẢ HÀNG/HOÀN TIỀN\n\n3.1. Người Mua đồng ý rằng Người Mua chỉ có thể yêu cầu trả hàng/hoàn tiền trong các trường hợp sau:"
   },
   {
     "chunk_id": 94,
     "source": "returns-refund-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "seller",
-    "chunk_index": 6,
-    "char_length": 667,
-    "content": "3.5. Shopee luôn xem xét cẩn thận các yêu cầu trả hàng/hoàn tiền của Người Mua và có quyền đưa ra quyết định cuối cùng đối với yêu cầu đó dựa trên các quy định nêu trên và theo Điều Khoản Dịch Vụ của Shopee.\n\n4. QUY ĐỊNH BỔ SUNG ĐỐI VỚI CÁC TRƯỜNG HỢP TRẢ HÀNG COM\n\nViệc Trả hàng COM được thực hiện với các quy định bổ sung như sau:\n\n4.1. Đối tượng áp dụng a. Trả hàng COM sẽ chỉ được áp dụng với các đối tượng như sau (“Người Mua hợp lệ”):\n\ni. Người Mua là thành viên của Chương trình khách hàng thân thiết Shopee đạt hạng Vàng và Kim Cương. Vui lòng tham khảo hạng thành viên tại ĐÂY;\n\nii. Người Mua đang sử dụng Gói ShopeeVIP. Vui lòng tham khảo ShopeeVIP tại ĐÂY."
+    "chunk_index": 4,
+    "char_length": 676,
+    "content": "- Người Mua đã thanh toán bằng các phương thức thanh toán hợp lệ và trực tiếp trên Trang Shopee nhưng (i) không nhận được Sản Phẩm, hoặc (ii) không nhận được toàn bộ các Sản Phẩm đã đặt, hoặc (iii) nhận được Sản Phẩm là hàng giả, hàng nhái;\n\n- Sản Phẩm bị lỗi hoặc bị hư hại trong quá trình vận chuyển;\n\n- Người Bán giao sai Sản Phẩm cho Người Mua (ví dụ: sai kích cỡ, sai màu sắc, v.v);\n\n- Sản Phẩm mà Người Mua nhận được khác biệt một cách rõ rệt so với thông tin mà Người Bán cung cấp trong mục mô tả sản phẩm;\n\n- Sản Phẩm hết hạn sử dụng;\n\n- Người Bán đã tự thỏa thuận và đồng ý cho Người Mua trả hàng (tuy nhiên Shopee sẽ cần Người Bán xác nhận lại những thỏa thuận này)."
   },
   {
     "chunk_id": 95,
     "source": "returns-refund-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "seller",
-    "chunk_index": 7,
-    "char_length": 583,
-    "content": "ii. Người Mua đang sử dụng Gói ShopeeVIP. Vui lòng tham khảo ShopeeVIP tại ĐÂY.\n\nb. Trong trường hợp Người Mua không thuộc đối tượng được quy định tại Điều 4.1.a nêu trên nhưng vẫn có thể thực hiện yêu cầu Trả hàng COM từ tài khoản của Người Mua, thì Shopee có quyền từ chối yêu cầu đó. Tuy nhiên, trong trường hợp Shopee, vì bất cứ lý do gì theo quyết định của riêng Shopee, đồng ý cho Người Mua đó được quyền Trả hàng COM, Người Bán sẽ không phải chịu phí vận chuyển của đơn hoàn.\n\n4.2. Hạn mức Người Mua hợp lệ chỉ được Trả hàng COM trong các hạn mức được tính theo tháng như sau:"
+    "chunk_index": 5,
+    "char_length": 649,
+    "content": "- Sản Phẩm ở trạng thái nguyên vẹn và nguyên bao bì nhưng Người Mua không còn nhu cầu (\"Trả hàng COM\"), theo yêu cầu tại Điều 4 dưới đây.\n\n3.2. Người Mua có thể gửi yêu cầu trả hàng/hoàn tiền trong vòng 15 (mười lăm) ngày kể từ lúc đơn hàng được cập nhật giao hàng thành công. Riêng đối với các Sản Phẩm là thực phẩm tươi sống và đông lạnh, Người Mua cần gửi yêu cầu trả hàng/hoàn tiền trong vòng 24 giờ kể từ lúc đơn hàng được cập nhật giao hàng thành công. Một số trường hợp Người Mua có nhu cầu trả hàng/hoàn tiền sau thời hạn trên, Shopee sẽ xem xét và có thể hỗ trợ Người Mua được trả hàng/hoàn tiền trong phạm vi phù hợp với Chính Sách Shopee."
   },
   {
     "chunk_id": 96,
     "source": "returns-refund-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "seller",
-    "chunk_index": 8,
-    "char_length": 628,
-    "content": "a. Đối với khách hàng thân thiết hạng Vàng và Kim Cương: không giới hạn hạn mức theo tháng, trừ trường hợp Người Mua thực hiện bất cứ hành vi nào vi phạm các Chính sách của Sàn TMĐT Shopee, bao gồm nhưng không giới hạn ở Điều khoản dịch vụ. Trong trường hợp đó, Người Mua mất quyền Trả hàng COM trong tháng phát sinh hành vi vi phạm.\n\ni. Việc giới hạn hạn mức quy định tại điểm này sẽ không còn áp dụng khi bắt đầu tháng dương lịch mới;\n\nii. Việc áp dụng giới hạn hạn mức theo quy định tại Điểm này sẽ không ảnh hưởng đến các yêu cầu Trả hàng COM mà Người Mua đã thực hiện trước thời điểm nhận được thông báo vi phạm của Shopee;"
+    "chunk_index": 6,
+    "char_length": 704,
+    "content": "3.3. Đối với các đơn hàng được thanh toán bằng hình thức Thanh toán khi nhận hàng (COD) và/hoặc Chuyển khoản ngân hàng, tài khoản Shopee của Người Mua phải liên kết với các phương thức nhận hoàn tiền hợp lệ theo quy định áp dụng của Shopee (ví dụ như Tài Khoản Ngân Hàng và/hoặc các ví điện tử hợp lệ như Ví ShopeePay) trước khi thực hiện yêu cầu Trả hàng / Hoàn tiền. Để làm rõ, Người Mua sẽ không thể thực hiện yêu cầu Trả hàng/ Hoàn tiền trong trường hợp tài khoản Shopee của Người Mua không liên kết thành công với các phương thức nhận hoàn tiền theo quy định tại Điều 3.3 này.\n\n3.4. Tất cả các yêu cầu trả hàng hoàn tiền phải được thực hiện trên tài khoản Shopee của chính Người Mua đã đặt đơn hàng."
   },
   {
     "chunk_id": 97,
     "source": "returns-refund-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "seller",
-    "chunk_index": 9,
-    "char_length": 751,
-    "content": "iii. Trong trường hợp giới hạn hạn mức này được áp dụng, Người Mua vẫn có thể thực hiện yêu cầu Trả hàng COM từ tài khoản Shopee của Người Mua; tuy nhiên, Shopee bảo lưu toàn quyền từ chối bất kỳ yêu cầu nào như vậy.\n\nb. Đối với Người Mua sử dụng Gói ShopeeVIP, hạn mức Trả hàng COM là 15 (mười lăm) lần trong mỗi tháng dương lịch được tính bắt đầu từ thời điểm Gói ShopeeVIP được Người Mua đăng ký thành công và Người Mua vẫn được hưởng quyền lợi này cho đến khi chấm dứt Gói ShopeeVIP (vì bất kỳ lý do gì), trừ trường hợp Người Mua thực hiện bất cứ hành vi nào vi phạm các Chính sách của Sàn TMĐT Shopee, bao gồm nhưng không giới hạn ở Điều khoản dịch vụ.\n\nTrong trường hợp đó, Người Mua mất quyền Trả hàng COM trong tháng phát sinh hành vi vi phạm."
+    "chunk_index": 7,
+    "char_length": 667,
+    "content": "3.5. Shopee luôn xem xét cẩn thận các yêu cầu trả hàng/hoàn tiền của Người Mua và có quyền đưa ra quyết định cuối cùng đối với yêu cầu đó dựa trên các quy định nêu trên và theo Điều Khoản Dịch Vụ của Shopee.\n\n4. QUY ĐỊNH BỔ SUNG ĐỐI VỚI CÁC TRƯỜNG HỢP TRẢ HÀNG COM\n\nViệc Trả hàng COM được thực hiện với các quy định bổ sung như sau:\n\n4.1. Đối tượng áp dụng a. Trả hàng COM sẽ chỉ được áp dụng với các đối tượng như sau (“Người Mua hợp lệ”):\n\ni. Người Mua là thành viên của Chương trình khách hàng thân thiết Shopee đạt hạng Vàng và Kim Cương. Vui lòng tham khảo hạng thành viên tại ĐÂY;\n\nii. Người Mua đang sử dụng Gói ShopeeVIP. Vui lòng tham khảo ShopeeVIP tại ĐÂY."
   },
   {
     "chunk_id": 98,
     "source": "returns-refund-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "seller",
-    "chunk_index": 10,
-    "char_length": 708,
-    "content": "Trong trường hợp đó, Người Mua mất quyền Trả hàng COM trong tháng phát sinh hành vi vi phạm.\n\ni. Việc áp dụng hạn mức được quy định tại điểm này được thực hiện tương tự như Điều 4.2.a nêu trên.\n\nii. Yêu cầu Trả hàng COM sẽ không bị tính vào hạn mức nếu yêu cầu đó bị từ chối bởi Shopee.\n\niii. Hạn mức còn lại của tháng trước đó sẽ không được cộng dồn vào hạn mức của tháng tiếp theo trong bất cứ trường hợp nào.\n\niv. Quyền Trả hàng COM sẽ bị chấm dứt ngay lập tức ngay khi gói ShopeeVIP của Người Mua hết hiệu lực hoặc bị Shopee loại khỏi gói ShopeeVIP theo các chính sách, quy định của Shopee. Việc chấm dứt ngay lập tức này không ảnh hưởng đến các yêu cầu Trả hàng COM đã được tạo trước thời điểm chấm dứt."
+    "chunk_index": 8,
+    "char_length": 583,
+    "content": "ii. Người Mua đang sử dụng Gói ShopeeVIP. Vui lòng tham khảo ShopeeVIP tại ĐÂY.\n\nb. Trong trường hợp Người Mua không thuộc đối tượng được quy định tại Điều 4.1.a nêu trên nhưng vẫn có thể thực hiện yêu cầu Trả hàng COM từ tài khoản của Người Mua, thì Shopee có quyền từ chối yêu cầu đó. Tuy nhiên, trong trường hợp Shopee, vì bất cứ lý do gì theo quyết định của riêng Shopee, đồng ý cho Người Mua đó được quyền Trả hàng COM, Người Bán sẽ không phải chịu phí vận chuyển của đơn hoàn.\n\n4.2. Hạn mức Người Mua hợp lệ chỉ được Trả hàng COM trong các hạn mức được tính theo tháng như sau:"
   },
   {
     "chunk_id": 99,
     "source": "returns-refund-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "seller",
-    "chunk_index": 11,
-    "char_length": 765,
-    "content": "v. Trong trường hợp một yêu cầu Trả hàng COM được tạo trong một tháng nhưng, vì bất cứ lý do gì, được Shopee giải quyết trong tháng tiếp theo, thì yêu cầu này sẽ được tính vào hạn mức của tháng mà yêu cầu đó được tạo, và không ảnh hưởng đến hạn mức của tháng tiếp theo.\n\nvi. Trong trường hợp vì bất cứ lý do gì mà dù cho Người Mua vẫn có thể thực hiện yêu cầu Trả hàng COM từ tài khoản của Người Mua, Shopee vẫn có quyền từ chối yêu cầu này khi yêu cầu đó được thực hiện sau khi Người Mua đã đạt hạn mức trong tháng hoặc bị chấm dứt quyền trả hàng COM.\n\nc. Người Mua vừa đồng thời được Trả hàng COM theo hạng thành viên của chương trình khách hàng thân thiết vừa được hưởng quyền lợi theo gói ShopeeVIP thì sẽ được áp dụng quyền lợi Trả hàng COM có hạn mức cao hơn."
+    "chunk_index": 9,
+    "char_length": 628,
+    "content": "a. Đối với khách hàng thân thiết hạng Vàng và Kim Cương: không giới hạn hạn mức theo tháng, trừ trường hợp Người Mua thực hiện bất cứ hành vi nào vi phạm các Chính sách của Sàn TMĐT Shopee, bao gồm nhưng không giới hạn ở Điều khoản dịch vụ. Trong trường hợp đó, Người Mua mất quyền Trả hàng COM trong tháng phát sinh hành vi vi phạm.\n\ni. Việc giới hạn hạn mức quy định tại điểm này sẽ không còn áp dụng khi bắt đầu tháng dương lịch mới;\n\nii. Việc áp dụng giới hạn hạn mức theo quy định tại Điểm này sẽ không ảnh hưởng đến các yêu cầu Trả hàng COM mà Người Mua đã thực hiện trước thời điểm nhận được thông báo vi phạm của Shopee;"
   },
   {
     "chunk_id": 100,
     "source": "returns-refund-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "seller",
-    "chunk_index": 12,
-    "char_length": 223,
-    "content": "4.3. Minh bạch thông tin a. Shopee có quyền cung cấp thông tin về thứ hạng/hạn mức/quyền lợi Trả hàng COM của Người Mua cho Người Bán trong trường hợp Người Bán có căn cứ hợp lý chứng minh Buyer không có quyền Trả hàng COM."
+    "chunk_index": 10,
+    "char_length": 751,
+    "content": "iii. Trong trường hợp giới hạn hạn mức này được áp dụng, Người Mua vẫn có thể thực hiện yêu cầu Trả hàng COM từ tài khoản Shopee của Người Mua; tuy nhiên, Shopee bảo lưu toàn quyền từ chối bất kỳ yêu cầu nào như vậy.\n\nb. Đối với Người Mua sử dụng Gói ShopeeVIP, hạn mức Trả hàng COM là 15 (mười lăm) lần trong mỗi tháng dương lịch được tính bắt đầu từ thời điểm Gói ShopeeVIP được Người Mua đăng ký thành công và Người Mua vẫn được hưởng quyền lợi này cho đến khi chấm dứt Gói ShopeeVIP (vì bất kỳ lý do gì), trừ trường hợp Người Mua thực hiện bất cứ hành vi nào vi phạm các Chính sách của Sàn TMĐT Shopee, bao gồm nhưng không giới hạn ở Điều khoản dịch vụ.\n\nTrong trường hợp đó, Người Mua mất quyền Trả hàng COM trong tháng phát sinh hành vi vi phạm."
   },
   {
     "chunk_id": 101,
     "source": "returns-refund-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "seller",
-    "chunk_index": 13,
-    "char_length": 714,
-    "content": "b. Trong trường hợp nhận được khiếu nại của Người Bán về kết quả giải quyết yêu cầu Trả hàng COM trên hệ thống của Shopee, Shopee có quyền (mà không phải là nghĩa vụ) cung cấp các thông tin về (i) hạng thành viên, (ii) hạn mức Trả hàng COM còn lại của Người Mua cho Người Bán mà không cần phải thông báo cho Người Mua về việc cung cấp thông tin này. Tùy vào từng thời điểm và theo quyết định của riêng Shopee, việc cung cấp thông tin này có thể được thực hiện thông qua các nhãn (tag) gắn liền với tài khoản của Người Mua (nếu có) hoặc thông qua bộ phận có liên quan của Shopee.\n\nKhi thực hiện yêu cầu Trả hàng COM, Người Mua đồng ý cho Shopee cung cấp các thông tin được nêu tại Điều 4.3.a nêu trên cho Người Bán."
+    "chunk_index": 11,
+    "char_length": 708,
+    "content": "Trong trường hợp đó, Người Mua mất quyền Trả hàng COM trong tháng phát sinh hành vi vi phạm.\n\ni. Việc áp dụng hạn mức được quy định tại điểm này được thực hiện tương tự như Điều 4.2.a nêu trên.\n\nii. Yêu cầu Trả hàng COM sẽ không bị tính vào hạn mức nếu yêu cầu đó bị từ chối bởi Shopee.\n\niii. Hạn mức còn lại của tháng trước đó sẽ không được cộng dồn vào hạn mức của tháng tiếp theo trong bất cứ trường hợp nào.\n\niv. Quyền Trả hàng COM sẽ bị chấm dứt ngay lập tức ngay khi gói ShopeeVIP của Người Mua hết hiệu lực hoặc bị Shopee loại khỏi gói ShopeeVIP theo các chính sách, quy định của Shopee. Việc chấm dứt ngay lập tức này không ảnh hưởng đến các yêu cầu Trả hàng COM đã được tạo trước thời điểm chấm dứt."
   },
   {
     "chunk_id": 102,
     "source": "returns-refund-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "seller",
-    "chunk_index": 14,
-    "char_length": 595,
-    "content": "4.4 Điều khoản loại trừ liên quan đến Trả hàng COM đối với một số Người bán và/hoặc nhóm sản phẩm Trả hàng COM sẽ không áp dụng với đối với một số Người bán và/hoặc nhóm sản phẩm nhất định dù Người mua thỏa các điều kiện ở Điều 4.1 nêu trên, bao gồm nhưng không giới hạn ở những Người bán và sản phẩm sau:\n\na. Các sản phẩm thuộc Shopee Mart;\n\nb. Một số Người bán và sản phẩm khác theo từng thời điểm cụ thể dựa trên đánh giá từ Shopee. Các thông tin sẽ được ghi chú rõ ràng tại trang chi tiết, hoặc hình ảnh sản phẩm, hoặc các nội dung đăng tải công khai khác của Shopee.\n\n5. QUYỀN CỦA NGƯỜI BÁN"
+    "chunk_index": 12,
+    "char_length": 765,
+    "content": "v. Trong trường hợp một yêu cầu Trả hàng COM được tạo trong một tháng nhưng, vì bất cứ lý do gì, được Shopee giải quyết trong tháng tiếp theo, thì yêu cầu này sẽ được tính vào hạn mức của tháng mà yêu cầu đó được tạo, và không ảnh hưởng đến hạn mức của tháng tiếp theo.\n\nvi. Trong trường hợp vì bất cứ lý do gì mà dù cho Người Mua vẫn có thể thực hiện yêu cầu Trả hàng COM từ tài khoản của Người Mua, Shopee vẫn có quyền từ chối yêu cầu này khi yêu cầu đó được thực hiện sau khi Người Mua đã đạt hạn mức trong tháng hoặc bị chấm dứt quyền trả hàng COM.\n\nc. Người Mua vừa đồng thời được Trả hàng COM theo hạng thành viên của chương trình khách hàng thân thiết vừa được hưởng quyền lợi theo gói ShopeeVIP thì sẽ được áp dụng quyền lợi Trả hàng COM có hạn mức cao hơn."
   },
   {
     "chunk_id": 103,
     "source": "returns-refund-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "seller",
-    "chunk_index": 15,
-    "char_length": 756,
-    "content": "Khi nhận được yêu cầu trả hàng và/hoặc hoàn tiền từ phía Người Mua, Shopee sẽ xem xét và quyết định cho Người Mua được trả hàng/hoàn tiền, đồng thời thông báo (i) về yêu cầu trả hàng/hoàn tiền của Người Mua hoặc (ii) quyết định xử lý yêu cầu trả hàng/hoàn tiền của Shopee cho Người Bán trên Ứng Dụng Shopee và/hoặc thư điện tử và/hoặc tin nhắn điện thoại. Người Bán cần gửi phản hồi trong vòng 02 ngày lịch (hoặc thời hạn khác được quy định bởi Shopee trong từng thời điểm) kể từ ngày nhận được thông báo của Shopee nếu không đồng ý với quyết định hoàn tiền của Shopee hoặc chưa nhận được Sản Phẩm Hoàn Trả/Sản Phẩm Hoàn Trả không thuộc các trường hợp mà Người Mua được hoàn hàng/trả tiền hoặc Sản Phẩm Hoàn Trả bị hư hỏng, mất mát trong quá trình hoàn trả"
+    "chunk_index": 13,
+    "char_length": 223,
+    "content": "4.3. Minh bạch thông tin a. Shopee có quyền cung cấp thông tin về thứ hạng/hạn mức/quyền lợi Trả hàng COM của Người Mua cho Người Bán trong trường hợp Người Bán có căn cứ hợp lý chứng minh Buyer không có quyền Trả hàng COM."
   },
   {
     "chunk_id": 104,
     "source": "returns-refund-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "seller",
-    "chunk_index": 16,
-    "char_length": 331,
-    "content": ". Sau thời gian này mà Shopee không nhận được bất cứ phản hồi nào từ Người Bán, Shopee hiểu rằng Người Bán hoàn toàn đồng ý với quyết định xử lý của Shopee và không có khiếu nại đối với quyết định xử lý này. Việc hoàn tiền cho Người Mua có thể được Shopee cân nhắc thực hiện mà không cần Người Mua phải hoàn trả hàng cho Người Bán."
+    "chunk_index": 14,
+    "char_length": 714,
+    "content": "b. Trong trường hợp nhận được khiếu nại của Người Bán về kết quả giải quyết yêu cầu Trả hàng COM trên hệ thống của Shopee, Shopee có quyền (mà không phải là nghĩa vụ) cung cấp các thông tin về (i) hạng thành viên, (ii) hạn mức Trả hàng COM còn lại của Người Mua cho Người Bán mà không cần phải thông báo cho Người Mua về việc cung cấp thông tin này. Tùy vào từng thời điểm và theo quyết định của riêng Shopee, việc cung cấp thông tin này có thể được thực hiện thông qua các nhãn (tag) gắn liền với tài khoản của Người Mua (nếu có) hoặc thông qua bộ phận có liên quan của Shopee.\n\nKhi thực hiện yêu cầu Trả hàng COM, Người Mua đồng ý cho Shopee cung cấp các thông tin được nêu tại Điều 4.3.a nêu trên cho Người Bán."
   },
   {
     "chunk_id": 105,
     "source": "returns-refund-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "seller",
-    "chunk_index": 17,
-    "char_length": 753,
-    "content": "6. YÊU CẦU ĐỐI VỚI SẢN PHẨM HOÀN TRẢ\n\nĐể hạn chế các rủi ro phát sinh liên quan đến việc hoàn trả Sản Phẩm, Người Mua lưu ý cần phải đóng gói Sản Phẩm Hoàn Trả theo quy định về đóng gói hàng hóa được quy định tại Chính Sách Vận Chuyển Shopee và gửi trả Sản Phẩm bao gồm toàn bộ phụ kiện đi kèm, hóa đơn thuế GTGT, tem phiếu bảo hành (nếu có) và Sản Phẩm phải trong tình trạng nguyên vẹn như khi nhận hàng. Người Mua bắt buộc phải quay video và/hoặc chụp lại ảnh Sản Phẩm ngay khi nhận được và trong lúc đóng gói Sản Phẩm Hoàn Trả về để làm bằng chứng đối chiếu/khiếu nại về sau. Shopee sẽ thông báo cho Người Mua về việc phải cung cấp video hay ảnh chụp trong từng trường hợp cụ thể.\n\n7. TRÁCH NHIỆM VỀ CHI PHÍ VẬN CHUYỂN HOÀN TRẢ SẢN PHẨM CỦA NGƯỜI BÁN"
+    "chunk_index": 15,
+    "char_length": 595,
+    "content": "4.4 Điều khoản loại trừ liên quan đến Trả hàng COM đối với một số Người bán và/hoặc nhóm sản phẩm Trả hàng COM sẽ không áp dụng với đối với một số Người bán và/hoặc nhóm sản phẩm nhất định dù Người mua thỏa các điều kiện ở Điều 4.1 nêu trên, bao gồm nhưng không giới hạn ở những Người bán và sản phẩm sau:\n\na. Các sản phẩm thuộc Shopee Mart;\n\nb. Một số Người bán và sản phẩm khác theo từng thời điểm cụ thể dựa trên đánh giá từ Shopee. Các thông tin sẽ được ghi chú rõ ràng tại trang chi tiết, hoặc hình ảnh sản phẩm, hoặc các nội dung đăng tải công khai khác của Shopee.\n\n5. QUYỀN CỦA NGƯỜI BÁN"
   },
   {
     "chunk_id": 106,
     "source": "returns-refund-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "seller",
-    "chunk_index": 18,
-    "char_length": 609,
-    "content": "7. TRÁCH NHIỆM VỀ CHI PHÍ VẬN CHUYỂN HOÀN TRẢ SẢN PHẨM CỦA NGƯỜI BÁN\n\n7.1. Người Bán sẽ chịu chi phí vận chuyển cho việc trả hàng chiều hoàn trả sản phẩm đối với:\n\n- đơn yêu cầu trả hàng/hoàn tiền trong trường hợp Shopee chấp thuận (theo quyết định riêng của Shopee) mà không do lỗi của Người Mua hoặc đơn vị vận chuyển,\n\n- đơn giao không thành công, và\n\n- các trường hợp ngoại lệ khác theo quyết định của Shopee vào từng thời điểm cụ thể. Shopee sẽ thông báo đến Người Bán theo Chính Sách Shopee.\n\n7.2. Người Bán sẽ không phải chịu bất kỳ chi phí vận chuyển cho việc trả hàng chiều hoàn trả sản phẩm đối với:"
+    "chunk_index": 16,
+    "char_length": 756,
+    "content": "Khi nhận được yêu cầu trả hàng và/hoặc hoàn tiền từ phía Người Mua, Shopee sẽ xem xét và quyết định cho Người Mua được trả hàng/hoàn tiền, đồng thời thông báo (i) về yêu cầu trả hàng/hoàn tiền của Người Mua hoặc (ii) quyết định xử lý yêu cầu trả hàng/hoàn tiền của Shopee cho Người Bán trên Ứng Dụng Shopee và/hoặc thư điện tử và/hoặc tin nhắn điện thoại. Người Bán cần gửi phản hồi trong vòng 02 ngày lịch (hoặc thời hạn khác được quy định bởi Shopee trong từng thời điểm) kể từ ngày nhận được thông báo của Shopee nếu không đồng ý với quyết định hoàn tiền của Shopee hoặc chưa nhận được Sản Phẩm Hoàn Trả/Sản Phẩm Hoàn Trả không thuộc các trường hợp mà Người Mua được hoàn hàng/trả tiền hoặc Sản Phẩm Hoàn Trả bị hư hỏng, mất mát trong quá trình hoàn trả"
   },
   {
     "chunk_id": 107,
     "source": "returns-refund-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "seller",
-    "chunk_index": 19,
-    "char_length": 749,
-    "content": "- đơn yêu cầu trả hàng/hoàn tiền một phần (Người Mua chỉ nhấn yêu cầu trả hàng/hoàn tiền cho một hoặc một số sản phẩm trong đơn hàng, không phải tất cả sản phẩm), hoặc Người Mua nhấn yêu cầu trả hàng/hoàn tiền với lý do Chưa nhận được hàng (được Shopee chấp thuận theo quyết định riêng của Shopee),\n\n- đơn yêu cầu trả hàng/hoàn tiền trong trường hợp Shopee chấp thuận (theo quyết định riêng của Shopee) hoặc đơn giao không thành công do lỗi của đơn vị vận chuyển,\n\n- đơn yêu cầu trả hàng/hoàn tiền được Shopee chấp nhận hoàn tiền ngay (không trả hàng) (theo quyết định riêng của Shopee),\n\n- đơn giao không thành công thuộc kênh Người bán tự vận chuyển, và\n\n- đơn yêu cầu trả hàng/hoàn tiền được Người mua lựa chọn hình thức \"Tự sắp xếp\" để trả hàng."
+    "chunk_index": 17,
+    "char_length": 331,
+    "content": ". Sau thời gian này mà Shopee không nhận được bất cứ phản hồi nào từ Người Bán, Shopee hiểu rằng Người Bán hoàn toàn đồng ý với quyết định xử lý của Shopee và không có khiếu nại đối với quyết định xử lý này. Việc hoàn tiền cho Người Mua có thể được Shopee cân nhắc thực hiện mà không cần Người Mua phải hoàn trả hàng cho Người Bán."
   },
   {
     "chunk_id": 108,
     "source": "returns-refund-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "seller",
-    "chunk_index": 20,
-    "char_length": 505,
-    "content": "- đơn yêu cầu trả hàng/hoàn tiền được Người mua lựa chọn hình thức \"Tự sắp xếp\" để trả hàng.\n\nVui lòng tham khảo chi tiết các thông tin về chi phí vận chuyển chiều hoàn trả sản phẩm của Người Bán tại ĐÂY.\n\n8. TRÁCH NHIỆM VỀ CHI PHÍ HOÀN TRẢ SẢN PHẨM CỦA NGƯỜI MUA\n\n8.1. Với Sản Phẩm mua tại Shopee Mall, Người Mua có thể lựa chọn hoàn trả Sản Phẩm:\n\n- Theo hình thức “Lấy hàng hoàn trả tại nhà” hoặc “Gửi hàng tại bưu cục”: Người Mua không phải thanh toán bất cứ chi phí vận chuyển nào cho việc trả hàng;"
+    "chunk_index": 18,
+    "char_length": 753,
+    "content": "6. YÊU CẦU ĐỐI VỚI SẢN PHẨM HOÀN TRẢ\n\nĐể hạn chế các rủi ro phát sinh liên quan đến việc hoàn trả Sản Phẩm, Người Mua lưu ý cần phải đóng gói Sản Phẩm Hoàn Trả theo quy định về đóng gói hàng hóa được quy định tại Chính Sách Vận Chuyển Shopee và gửi trả Sản Phẩm bao gồm toàn bộ phụ kiện đi kèm, hóa đơn thuế GTGT, tem phiếu bảo hành (nếu có) và Sản Phẩm phải trong tình trạng nguyên vẹn như khi nhận hàng. Người Mua bắt buộc phải quay video và/hoặc chụp lại ảnh Sản Phẩm ngay khi nhận được và trong lúc đóng gói Sản Phẩm Hoàn Trả về để làm bằng chứng đối chiếu/khiếu nại về sau. Shopee sẽ thông báo cho Người Mua về việc phải cung cấp video hay ảnh chụp trong từng trường hợp cụ thể.\n\n7. TRÁCH NHIỆM VỀ CHI PHÍ VẬN CHUYỂN HOÀN TRẢ SẢN PHẨM CỦA NGƯỜI BÁN"
   },
   {
     "chunk_id": 109,
     "source": "returns-refund-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "seller",
-    "chunk_index": 21,
-    "char_length": 675,
-    "content": "- Theo hình thức “Tự sắp xếp”: Người Mua cần thanh toán trước chi phí vận chuyển cho việc trả hàng. Shopee sẽ hoàn lại số tiền bằng với chi phí vận chuyển mà Người Mua đã thanh toán cho đơn vị vận chuyển thông qua “Số Dư Tài Khoản Shopee” trên Ứng Dụng Shopee trong thời hạn 03 – 05 ngày làm việc kể từ ngày Người Mua đã gửi Sản Phẩm Hoàn Trả cho đơn vị vận chuyển và yêu cầu trả hàng/hoàn tiền của Người Mua được chấp nhận.\n\n8.2. Với Sản Phẩm không thuộc Shopee Mall, Người Mua có thể lựa chọn hoàn trả Sản Phẩm:\n\n- Theo hình thức “Lấy hàng hoàn trả tại nhà” hoặc “Gửi trả hàng tại bưu cục”: Người Mua không phải thanh toán bất cứ chi phí vận chuyển nào cho việc trả hàng."
+    "chunk_index": 19,
+    "char_length": 609,
+    "content": "7. TRÁCH NHIỆM VỀ CHI PHÍ VẬN CHUYỂN HOÀN TRẢ SẢN PHẨM CỦA NGƯỜI BÁN\n\n7.1. Người Bán sẽ chịu chi phí vận chuyển cho việc trả hàng chiều hoàn trả sản phẩm đối với:\n\n- đơn yêu cầu trả hàng/hoàn tiền trong trường hợp Shopee chấp thuận (theo quyết định riêng của Shopee) mà không do lỗi của Người Mua hoặc đơn vị vận chuyển,\n\n- đơn giao không thành công, và\n\n- các trường hợp ngoại lệ khác theo quyết định của Shopee vào từng thời điểm cụ thể. Shopee sẽ thông báo đến Người Bán theo Chính Sách Shopee.\n\n7.2. Người Bán sẽ không phải chịu bất kỳ chi phí vận chuyển cho việc trả hàng chiều hoàn trả sản phẩm đối với:"
   },
   {
     "chunk_id": 110,
     "source": "returns-refund-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "seller",
-    "chunk_index": 22,
-    "char_length": 716,
-    "content": "- Theo hình thức “Tự sắp xếp”: Người Mua cần thanh toán trước chi phí vận chuyển cho việc trả hàng. Shopee sẽ hỗ trợ hoàn lại một phần chi phí vận chuyển cho việc trả hàng dưới hình thức Shopee Xu theo chính sách của Shopee khi Người Mua đáp ứng được các điều kiện để được hỗ trợ trả hàng trong thời hạn 03 – 05 ngày làm việc kể từ ngày Người Mua đã gửi Sản Phẩm Hoàn Trả cho đơn vị vận chuyển và yêu cầu trả hàng/hoàn tiền của Người Mua được chấp nhận.\n\n9. HOÀN TIỀN ĐỐI VỚI SẢN PHẨM HOÀN TRẢ\n\n9.1. Shopee sẽ chỉ hoàn tiền cho Người Mua thuộc một trong các trường hợp sau:\n\n- Người Bán xác nhận đã nhận được Sản Phẩm Hoàn Trả; hoặc\n\n- Người Mua chấp nhận đề xuất hoàn tiền không cần trả Sản Phẩm của Người Bán; hoặc"
+    "chunk_index": 20,
+    "char_length": 749,
+    "content": "- đơn yêu cầu trả hàng/hoàn tiền một phần (Người Mua chỉ nhấn yêu cầu trả hàng/hoàn tiền cho một hoặc một số sản phẩm trong đơn hàng, không phải tất cả sản phẩm), hoặc Người Mua nhấn yêu cầu trả hàng/hoàn tiền với lý do Chưa nhận được hàng (được Shopee chấp thuận theo quyết định riêng của Shopee),\n\n- đơn yêu cầu trả hàng/hoàn tiền trong trường hợp Shopee chấp thuận (theo quyết định riêng của Shopee) hoặc đơn giao không thành công do lỗi của đơn vị vận chuyển,\n\n- đơn yêu cầu trả hàng/hoàn tiền được Shopee chấp nhận hoàn tiền ngay (không trả hàng) (theo quyết định riêng của Shopee),\n\n- đơn giao không thành công thuộc kênh Người bán tự vận chuyển, và\n\n- đơn yêu cầu trả hàng/hoàn tiền được Người mua lựa chọn hình thức \"Tự sắp xếp\" để trả hàng."
   },
   {
     "chunk_id": 111,
     "source": "returns-refund-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "seller",
-    "chunk_index": 23,
-    "char_length": 710,
-    "content": "- Người Mua chấp nhận đề xuất hoàn tiền không cần trả Sản Phẩm của Người Bán; hoặc\n\n- Người Mua được Shopee quyết định hoàn tiền ngay mà không cần Người Mua trả Sản Phẩm; và/hoặc\n\n- Đơn hàng của Người Mua đủ điều kiện được trả hàng/hoàn tiền và Shopee quyết định cho Người Mua được hoàn tiền khi Người Mua đã gửi trả Sản Phẩm cho đơn vị vận chuyển và đơn vị vận chuyển xác nhận đã nhận được Sản Phẩm Hoàn Trả.\n\n9.2. Trong trường hợp Người Mua không có lịch sử vi phạm các chính sách, tiêu chuẩn cộng đồng của Shopee thì Shopee, trong một số trường hợp, sẽ quyết định việc hoàn tiền ngay cho Người Mua mà không cần phải chờ Người Mua trả Sản Phẩm hoặc đáp ứng các trường hợp được quy định tại Điều 9.1 nêu trên."
+    "chunk_index": 21,
+    "char_length": 505,
+    "content": "- đơn yêu cầu trả hàng/hoàn tiền được Người mua lựa chọn hình thức \"Tự sắp xếp\" để trả hàng.\n\nVui lòng tham khảo chi tiết các thông tin về chi phí vận chuyển chiều hoàn trả sản phẩm của Người Bán tại ĐÂY.\n\n8. TRÁCH NHIỆM VỀ CHI PHÍ HOÀN TRẢ SẢN PHẨM CỦA NGƯỜI MUA\n\n8.1. Với Sản Phẩm mua tại Shopee Mall, Người Mua có thể lựa chọn hoàn trả Sản Phẩm:\n\n- Theo hình thức “Lấy hàng hoàn trả tại nhà” hoặc “Gửi hàng tại bưu cục”: Người Mua không phải thanh toán bất cứ chi phí vận chuyển nào cho việc trả hàng;"
   },
   {
     "chunk_id": 112,
     "source": "returns-refund-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "seller",
-    "chunk_index": 24,
-    "char_length": 313,
-    "content": "9.3. Shopee sẽ tự động hoàn tiền cho Người Mua trong trường hợp Người Bán không phản hồi trong khoảng thời gian đã được quy định trước.\n\nĐể biết thêm thông tin về thời hạn phản hồi của Người Bán, vui lòng nhấn vào ĐÂY.\n\nĐể biết thêm thông tin về việc hoàn tiền không cần trả Sản Phẩm, vui lòng nhấn vào ĐÂY."
+    "chunk_index": 22,
+    "char_length": 675,
+    "content": "- Theo hình thức “Tự sắp xếp”: Người Mua cần thanh toán trước chi phí vận chuyển cho việc trả hàng. Shopee sẽ hoàn lại số tiền bằng với chi phí vận chuyển mà Người Mua đã thanh toán cho đơn vị vận chuyển thông qua “Số Dư Tài Khoản Shopee” trên Ứng Dụng Shopee trong thời hạn 03 – 05 ngày làm việc kể từ ngày Người Mua đã gửi Sản Phẩm Hoàn Trả cho đơn vị vận chuyển và yêu cầu trả hàng/hoàn tiền của Người Mua được chấp nhận.\n\n8.2. Với Sản Phẩm không thuộc Shopee Mall, Người Mua có thể lựa chọn hoàn trả Sản Phẩm:\n\n- Theo hình thức “Lấy hàng hoàn trả tại nhà” hoặc “Gửi trả hàng tại bưu cục”: Người Mua không phải thanh toán bất cứ chi phí vận chuyển nào cho việc trả hàng."
   },
   {
     "chunk_id": 113,
     "source": "returns-refund-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "seller",
-    "chunk_index": 25,
+    "chunk_index": 23,
     "char_length": 716,
-    "content": "9.4. Tùy từng trường hợp, tiền hoàn trả sẽ được chuyển vào Ví ShopeePay, SPayLater, Thẻ nội địa Napas, Tài Khoản Ngân Hàng, Thẻ thẻ tín dụng/ ghi nợ của Người Mua đã đăng ký với Shopee hoặc Số Dư Tài Khoản Shopee của Người Mua. Để biết thêm chi tiết về thời gian hoàn tiền, vui lòng tham khảo hướng dẫn tại ĐÂY. Để làm rõ, Người Mua phải đảm bảo duy trì các phương thức nhận hoàn tiền hợp lệ theo quy định tại Chính Sách này và các chính sách khác của Shopee vào từng thời điểm cụ thể. Shopee sẽ không chịu bất kỳ trách nhiệm nào có liên quan đến hoặc phát sinh từ việc Người Mua không tuân thủ các quy định liên quan dẫn đến việc chậm trễ hoặc không thể nhận tiền hoàn từ Shopee đối với Sản Phẩm Hoàn Trả."
+    "content": "- Theo hình thức “Tự sắp xếp”: Người Mua cần thanh toán trước chi phí vận chuyển cho việc trả hàng. Shopee sẽ hỗ trợ hoàn lại một phần chi phí vận chuyển cho việc trả hàng dưới hình thức Shopee Xu theo chính sách của Shopee khi Người Mua đáp ứng được các điều kiện để được hỗ trợ trả hàng trong thời hạn 03 – 05 ngày làm việc kể từ ngày Người Mua đã gửi Sản Phẩm Hoàn Trả cho đơn vị vận chuyển và yêu cầu trả hàng/hoàn tiền của Người Mua được chấp nhận.\n\n9. HOÀN TIỀN ĐỐI VỚI SẢN PHẨM HOÀN TRẢ\n\n9.1. Shopee sẽ chỉ hoàn tiền cho Người Mua thuộc một trong các trường hợp sau:\n\n- Người Bán xác nhận đã nhận được Sản Phẩm Hoàn Trả; hoặc\n\n- Người Mua chấp nhận đề xuất hoàn tiền không cần trả Sản Phẩm của Người Bán; hoặc"
   },
   {
     "chunk_id": 114,
     "source": "returns-refund-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "seller",
-    "chunk_index": 26,
-    "char_length": 737,
-    "content": "9.5. Đối với các trường hợp hoàn tiền ngay do Người Bán đề xuất, số tiền hoàn trả sẽ do hai Bên tự thỏa thuận với nhau nhưng không được thấp hơn 50% giá trị của Sản Phẩm Hoàn Trả. Trường hợp Shopee nhận được khiếu nại từ Người Mua vì lý do Người Bán hoàn tiền thấp hơn 50% giá trị của Sản Phẩm Hoàn Trả thì Shopee, tại bất kỳ thời điểm nào, có quyền cấn trừ từ Số Dư Tài Khoản Shopee của Người Bán đó số tiền chênh lệch (được xác định bằng 100% giá trị Sản Phẩm Hoàn Trả trừ đi số tiền đã hoàn lại cho Người Mua) để thanh toán cho Người Mua mà không cần phải thông báo hay được sự đồng ý của Người Bán. Quy định này nhằm ngăn chặn các hành vi trục lợi, đảm bảo tính minh bạch và công bằng của Chính Sách Trả Hàng và Hoàn Tiền của Shopee."
+    "chunk_index": 24,
+    "char_length": 710,
+    "content": "- Người Mua chấp nhận đề xuất hoàn tiền không cần trả Sản Phẩm của Người Bán; hoặc\n\n- Người Mua được Shopee quyết định hoàn tiền ngay mà không cần Người Mua trả Sản Phẩm; và/hoặc\n\n- Đơn hàng của Người Mua đủ điều kiện được trả hàng/hoàn tiền và Shopee quyết định cho Người Mua được hoàn tiền khi Người Mua đã gửi trả Sản Phẩm cho đơn vị vận chuyển và đơn vị vận chuyển xác nhận đã nhận được Sản Phẩm Hoàn Trả.\n\n9.2. Trong trường hợp Người Mua không có lịch sử vi phạm các chính sách, tiêu chuẩn cộng đồng của Shopee thì Shopee, trong một số trường hợp, sẽ quyết định việc hoàn tiền ngay cho Người Mua mà không cần phải chờ Người Mua trả Sản Phẩm hoặc đáp ứng các trường hợp được quy định tại Điều 9.1 nêu trên."
   },
   {
     "chunk_id": 115,
     "source": "returns-refund-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "seller",
-    "chunk_index": 27,
-    "char_length": 716,
-    "content": "9.6. Trường hợp Người Mua gửi yêu cầu trả hàng/hoàn tiền sau khi Shopee đã thanh toán cho Người Bán và được Shopee đồng ý hoàn tiền, Shopee sẽ điều chỉnh khoản tiền đã thanh toán cho Người Bán để hoàn lại cho Người Mua.\n\n10. LIÊN LẠC GIỮA NGƯỜI BÁN VÀ NGƯỜI MUA\n\nShopee khuyến khích Người Mua chủ động liên hệ với Người Bán để thương lượng và giải quyết với nhau thông qua các kênh liên lạc được cung cấp trên hệ thống Shopee khi có bất cứ vấn đề nào phát sinh liên quan giao dịch mua Sản Phẩm. Lưu ý rằng việc sử dụng các kênh liên lạc bên ngoài hệ thống Shopee có thể sẽ có rủi ro cho Người Mua khi hệ thống Shopee không thể lưu lại bằng chứng của việc thương lượng này.\n\n11. TRANH CHẤP GIỮA NGƯỜI MUA VÀ NGƯỜI BÁN"
+    "chunk_index": 25,
+    "char_length": 313,
+    "content": "9.3. Shopee sẽ tự động hoàn tiền cho Người Mua trong trường hợp Người Bán không phản hồi trong khoảng thời gian đã được quy định trước.\n\nĐể biết thêm thông tin về thời hạn phản hồi của Người Bán, vui lòng nhấn vào ĐÂY.\n\nĐể biết thêm thông tin về việc hoàn tiền không cần trả Sản Phẩm, vui lòng nhấn vào ĐÂY."
   },
   {
     "chunk_id": 116,
     "source": "returns-refund-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "seller",
-    "chunk_index": 28,
-    "char_length": 225,
-    "content": "11. TRANH CHẤP GIỮA NGƯỜI MUA VÀ NGƯỜI BÁN\n\n11.1. Trong trường hợp Người Mua và Người Bán không thể đồng thuận về phương án giải quyết, Người Mua và Người Bán có thể khiếu nại việc này lên các Cơ quan chức năng để giải quyết."
+    "chunk_index": 26,
+    "char_length": 716,
+    "content": "9.4. Tùy từng trường hợp, tiền hoàn trả sẽ được chuyển vào Ví ShopeePay, SPayLater, Thẻ nội địa Napas, Tài Khoản Ngân Hàng, Thẻ thẻ tín dụng/ ghi nợ của Người Mua đã đăng ký với Shopee hoặc Số Dư Tài Khoản Shopee của Người Mua. Để biết thêm chi tiết về thời gian hoàn tiền, vui lòng tham khảo hướng dẫn tại ĐÂY. Để làm rõ, Người Mua phải đảm bảo duy trì các phương thức nhận hoàn tiền hợp lệ theo quy định tại Chính Sách này và các chính sách khác của Shopee vào từng thời điểm cụ thể. Shopee sẽ không chịu bất kỳ trách nhiệm nào có liên quan đến hoặc phát sinh từ việc Người Mua không tuân thủ các quy định liên quan dẫn đến việc chậm trễ hoặc không thể nhận tiền hoàn từ Shopee đối với Sản Phẩm Hoàn Trả."
   },
   {
     "chunk_id": 117,
     "source": "returns-refund-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "seller",
-    "chunk_index": 29,
-    "char_length": 626,
-    "content": "11.2. Nếu một bên khiếu nại bên kia tới các Cơ quan chức năng, bên khiếu nại cần thông báo kịp thời với Shopee về vụ việc tranh chấp này kèm theo những thông tin yêu cầu từ phía Shopee mà Shopee cho là hợp lý, theo từng vụ việc cụ thể. Trong trường hợp đó, Người Bán và Người Mua cùng đồng ý rằng một khi Shopee đã nhận được thông báo và các thông tin liên quan đến vụ việc tranh chấp, khi tiền hàng vẫn chưa được thanh toán cho Người Bán theo quy định của Thời Gian Shopee Đảm Bảo, Shopee có quyền tạm hoãn thanh toán cho Người Bán cho đến khi có quyết định cuối cùng về việc giải quyết tranh chấp giữa Người Bán và Người Mua"
+    "chunk_index": 27,
+    "char_length": 737,
+    "content": "9.5. Đối với các trường hợp hoàn tiền ngay do Người Bán đề xuất, số tiền hoàn trả sẽ do hai Bên tự thỏa thuận với nhau nhưng không được thấp hơn 50% giá trị của Sản Phẩm Hoàn Trả. Trường hợp Shopee nhận được khiếu nại từ Người Mua vì lý do Người Bán hoàn tiền thấp hơn 50% giá trị của Sản Phẩm Hoàn Trả thì Shopee, tại bất kỳ thời điểm nào, có quyền cấn trừ từ Số Dư Tài Khoản Shopee của Người Bán đó số tiền chênh lệch (được xác định bằng 100% giá trị Sản Phẩm Hoàn Trả trừ đi số tiền đã hoàn lại cho Người Mua) để thanh toán cho Người Mua mà không cần phải thông báo hay được sự đồng ý của Người Bán. Quy định này nhằm ngăn chặn các hành vi trục lợi, đảm bảo tính minh bạch và công bằng của Chính Sách Trả Hàng và Hoàn Tiền của Shopee."
   },
   {
     "chunk_id": 118,
     "source": "returns-refund-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "seller",
-    "chunk_index": 30,
-    "char_length": 242,
-    "content": ". Trong trường hợp khoản tiền thanh toán này đã được trả cho Người Bán theo Chính Sách Shopee Đảm Bảo, Shopee có quyền điều chỉnh số tiền đã thanh toán sau khi có quyết định cuối cùng về việc giải quyết tranh chấp giữa Người bán và Người mua."
+    "chunk_index": 28,
+    "char_length": 716,
+    "content": "9.6. Trường hợp Người Mua gửi yêu cầu trả hàng/hoàn tiền sau khi Shopee đã thanh toán cho Người Bán và được Shopee đồng ý hoàn tiền, Shopee sẽ điều chỉnh khoản tiền đã thanh toán cho Người Bán để hoàn lại cho Người Mua.\n\n10. LIÊN LẠC GIỮA NGƯỜI BÁN VÀ NGƯỜI MUA\n\nShopee khuyến khích Người Mua chủ động liên hệ với Người Bán để thương lượng và giải quyết với nhau thông qua các kênh liên lạc được cung cấp trên hệ thống Shopee khi có bất cứ vấn đề nào phát sinh liên quan giao dịch mua Sản Phẩm. Lưu ý rằng việc sử dụng các kênh liên lạc bên ngoài hệ thống Shopee có thể sẽ có rủi ro cho Người Mua khi hệ thống Shopee không thể lưu lại bằng chứng của việc thương lượng này.\n\n11. TRANH CHẤP GIỮA NGƯỜI MUA VÀ NGƯỜI BÁN"
   },
   {
     "chunk_id": 119,
     "source": "returns-refund-policy-shopee.md",
     "doc_type": "legal",
     "customer_role": "seller",
+    "chunk_index": 29,
+    "char_length": 225,
+    "content": "11. TRANH CHẤP GIỮA NGƯỜI MUA VÀ NGƯỜI BÁN\n\n11.1. Trong trường hợp Người Mua và Người Bán không thể đồng thuận về phương án giải quyết, Người Mua và Người Bán có thể khiếu nại việc này lên các Cơ quan chức năng để giải quyết."
+  },
+  {
+    "chunk_id": 120,
+    "source": "returns-refund-policy-shopee.md",
+    "doc_type": "legal",
+    "customer_role": "seller",
+    "chunk_index": 30,
+    "char_length": 626,
+    "content": "11.2. Nếu một bên khiếu nại bên kia tới các Cơ quan chức năng, bên khiếu nại cần thông báo kịp thời với Shopee về vụ việc tranh chấp này kèm theo những thông tin yêu cầu từ phía Shopee mà Shopee cho là hợp lý, theo từng vụ việc cụ thể. Trong trường hợp đó, Người Bán và Người Mua cùng đồng ý rằng một khi Shopee đã nhận được thông báo và các thông tin liên quan đến vụ việc tranh chấp, khi tiền hàng vẫn chưa được thanh toán cho Người Bán theo quy định của Thời Gian Shopee Đảm Bảo, Shopee có quyền tạm hoãn thanh toán cho Người Bán cho đến khi có quyết định cuối cùng về việc giải quyết tranh chấp giữa Người Bán và Người Mua"
+  },
+  {
+    "chunk_id": 121,
+    "source": "returns-refund-policy-shopee.md",
+    "doc_type": "legal",
+    "customer_role": "seller",
     "chunk_index": 31,
+    "char_length": 242,
+    "content": ". Trong trường hợp khoản tiền thanh toán này đã được trả cho Người Bán theo Chính Sách Shopee Đảm Bảo, Shopee có quyền điều chỉnh số tiền đã thanh toán sau khi có quyết định cuối cùng về việc giải quyết tranh chấp giữa Người bán và Người mua."
+  },
+  {
+    "chunk_id": 122,
+    "source": "returns-refund-policy-shopee.md",
+    "doc_type": "legal",
+    "customer_role": "seller",
+    "chunk_index": 32,
     "char_length": 457,
     "content": "12. CÁC ĐIỀU KHOẢN CHUNG\n\n12.1. Người mua và Người bán đồng ý bồi thường và giữ cho Shopee không bị thiệt hại, hoặc chống lại bất kỳ việc khiếu nại, kiện tụng, hoặc các nghĩa vụ/trách nhiệm, thiệt hại, tuyên bố, hình phạt, tiền phạt, các chi phí và phí tổn (bao gồm, nhưng không giới hạn bất kỳ chi phí giải quyết tranh chấp nào khác) có liên quan phát sinh từ hoặc có liên quan đến bất kỳ hành động nào của Shopee theo Chính Sách Trả Hàng và Hoàn Tiền này."
   },
   {
-    "chunk_id": 120,
+    "chunk_id": 123,
     "source": "article_01.md",
     "doc_type": "news",
     "customer_role": "buyer",
     "chunk_index": 0,
     "char_length": 793,
-    "content": "# [Thành viên mới] Cách theo dõi tình trạng vận chuyển của đơn hàng?\n\n**Source:** https://help.shopee.vn/portal/4/article/79215\n**Category:** Order Tracking\n**Crawled:** 2026-08-04T15:16:32.222226\n\n---\n\nHướng dẫn theo dõi áp dụng cho tất cả đơn hàng (bao gồm đơn hàng trong nước và đơn hàng quốc tế)\n\n1. Xem Người bán đã gửi hàng cho đơn vị vận chuyển hay chưa\n\n- Vào mục Tôi > Chờ lấy hàng > Chọn đơn hàng cần kiểm tra (hoặc thông tin được hiển thị phía dưới đơn hàng)\n\n2. Kiểm tra tình trạng giao hàng\n\n- Tại mục Tôi > Đang giao > Chọn đơn hàng cần kiểm tra > Thông tin trạng thái đơn hàng sẽ được cập nhật tại đây\n\n⚠️Lưu ý:\n\n- Shopee chưa hỗ trợ giao hàng theo giờ cụ thể\n\n- Shopee chưa hỗ trợ cung cấp số điện thoại của shipper/nhân viên giao hàng\n\n3. Kiểm tra chi tiết tình trạng đơn hàng"
+    "content": "# [Thành viên mới] Cách theo dõi tình trạng vận chuyển của đơn hàng?\n\n**Source:** https://help.shopee.vn/portal/4/article/79215\n**Category:** Order Tracking\n**Crawled:** 2026-08-04T16:59:26.106034\n\n---\n\nHướng dẫn theo dõi áp dụng cho tất cả đơn hàng (bao gồm đơn hàng trong nước và đơn hàng quốc tế)\n\n1. Xem Người bán đã gửi hàng cho đơn vị vận chuyển hay chưa\n\n- Vào mục Tôi > Chờ lấy hàng > Chọn đơn hàng cần kiểm tra (hoặc thông tin được hiển thị phía dưới đơn hàng)\n\n2. Kiểm tra tình trạng giao hàng\n\n- Tại mục Tôi > Đang giao > Chọn đơn hàng cần kiểm tra > Thông tin trạng thái đơn hàng sẽ được cập nhật tại đây\n\n⚠️Lưu ý:\n\n- Shopee chưa hỗ trợ giao hàng theo giờ cụ thể\n\n- Shopee chưa hỗ trợ cung cấp số điện thoại của shipper/nhân viên giao hàng\n\n3. Kiểm tra chi tiết tình trạng đơn hàng"
   },
   {
-    "chunk_id": 121,
+    "chunk_id": 124,
     "source": "article_01.md",
     "doc_type": "news",
     "customer_role": "buyer",
@@ -1089,16 +1116,16 @@
     "content": "3. Kiểm tra chi tiết tình trạng đơn hàng\n\nBước 1: Vào mục Tôi > Đơn mua > Chọn đơn hàng cần kiểm tra\n\nBước 2: Kiểm tra tình trạng tại mục Thông tin vận chuyển\n\n4. Tra cứu bằng mã vận đơn trên trang đơn vị vận chuyển\n\nDùng Mã vận đơn để tiến hành tra cứu trên trang web của đơn vị vận chuyển\n\n5. Theo dõi tại mục \"Trò chuyện với Shopee\"\n\nNhằm giúp Người mua dễ dàng tra cứu thông tin đơn hàng của mình, khi sử dụng mục \"Trò chuyện với Shopee\", bạn có thể kiểm tra bằng cách sau đây.\n\nXem Thêm: Tôi Muốn Đổi Địa Chỉ/Thông tin/Số Điện Thoại Nhận Hàng"
   },
   {
-    "chunk_id": 122,
+    "chunk_id": 125,
     "source": "article_02.md",
     "doc_type": "news",
     "customer_role": "buyer",
     "chunk_index": 0,
     "char_length": 725,
-    "content": "# [Phương thức thanh toán] Tại sao tôi không chọn được phương thức thanh toán mong muốn?\n\n**Source:** https://help.shopee.vn/portal/4/article/79196\n**Category:** Payment\n**Crawled:** 2026-08-04T15:16:32.772500\n\n---\n\n- Bạn không thể chọn được phương thức thanh toán mong muốn, thông thường là do Người bán/sản phẩm chưa hỗ trợ phương thức thanh toán đó\n\n- Vui lòng chọn phương thức thanh toán khác để hoàn tất đặt mua hàng trên Shopee nhé\n\n1. Thẻ tín dụng/ghi nợ/Thẻ nội địa NAPAS\n\n- Số dư trong thẻ nhỏ hơn giá trị đơn hàng cần thanh toán\n\n- Đã từng/Đang vi phạm các điều lệ thanh toán của các tổ chức thẻ quốc tế/ngân hàng phát hành thẻ\n\n- Vượt mức thanh toán của thẻ (tùy ngân hàng)\n\n- Chưa đăng ký dịch vụ internet banking"
+    "content": "# [Phương thức thanh toán] Tại sao tôi không chọn được phương thức thanh toán mong muốn?\n\n**Source:** https://help.shopee.vn/portal/4/article/79196\n**Category:** Payment\n**Crawled:** 2026-08-04T16:59:26.601511\n\n---\n\n- Bạn không thể chọn được phương thức thanh toán mong muốn, thông thường là do Người bán/sản phẩm chưa hỗ trợ phương thức thanh toán đó\n\n- Vui lòng chọn phương thức thanh toán khác để hoàn tất đặt mua hàng trên Shopee nhé\n\n1. Thẻ tín dụng/ghi nợ/Thẻ nội địa NAPAS\n\n- Số dư trong thẻ nhỏ hơn giá trị đơn hàng cần thanh toán\n\n- Đã từng/Đang vi phạm các điều lệ thanh toán của các tổ chức thẻ quốc tế/ngân hàng phát hành thẻ\n\n- Vượt mức thanh toán của thẻ (tùy ngân hàng)\n\n- Chưa đăng ký dịch vụ internet banking"
   },
   {
-    "chunk_id": 123,
+    "chunk_id": 126,
     "source": "article_02.md",
     "doc_type": "news",
     "customer_role": "buyer",
@@ -1107,7 +1134,7 @@
     "content": "- Vượt mức thanh toán của thẻ (tùy ngân hàng)\n\n- Chưa đăng ký dịch vụ internet banking\n\n- Đơn hàng có giá trị thanh toán (bao gồm phí vận chuyển và các chi phí phát sinh khác) nhỏ hơn hạn mức thanh toán tối thiểu là 10.000 VNĐ\n\n2. Ví ShopeePay\n\n- Số dư trong Ví ShopeePay/tài khoản ngân hàng liên kết Ví ShopeePay nhỏ hơn giá trị đơn hàng cần thanh toán\n\n- Tài khoản ShopeePay của bạn bị giới hạn/khóa\n\n- Chưa liên kết tài khoản Shopee với Ví ShopeePay\n\n- Chưa liên kết tài khoản ngân hàng với Ví ShopeePay\n\n3. Trả góp 0% lãi suất\n\n- Sản phẩm bạn mua không được ưu đãi trả góp 0% lãi suất\n\n- Sản phẩm dưới 3.000.000 VNĐ\n\n- Tham khảo thêm chương trình Trả góp 0% lãi suất\n\n4. Thanh toán QR\n\n- Sản phẩm của bạn không thuộc ngành hàng được áp dụng phương thức thanh toán này"
   },
   {
-    "chunk_id": 124,
+    "chunk_id": 127,
     "source": "article_02.md",
     "doc_type": "news",
     "customer_role": "buyer",
@@ -1116,7 +1143,7 @@
     "content": "- Sản phẩm của bạn không thuộc ngành hàng được áp dụng phương thức thanh toán này\n\n- Đơn hàng có giá trị thanh toán cuối cùng (gồm phí vận chuyển và các chi phí phát sinh khác) dưới 10.000 VNĐ\n\n5. Ứng dụng ngân hàng\n\n- Hình thức này chỉ áp dụng cho một số Người bán hoặc Ngân hàng có hỗ trợ liên kết.\n\n- Đơn hàng có giá trị thanh toán cuối cùng (gồm phí vận chuyển và các chi phí phát sinh khác) dưới 10.000 VNĐ\n\n6. Apple Pay\n\n- Thiết bị của bạn chưa hỗ trợ hình thức thanh toán Apple Pay (Xem chi tiết thiết bị tương thích TẠI ĐÂY)\n\n- Đơn hàng có giá trị thanh toán (đã bao gồm phí vận chuyển và các chi phí phát sinh khác - nếu có) không nằm trong hạn mức thanh toán là từ 10.000 VNĐ đến 25.000.000 VNĐ"
   },
   {
-    "chunk_id": 125,
+    "chunk_id": 128,
     "source": "article_02.md",
     "doc_type": "news",
     "customer_role": "buyer",
@@ -1125,7 +1152,7 @@
     "content": "- Đơn hàng thuộc các trường hợp sau:Đơn hàng có sản phẩm thuộc nhóm Nạp thẻ & Dịch vụĐơn hàng có phương thức vận chuyển “Người bán tự vận chuyển” hoặc “Seller Own Fleet - Vận chuyển quốc tế”Đơn hàng ShopeeFood\n\n- Thiết bị của bạn chưa hỗ trợ hình thức thanh toán Google Pay (xem chi tiết tại đây)\n\n- Đơn hàng có giá trị thanh toán (đã bao gồm phí vận chuyển và các chi phí phát sinh khác - nếu có) KHÔNG nằm trong hạn mức thanh toán  từ 10.000 VNĐ đến 120.000.000 VNĐ\n\n- Đơn hàng có bao gồm sản phẩm Nạp thẻ & Dịch vụ/đơn hàng ShopeeFood\n\n8. Thanh toán khi nhận hàng (tiền mặt):\n\n- Người bán không sử dụng các hình thức vận chuyển của Shopee và không cung cấp hình thức thanh toán này cho sản phẩm bạn chọn mua (ví dụ: mã điện tử để nạp điện thoại, mã vé xem phim điện tử...) hoặc"
   },
   {
-    "chunk_id": 126,
+    "chunk_id": 129,
     "source": "article_02.md",
     "doc_type": "news",
     "customer_role": "buyer",
@@ -1134,16 +1161,16 @@
     "content": "- Bạn đang bị giới hạn tạm thời chức năng thanh toán này trong 24 giờ do tài khoản đang sử dụng đã vượt mức giới hạn về số đơn hàng được chọn hình thức thanh toán COD trong ngày hoặc\n\n- Shopee đang tạm thời tắt chức năng Thanh toán khi nhận hàng của bạn do hệ thống ghi nhận bạn có lịch sử nhận hàng thành công đơn COD chưa phù hợp: lý do thường gặp nhất là có từ 3 đơn hàng COD trở lên giao không thành công trong vòng 90 ngày gần nhất."
   },
   {
-    "chunk_id": 127,
+    "chunk_id": 130,
     "source": "article_03.md",
     "doc_type": "news",
     "customer_role": "buyer",
     "chunk_index": 0,
     "char_length": 613,
-    "content": "# [Trả hàng/Hoàn tiền] Hướng dẫn chuẩn bị bằng chứng khi yêu cầu Trả hàng/ Hoàn tiền\n\n**Source:** https://help.shopee.vn/portal/4/article/79467\n**Category:** Returns & Refund\n**Crawled:** 2026-08-04T15:16:33.405340\n\n---\n\nKhi bạn cần gửi yêu cầu Trả hàng/Hoàn tiền trên Shopee, việc cung cấp đầy đủ và chính xác bằng chứng là rất quan trọng để đảm bảo yêu cầu của bạn được xử lý nhanh chóng. Tùy thuộc vào từng trường hợp, loại bằng chứng bạn cần chuẩn bị sẽ khác nhau.\n\nNếu bạn chưa nhận được hàng, bạn không cần cung cấp bất kỳ bằng chứng nào. Shopee sẽ tự động xử lý yêu cầu dựa trên hệ thống theo dõi đơn hàng."
+    "content": "# [Trả hàng/Hoàn tiền] Hướng dẫn chuẩn bị bằng chứng khi yêu cầu Trả hàng/ Hoàn tiền\n\n**Source:** https://help.shopee.vn/portal/4/article/79467\n**Category:** Returns & Refund\n**Crawled:** 2026-08-04T16:59:27.165695\n\n---\n\nKhi bạn cần gửi yêu cầu Trả hàng/Hoàn tiền trên Shopee, việc cung cấp đầy đủ và chính xác bằng chứng là rất quan trọng để đảm bảo yêu cầu của bạn được xử lý nhanh chóng. Tùy thuộc vào từng trường hợp, loại bằng chứng bạn cần chuẩn bị sẽ khác nhau.\n\nNếu bạn chưa nhận được hàng, bạn không cần cung cấp bất kỳ bằng chứng nào. Shopee sẽ tự động xử lý yêu cầu dựa trên hệ thống theo dõi đơn hàng."
   },
   {
-    "chunk_id": 128,
+    "chunk_id": 131,
     "source": "article_03.md",
     "doc_type": "news",
     "customer_role": "buyer",
@@ -1152,7 +1179,7 @@
     "content": "Trong các trường hợp đã nhận hàng nhưng gặp vấn đề, Shopee khuyến khích bạn chuẩn bị bằng chứng là video mở kiện hàng. Video này sẽ là bằng chứng mạnh nhất để giải quyết khiếu nại của bạn.\n\nVideo cần đảm bảo các yếu tố sau:\n\n- Quay xuyên suốt, liên tục, không bị cắt ghép.\n\n- Góc quay rõ ràng, không bị khuất.\n\n- Chất lượng video tốt, không bị mờ nhòe.\n\n- Thể hiện rõ các thông tin sau:\n\n- Tình trạng kiện hàng: Quay 6 mặt của kiện hàng để chứng minh tình trạng khi bạn nhận được.\n\n- Quá trình mở kiện: Thấy rõ mã vận đơn trên kiện hàng, khớp với thông tin đơn hàng của bạn.\n\n- Tình trạng sản phẩm: Quay cận cảnh số lượng và tình trạng sản phẩm bên trong, đặc biệt là các niêm phong, tem nhãn (nếu có)."
   },
   {
-    "chunk_id": 129,
+    "chunk_id": 132,
     "source": "article_03.md",
     "doc_type": "news",
     "customer_role": "buyer",
@@ -1161,7 +1188,7 @@
     "content": "⚠️ Lưu ý: Khi bạn cần gửi trả sản phẩm, Shopee khuyến khích bạn quay lại video đóng kiện hàng hoàn trả. Video này cũng cần đáp ứng các tiêu chí tương tự video mở hàng (quay xuyên suốt, rõ nét) và thể hiện rõ tình trạng sản phẩm (niêm phong, tem nhãn) và quá trình đóng gói\n\nĐối với trường hợp đặc biệt này, bạn cần chuẩn bị thêm bằng chứng chứng minh sản phẩm nhận được là hàng giả/nhái.\n\nDưới đây là một số ví dụ về bằng chứng bạn có thể cung cấp:\n\nLoại bằng chứng\n\nCách thực hiện\n\nQuét mã QR/ Kiểm tra số seri\n\nQuay video quét mã QR, kiểm tra số seri trên trang web của hãng để chứng minh sản phẩm không phải hàng thật.\n\nSo sánh sản phẩm\n\nChụp ảnh/quay video so sánh sự khác biệt giữa sản phẩm thực nhận và sản phẩm chính hãng (màu sắc, chất liệu, tem nhãn, logo, mã sản phẩm).\n\nBao bì sản phẩm"
   },
   {
-    "chunk_id": 130,
+    "chunk_id": 133,
     "source": "article_03.md",
     "doc_type": "news",
     "customer_role": "buyer",
@@ -1170,7 +1197,7 @@
     "content": "Bao bì sản phẩm\n\nChụp ảnh/quay video cho thấy sự sai khác của bao bì sản phẩm thực nhận so với bao bì chính hãng.\n\nĐể yêu cầu của bạn được xử lý hiệu quả, hãy lưu ý các quy định sau về bằng chứng:\n\n- Dung lượng tối đa:\n\n- Hình ảnh: Không quá 5MB/ảnh.\n\n- Video: Không quá 100 MB/video (tối đa 1 phút).\n\n- Tải lên bằng chứng có dung lượng lớn: Nếu video/hình ảnh của bạn có dung lượng lớn hơn quy định, hãy tải lên YouTube hoặc Google Drive (để ở chế độ công khai) rồi gửi đường dẫn trong phần chú thích khi gửi yêu cầu.\n\n- Chất lượng: Bằng chứng phải rõ nét, không mờ nhòe.\n\n- Chi tiết: Chụp/quay cận cảnh lỗi hoặc điểm bất thường của sản phẩm.\n\n- Bằng chứng bổ sung: Nếu có, bạn có thể cung cấp thêm lịch sử chat với người bán hoặc các bằng chứng khác để Shopee có thêm thông tin xử lý."
   },
   {
-    "chunk_id": 131,
+    "chunk_id": 134,
     "source": "article_03.md",
     "doc_type": "news",
     "customer_role": "buyer",
@@ -1179,25 +1206,25 @@
     "content": "Nếu Shopee cần thêm bằng chứng khác, bạn sẽ nhận được thông báo trong mục Thông báo > Cập nhật đơn hàng. Bạn cần bổ sung bằng chứng trong vòng 24 giờ. Sau thời gian này, Shopee sẽ chỉ xem xét dựa trên các bằng chứng đã có.\n\n5. Một số ví dụ minh họa về bằng chứng cần cung cấp"
   },
   {
-    "chunk_id": 132,
+    "chunk_id": 135,
     "source": "article_04.md",
     "doc_type": "news",
     "customer_role": "buyer",
     "chunk_index": 0,
     "char_length": 794,
-    "content": "# [Đơn hàng Quốc tế] Tôi cần chờ bao lâu để nhận được đơn hàng Quốc tế?\n\n**Source:** https://help.shopee.vn/portal/4/article/79556\n**Category:** Cross-border\n**Crawled:** 2026-08-04T15:16:33.852676\n\n---\n\nThời gian dự kiến giao đơn hàng Quốc tế là trong vòng 7 - 15 ngày kể từ thời điểm bạn thanh toán đơn hàng, không bao gồm những ngày lễ theo quy định tại Việt Nam và các quốc gia mà Shop Quốc tế đang hoạt động; hoặc ngày nghỉ không làm việc của Đơn vị vận chuyển. Để biết cụ thể ngày nhận hàng, bạn có thể kiểm tra thời gian giao hàng dự kiến của đơn hàng.\n⚠️ Lưu ý:\n\nThời gian giao đơn hàng Quốc tế có thể lâu hơn so với dự kiến vì một (số) lý do khách quan như điều kiện thời tiết xấu, gặp vấn đề liên quan đến thủ tục Hải quan, hoặc do trùng lặp với những kỳ nghỉ lễ lớn của mỗi quốc gia."
+    "content": "# [Đơn hàng Quốc tế] Tôi cần chờ bao lâu để nhận được đơn hàng Quốc tế?\n\n**Source:** https://help.shopee.vn/portal/4/article/79556\n**Category:** Cross-border\n**Crawled:** 2026-08-04T16:59:27.630023\n\n---\n\nThời gian dự kiến giao đơn hàng Quốc tế là trong vòng 7 - 15 ngày kể từ thời điểm bạn thanh toán đơn hàng, không bao gồm những ngày lễ theo quy định tại Việt Nam và các quốc gia mà Shop Quốc tế đang hoạt động; hoặc ngày nghỉ không làm việc của Đơn vị vận chuyển. Để biết cụ thể ngày nhận hàng, bạn có thể kiểm tra thời gian giao hàng dự kiến của đơn hàng.\n⚠️ Lưu ý:\n\nThời gian giao đơn hàng Quốc tế có thể lâu hơn so với dự kiến vì một (số) lý do khách quan như điều kiện thời tiết xấu, gặp vấn đề liên quan đến thủ tục Hải quan, hoặc do trùng lặp với những kỳ nghỉ lễ lớn của mỗi quốc gia."
   },
   {
-    "chunk_id": 133,
+    "chunk_id": 136,
     "source": "article_05.md",
     "doc_type": "news",
     "customer_role": "seller",
     "chunk_index": 0,
     "char_length": 631,
-    "content": "# CHÍNH SÁCH CHỐNG HÀNH VI GIAN LẬN TRÊN SÀN SHOPEE VÀ CÁC BIỆN PHÁP XỬ LÝ ĐỐI VỚI NGƯỜI BÁN VI PHẠM\n\n**Source:** https://help.shopee.vn/portal/4/article/140097\n**Category:** Seller Policy\n**Crawled:** 2026-08-04T15:16:34.324699\n\n---\n\nĐể giữ gìn và đảm bảo một nền tảng mua bán minh bạch, an toàn, thân thiện và tích cực, nhằm bảo vệ tối đa quyền lợi của Người Dùng chân chính và bù đắp những tổn hại mà Shopee phải gánh chịu từ các hành vi gian lận, Shopee ban hành Chính sách chống hành vi gian lận trên Sàn Shopee và các biện pháp xử lý đối với Người bán vi phạm (“Chính sách”) như dưới đây.\n\n1. Hành Vi Gian Lận Trên Sàn Shopee"
+    "content": "# CHÍNH SÁCH CHỐNG HÀNH VI GIAN LẬN TRÊN SÀN SHOPEE VÀ CÁC BIỆN PHÁP XỬ LÝ ĐỐI VỚI NGƯỜI BÁN VI PHẠM\n\n**Source:** https://help.shopee.vn/portal/4/article/140097\n**Category:** Seller Policy\n**Crawled:** 2026-08-04T16:59:28.138969\n\n---\n\nĐể giữ gìn và đảm bảo một nền tảng mua bán minh bạch, an toàn, thân thiện và tích cực, nhằm bảo vệ tối đa quyền lợi của Người Dùng chân chính và bù đắp những tổn hại mà Shopee phải gánh chịu từ các hành vi gian lận, Shopee ban hành Chính sách chống hành vi gian lận trên Sàn Shopee và các biện pháp xử lý đối với Người bán vi phạm (“Chính sách”) như dưới đây.\n\n1. Hành Vi Gian Lận Trên Sàn Shopee"
   },
   {
-    "chunk_id": 134,
+    "chunk_id": 137,
     "source": "article_05.md",
     "doc_type": "news",
     "customer_role": "seller",
@@ -1206,7 +1233,7 @@
     "content": "1. Hành Vi Gian Lận Trên Sàn Shopee\n\nNgười Bán được xem là có hành vi gian lận đối với hoạt động bán hàng trên Sàn Thương Mại Điện Tử Shopee (“Sàn Shopee”) nếu Người Bán thực hiện, có dấu hiệu thực hiện một trong các hành vi sau (“Người Bán Vi Phạm”):\n\n(a) Tăng lượt đánh giá Shop bằng các phương thức vi phạm chính sách hiện hành của Shopee;"
   },
   {
-    "chunk_id": 135,
+    "chunk_id": 138,
     "source": "article_05.md",
     "doc_type": "news",
     "customer_role": "seller",
@@ -1215,7 +1242,7 @@
     "content": "(a) Tăng lượt đánh giá Shop bằng các phương thức vi phạm chính sách hiện hành của Shopee;\n\n(b) Tạo đơn hàng ảo để tăng lượt bán, hiển thị, tương tác cho Sản Phẩm. Đơn hàng ảo bao gồm nhưng không giới hạn đơn hàng được đặt bởi Người Mua nhưng không được gửi đến Người Mua trên thực tế; hoặc đơn hàng có sự thông đồng giữa Người Bán và Người Mua và/hoặc bên thứ ba; hoặc đơn hàng không có Sản Phẩm thực tế bên trong hoặc Sản Phẩm khác biệt một cách rõ ràng với thông tin và mô tả đơn hàng trên hệ thống Shopee; có sự bất thường trong địa chỉ nhận hàng của nhiều Người Mua khi mua hàng trên cùng một hoặc một số Shop của Người Bán;"
   },
   {
-    "chunk_id": 136,
+    "chunk_id": 139,
     "source": "article_05.md",
     "doc_type": "news",
     "customer_role": "seller",
@@ -1224,7 +1251,7 @@
     "content": "(c) Tạo đơn hàng ảo để lừa đảo, chiếm dụng tiền, lợi ích vật chất của Sàn Shopee, bao gồm nhưng không giới hạn các mã ưu đãi, mã giảm giá do Shopee và/hoặc Đối Tác của Shopee tài trợ;\n\n(d) Lạm dụng các chương trình khuyến mại của Shopee và/hoặc Đối Tác của Shopee tổ chức trong từng thời kỳ nhằm mục đích lừa đảo, chiếm dụng tiền, các lợi ích vật chất từ những chương trình này;\n\n(e) Lạm dụng các chương trình ưu đãi miễn phí vận chuyển, mã giảm giá, Shopee Xu do Shopee và/hoặc Đối Tác của Shopee tài trợ;\n\n(f) Thực hiện các giao dịch hoặc kêu gọi, hướng dẫn Người Mua thực hiện các giao dịch mua hàng ngoài Sàn Shopee, bao gồm các giao dịch ngoại tuyến."
   },
   {
-    "chunk_id": 137,
+    "chunk_id": 140,
     "source": "article_05.md",
     "doc_type": "news",
     "customer_role": "seller",
@@ -1233,7 +1260,7 @@
     "content": "Hành Vi Gian Lận Trên Sàn Shopee được xem là hành vi vi phạm nghiêm trọng đối với Điều khoản dịch vụ, Quy chế hoạt động và các Quy định, Chính Sách khác của Shopee, gây ra tổn hại có thể không bù đắp được không chỉ cho Shopee, Đối Tác của Shopee và cho Người Dùng chân chính.\n\n2. Tổn hại Đối Với Hành Vi Gian Lận Trên của Người Bán:\n\nHành Vi Gian Lận Trên của Người Bán không chỉ gây tổn hại cho Shopee, Đối tác của Shopee mà còn ảnh hưởng tiêu cực đến Người Dùng chân chính trên Sàn Shopee, cụ thể:"
   },
   {
-    "chunk_id": 138,
+    "chunk_id": 141,
     "source": "article_05.md",
     "doc_type": "news",
     "customer_role": "seller",
@@ -1242,7 +1269,7 @@
     "content": "a. Tước đoạt cơ hội mua hàng của Người Dùng chân chính: Những Người Mua và Người Bán chân chính có thể sẽ không được hưởng những quyền lợi của các chương trình khuyến mại, chương trình ưu đãi do Shopee và/hoặc Đối Tác của Shopee tài trợ do Người Bán có hành vi gian lận, dẫn đến một môi trường giao dịch, kinh doanh không công bằng và thiếu sự minh bạch;\n\nb. Gây tổn hại cho Shopee và Đối Tác của Shopee: Hành Vi Gian Lận Trên Sàn Shopee làm giảm sự tin tưởng của Người Dùng đối với Sàn Shopee, gây ảnh hưởng đến uy tín, danh tiếng và tổn hại cho tài sản của Shopee và/hoặc Đối Tác của Shopee.\n\n3. Biện Pháp Xử Lý Đối Với Người Bán Vi Phạm:\n\na. Shopee có quyền áp dụng riêng lẻ hoặc đồng thời các biện pháp bao gồm nhưng không giới hạn các biện pháp sau đối với Người Bán Vi Phạm:"
   },
   {
-    "chunk_id": 139,
+    "chunk_id": 142,
     "source": "article_05.md",
     "doc_type": "news",
     "customer_role": "seller",
@@ -1251,7 +1278,7 @@
     "content": "(i) Gửi thông tin cảnh báo vi phạm tới tài khoản Người Bán Vi Phạm;\n\n(ii) Hủy tất cả đơn hàng vi phạm;\n\n(iii) Tạm khóa Số dư Tài khoản Shopee của Người Bán Vi Phạm để cấn trừ đối với các đơn hàng vi phạm;\n\n(iv) Thu hồi tiền, tài sản, các chi phí có liên quan như chi phí vận chuyển của đơn hàng, phí thanh toán, và bất kỳ lợi ích vật chất nào mà Người Bán Vi Phạm nhận được được do hành vi vi phạm Chính Sách;\n\n(v) Ngưng hỗ trợ mã giảm giá/mã ưu đãi cho Người Bán Vi Phạm;\n\n(vi) Khóa tài khoản Người Bán Vi Phạm vĩnh viễn;\n\n(vii) Báo cáo và phối hợp với cơ quan chức năng để tiến hành các cuộc\nđiều tra, các biện pháp pháp lý để xử lý những hành vi vi phạm Chính Sách;"
   },
   {
-    "chunk_id": 140,
+    "chunk_id": 143,
     "source": "article_05.md",
     "doc_type": "news",
     "customer_role": "seller",
@@ -1260,7 +1287,7 @@
     "content": "(viii) Áp dụng các hành động hoặc biện pháp chế tài khác theo Tiêu Chuẩn Cộng Đồng, Quy Chế Hoạt Động, hoặc các Chính Sách Shopee.\n\nb. Từ ngày 28/12/2023, để bù đắp cho những tổn hại mà Shopee có thể phải gánh chịu từ các hành vi gian lận, Shopee sẽ áp dụng và Người Bán sẽ phải bồi thường cho Shopee một khoản tiền lên đến 10.000.000 VND (Bằng chữ: Mười triệu đồng) cho từng đơn hàng vi phạm Chính Sách này. Khoản tiền này sẽ được cộng dồn theo số lượng đơn hàng vi phạm được phát hiện, và được cấn trừ vào Số dư Tài Khoản Shopee của Người Bán Vi Phạm."
   },
   {
-    "chunk_id": 141,
+    "chunk_id": 144,
     "source": "article_05.md",
     "doc_type": "news",
     "customer_role": "seller",
@@ -1269,7 +1296,7 @@
     "content": "Lưu ý rằng, việc áp dụng khoản tiền này không đồng nghĩa với việc Shopee từ bỏ bất cứ quyền nào của mình theo quy định của pháp luật để buộc Người Bán Vi Phạm phải chịu trách nhiệm về hành vi của mình. Shopee bảo lưu tất cả các quyền của mình theo quy định.\n\n4. Ngăn Chặn Hành Vi Gian Lận Trên Sàn Shopee:\n\nĐể ngăn chặn Hành Vi Gian Lận Trên Sàn Shopee, Shopee khuyến khích tất cả Người Dùng:\n\na. Báo cáo các hoạt động hoặc hành vi mà Người Dùng nghi ngờ đang vi phạm Chính sách Shopee với Bộ phận CSKH Shopee;\n\nb. Tham khảo và luôn tuân thủ các Điều khoản dịch vụ của Shopee."
   },
   {
-    "chunk_id": 142,
+    "chunk_id": 145,
     "source": "article_05.md",
     "doc_type": "news",
     "customer_role": "seller",
@@ -1278,7 +1305,7 @@
     "content": "b. Tham khảo và luôn tuân thủ các Điều khoản dịch vụ của Shopee.\n\nĐể đảm bảo môi trường mua sắm lành mạnh, thân thiện và vì lợi ích của Người Dùng trên Sàn Shopee, Shopee sẽ liên tục kiểm tra và gửi cảnh báo, xử lý vi phạm nếu phát hiện ra các Hành Vi Gian Lận Trên Sàn Shopee. Shopee rất mong nhận được sự chung tay từ tất cả Người Dùng để tích cực ngăn chặn các hành vi gian lận, đồng thời mong muốn Người Bán luôn tuân thủ các điều khoản, điều kiện và Chính Sách của Shopee để tránh bị xử lý vi phạm và đảm bảo hoạt động bán hàng trên Sàn không bị gián đoạn.\n\nViệc Người Bán tiếp tục duy trì tài khoản Người Bán trên Sàn Shopee sau ngày hiệu lực của Chính sách này được coi là Người Bán đã đồng ý với toàn bộ các quy định trong Chính sách này."
   },
   {
-    "chunk_id": 143,
+    "chunk_id": 146,
     "source": "article_05.md",
     "doc_type": "news",
     "customer_role": "seller",
