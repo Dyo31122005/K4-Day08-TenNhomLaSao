@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopee AI - Trợ lý chính sách Shopee</title>
+  <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+  <link rel="shortcut icon" href="/static/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    :root {
+      --shopee-red: #EE4D2D;
+      --shopee-red-dark: #D73211;
+      --sidebar-bg: #FAFAFA;
+      --border-color: #EBEBEB;
+      --text-dark: #1F2937;
+      --text-muted: #6B7280;
+      --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.04);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #FFFFFF;
+      color: var(--text-dark);
+      height: 100vh;
+      display: flex;
+      overflow: hidden;
+    }
+
+    /* Left Sidebar */
+    aside.sidebar {
+      width: 280px;
+      background-color: var(--sidebar-bg);
+      border-right: 1px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+      flex-shrink: 0;
+    }
+
+    .brand-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      text-decoration: none;
+    }
+
+    .brand-logo-img {
+      height: 28px;
+      object-fit: contain;
+    }
+
+    .new-chat-btn {
+      background: #FFFFFF;
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 10px 16px;
+      font-size: 14px;
+      color: var(--text-dark);
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: var(--shadow-card);
+      margin-bottom: 24px;
+      transition: all 0.2s;
+    }
+
+    .new-chat-btn:hover {
+      border-color: #CCCCCC;
+      background: #F5F5F5;
+    }
+
+    .sidebar-section-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: #9CA3AF;
+      letter-spacing: 0.6px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    .topic-list {
+      list-style: none;
+      margin-bottom: 24px;
+    }
+
+    .topic-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 12px;
+      border-radius: 8px;
+      font-size: 13px;
+      color: #374151;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .topic-item:hover,
+    .topic-item.active {
+      background: #F3F4F6;
+      color: var(--shopee-red);
+      font-weight: 600;
+    }
+
+    .dot-icon {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #9CA3AF;
+    }
+
+    .topic-item.active .dot-icon {
+      background: var(--shopee-red);
+    }
+
+    .recent-list {
+      list-style: none;
+      overflow-y: auto;
+      flex: 1;
+    }
+
+    .recent-item {
+      padding: 9px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-bottom: 6px;
+      transition: background 0.15s;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .recent-item:hover,
+    .recent-item.active {
+      background: #F3F4F6;
+    }
+
+    .recent-item.active .recent-title {
+      color: var(--shopee-red);
+      font-weight: 700;
+    }
+
+    .recent-title-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .recent-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-dark);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      flex: 1;
+    }
+
+    .delete-chat-btn {
+      opacity: 0;
+      background: transparent;
+      border: none;
+      color: #9CA3AF;
+      font-size: 12px;
+      cursor: pointer;
+      padding: 2px 4px;
+      border-radius: 4px;
+      transition: all 0.15s;
+    }
+
+    .recent-item:hover .delete-chat-btn {
+      opacity: 1;
+    }
+
+    .delete-chat-btn:hover {
+      color: #EF4444;
+      background: #FEE2E2;
+    }
+
+    .recent-sub {
+      font-size: 11px;
+      color: var(--text-muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-top: 2px;
+    }
+
+
+    .user-footer {
+      padding-top: 12px;
+      border-top: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .user-avatar {
+      width: 28px;
+      height: 28px;
+      background: #4B5563;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .user-name {
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    /* Main Area */
+    main.chat-main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      position: relative;
+    }
+
+    /* Top Nav Header */
+    .top-nav {
+      height: 56px;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .menu-btn {
+      background: transparent;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+      color: var(--text-muted);
+    }
+
+    .bot-title-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .bot-header-logo {
+      height: 22px;
+      object-fit: contain;
+    }
+
+    .bot-name {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+
+    .status-badge {
+      background: #E8F5E9;
+      color: #2E7D32;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .status-dot {
+      width: 6px;
+      height: 6px;
+      background: #4CAF50;
+      border-radius: 50%;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .help-link {
+      font-size: 13px;
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+
+    .new-btn-red {
+      background: var(--shopee-red);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 6px 14px;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    /* Content Area */
+    .content-area {
+      flex: 1;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px 100px;
+    }
+
+    /* Hero Welcome Screen */
+    .hero-welcome {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      max-width: 680px;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .hero-shopee-logo {
+      height: 48px;
+      margin-bottom: 24px;
+      object-fit: contain;
+    }
+
+    .hero-title {
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+    }
+
+    .hero-title span {
+      color: var(--shopee-red);
+    }
+
+    .hero-subtitle {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+    }
+
+    /* 6 Action Cards Grid */
+    .action-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      width: 100%;
+    }
+
+    .action-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.2s;
+      box-shadow: var(--shadow-card);
+      min-height: 64px;
+    }
+
+    .action-card:hover {
+      border-color: var(--shopee-red);
+      box-shadow: 0 4px 12px rgba(238, 77, 45, 0.12);
+      transform: translateY(-2px);
+    }
+
+    .card-text {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+
+    /* Active Chat Feed */
+    .chat-messages-list {
+      width: 100%;
+      max-width: 760px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .chat-msg-row {
+      display: flex;
+      gap: 12px;
+    }
+
+    .chat-msg-row.user {
+      flex-direction: row-reverse;
+    }
+
+    .chat-bubble {
+      max-width: 80%;
+      padding: 14px 18px;
+      border-radius: 16px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .chat-msg-row.user .chat-bubble {
+      background: var(--shopee-red);
+      color: white;
+      border-bottom-right-radius: 4px;
+    }
+
+    .chat-msg-row.bot .chat-bubble {
+      background: #F9FAFB;
+      color: var(--text-dark);
+      border: 1px solid var(--border-color);
+      border-bottom-left-radius: 4px;
+    }
+
+    .chat-bubble p {
+      margin: 0 0 8px 0;
+      line-height: 1.6;
+    }
+
+    .chat-bubble p:last-child {
+      margin-bottom: 0;
+    }
+
+    .chat-bubble ul,
+    .chat-bubble ol {
+      margin: 6px 0 10px 0;
+      padding-left: 20px;
+    }
+
+    .chat-bubble li {
+      margin-bottom: 6px;
+      line-height: 1.55;
+    }
+
+    .chat-bubble strong,
+    .chat-bubble b {
+      color: #111827;
+      font-weight: 700;
+    }
+
+    .source-box {
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px dashed var(--border-color);
+      font-size: 11px;
+      color: #6B7280;
+    }
+
+    .source-tag {
+      display: inline-block;
+      background: #EFF6FF;
+      color: #2563EB;
+      padding: 4px 10px;
+      border-radius: 10px;
+      font-weight: 500;
+      margin-top: 6px;
+      margin-right: 6px;
+    }
+
+    .source-tag.clickable {
+      cursor: pointer;
+      transition: all 0.2s ease;
+      user-select: none;
+      border: 1px solid #BFDBFE;
+    }
+
+    .source-tag.clickable:hover {
+      background: #DBEAFE;
+      color: #1D4ED8;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 6px rgba(37, 99, 235, 0.18);
+    }
+
+    /* Modal Popup xem chi tiết Chunk Nguồn */
+    .source-modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(4px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      animation: fadeIn 0.2s ease-out;
+    }
+
+    .source-modal-card {
+      background: #FFFFFF;
+      width: 90%;
+      max-width: 680px;
+      max-height: 82vh;
+      border-radius: 12px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      animation: slideUp 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .source-modal-header {
+      background: var(--shopee-red);
+      color: #FFFFFF;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .source-modal-title {
+      font-size: 15px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .source-modal-close {
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+      color: white;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.15s;
+    }
+
+    .source-modal-close:hover {
+      background: rgba(255, 255, 255, 0.35);
+    }
+
+    .source-modal-body {
+      padding: 20px;
+      overflow-y: auto;
+      font-size: 13.5px;
+      color: var(--text-dark);
+      line-height: 1.65;
+    }
+
+    .source-modal-meta {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+      flex-wrap: wrap;
+    }
+
+    .meta-chip {
+      background: #F3F4F6;
+      color: #4B5563;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .meta-chip.score {
+      background: #FEF3C7;
+      color: #D97706;
+    }
+
+    .source-modal-content-box {
+      background: #F9FAFB;
+      border: 1px solid #E5E7EB;
+      border-radius: 8px;
+      padding: 16px;
+      white-space: pre-wrap;
+      font-family: inherit;
+      line-height: 1.6;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /* Fixed Bottom Input Area */
+    .input-container {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: white;
+      padding: 12px 24px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .input-box-wrapper {
+      width: 100%;
+      max-width: 760px;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .input-box-wrapper input {
+      width: 100%;
+      padding: 14px 50px 14px 20px;
+      border-radius: 24px;
+      border: 1px solid #E5E7EB;
+      background: #F9FAFB;
+      font-size: 14px;
+      outline: none;
+      transition: all 0.2s;
+    }
+
+    .input-box-wrapper input:focus {
+      background: white;
+      border-color: var(--shopee-red);
+      box-shadow: 0 2px 10px rgba(238, 77, 45, 0.15);
+    }
+
+    .send-btn-circle {
+      position: absolute;
+      right: 6px;
+      width: 36px;
+      height: 36px;
+      background: var(--shopee-red);
+      border: none;
+      border-radius: 50%;
+      color: white;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.15s;
+    }
+
+    .send-btn-circle:hover {
+      transform: scale(1.05);
+    }
+
+    .disclaimer-text {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 8px;
+    }
+
+    /* Floating Video Widget */
+    .video-widget-container {
+      position: absolute;
+      bottom: 110px;
+      right: 24px;
+      z-index: 100;
+      width: 250px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+      border: 2px solid var(--shopee-red);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: width 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), height 0.4s ease;
+    }
+
+    .video-widget-header {
+      background: var(--shopee-red);
+      color: white;
+      padding: 6px 12px;
+      font-size: 11px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .video-widget-close-btn {
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+      font-size: 12px;
+      padding: 0 2px;
+      line-height: 1;
+      opacity: 0.9;
+    }
+
+    .video-widget-close-btn:hover {
+      opacity: 1;
+    }
+
+    .video-widget-body {
+      width: 100%;
+      height: 140px;
+      background: #000;
+      transition: height 0.4s ease;
+    }
+
+
+    .video-widget-body video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+    /* Typing Loader */
+    .typing-indicator {
+      display: flex;
+      gap: 4px;
+      padding: 6px 12px;
+    }
+
+    .typing-dot {
+      width: 6px;
+      height: 6px;
+      background: #9CA3AF;
+      border-radius: 50%;
+      animation: bounce 1.4s infinite ease-in-out;
+    }
+
+    .typing-dot:nth-child(1) {
+      animation-delay: -0.32s;
+    }
+
+    .typing-dot:nth-child(2) {
+      animation-delay: -0.16s;
+    }
+
+    @keyframes bounce {
+
+      0%,
+      80%,
+      100% {
+        transform: scale(0);
+      }
+
+      40% {
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Left Sidebar -->
+  <aside class="sidebar">
+    <a href="/" class="brand-header">
+      <img src="/static/shopee_logo.svg" alt="Shopee Logo" class="brand-logo-img">
+    </a>
+
+    <button class="new-chat-btn" onclick="startNewChat()">
+      <span>+</span> Cuộc trò chuyện mới
+    </button>
+
+    <div class="sidebar-section-title">CHỦ ĐỀ</div>
+    <ul class="topic-list">
+      <li class="topic-item active"
+        onclick="selectTopic(this, 'Trả hàng & Hoàn tiền', 'Thời hạn và điều kiện yêu cầu trả hàng hoàn tiền trên Shopee là bao lâu?')">
+        <span class="dot-icon"></span> Trả hàng & Hoàn tiền
+      </li>
+      <li class="topic-item"
+        onclick="selectTopic(this, 'Phương thức thanh toán', 'Shopee hiện đang hỗ trợ những phương thức thanh toán nào?')">
+        <span class="dot-icon"></span> Phương thức thanh toán
+      </li>
+      <li class="topic-item"
+        onclick="selectTopic(this, 'Bảo mật thông tin', 'Chính sách bảo mật dữ liệu cá nhân của Shopee quy định những gì?')">
+        <span class="dot-icon"></span> Bảo mật thông tin
+      </li>
+      <li class="topic-item"
+        onclick="selectTopic(this, 'Theo dõi đơn hàng', 'Hướng dẫn chi tiết cách kiểm tra hành trình đơn hàng trên Shopee?')">
+        <span class="dot-icon"></span> Theo dõi đơn hàng
+      </li>
+      <li class="topic-item"
+        onclick="selectTopic(this, 'Quy định người bán', 'Hướng dẫn chuẩn hóa quy trình đóng gói và gửi hàng cho người bán Shopee?')">
+        <span class="dot-icon"></span> Quy định người bán
+      </li>
+    </ul>
+
+    <div class="sidebar-section-title">GẦN ĐÂY</div>
+    <div class="recent-list" id="recentList">
+      <!-- Dynamic localStorage chat sessions rendered here -->
+    </div>
+
+
+    <div class="user-footer">
+      <div class="user-avatar">U</div>
+      <div class="user-name">Người dùng</div>
+    </div>
+  </aside>
+
+  <!-- Main Chat Area -->
+  <main class="chat-main">
+
+    <!-- Top Nav Header -->
+    <div class="top-nav">
+      <div class="nav-left">
+        <div class="bot-title-group">
+          <div class="bot-name">Trợ lý chính sách Shopee</div>
+          <div class="status-badge">
+            <span class="status-dot"></span> Trực tuyến
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <a href="/" class="help-link">Trợ giúp</a>
+        <button class="new-btn-red" onclick="startNewChat()">+ Mới</button>
+      </div>
+    </div>
+
+    <!-- Content Area -->
+    <div class="content-area" id="contentArea">
+
+      <!-- Hero Welcome Screen (Initial State) -->
+      <div class="hero-welcome" id="heroWelcome">
+        <img src="/static/shopee_logo.svg" alt="Shopee Official Logo" class="hero-shopee-logo">
+
+        <h1 class="hero-title">Xin chào! Tôi là <span>Shopee AI</span></h1>
+        <p class="hero-subtitle">Tôi có thể giúp bạn tìm hiểu chính sách mua hàng, vận chuyển, hoàn tiền và nhiều hơn
+          nữa.</p>
+
+        <!-- 6 Action Cards Grid (Clean, Professional Minimalist Cards) -->
+        <div class="action-grid">
+          <div class="action-card"
+            onclick="quickAsk('Thời hạn gửi yêu cầu trả hàng và hoàn tiền trên Shopee là bao lâu?')">
+            <span class="card-text">Chính sách trả hàng</span>
+          </div>
+
+          <div class="action-card" onclick="quickAsk('Quy định về phí vận chuyển và miễn phí vận chuyển trên Shopee?')">
+            <span class="card-text">Phí vận chuyển</span>
+          </div>
+
+          <div class="action-card" onclick="quickAsk('Điều kiện nhận hoàn tiền khi thanh toán COD hoặc ví ShopeePay?')">
+            <span class="card-text">Thanh toán & hoàn tiền</span>
+          </div>
+
+          <div class="action-card" onclick="quickAsk('Chính sách bảo vệ người mua và xử lý hàng giả hàng nhái?')">
+            <span class="card-text">Bảo vệ người mua</span>
+          </div>
+
+          <div class="action-card" onclick="quickAsk('Quy định về đánh giá sản phẩm và phản hồi trên Shopee?')">
+            <span class="card-text">Đánh giá sản phẩm</span>
+          </div>
+
+          <div class="action-card"
+            onclick="quickAsk('Người bán bị xử lý thế nào khi vi phạm quy định đăng bán hàng cấm?')">
+            <span class="card-text">Chính sách người bán</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Active Chat Messages Feed -->
+      <div class="chat-messages-list" id="chatList" style="display: none;"></div>
+
+    </div>
+
+    <!-- Fixed Bottom Input Area -->
+    <div class="input-container">
+      <form class="input-box-wrapper" onsubmit="handleSend(event)">
+        <input type="text" id="chatInput" placeholder="Hỏi về chính sách Shopee..." autocomplete="off">
+        <button type="submit" class="send-btn-circle">
+          <svg style="width:16px;height:16px;fill:white;" viewBox="0 0 24 24">
+            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+          </svg>
+        </button>
+      </form>
+      <div class="disclaimer-text">Shopee AI có thể mắc lỗi. Vui lòng kiểm tra thông tin quan trọng.</div>
+    </div>
+
+    <!-- Video Player Widget at Bottom Right -->
+    <div class="video-widget-container" id="videoWidget">
+      <div class="video-widget-header">
+        <span id="videoWidgetTitle" style="transition: font-size 0.3s ease;">🎬 SÁU GIỜ NĂM MƯƠI!</span>
+        <button class="video-widget-close-btn" onclick="toggleVideoWidget()" title="Ẩn/Hiện video">✖</button>
+      </div>
+
+      <div class="video-widget-body">
+        <video controls autoplay loop muted playsinline src="/static/source.mp4">
+          Trình duyệt của bạn không hỗ trợ video.
+        </video>
+      </div>
+    </div>
+
+  </main>
+
+
+  <script>
+    const STORAGE_KEY = 'shopee_chat_sessions_v2';
+    let sessions = [];
+    let activeSessionId = null;
+    let isChatActive = false;
+    let currentSourcesMap = [];
+
+    function toggleVideoWidget() {
+      const widget = document.getElementById('videoWidget');
+      if (widget) {
+        widget.style.display = widget.style.display === 'none' ? 'flex' : 'none';
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      initChatSessions();
+    });
+
+
+    function initChatSessions() {
+      try {
+        const stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) {
+          sessions = JSON.parse(stored);
+        }
+      } catch (e) {
+        sessions = [];
+      }
+
+      if (!sessions || sessions.length === 0) {
+        sessions = [
+          {
+            id: 'session-1',
+            title: 'Trả hàng & Hoàn tiền Shopee',
+            subtitle: 'Thời hạn 15 ngày kể từ khi nhận hàng...',
+            createdAt: Date.now() - 3600000,
+            messages: [
+              { role: 'user', content: 'Thời hạn yêu cầu trả hàng và hoàn tiền trên Shopee là bao lâu?' },
+              { role: 'bot', content: 'Theo **Chính sách Trả hàng và Hoàn tiền Shopee**, Người Mua có thể gửi yêu cầu trả hàng/hoàn tiền trong vòng **15 (mười lăm) ngày** kể từ khi đơn hàng được cập nhật giao hàng thành công [returns-refund-policy-shopee.pdf].\n\nĐối với thực phẩm tươi sống và đông lạnh, thời hạn gửi yêu cầu là **24 giờ**.' }
+            ]
+          },
+          {
+            id: 'session-2',
+            title: 'Phương thức thanh toán Shopee',
+            subtitle: 'Hỗ trợ 09 hình thức thanh toán chính...',
+            createdAt: Date.now() - 7200000,
+            messages: [
+              { role: 'user', content: 'Shopee hỗ trợ những phương thức thanh toán nào?' },
+              { role: 'bot', content: 'Shopee Việt Nam hiện hỗ trợ **09 hình thức thanh toán chính**:\n1. Ví ShopeePay\n2. Thẻ Tín dụng/Ghi nợ (Visa, Mastercard, JCB, AMEX)\n3. Trả góp bằng Thẻ tín dụng\n4. Thanh toán QR Ngân hàng\n5. Thẻ nội địa NAPAS\n6. Apple Pay\n7. Google Pay\n8. Thanh toán khi nhận hàng (COD)\n9. Dịch vụ SPayLater [payment-methods-shopee.pdf]' }
+            ]
+          }
+        ];
+        saveSessionsToStorage();
+      }
+
+      renderRecentList();
+      if (sessions.length > 0) {
+        selectSession(sessions[0].id);
+      } else {
+        startNewChat();
+      }
+    }
+
+    function saveSessionsToStorage() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(sessions));
+      } catch (e) { }
+    }
+
+    function renderRecentList() {
+      const container = document.getElementById('recentList');
+      if (!container) return;
+      container.innerHTML = '';
+
+      sessions.forEach(sess => {
+        const item = document.createElement('div');
+        item.className = `recent-item ${sess.id === activeSessionId ? 'active' : ''}`;
+        item.onclick = (e) => {
+          if (!e.target.classList.contains('delete-chat-btn')) {
+            selectSession(sess.id);
+          }
+        };
+
+        item.innerHTML = `
+          <div class="recent-title-row">
+            <div class="recent-title">${escapeHtml(sess.title)}</div>
+            <button class="delete-chat-btn" title="Xóa cuộc trò chuyện" onclick="deleteSession('${sess.id}', event)">🗑️</button>
+          </div>
+          <div class="recent-sub">${escapeHtml(sess.subtitle || 'Không có tin nhắn')}</div>
+        `;
+        container.appendChild(item);
+      });
+    }
+
+    function selectSession(sessionId) {
+      activeSessionId = sessionId;
+      const sess = sessions.find(s => s.id === sessionId);
+      if (!sess) {
+        startNewChat();
+        return;
+      }
+
+      isChatActive = true;
+      document.getElementById('heroWelcome').style.display = 'none';
+      const chatList = document.getElementById('chatList');
+      chatList.style.display = 'flex';
+      chatList.innerHTML = '';
+
+      if (sess.messages && sess.messages.length > 0) {
+        sess.messages.forEach(msg => {
+          let sourcesHtml = '';
+          if (msg.sources && msg.sources.length > 0) {
+            currentSourcesMap = msg.sources;
+            sourcesHtml = `<div class="source-box"><strong>📌 Tài liệu liên quan (Click để xem chi tiết Popup):</strong><br>`;
+            msg.sources.forEach((s, idx) => {
+              sourcesHtml += `<span class="source-tag clickable" onclick="openSourceModal(${idx})" title="Bấm để xem chi tiết chunk">📌 ${s.title} (Score: ${s.score})</span> `;
+            });
+            sourcesHtml += `</div>`;
+          }
+          if (msg.role === 'user') {
+            appendMsg(msg.content, 'user');
+          } else {
+            const clean = msg.content.replace(/^[ \t]*[•·][ \t]*/gm, '- ');
+            appendMsg(marked.parse(clean) + sourcesHtml, 'bot', true);
+          }
+        });
+      }
+
+      renderRecentList();
+    }
+
+    function startNewChat() {
+      const newId = 'session-' + Date.now();
+      activeSessionId = newId;
+      isChatActive = false;
+
+      document.getElementById('heroWelcome').style.display = 'flex';
+      const chatList = document.getElementById('chatList');
+      chatList.style.display = 'none';
+      chatList.innerHTML = '';
+      document.getElementById('chatInput').value = '';
+
+      renderRecentList();
+    }
+
+    function deleteSession(sessionId, event) {
+      if (event) event.stopPropagation();
+      sessions = sessions.filter(s => s.id !== sessionId);
+      saveSessionsToStorage();
+      if (activeSessionId === sessionId) {
+        if (sessions.length > 0) {
+          selectSession(sessions[0].id);
+        } else {
+          startNewChat();
+        }
+      } else {
+        renderRecentList();
+      }
+    }
+
+    function selectTopic(element, topicName, samplePrompt) {
+      document.querySelectorAll('.topic-item').forEach(el => el.classList.remove('active'));
+      element.classList.add('active');
+      if (samplePrompt) {
+        quickAsk(samplePrompt);
+      }
+    }
+
+    function quickAsk(text) {
+      document.getElementById('chatInput').value = text;
+      handleSend(new Event('submit'));
+    }
+
+    let currentVideoWidth = 250;
+    let currentVideoHeight = 140;
+    let currentTitleFontSize = 11;
+
+    function growVideoWidget() {
+      const widget = document.getElementById('videoWidget');
+      if (!widget) return;
+      const body = widget.querySelector('.video-widget-body');
+      const titleEl = document.getElementById('videoWidgetTitle');
+
+      if (currentVideoWidth < 700) {
+        currentVideoWidth += 70;
+        currentVideoHeight += 44;
+        widget.style.width = currentVideoWidth + 'px';
+        if (body) body.style.height = currentVideoHeight + 'px';
+      }
+
+      currentTitleFontSize += 3;
+      if (titleEl) {
+        titleEl.style.fontSize = currentTitleFontSize + 'px';
+      }
+    }
+
+
+
+    async function handleSend(e) {
+      e.preventDefault();
+      const input = document.getElementById('chatInput');
+      const question = input.value.trim();
+      if (!question) return;
+
+      input.value = '';
+      growVideoWidget();
+
+
+      let currentSess = sessions.find(s => s.id === activeSessionId);
+      if (!currentSess) {
+        currentSess = {
+          id: activeSessionId || ('session-' + Date.now()),
+          title: question.length > 30 ? (question.substring(0, 30) + '...') : question,
+          subtitle: question,
+          createdAt: Date.now(),
+          messages: []
+        };
+        activeSessionId = currentSess.id;
+        sessions.unshift(currentSess);
+      } else if (currentSess.messages.length === 0) {
+        currentSess.title = question.length > 30 ? (question.substring(0, 30) + '...') : question;
+        currentSess.subtitle = question;
+      }
+
+      if (!isChatActive) {
+        isChatActive = true;
+        document.getElementById('heroWelcome').style.display = 'none';
+        document.getElementById('chatList').style.display = 'flex';
+      }
+
+      appendMsg(question, 'user');
+      currentSess.messages.push({ role: 'user', content: question });
+      saveSessionsToStorage();
+      renderRecentList();
+
+      const loaderId = appendLoader();
+
+      try {
+        const res = await fetch('/api/chat/stream', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ question: question })
+        });
+
+        if (!res.ok) throw new Error("Stream error");
+
+        let bubbleEl = null;
+        const reader = res.body.getReader();
+        const decoder = new TextDecoder("utf-8");
+        let rawMarkdown = "";
+        let sourcesHtml = "";
+        let retrievedSourcesMeta = [];
+
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+
+          const chunk = decoder.decode(value, { stream: true });
+          const lines = chunk.split("\n");
+
+          for (const line of lines) {
+            if (line.startsWith("data: ")) {
+              try {
+                const event = JSON.parse(line.slice(6));
+                if (event.type === "sources" && event.sources && event.sources.length > 0) {
+                  currentSourcesMap = event.sources;
+                  retrievedSourcesMeta = event.sources;
+                  sourcesHtml = `<div class="source-box"><strong>📌 Tài liệu liên quan (Click để xem chi tiết Popup):</strong><br>`;
+                  event.sources.forEach((s, idx) => {
+                    sourcesHtml += `<span class="source-tag clickable" onclick="openSourceModal(${idx})" title="Bấm để xem chi tiết chunk">📌 ${s.title} (Score: ${s.score})</span> `;
+                  });
+                  sourcesHtml += `</div>`;
+                  updateLoaderText(loaderId, "🤖 Shopee AI đang tổng hợp câu trả lời...");
+                } else if (event.type === "content" && event.delta) {
+                  if (!bubbleEl) {
+                    removeLoader(loaderId);
+                    bubbleEl = appendMsg("", 'bot', true);
+                  }
+                  rawMarkdown += event.delta;
+                  const clean = rawMarkdown.replace(/^[ \t]*[•·][ \t]*/gm, '- ');
+                  bubbleEl.innerHTML = marked.parse(clean) + sourcesHtml;
+                  const contentArea = document.getElementById('contentArea');
+                  if (contentArea) contentArea.scrollTop = contentArea.scrollHeight;
+                }
+              } catch (err) {
+                // Ignore parse errors
+              }
+            }
+          }
+        }
+
+        // Save bot response to session storage
+        currentSess.messages.push({
+          role: 'bot',
+          content: rawMarkdown,
+          sources: retrievedSourcesMeta
+        });
+        currentSess.subtitle = rawMarkdown.substring(0, 35) + '...';
+        saveSessionsToStorage();
+        renderRecentList();
+
+      } catch (err) {
+        removeLoader(loaderId);
+        appendMsg("Xin lỗi, đã xảy ra lỗi kết nối với RAG server.", 'bot');
+      }
+    }
+
+    function openSourceModal(index) {
+      const src = currentSourcesMap[index];
+      if (!src) return;
+
+      document.getElementById('modalFileName').innerText = '📄 Nguồn: ' + (src.title || 'Shopee Policy');
+      document.getElementById('modalScore').innerText = '⭐ Score: ' + src.score;
+      document.getElementById('modalType').innerText = '📌 Loại: ' + (src.type || 'legal');
+      document.getElementById('modalChunkContent').innerText = src.content || 'Nội dung tài liệu đang được cập nhật.';
+
+      document.getElementById('sourceModalOverlay').style.display = 'flex';
+    }
+
+    function closeSourceModal() {
+      document.getElementById('sourceModalOverlay').style.display = 'none';
+    }
+
+    function handleOverlayClick(e) {
+      if (e.target.id === 'sourceModalOverlay') {
+        closeSourceModal();
+      }
+    }
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    }
+
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeSourceModal();
+    });
+
+    function appendMsg(content, sender, isHtml = false) {
+      const list = document.getElementById('chatList');
+      const row = document.createElement('div');
+      row.className = `chat-msg-row ${sender}`;
+
+      const bubble = document.createElement('div');
+      bubble.className = 'chat-bubble';
+      if (isHtml) {
+        bubble.innerHTML = content;
+      } else {
+        bubble.innerText = content;
+      }
+
+      row.appendChild(bubble);
+      list.appendChild(row);
+
+      const contentArea = document.getElementById('contentArea');
+      contentArea.scrollTop = contentArea.scrollHeight;
+      return bubble;
+    }
+
+    function appendLoader() {
+      const list = document.getElementById('chatList');
+      const row = document.createElement('div');
+      const id = 'loader-' + Date.now();
+      row.id = id;
+      row.className = 'chat-msg-row bot';
+      row.innerHTML = `<div class="chat-bubble" style="background:#FFF8F6; border:1px solid #FFD8D0; color:#EE4D2D; display:flex; align-items:center; gap:10px;"><div class="typing-indicator"><div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div></div><span id="${id}-text" style="font-size:13px; font-weight:600;">🔍 Đang tìm kiếm tài liệu...</span></div>`;
+      list.appendChild(row);
+
+      const contentArea = document.getElementById('contentArea');
+      contentArea.scrollTop = contentArea.scrollHeight;
+      return id;
+    }
+
+    function updateLoaderText(id, text) {
+      const el = document.getElementById(id + '-text');
+      if (el) el.innerText = text;
+    }
+
+    function removeLoader(id) {
+      const el = document.getElementById(id);
+      if (el) el.remove();
+    }
+  </script>
+
+
+  <!-- Modal Popup Xem Chi Tiết Trích Dẫn Tài Liệu -->
+  <div class="source-modal-overlay" id="sourceModalOverlay" onclick="handleOverlayClick(event)">
+    <div class="source-modal-card">
+      <div class="source-modal-header">
+        <div class="source-modal-title">
+          <span>📄 Trích Dẫn Tài Liệu Tham Khảo (Shopee Policy)</span>
+        </div>
+        <button class="source-modal-close" onclick="closeSourceModal()">✕</button>
+      </div>
+      <div class="source-modal-body">
+        <div class="source-modal-meta">
+          <span class="meta-chip" id="modalFileName">File Name</span>
+          <span class="meta-chip score" id="modalScore">Score: 0.0000</span>
+          <span class="meta-chip" id="modalType">Type</span>
+        </div>
+        <div class="source-modal-content-box" id="modalChunkContent">
+          Nội dung trích dẫn tài liệu sẽ hiển thị tại đây...
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
