@@ -79,6 +79,8 @@ Xem code mẫu (DeepEval/RAGAS/TruLens) chi tiết trong `README.md` gốc mục
 
 | Thành viên | MSSV | Nhiệm vụ | Trạng thái |
 |-----------|------|----------|------------|
+| Nguyễn Hùng Mạnh | 2A202601256 | Role 2 (Data Dev - Task 1..3) & Role 5 (UI & Task 10) | Task 1-3 Hoàn thành |
+| | | | |
 | | | | |
 | | | | |
 | | | | |
